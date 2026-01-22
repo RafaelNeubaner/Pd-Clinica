@@ -219,56 +219,29 @@ Desktop	≥ 992px	Layout completo
 ## 11. Fluxograma, Wireframe e Prototipagem
 Deve ser desenvolvido em equipe com o trabalho de todos os integrantes. As páginas devem ser componentizadas e seguidas fielmente no desenvolvimento.
 
-# 🧑‍⚕️ DIVISÃO DE PÁGINAS — PD Clínica
 
-### 👤 Igor
+## 👨‍💻 Divisão de Módulos e Requisitos (RFs)
 
-Home
+### 1. Pedro: Módulo de Sistemas e Lógica
+**Foco:** Funcionalidades interativas, fluxos de dados simulados e reatividade do sistema.
+* **RF04 — Área do Paciente:** Telas de Login, Cadastro, Perfil e Recuperação de Senha.
+* **RF05 — Agendamento Médico:** Formulário interativo com seleção de especialidade/data e confirmação visual via JS.
+* **RF10 — Área Administrativa:** Dashboard funcional com alternância de abas (Agenda, Relatórios e Configurações).
+* **Scripts Globais:** Criação dos arquivos `.js` que controlam a inteligência do sistema.
 
-Sobre a Clínica
+### 2. Rafael: Módulo Institucional e Conteúdo
+**Foco:** Apresentação da clínica, autoridade médica e páginas informativas.
+* **RF02 — Institucional:** Páginas de Missão, Visão, Valores, Estrutura e História.
+* **RF03 — Especialidades Médicas:** Listagem geral e páginas individuais para as 5 especialidades.
+* **RF06 — Conteúdo Informativo:** Estrutura do Blog, Artigos Médicos, FAQ e Convênios.
 
-Estrutura Física
 
-Nossa História
+### 3. Pablo: Módulo de Conversão e UI/UX
+**Foco:** Design do sistema, suporte ao cliente e padronização visual (CSS).
+* **RF01 — Página Inicial:** Home completa com Carousel institucional e destaques.
+* **RF07 — Contato:** Formulário de contato com validações de campos.
+* **RF08 — Trabalhe Conosco:** Página de envio de currículo simulada.
+* **RF09 — Localização:** Informações de atendimento e Mapa (Google Maps Iframe).
+* **Design System:** Criação do `global.css` (Cores, Fontes, Botões, Header e Footer padrão).
+---
 
-Lista de Especialidades
-
-### 👤 Elias
-
-Definir pelo menos 5 especialidades
-
-Blog
-
-Artigo Médico
-
-### 👤 Roger
-
-Login
-
-Cadastro
-
-Perfil do Paciente
-
-Agendamento
-
-Dashboard
-
-Agenda Médica
-
-Relatórios
-
-Configurações
-
-### 👤 Mateus
-
-Contato
-
-Trabalhe Conosco
-
-Orçamento
-
-Localização
-
-FAQ
-
-Convênios
