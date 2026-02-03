@@ -1,0 +1,30 @@
+@import url(styles.css);
+
+footer {
+  background-color: var(--bg-dark);
+  color: var(--tertiary);
+}
+
+footer a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+footer #socialSection a{
+    background-color: var(--secondary);
+    color: var(--bg-dark);
+    padding: 1px;
+    border-radius: 4px;
+}
+
+footer #socialSection i {
+    font-size: 38px;
+}
+
+footer button{
+    height: 50px;
+}
+
+#divider{
+    border-bottom: 1px solid var(--tertiary);
+}
