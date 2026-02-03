@@ -28,6 +28,11 @@
     color: var(--txt-dark);
 }
 
+.bg-tertiary{
+    background-color: var(--tertiary);
+    color: var(--txt-light);
+}
+
 .txt-light{
     color: var(--txt-light);
 }
@@ -89,11 +94,6 @@ h2{
 h3{
     font-size: 16px;
     font-weight: semi-bold;
-}
-main{
-    padding: 20px;
-    min-height: 100vh;
-    background-color: var(--bg-light);
 }
 
 @media (max-width: 576px) {
