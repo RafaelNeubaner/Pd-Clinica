@@ -10,21 +10,40 @@ footer a {
   text-decoration: none;
 }
 
-footer #socialSection a{
-    background-color: var(--secondary);
-    color: var(--bg-dark);
-    padding: 1px;
-    border-radius: 4px;
+footer a:hover {
+  color: var(--tertiary);
+  transition: all 0.2s ease;
+}
+
+footer img{
+    min-width: 350px;
+}
+
+footer #socialSection a {
+  background-color: var(--secondary);
+  color: var(--bg-dark);
+  padding: 1px;
+  border-radius: 4px;
+}
+
+footer #socialSection {
+    min-width: 250px;
 }
 
 footer #socialSection i {
-    font-size: 38px;
+  font-size: 38px;
 }
 
-footer button{
-    height: 50px;
+footer button {
+  height: 50px;
 }
 
-#divider{
-    border-bottom: 1px solid var(--tertiary);
+#divider {
+  border-bottom: 1px solid var(--tertiary);
+}
+
+@media (min-width: 992px) {
+    footer img{
+        max-width: 250px;
+    }
 }
