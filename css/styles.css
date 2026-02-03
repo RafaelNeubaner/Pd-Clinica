@@ -96,6 +96,20 @@ h3{
     font-weight: semi-bold;
 }
 
+.mainTitle{
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.subTitle{
+    font-size: 20px;
+    font-weight: semi-bold;
+}
+
+.textCenter{
+    text-align: center;
+}
+
 @media (max-width: 576px) {
     h1{
         font-size: 24px;
