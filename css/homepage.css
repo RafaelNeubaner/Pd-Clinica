@@ -1,38 +1,60 @@
 #heroSection {
-    text-align: center;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 64px 128px;
-    gap: 64px;
-    text-align: left;
+  text-align: center;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 64px 128px;
+  gap: 64px;
+  text-align: left;
 }
 
 .heroText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
 }
 
 .heroText #frase1Hero {
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1.2;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 .heroText #frase2Hero {
-    font-size: 20px;
-    font-weight: semi-bold;
-
+  font-size: 20px;
+  font-weight: semi-bold;
 }
 
-.heroText a{
-    width: fit-content;
+.heroText a {
+  width: fit-content;
 }
 
 #heroSection img {
-    height: 327px;
-    width: 479px;
+  height: 327px;
+  width: 479px;
+}
+
+.helpCard {
+  height: 270px;
+  min-width: 270px;
+  border: 2px solid var(--secondary);
+  border-radius: 12px;
+  color: var(--primary);
+}
+
+.helpCard .iconHelp {
+  background-color: var(--primary);
+  width: fit-content;
+  border-radius: 8px;
+}
+
+.iconHelp img {
+  height: 40px;
+  width: 40px;
+}
+
+#helpSection button {
+  width: fit-content;
 }
