@@ -1,0 +1,38 @@
+#heroSection {
+    text-align: center;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 64px 128px;
+    gap: 64px;
+    text-align: left;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.heroText #frase1Hero {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.heroText #frase2Hero {
+    font-size: 20px;
+    font-weight: semi-bold;
+
+}
+
+.heroText a{
+    width: fit-content;
+}
+
+#heroSection img {
+    height: 327px;
+    width: 479px;
+}
