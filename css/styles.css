@@ -96,6 +96,20 @@ h3{
     font-weight: semi-bold;
 }
 
+.mainTitle{
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.subTitle{
+    font-size: 20px;
+    font-weight: semi-bold;
+}
+
+.textCenter{
+    text-align: center;
+}
+
 @media (max-width: 576px) {
     h1{
         font-size: 24px;
@@ -120,9 +134,18 @@ h3{
             padding: 5px 12px;
         }
     
-
-    
         .btn-outline {
             padding: 5px 12px;   
         }
+
+        .mainTitle {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    
+        .subTitle {
+            font-size: 16px;
+            font-weight: semi-bold;
+        }
+    
 }
