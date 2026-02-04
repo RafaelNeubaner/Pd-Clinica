@@ -29,3 +29,17 @@ btnLeft.addEventListener('click', function () {
 btnRight.addEventListener('click', function () {
     carouselHelpSection.scrollLeft += 300;
 });
+
+var formContact = document.getElementById('formContactForm');
+formContact.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    let isFormValid = formContact.checkValidity();
+    if (isFormValid) {
+        alert('Mensagem enviada com sucesso!');
+        formContact.reset();
+    } else {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+    }
+}
+);
