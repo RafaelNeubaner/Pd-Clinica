@@ -127,7 +127,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="d-flex flex-column align-items-center gap-5">
       <!-- Hero Section -->
       <section class="container-fluid w-100 bg-tertiary" id="heroSection">
         <div class="heroText">
@@ -149,6 +149,62 @@
           alt="Atendimento de qualidade"
         />
       </section>
+        <img src="assets/media/images/img-hero-home.png" alt="Atendimento de qualidade">
+        </section>
+
+        <section class="container row gap-3 gap-lg-0 justify-content-between" id="helpSection">
+            <div class="col-12 col-lg-5 d-flex flex-column justify-content-between gap-2 text-center text-lg-start">
+                <div>
+                    <h1>Como podemos te ajudar?</h1>
+                    <h2>Conheça mais sobre os serviços oferecidos e convênios aceitos pela PD Clínica para cuidar da sua saúde e bem-estar</h2>
+                </div>
+                <button class="btn-primary d-none d-lg-block buttonMore">Saiba Mais</button>
+            </div>
+            <div class="col-12 col-lg-7" id="container-help-carousel"> 
+                <div class="d-flex gap-3 justify-content-center align-items-center justify-content-lg-start align-items-lg-start flex-wrap flex-lg-nowrap overflow-scroll px-lg-4" id="carousel-scroll-container">
+                    <article class="helpCard col-5 col-lg-auto d-flex flex-column justify-content-between p-2 p-lg-3 py-3 py-lg-5 gap-0 gap-lg-2">
+                        <div class="p-2 iconHelp">
+                            <img src="assets/media/icons/house_garage.svg" alt="" srcset="">
+                        </div>
+                        <div>
+                            <h2>PD Até Você</h2>
+                            <p>O atendimento móvel do PD Clínica onde você estiver</p>
+                        </div>
+                    </article>
+                    <article class="helpCard col-5 col-lg-auto d-flex flex-column justify-content-between p-2 p-lg-3 py-3 py-lg-5 gap-0 gap-lg-2">
+                        <div class="p-2 iconHelp">
+                            <img src="assets/media/icons/phone_film.svg" alt="" srcset="">
+                        </div>
+                        <div>
+                            <h2>Telemedicina</h2>
+                            <p>Consultas com especialistas, a qualquer hora e de forma remota</p>
+                        </div>
+                    </article>
+                    <article class="helpCard col-5 col-lg-auto d-flex flex-column justify-content-between p-2 p-lg-3 py-3 py-lg-5 gap-0 gap-lg-2">
+                        <div class="p-2 iconHelp">
+                            <img src="assets/media/icons/health_checklist.svg" alt="" srcset="">
+                        </div>
+                        <div>
+                            <h2>Check-up</h2>
+                            <p>Um protocolo de cuidado personalizado para você</p>
+                        </div>
+                    </article>
+                    <article class="helpCard col-5 col-lg-auto d-flex flex-column justify-content-between p-2 p-lg-3 py-3 py-lg-5 gap-0 gap-lg-2">
+                        <div class="p-2 iconHelp">
+                            <img src="assets/media/icons/checkup.svg" alt="" srcset="">
+                        </div>
+                        <div>
+                            <h2>Exames & Procedimentos</h2>
+                            <p>Atendimento de acordo com a sua necessidade</p>
+                        </div>
+                    </article>
+                </div>
+                <button class="btn-primary d-none" id="slideLeft"><</button>
+                <button class="btn-primary d-none d-lg-block" id="slideRight">></button>
+            </div>
+            <button class="btn-primary w-100 d-lg-none buttonMore">Saiba Mais</button>
+        </section>
+        
 
       <!-- Especialidades Section -->
       <section class="container" id="especialidades">
@@ -274,5 +330,7 @@
         </p>
       </div>
     </footer>
-  </body>
+
+    <script src="js/homepage.js"></script>
+</body>
 </html>
