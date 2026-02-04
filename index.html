@@ -266,6 +266,39 @@
         </div>
       </section>
       
+
+      <section class="container row justify-content-between py-3" id="contactSection">
+        <div class="col-12 col-lg-5 d-flex flex-column justify-content-center text-center text-lg-start gap-3" id="contactText">
+            <h1>Estamos aqui pra você</h1>
+            <h2>Tem alguma dúvida sobre nossos serviços, convênios ou unidades? Preencha o formulário abaixo e nossa equipe retornará em breve.</h2>
+            <img class="flex-grow-1" src="assets/media/images/fale_conosco.png" alt="Img Description Fale Conosco">
+        </div>
+        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center gap-3 px-5 py-5" id="formContact">
+            <h2>Fale Conosco</h2>
+            <form class="d-flex flex-column w-100 gap-2" id="formContactForm"> 
+                <div class="w-100 d-flex flex-column">
+                    <label for="nameInput">Nome Completo</label>
+                    <input type="text" id="nameInput" name="nameInput" placeholder="Digite seu nome completo" minlength="4" required>
+                </div>
+                
+                <div class="w-100 d-flex flex-column">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="emailInput" name="emailInput" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="w-100 d-flex flex-column">
+                    <label for="subjectInput">Assunto</label>
+                    <input type="text" id="subjectInput" name="subjectInput" placeholder="Digite o assunto" required>
+                </div>
+
+                <div class="w-100 d-flex flex-column">
+                    <label for="messageInput">Sua Mensagem</label>
+                    <textarea id="messageInput" name="messageInput" placeholder="Digite sua mensagem aqui..." required></textarea>
+                </div>
+                <button class="btn-outline" type="submit">Enviar</button>
+            </form>
+        </div>
+      </section>
     </main>
 
     <footer
