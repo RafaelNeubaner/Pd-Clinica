@@ -28,6 +28,11 @@
     color: var(--txt-dark);
 }
 
+.bg-tertiary{
+    background-color: var(--tertiary);
+    color: var(--txt-light);
+}
+
 .txt-light{
     color: var(--txt-light);
 }
@@ -90,10 +95,19 @@ h3{
     font-size: 16px;
     font-weight: semi-bold;
 }
-main{
-    padding: 20px;
-    min-height: 100vh;
-    background-color: var(--bg-light);
+
+.mainTitle{
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.subTitle{
+    font-size: 20px;
+    font-weight: semi-bold;
+}
+
+.textCenter{
+    text-align: center;
 }
 
 @media (max-width: 576px) {
@@ -120,9 +134,18 @@ main{
             padding: 5px 12px;
         }
     
-
-    
         .btn-outline {
             padding: 5px 12px;   
         }
+
+        .mainTitle {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    
+        .subTitle {
+            font-size: 16px;
+            font-weight: semi-bold;
+        }
+    
 }
