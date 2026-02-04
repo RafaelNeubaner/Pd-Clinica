@@ -28,7 +28,7 @@
 
 }
 
-.heroText a{
+.heroText a {
     width: fit-content;
 }
 
@@ -36,3 +36,70 @@
     height: 327px;
     width: 479px;
 }
+
+/* HOMEPAGE - CTA SECTION */
+#ctaSection {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.containerCtaTxt {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.containerCtaTxt h1 {
+    color: var(--txt-light);
+    margin: 0;
+}
+
+.containerCtaTxt h2 {
+    color: var(--txt-light);
+    max-width: 700px;
+    margin: 0;
+}
+
+.containerCtaTxt span {
+    font-weight: 600;
+}
+
+.containerCtaBtn {
+    display: flex;
+    gap: 24px;
+}
+
+.containerCtaBtn .btn-primary{
+    background-color: var(--primary);
+    color: var(--tertiary);
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.containerCtaBtn .btn-primary:hover{
+    background-color: var(--bg-dark);
+    color: var(--txt-dark);
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.containerCtaBtn .btn-outline{
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    font-weight: 500;
+    
+}
+
+.containerCtaBtn .btn-outline:hover{
+    background-color: var(--tertiary);
+    color: var(--txt-light);
+    font-weight: 600;
+    border: 2px solid var(--txt-light);
+}
+
