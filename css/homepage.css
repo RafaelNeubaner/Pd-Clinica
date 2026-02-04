@@ -49,12 +49,69 @@ main {
     gap: 64px;
 }
 
+@media (max-width: 556px) {
+    #heroSection {
+        flex-direction: column;
+        padding: 32px;
+        gap: 12px;
+    }
+
+    #heroSection img {
+        width: 100%;
+        height: auto;
+    }
+
+    .heroText #frase1Hero {
+        font-size: 24px;
+    }
+
+    .heroText #frase2Hero {
+        display: none;
+    }
+}
+
+#especialidades .containerEspecialidades {
+    width: 80%;
+    margin: auto;
+}
+
 #especialidades .btn-outline {
     width: fit-content;
     display: flex;
     margin: 0 auto;
+    font-size: larger;
 }
 
 #especialidades .btn-primary {
     font-size: 36px;
+}
+
+#especialidades img{
+    width: 54px;
+}
+
+@media (max-width: 556px) {
+    #especialidades .containerEspecialidades {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    #especialidades .btn-outline {
+        font-size: medium;
+    }
+
+    #especialidades .btn-primary {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    #especialidades .gap64 {
+        gap: 32px;
+    }
+
+    #especialidades p{
+        width: 80%;
+        margin: auto;
+    }
+
 }
