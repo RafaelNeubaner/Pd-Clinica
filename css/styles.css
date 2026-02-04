@@ -108,31 +108,56 @@ h3 {
   font-weight: semi-bold;
 }
 
-@media (max-width: 576px) {
-  h1 {
-    font-size: 24px;
+.mainTitle{
+    font-size: 44px;
     font-weight: bold;
-  }
+}
 
-  h2 {
-    font-size: 16px;
+.subTitle{
+    font-size: 20px;
     font-weight: semi-bold;
-  }
+}
 
-  h3 {
-    font-size: 14px;
-    font-weight: semi-bold;
-  }
+.textCenter{
+    text-align: center;
+}
 
-  p {
-    font-size: 12px;
-  }
+@media (max-width: 576px) {
+    h1{
+        font-size: 24px;
+        font-weight: bold;
+    }
 
-  .btn-primary {
-    padding: 5px 12px;
-  }
+    h2{
+        font-size: 16px;
+        font-weight: semi-bold;
+    }
 
-  .btn-outline {
-    padding: 5px 12px;
-  }
+    h3{
+        font-size: 14px;
+        font-weight: semi-bold;
+    }
+
+    p{
+        font-size: 12px;
+    }
+    
+        .btn-primary {
+            padding: 5px 12px;
+        }
+    
+        .btn-outline {
+            padding: 5px 12px;   
+        }
+
+        .mainTitle {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    
+        .subTitle {
+            font-size: 16px;
+            font-weight: semi-bold;
+        }
+    
 }
