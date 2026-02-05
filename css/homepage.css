@@ -439,6 +439,14 @@ main {
     display: none; /* Spec para Safari antigo */
   }
 
+.faqItem[open] summary::marker {
+  transform: rotate(180deg);
+}
+
+#modalSuccessMessage h2{
+  font-weight: bold;
+  font-size: 24px;
+}
   .faqItem summary::after {
     content: url("../assets/media/icons/arrow_down.svg");
     margin-left: 10px;
