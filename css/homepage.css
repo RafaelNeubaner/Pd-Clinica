@@ -4,6 +4,12 @@ main {
   gap: 96px;
 }
 
+@media (max-width: 556px) {
+    main {
+        gap: 48px;
+    }
+}
+
 /* HOMEPAGE - HERO SECTION */
 #heroSection {
   text-align: center;
@@ -216,18 +222,6 @@ main {
   gap: 24px;
 }
 
-.containerCtaTxt h1 {
-  color: var(--txt-light);
-  margin: 0;
-}
-
-.containerCtaTxt h2 {
-  color: var(--txt-light);
-  max-width: 700px;
-  margin: 0;
-  line-height: 30px;
-}
-
 .containerCtaTxt span {
   font-weight: 600;
 }
@@ -264,55 +258,186 @@ main {
   border: 2px solid var(--txt-light);
 }
 
+@media (max-width: 556px) {
+  #ctaSection {
+    padding: 32px 24px;
+    gap: 32px;
+  }
+
+  #ctaSection .mainTitle {
+    width: 80%;
+    margin: auto;
+  }
+
+}
+
+/* Avaliações Section */
+    #avaliacoes .font36 {
+        margin-bottom: 64px;
+    }
+
+    #avaliacoes .col-lg-4 {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .starBadge {
+        color: rgb(255, 230, 0);
+    }
+
+    .badgeRating {
+        background-color: var(--primary);
+        color: var(--txt-dark);
+        padding: 8px 16px;
+        border-radius: 12px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .padding24 {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .avatar {
+        background-color: var(--secondary);
+        color: var(--txt-light);
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 32px;
+        margin-right: 12px;
+    }
+
+    .nameCard {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .depoimento {
+        font-size:12px;
+        line-height: 18px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .feedback {
+        font-size: 14px;
+        font-weight: semi-bold;
+    }
+
+    #avaliacoes a {
+        color: #32B119;
+    }
+
+    @media (min-width: 992px){
+        .assigned {
+            margin: auto;
+            width:30.5%;
+        }
+    }   
+
+    @media (max-width: 556px) {
+        #avaliacoes .font36 {
+            font-size: 24px;
+            margin-bottom: 32px;
+        }
+
+        .assigned {
+            width: 80%;
+            margin: auto;
+        }
+
+        .badgeRating p{
+            display: none;
+        }
+
+        #avaliacoes .font36 {
+            font-size: 24px;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 32px;
+        }
+    }
+
+
 /* Fale conosco section */
-#contactText img {
-  object-fit: cover;
-}
+    #contactText img{
+      object-fit: cover;
+    }
 
-#formContact {
-  background-color: var(--bg-dark);
-  border-radius: 12px;
-  border-top-left-radius: 100px;
-}
+    #formContact{
+      background-color: var(--bg-dark);
+      border-radius: 12px;
+      border-top-left-radius: 100px;
+    }
 
-#formContact h2 {
-  color: var(--tertiary);
-}
+    #formContact h2{
+      color: var(--tertiary);
+    }
 
-#formContact label {
-  color: var(--tertiary);
-}
-#formContact input,
-textarea {
-  color: var(--txt-dark);
-  border-color: var(--tertiary);
-}
+    #formContact label{
+      color: var(--tertiary);
+    }
+    #formContact input, textarea{
+      color: var(--txt-dark);
+      border-color: var(--tertiary);
+    }
 
-#formContact button {
-  padding: 12px 24px;
-}
+    #formContact button{
+      padding: 12px 24px;
+    }
 
-@media (max-width: 992px) {
-  #contactSection {
-    margin: 16px 0px;
-    padding: 0px;
-  }
+    @media (max-width: 992px){
+      #contactSection{
+        margin: 16px 0px;
+        padding: 0px;
+      }
 
-  #formContact {
-    border-radius: 0;
-  }
-}
+      #formContact{
+        border-radius: 0;
+      }
+    }
 
 /* FAQ Section */
 
-#faqSection .faqItem {
-  border-bottom: 1 px solid var(--bg-dark);
-  padding: 16px 0;
-}
+  #faqSection {
+    margin-bottom: 40px;
+  }
 
-.faqItem summary::marker {
-  content: url("../assets/media/icons/arrow_down.svg");
-}
+  #faqSection > h2 {
+    border-bottom: 1px solid var(--bg-dark);
+    text-align: center;
+    padding: 20px;
+  }
+
+  #faqSection .faqItem {
+    border-bottom: 1px solid var(--bg-dark);
+    padding: 16px 0;
+    transition: all 0.3s ease;
+  }
+
+  .faqItem summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  .faqItem summary::-webkit-details-marker {
+    display: none; /* Spec para Safari antigo */
+  }
 
 .faqItem[open] summary::marker {
   transform: rotate(180deg);
@@ -322,3 +447,16 @@ textarea {
   font-weight: bold;
   font-size: 24px;
 }
+  .faqItem summary::after {
+    content: url("../assets/media/icons/arrow_down.svg");
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .faqItem[open] summary::after {
+    transform: rotate(180deg);
+  }
+
+  .faqItem p {
+    margin: 10px 40px;
+  }

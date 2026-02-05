@@ -24,6 +24,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
@@ -127,7 +128,7 @@
       </nav>
     </header>
 
-    <main class="d-flex flex-column align-items-center gap-5">
+    <main class="d-flex flex-column align-items-center">
       <!-- Hero Section -->
       <section class="container-fluid w-100 bg-tertiary" id="heroSection">
         <div class="heroText">
@@ -251,8 +252,8 @@
       <!-- CTA Section -->
       <section class="container-fluid" id="ctaSection">
         <div class="containerCtaTxt">
-          <h1>Atendimento de Qualidade é Saúde</h1>
-          <h2>
+          <h2 class="mainTitle">Atendimento de Qualidade é Saúde</h2>
+          <h2 class="subTitle">
             Junte-se a <span>milhares de pacientes</span> que já simplificaram
             seus cuidados médicos.<span
               > Sem filas, sem espera e com preço justo.</span
@@ -265,6 +266,92 @@
           <button class="btn-outline btnCta">Fale com um especialista</button>
         </div>
       </section>
+
+      <!-- Avaliações Section-->
+      <section class="container" id="avaliacoes">
+        <div class="padding24">
+          <div class="d-md-flex justify-content-center align-items-center badgeRating">
+            <span class="starBadge">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </span>
+            <p class="subTitle mb-0 ms-2">4.9/5 de satisfação dos pacientes</p>
+          </div>
+          <h2 class="font36 text-center" >Histórias reais de quem confia na PD</h2>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3 card shadow p-4 mb-4 mb-md-0 offset-md-1 assigned h-100">
+            <div class="cardHeader d-flex align-items-center">
+              <p class="avatar">P</p>
+              <div class="infoClient">
+                <p class="nameCard">Pedro Manoel</p>
+                <p class="patientDesc">Paciente do Dr. Rodrigo Lasmar</p>
+              </div>
+            </div>
+            <span class="starBadge">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </span>
+            <cite class="depoimento">
+              "Excelente atendimento! A equipe da PD Clínica foi muito
+              atenciosa e profissional. Recomendo a todos que buscam cuidados
+              de saúde de qualidade."
+            </cite>
+            <p class="feedback">Feedback realizado pelo: <a href="#">Whatsapp</a></p>
+          </div>
+          <div class="col-12 col-md-3 card shadow p-4 mb-4 mb-md-0 offset-md-1 assigned h-100">
+            <div class="cardHeader d-flex align-items-center">
+              <p class="avatar">R</p>
+              <div class="infoClient">
+                <p class="nameCard">Rafael Almeida</p>
+                <p class="patientDesc">Paciente da Dra. Ana Clara</p>
+              </div>
+            </div>
+            <span class="starBadge">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </span>
+            <cite class="depoimento">
+              "A PD Clínica é simplesmente incrível! Desde a marcação da
+              consulta até o atendimento final, tudo foi perfeito. Me senti
+              valorizado como paciente."
+            </cite>
+            <p class="feedback">Feedback realizado pelo: <a href="#">Whatsapp</a></p>
+          </div>
+          <div class="col-12 col-md-3 card shadow p-4 mb-4 mb-md-0 offset-md-1 assigned h-100">
+            <div class="cardHeader d-flex align-items-center">
+              <p class="avatar">P</p>
+              <div class="infoClient">
+                <p class="nameCard">Pablo Santos</p>
+                <p class="patientDesc">Paciente do Dr. Lucas Ferreira</p>
+              </div>
+            </div>
+            <span class="starBadge">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </span>
+            <cite class="depoimento">
+              "A PD Clínica superou minhas expectativas! Desde a recepção até o
+              atendimento médico, tudo foi impecável. Me senti acolhido e bem
+              cuidado."
+            </cite>
+            <p class="feedback">Feedback realizado pelo: <a href="#">Whatsapp</a></p>
+          </div>
+        </div>
+</section>
+
       
 
       <section class="container row justify-content-between py-3" id="contactSection">
@@ -303,12 +390,28 @@
         <h2 class="mainTitle">Perguntas Frequentes</h2>
         <div>
             <details class="faqItem">
-                <summary>Como faço para acessar resultados de exames?</summary>
-                <p>Para acessar os resultados de exames basta entrar em contato com a nossa eequipe através dos nosso canais de comunicação (E-mail, telefone ou Whatsapp) que um de nossos atendentes irá te eenviar o relatorio completo com todos os seus resultados, receitas e agendamentos</p>
+                <summary><h2 class="subTitle">Como faço para acessar resultados de exames?</h2></summary>
+                <p>Para acessar os resultados de exames basta entrar em contato com a nossa eequipe através dos nosso canais de comunicação (<a href="#">E-mail</a>, <a href="#">telefone</a> ou <a href="#">Whatsapp</a>) que um de nossos atendentes irá te eenviar o relatorio completo com todos os seus resultados, receitas e agendamentos</p>
             </details>
             <details class="faqItem">
-                <summary>Quais convênios a PD Clínica aceita?</summary>
+                <summary><h2 class="subTitle">Quais convênios a PD Clínica aceita?</h2></summary>
                 <p>A PD Clínica aceita uma ampla variedade de convênios médicos. Para obter uma lista completa e atualizada dos convênios aceitos, recomendamos entrar em contato diretamente com nossa equipe de atendimento ao cliente ou visitar a seção de convênios em nosso site.</p>
+            </details>
+            <details class="faqItem">
+                <summary><h2 class="subTitle">Como faço para marcar uma consulta com um especialista?</h2></summary>
+                <p>Você pode realizar o agendamento de forma rápida pelo nosso WhatsApp ou telefone. Tenha em mãos seu documento de identidade e, caso possua, a carteirinha do seu convênio para agilizarmos o processo.</p>
+            </details>
+            <details class="faqItem">
+                <summary><h2 class="subTitle">Como são feitos os agendamentos de exames?</h2></summary>
+                <p>Os exames são agendados exclusivamente via WhatsApp ou telefone. Para agilizar, pedimos que envie uma foto da sua guia médica e do cartão do convênio. Nossa equipe confirmará a disponibilidade e passará as orientações de preparo na hora.</p>
+            </details>
+            <details class="faqItem">
+                <summary><h2 class="subTitle">A PD Clínica oferece serviços de telemedicina?</h2></summary>
+                <p>Sim, a PD Clínica oferece serviços de telemedicina, permitindo que os pacientes consultem especialistas remotamente por meio de videochamadas. Isso proporciona conveniência e acesso a cuidados médicos de qualidade, independentemente da localização do paciente.</p>
+            </details>
+            <details class="faqItem">
+                <summary><h2 class="subTitle">Em qual unidade da PD Clinica são feitos os procedimentos cirúrgicos?</h2></summary>
+                <p>Todos os nossos procedimentos cirúrgicos são realizados em nossa unidade central [Endereço/Bairro]. Contamos com um centro cirúrgico moderno e equipado para garantir sua segurança e conforto durante todo o processo.</p>
             </details>
         </div>
       </section>
