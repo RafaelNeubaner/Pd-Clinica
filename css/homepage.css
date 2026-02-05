@@ -317,3 +317,8 @@ textarea {
 .faqItem[open] summary::marker {
   transform: rotate(180deg);
 }
+
+#modalSuccessMessage h2{
+  font-weight: bold;
+  font-size: 24px;
+}

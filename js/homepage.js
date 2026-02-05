@@ -36,7 +36,8 @@ formContact.addEventListener('submit', function (event) {
 
     let isFormValid = formContact.checkValidity();
     if (isFormValid) {
-        alert('Mensagem enviada com sucesso!');
+        var modalSuccessMessage = new bootstrap.Modal(document.getElementById('modalSuccessMessage'));
+        modalSuccessMessage.show();
         formContact.reset();
     } else {
         alert('Por favor, preencha todos os campos obrigatórios.');
