@@ -121,3 +121,68 @@ main {
     text-align: center;
     line-height: 1.3;
 }
+  
+/* Missao e valores*/
+  #missaoValores {
+  min-height: 600px;
+}
+
+#missaoValores img {
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  border: 3px solid var(--bg-dark);
+  border-bottom: none;
+}
+
+.missaoValoresItem {
+  background-color: var(--tertiary);
+  padding: 10px 24px;
+  text-align: center;
+  border: 3px solid var(--bg-dark);
+  border-radius: 0;
+  flex:1;
+}
+
+.missaoValoresItem:nth-child(1),
+.missaoValoresItem:nth-child(2) {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.missaoValoresItem:nth-child(3) {
+  border-top: 0;
+  border-radius: 0 0 12px 12px;
+}
+
+.missaoValoresItem h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--txt-dark);
+}
+
+@media (min-width: 992px) {
+    #missaoValores img {
+        max-width: 40%;
+        border-right: 0;
+        border-bottom: 3px solid var(--bg-dark);
+        border-radius: 12px 0 0 12px;
+    }
+
+    .missaoValoresItem:nth-child(1),
+    .missaoValoresItem:nth-child(2) {
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 0;
+    }
+
+    .missaoValoresItem:nth-child(1){
+        border-top: 3px solid var(--bg-dark);
+        border-radius: 0 12px 0 0;
+    }
+
+    .missaoValoresItem:nth-child(3) {
+        border-top: 0;
+        border-left:0;
+        border-radius: 0 0 12px 0;
+    }
+}
