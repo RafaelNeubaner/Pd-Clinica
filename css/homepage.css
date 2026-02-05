@@ -305,15 +305,45 @@ textarea {
 
 /* FAQ Section */
 
+#faqSection {
+  margin-bottom: 40px;
+}
+
+#faqSection > h2 {
+  border-bottom: 1px solid var(--bg-dark);
+  text-align: center;
+  padding: 20px;
+}
+
 #faqSection .faqItem {
-  border-bottom: 1 px solid var(--bg-dark);
+  border-bottom: 1px solid var(--bg-dark);
   padding: 16px 0;
+  transition: all 0.3s ease;
 }
 
-.faqItem summary::marker {
+.faqItem summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.faqItem summary::-webkit-details-marker {
+  display: none; /* Spec para Safari antigo */
+}
+
+.faqItem summary::after {
   content: url("../assets/media/icons/arrow_down.svg");
+  margin-left: 10px;
+  transition: transform 0.3s ease;
 }
 
-.faqItem[open] summary::marker {
+.faqItem[open] summary::after {
   transform: rotate(180deg);
+}
+
+.faqItem p {
+  margin: 10px 40px;
 }
