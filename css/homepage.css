@@ -343,10 +343,36 @@ main {
         color: #32B119;
     }
 
-    .assigned {
-        margin: auto;
-        width:30.5%;
+    @media (min-width: 992px){
+        .assigned {
+            margin: auto;
+            width:30.5%;
+        }
+    }   
+
+    @media (max-width: 556px) {
+        #avaliacoes .font36 {
+            font-size: 24px;
+            margin-bottom: 32px;
+        }
+
+        .assigned {
+            width: 80%;
+            margin: auto;
+        }
+
+        .badgeRating p{
+            display: none;
+        }
+
+        #avaliacoes .font36 {
+            font-size: 24px;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 32px;
+        }
     }
+
 
 /* Fale conosco section */
     #contactText img{
