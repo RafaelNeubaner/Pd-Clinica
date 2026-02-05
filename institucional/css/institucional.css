@@ -1,1 +1,83 @@
 @import url(../../css/styles.css);
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    padding: 128px;
+}
+
+/* Nosssa Historia */
+#historia #img1 {
+    width: 381px;
+    height: 203px;
+    border-radius: 15px 0 0 0;
+    border-top: 3px solid #000;
+    border-left: 3px solid #000;
+}
+
+#historia #img2 {
+    width: 381px;
+    height: 203px;
+    border-right: 3px solid #000;
+}
+
+#historia #img3 {
+    width: 381px;
+    height: 203px;
+    border-radius: 0 0 0 15px;
+    border-bottom: 3px solid #000;
+    border-left: 3px solid #000;
+}
+
+#historia .textHistory{
+    padding: 8px;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    border-radius: 0 15px 0 0;
+    width: 781px;
+    height: 203px;
+    background-color: var(--tertiary);
+}
+
+#historia .textHistory2{
+    padding: 8px;
+    border-left: 3px solid #000;
+    width: 781px;
+    height: 203px;
+    background-color: var(--tertiary);
+}
+
+#historia .textHistory3{
+    padding: 8px;
+    border-bottom: 3px solid #000;
+    border-right: 3px solid #000;
+    border-radius: 0 0 15px 0;
+    width: 781px;
+    height: 203px;
+    background-color: var(--tertiary);
+}
+
+#historia .linha{
+    display: flex;
+    gap: 22px;
+    margin-bottom:32px;
+}
+
+#historia h3{
+    color: var(--bg-light);
+    font-weight: bold;
+    margin-bottom: 0;
+    text-shadow:
+            1px 0 0 var(--bg-light),
+            -1px 0 0 var(--bg-light),
+            0 1px 0 var(--bg-light),
+            0 -1px 0 var(--bg-light);
+}
+
+#historia p {
+    width: 765px;
+    height: 160px;
+    text-align: center;
+    line-height: 1.3;
+}
