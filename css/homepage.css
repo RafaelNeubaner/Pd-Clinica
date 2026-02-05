@@ -222,18 +222,6 @@ main {
   gap: 24px;
 }
 
-.containerCtaTxt h1 {
-  color: var(--txt-light);
-  margin: 0;
-}
-
-.containerCtaTxt h2 {
-  color: var(--txt-light);
-  max-width: 700px;
-  margin: 0;
-  line-height: 30px;
-}
-
 .containerCtaTxt span {
   font-weight: 600;
 }
@@ -270,46 +258,20 @@ main {
   border: 2px solid var(--txt-light);
 }
 
-/* Fale conosco section */
-#contactText img {
-  object-fit: cover;
-}
-
-#formContact {
-  background-color: var(--bg-dark);
-  border-radius: 12px;
-  border-top-left-radius: 100px;
-}
-
-#formContact h2 {
-  color: var(--tertiary);
-}
-
-#formContact label {
-  color: var(--tertiary);
-}
-#formContact input,
-textarea {
-  color: var(--txt-dark);
-  border-color: var(--tertiary);
-}
-
-#formContact button {
-  padding: 12px 24px;
-}
-
-@media (max-width: 992px) {
-  #contactSection {
-    margin: 16px 0px;
-    padding: 0px;
+@media (max-width: 556px) {
+  #ctaSection {
+    padding: 32px 24px;
+    gap: 32px;
   }
 
-  #formContact {
-    border-radius: 0;
+  #ctaSection .mainTitle {
+    width: 80%;
+    margin: auto;
   }
+
 }
 
-    /* Avaliações Section */
+/* Avaliações Section */
     #avaliacoes .font36 {
         margin-bottom: 64px;
     }
