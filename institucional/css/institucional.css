@@ -3,7 +3,12 @@
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 96px;
+
+    padding: 128px 24px; 
+    width: 100%;
     width: 100%;
     overflow: hidden;
 }
@@ -66,25 +71,28 @@ section {
     object-fit: cover;
 }
 
-/* Nosssa Historia */
+/* INSTITUCIONAL | Nossa Historia */
 #historia #img1 {
 
     border-radius: 15px 0 0 0;
     border-top: 3px solid #000;
     border-left: 3px solid #000;
+    object-fit: cover;
 }
 
 #historia #img2 {
     border-right: 3px solid #000;
+    object-fit: cover;
 }
 
 #historia #img3 {
     border-radius: 0 0 0 15px;
     border-bottom: 3px solid #000;
     border-left: 3px solid #000;
+    object-fit: cover;
 }
 
-#historia .textHistory{
+#historia .textHistory {
     padding: 8px;
     border-top: 3px solid #000;
     border-right: 3px solid #000;
@@ -93,14 +101,14 @@ section {
     background-color: var(--tertiary);
 }
 
-#historia .textHistory2{
+#historia .textHistory2 {
     padding: 8px;
     border-left: 3px solid #000;
     flex:1;
     background-color: var(--tertiary);
 }
 
-#historia .textHistory3{
+#historia .textHistory3 {
     padding: 8px;
     border-bottom: 3px solid #000;
     border-right: 3px solid #000;
@@ -117,21 +125,222 @@ section {
     width: 100%;
 }
 
-#historia h3{
+#historia h3 {
     color: var(--bg-light);
     font-weight: bold;
     margin-bottom: 0;
     text-shadow:
-            1px 0 0 var(--bg-light),
-            -1px 0 0 var(--bg-light),
-            0 1px 0 var(--bg-light),
-            0 -1px 0 var(--bg-light);
+        1px 0 0 var(--bg-light),
+        -1px 0 0 var(--bg-light),
+        0 1px 0 var(--bg-light),
+        0 -1px 0 var(--bg-light);
 }
 
 #historia p {
     text-align: center;
     line-height: 1.3;
-    font-size: 12px;
+      font-size: 12px;
+}
+
+/* --- INSTITUCIONAL | Estrutura --- */
+
+#estrutura .estrutura-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+#estrutura .estrutura-card {
+    width: 100%;
+    max-width: 381px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#estrutura .img-container img {
+    width: 100%;
+    height: 203px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 32px;
+}
+
+#imgEstrutura01,
+#imgEstrutura03 {
+    border-top: 3px solid var(--bg-dark);
+    
+}
+
+#imgEstrutura01 {
+    border-left: 3px solid var(--bg-dark);
+    border-radius: 12px 0 0 0;
+}
+
+#imgEstrutura02 {
+    border-top: 3px solid var(--bg-dark);
+    
+}
+
+#imgEstrutura03 {
+    border-radius: 0 12px 0 0;
+    border-top: 3px solid var(--bg-dark);
+    border-right: 3px solid var(--bg-dark);
+}
+
+#estrutura .textContainer01,
+#estrutura .textContainer02,
+#estrutura .textContainer03 {
+    background-color: var(--tertiary);
+    padding: 24px 16px;
+    height: auto;
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+#estrutura .textContainer01 {
+    border-bottom: 3px solid var(--bg-dark);
+    border-left: 3px solid var(--bg-dark);
+    border-radius: 0 0 0 12px;
+}
+
+#estrutura .textContainer02 {
+    border-bottom: 3px solid var(--bg-dark);
+}
+
+#estrutura .textContainer03 {
+    border-bottom: 3px solid var(--bg-dark);
+    border-right: 3px solid var(--bg-dark);
+    border-radius: 0 0 12px 0;
+}
+
+
+#estrutura h3 {
+    color: var(--bg-light);
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+
+}
+
+#estrutura p {
+    color: var(--txt-light);
+    text-align: center;
+    line-height: 1.4;
+    font-size: 16px;
+    margin: 0;
+    width: 100%;
+}
+
+/* --- INSTITUCIONAL | Estrutura - responsividade --- */
+@media (max-width: 768px) {
+
+    #estrutura .img-container img {
+
+        margin-bottom: 0px;
+
+    }
+
+    #estrutura .estrutura-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imgEstrutura01 {
+        border-radius: 12px 12px 0 0;
+        border-top: 3px solid var(--bg-dark);
+        border-left: 3px solid var(--bg-dark);
+        border-right: 3px solid var(--bg-dark);
+    }
+
+    #imgEstrutura02,
+    #imgEstrutura03 {
+        border-left: 3px solid var(--bg-dark);
+        border-right: 3px solid var(--bg-dark);
+        border-top: none;
+        border-bottom: none;
+    }
+
+    #imgEstrutura03 {
+        border-radius: 0;
+    }
+
+    #estrutura .textContainer01,
+    #estrutura .textContainer02,
+    #estrutura .textContainer03 {
+        background-color: var(--tertiary);
+        padding: 24px 16px;
+        height: auto;
+        min-height: 200px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    #estrutura .textContainer01 {
+        border-bottom: none;
+
+        border-left: 3px solid var(--bg-dark);
+        border-right: 3px solid var(--bg-dark);
+        border-radius: 0;
+    }
+
+    #estrutura .textContainer02 {
+
+        border-left: 3px solid var(--bg-dark);
+        border-right: 3px solid var(--bg-dark);
+        border-bottom: none;
+
+    }
+
+    #estrutura .textContainer03 {
+        border-bottom: 3px solid var(--bg-dark);
+        border-left: 3px solid var(--bg-dark);
+        border-right: 3px solid var(--bg-dark);
+        border-radius: 0 0 12px 12px;
+    }
+
+}
+
+/* --- INSTITUCIONAL | Cta Estrutura --- */
+#ctaEstrutura {
+    background-color: var(--primary);
+    padding: 48px 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+
+    width: 100%; 
+    max-width: 1191px; 
+    
+}
+
+#ctaEstrutura h2 {
+    color: var(--bg-light);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    #ctaEstrutura {
+        padding: 32px 12px;
+        gap: 32px;
+    }
+
+    #ctaEstrutura h2 {
+        font-size: 20px;
+    }
 }
   
 /* Missao e valores*/
