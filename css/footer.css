@@ -1,7 +1,6 @@
 @import url(styles.css);
 
 footer {
-  margin: 0;
   background-color: var(--bg-dark);
   color: var(--tertiary);
 }

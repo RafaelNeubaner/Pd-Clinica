@@ -4,14 +4,37 @@ main {
   gap: 96px;
 }
 
-@media (max-width: 556px) {
+@media (max-width: 576px) {
     main {
         gap: 48px;
     }
 }
 
+.containerTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.containerTxt h1 {
+    color: var(--txt-light);
+    margin: 0;
+}
+
+.containerTxt h2 {
+    color: var(--txt-light);
+    margin: 0;
+    text-align: center;
+}
+
+.containerTxt span {
+    font-weight: 600;
+}
+
 /* HOMEPAGE - HERO SECTION */
 #heroSection {
+  margin-top: 150px;
   text-align: center;
   padding: 60px 20px;
   display: flex;
@@ -45,8 +68,10 @@ main {
 }
 
 #heroSection img {
-  height: 327px;
-  width: 479px;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  object-position: 75% center;
 }
 
 .gap64 {
@@ -55,8 +80,53 @@ main {
   gap: 64px;
 }
 
-@media (max-width: 556px) {
+#button2 {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
   #heroSection {
+    padding: 32px 64px;
+    gap: 32px;
+  }
+
+  .heroText #frase1Hero {
+    font-size: 36px;
+  }
+
+  .heroText #frase2Hero {
+    font-size: 16px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  #heroSection {
+    margin-top: 100px;
+    padding: 32px 54px;
+    gap: 0px;
+  }
+
+  #heroSection img {
+    height: auto;
+    max-height: 18rem;
+    width: 110%;
+    margin: 0 auto;
+  }
+
+  .heroText #frase1Hero {
+    font-size: 26px;
+  }
+
+  .heroText #frase2Hero {
+    font-size: 16px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  #heroSection {
+    margin-top: 80px;
     flex-direction: column;
     padding: 32px;
     gap: 12px;
@@ -78,6 +148,10 @@ main {
 
 /* HOMEPAGE - COMO PODEMOS AJUDAR SECTION */
 
+#helpSection {
+    width: 100%;
+    padding: 0 32px;
+}
 .buttonMore {
   background-color: var(--primary);
   padding: 12px 24px;
@@ -89,11 +163,11 @@ main {
 
 #carousel-scroll-container {
   scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 
 #carousel-scroll-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none; 
 }
 
 .helpCard {
@@ -156,6 +230,8 @@ main {
   }
 }
 
+
+
 /* HOMEPAGE - ESPECIALIDADES SECTION */
 
 #especialidades .containerEspecialidades {
@@ -178,7 +254,7 @@ main {
   width: 54px;
 }
 
-@media (max-width: 556px) {
+@media (max-width: 576px) {
   #especialidades .containerEspecialidades {
     width: 100%;
     padding: 0 16px;
@@ -190,7 +266,6 @@ main {
 
   #especialidades .btn-primary {
     font-size: 24px;
-    margin-bottom: 24px;
   }
 
   #especialidades .gap64 {
@@ -201,6 +276,13 @@ main {
     width: 80%;
     margin: auto;
   }
+}
+
+@media (max-width: 992px) {
+  #especialidades .containerEspecialidades{
+    gap: 24px;
+  }
+  
 }
 
 /* HOMEPAGE - CTA SECTION */
@@ -258,14 +340,18 @@ main {
   border: 2px solid var(--txt-light);
 }
 
-@media (max-width: 556px) {
+@media (max-width: 576px) {
+  #ctaSection .containerCtaTxt h1 {
+    margin: 24px 32px;
+  }
+
   #ctaSection {
     padding: 32px 24px;
-    gap: 32px;
+    gap: 24px;
   }
 
   #ctaSection .mainTitle {
-    width: 80%;
+    width: 75%;
     margin: auto;
   }
 
@@ -346,7 +432,7 @@ main {
         }
     }   
 
-    @media (max-width: 556px) {
+    @media (max-width: 576px) {
         #avaliacoes .font36 {
             font-size: 24px;
             margin-bottom: 32px;
@@ -368,6 +454,239 @@ main {
             margin-bottom: 32px;
         }
     }
+
+
+    #ctaSection .containerTxt {
+        gap: 24px;
+    }
+
+    #ctaSection .containerTxt h2 {
+        max-width: 700px;
+        line-height: 30px;
+    }
+
+    #ctaSection .containerCtaBtn {
+        display: flex;
+        gap: 24px;
+    }
+
+    #ctaSection .containerCtaBtn .btn-primary{
+        background-color: var(--primary);
+        color: var(--tertiary);
+        transition: background-color 0.3s ease;
+        font-weight: 500;
+    }
+
+    #ctaSection .containerCtaBtn .btn-primary:hover{
+        background-color: var(--bg-dark);
+        color: var(--txt-dark);
+        transition: background-color 0.3s ease;
+        font-weight: 600;
+    }
+
+    #ctaSection .containerCtaBtn .btn-outline{
+        color: var(--primary);
+        border: 2px solid var(--primary);
+        font-weight: 500;
+        
+    }
+
+    #ctaSection .containerCtaBtn .btn-outline:hover{
+        background-color: var(--tertiary);
+        color: var(--txt-light);
+        font-weight: 600;
+        border: 2px solid var(--txt-light);
+    }
+
+/* HOMEPAGE - UNIDADES */
+
+#unidades .container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+#unidades .slider-track {
+    gap: 24px;
+}
+
+#unidades .slider-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+#unidades .slider-window {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+
+#unidades .slider-window::-webkit-scrollbar {
+    display: none;
+}
+
+#unidades .slider-window .slider-item .card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    background-color: var(--tertiary);
+    border: none;
+    height: 100%;
+    width: auto;
+    border-radius: 12px;
+}
+
+
+#unidades .slider-item .card .cardImgUnidade {
+    max-height: 212px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#unidades .slider-item .card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 0 24px 12px 24px;
+    padding: 0;
+}
+
+#unidades .slider-item .card .card-body .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#unidades .slider-item .card .card-body .card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+}
+
+#unidades .slider-item .card .card-body h3 {
+    color: var(--txt-light);
+    font-size: 24px;
+    margin: 0;
+}
+
+#unidades .slider-item .card .card-body p {
+    color: var(--txt-light);
+    margin: 0;
+}
+
+#unidades .slider-item .card .card-body address {
+    margin: 0;
+    padding: 0;
+}
+
+
+#unidades .slider-item .card .card-body address a {
+    color: var(--txt-light);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+#unidades .slider-item .card .card-body iframe {
+    width: auto;
+    height:100%;
+    border:0; 
+    border-radius: 8px;
+}
+
+
+#unidades .slider-item .card .card-body .btn-primary {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+@media (min-width: 992px) {
+
+    #unidades .slider-item {
+    flex: 0 0 calc((100% - 72px) / 2);
+    max-width: calc((100% - 72px) / 2);
+    }
+
+    #unidades .slider-item .card .card-body {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    #unidades .slider-item .card .card-body iframe {
+        width: 212px;
+        height:220px;
+    }
+
+}
+
+#unidades .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    z-index: 10;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--bg-dark);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+#unidades .carousel-control:hover {
+    background-color: var(--bg-dark);
+    color: var(--txt-dark);
+
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#unidades .prev { left: -20px; }
+#unidades .next { right: -20px; }
+
+@media (max-width: 991px) {
+  #unidades .slider-track {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--bg-dark) transparent;
+  }
+
+  #unidades .carousel-control {
+    display: none;
+  }
+
+}
+
+@media (max-width: 576px) {
+    #unidades .container {
+        width: 100%;
+        padding: 0 32px;
+    }
+
+    #unidades .slider-item .card .card-body iframe {
+        display: none;
+    }
+
+    #unidades .slider-item .card .card-body address a {
+    font-size: 14px;
+
+    }
+}
+
 
 
 /* Fale conosco section */
@@ -439,6 +758,14 @@ main {
     display: none; /* Spec para Safari antigo */
   }
 
+.faqItem[open] summary::marker {
+  transform: rotate(180deg);
+}
+
+#modalSuccessMessage h2{
+  font-weight: bold;
+  font-size: 24px;
+}
   .faqItem summary::after {
     content: url("../assets/media/icons/arrow_down.svg");
     margin-left: 10px;
