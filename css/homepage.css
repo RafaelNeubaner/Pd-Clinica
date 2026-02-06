@@ -4,7 +4,7 @@ main {
   gap: 96px;
 }
 
-@media (max-width: 556px) {
+@media (max-width: 576px) {
     main {
         gap: 48px;
     }
@@ -68,8 +68,9 @@ main {
 }
 
 #heroSection img {
-  height: 327px;
-  width: 479px;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
 }
 
 .gap64 {
@@ -78,7 +79,49 @@ main {
   gap: 64px;
 }
 
-@media (max-width: 556px) {
+#button2 {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  #heroSection {
+    padding: 32px 64px;
+    gap: 32px;
+  }
+
+  .heroText #frase1Hero {
+    font-size: 36px;
+  }
+
+  .heroText #frase2Hero {
+    font-size: 16px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  #heroSection {
+    margin-top: 100px;
+    padding: 32px 64px;
+    gap: 0px;
+  }
+
+  #heroSection img {
+    height: auto;
+    width: 110%;
+  }
+
+  .heroText #frase1Hero {
+    font-size: 36px;
+  }
+
+  .heroText #frase2Hero {
+    font-size: 16px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
   #heroSection {
     margin-top: 80px;
     flex-direction: column;
@@ -208,7 +251,7 @@ main {
   width: 54px;
 }
 
-@media (max-width: 556px) {
+@media (max-width: 576px) {
   #especialidades .containerEspecialidades {
     width: 100%;
     padding: 0 16px;
@@ -288,7 +331,7 @@ main {
   border: 2px solid var(--txt-light);
 }
 
-@media (max-width: 556px) {
+@media (max-width: 576px) {
   #ctaSection .containerCtaTxt h1 {
     margin: 24px 32px;
   }
@@ -380,7 +423,7 @@ main {
         }
     }   
 
-    @media (max-width: 556px) {
+    @media (max-width: 576px) {
         #avaliacoes .font36 {
             font-size: 24px;
             margin-bottom: 32px;
@@ -619,7 +662,7 @@ main {
 
 }
 
-@media (max-width: 556px) {
+@media (max-width: 576px) {
     #unidades .container {
         width: 100%;
         padding: 0 32px;
