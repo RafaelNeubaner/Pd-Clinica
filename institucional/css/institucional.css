@@ -3,23 +3,29 @@
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 96px;
-    padding: 128px;
+
+    padding: 128px 24px; 
+    width: 100%;
 }
 
-/* Nosssa Historia */
+/* INSTITUCIONAL | Nossa Historia */
 #historia #img1 {
     width: 381px;
     height: 203px;
     border-radius: 15px 0 0 0;
     border-top: 3px solid #000;
     border-left: 3px solid #000;
+    object-fit: cover;
 }
 
 #historia #img2 {
     width: 381px;
     height: 203px;
     border-right: 3px solid #000;
+    object-fit: cover;
 }
 
 #historia #img3 {
@@ -28,9 +34,10 @@ main {
     border-radius: 0 0 0 15px;
     border-bottom: 3px solid #000;
     border-left: 3px solid #000;
+    object-fit: cover;
 }
 
-#historia .textHistory{
+#historia .textHistory {
     padding: 8px;
     border-top: 3px solid #000;
     border-right: 3px solid #000;
@@ -40,7 +47,7 @@ main {
     background-color: var(--tertiary);
 }
 
-#historia .textHistory2{
+#historia .textHistory2 {
     padding: 8px;
     border-left: 3px solid #000;
     width: 781px;
@@ -48,7 +55,7 @@ main {
     background-color: var(--tertiary);
 }
 
-#historia .textHistory3{
+#historia .textHistory3 {
     padding: 8px;
     border-bottom: 3px solid #000;
     border-right: 3px solid #000;
@@ -58,21 +65,21 @@ main {
     background-color: var(--tertiary);
 }
 
-#historia .linha{
+#historia .linha {
     display: flex;
     gap: 22px;
-    margin-bottom:32px;
+    margin-bottom: 32px;
 }
 
-#historia h3{
+#historia h3 {
     color: var(--bg-light);
     font-weight: bold;
     margin-bottom: 0;
     text-shadow:
-            1px 0 0 var(--bg-light),
-            -1px 0 0 var(--bg-light),
-            0 1px 0 var(--bg-light),
-            0 -1px 0 var(--bg-light);
+        1px 0 0 var(--bg-light),
+        -1px 0 0 var(--bg-light),
+        0 1px 0 var(--bg-light),
+        0 -1px 0 var(--bg-light);
 }
 
 #historia p {
@@ -80,4 +87,205 @@ main {
     height: 160px;
     text-align: center;
     line-height: 1.3;
+}
+
+/* --- INSTITUCIONAL | Estrutura --- */
+
+#estrutura .estrutura-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+#estrutura .estrutura-card {
+    width: 100%;
+    max-width: 381px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#estrutura .img-container img {
+    width: 100%;
+    height: 203px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 32px;
+}
+
+#imgEstrutura01,
+#imgEstrutura03 {
+    border-top: 3px solid var(--bg-dark);
+    
+}
+
+#imgEstrutura01 {
+    border-left: 3px solid var(--bg-dark);
+    border-radius: 12px 0 0 0;
+}
+
+#imgEstrutura02 {
+    border-top: 3px solid var(--bg-dark);
+    
+}
+
+#imgEstrutura03 {
+    border-radius: 0 12px 0 0;
+    border-top: 3px solid var(--bg-dark);
+    border-right: 3px solid var(--bg-dark);
+}
+
+#estrutura .textContainer01,
+#estrutura .textContainer02,
+#estrutura .textContainer03 {
+    background-color: var(--tertiary);
+    padding: 24px 16px;
+    height: auto;
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+#estrutura .textContainer01 {
+    border-bottom: 3px solid var(--bg-dark);
+    border-left: 3px solid var(--bg-dark);
+    border-radius: 0 0 0 12px;
+}
+
+#estrutura .textContainer02 {
+    border-bottom: 3px solid var(--bg-dark);
+}
+
+#estrutura .textContainer03 {
+    border-bottom: 3px solid var(--bg-dark);
+    border-right: 3px solid var(--bg-dark);
+    border-radius: 0 0 12px 0;
+}
+
+
+#estrutura h3 {
+    color: var(--bg-light);
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+
+}
+
+#estrutura p {
+    color: var(--txt-light);
+    text-align: center;
+    line-height: 1.4;
+    font-size: 16px;
+    margin: 0;
+    width: 100%;
+}
+
+/* --- INSTITUCIONAL | Estrutura - responsividade --- */
+@media (max-width: 768px) {
+
+    #estrutura .img-container img {
+
+        margin-bottom: 0px;
+
+    }
+
+    #estrutura .estrutura-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imgEstrutura01 {
+        border-radius: 12px 12px 0 0;
+        border-top: 3px solid var(--bg-dark);
+        border-left: 3px solid var(--bg-dark);
+        border-right: 3px solid var(--bg-dark);
+    }
+
+    #imgEstrutura02,
+    #imgEstrutura03 {
+        border-left: 3px solid var(--bg-dark);
+        border-right: 3px solid var(--bg-dark);
+        border-top: none;
+        border-bottom: none;
+    }
+
+    #imgEstrutura03 {
+        border-radius: 0;
+    }
+
+    #estrutura .textContainer01,
+    #estrutura .textContainer02,
+    #estrutura .textContainer03 {
+        background-color: var(--tertiary);
+        padding: 24px 16px;
+        height: auto;
+        min-height: 200px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    #estrutura .textContainer01 {
+        border-bottom: none;
+
+        border-left: 3px solid var(--bg-dark);
+        border-right: 3px solid var(--bg-dark);
+        border-radius: 0;
+    }
+
+    #estrutura .textContainer02 {
+
+        border-left: 3px solid var(--bg-dark);
+        border-right: 3px solid var(--bg-dark);
+        border-bottom: none;
+
+    }
+
+    #estrutura .textContainer03 {
+        border-bottom: 3px solid var(--bg-dark);
+        border-left: 3px solid var(--bg-dark);
+        border-right: 3px solid var(--bg-dark);
+        border-radius: 0 0 12px 12px;
+    }
+
+}
+
+/* --- INSTITUCIONAL | Cta Estrutura --- */
+#ctaEstrutura {
+    background-color: var(--primary);
+    padding: 48px 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+
+    width: 100%; /* Garante que ele estique em telas menores */
+    max-width: 1191px; /* Trava na mesma largura total dos 3 cards */
+    
+}
+
+#ctaEstrutura h2 {
+    color: var(--bg-light);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    #ctaEstrutura {
+        padding: 32px 12px;
+        gap: 32px;
+    }
+
+    #ctaEstrutura h2 {
+        font-size: 20px;
+    }
 }
