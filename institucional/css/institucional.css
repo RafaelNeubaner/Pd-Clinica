@@ -143,9 +143,9 @@ section {
 
 #estrutura .estrutura-grid {
     display: flex;
-    flex-wrap: wrap;
+    gap: 32px;
     justify-content: center;
-    gap: 24px;
+    flex-wrap:nowrap;
 
 }
 
@@ -237,7 +237,7 @@ section {
 }
 
 /* --- INSTITUCIONAL | Estrutura - responsividade --- */
-@media (max-width: 768px) {
+@media (max-width: 996px) {
 
     #estrutura .img-container img {
 
