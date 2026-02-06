@@ -80,10 +80,10 @@ main {
 
 @media (max-width: 556px) {
   #heroSection {
+    margin-top: 80px;
     flex-direction: column;
     padding: 32px;
     gap: 12px;
-    margin-top: 90px;;
   }
 
   #heroSection img {
@@ -289,13 +289,17 @@ main {
 }
 
 @media (max-width: 556px) {
+  #ctaSection .containerCtaTxt h1 {
+    margin: 24px 32px;
+  }
+
   #ctaSection {
     padding: 32px 24px;
-    gap: 32px;
+    gap: 24px;
   }
 
   #ctaSection .mainTitle {
-    width: 80%;
+    width: 75%;
     margin: auto;
   }
 
@@ -399,17 +403,6 @@ main {
         }
     }
 
-
-    #ctaSection {
-        background-color: var(--secondary);
-        text-align: center;
-        padding: 64px 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 48px;
-    }
 
     #ctaSection .containerTxt {
         gap: 24px;
