@@ -190,7 +190,6 @@ main {
 
   #especialidades .btn-primary {
     font-size: 24px;
-    margin-bottom: 24px;
   }
 
   #especialidades .gap64 {
@@ -201,6 +200,13 @@ main {
     width: 80%;
     margin: auto;
   }
+}
+
+@media (max-width: 992px) {
+  #especialidades .containerEspecialidades{
+    gap: 24px;
+  }
+  
 }
 
 /* HOMEPAGE - CTA SECTION */

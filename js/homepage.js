@@ -6,6 +6,29 @@ var carouselHelpSection = carouselHelpContainer.querySelector('#carousel-scroll-
 btnLeft = carouselHelpContainer.querySelector('#slideLeft');
 btnRight = carouselHelpContainer.querySelector('#slideRight');
 
+window.addEventListener('resize', function () {
+    let maxScrollLeft = carouselHelpSection.scrollWidth - carouselHelpSection.clientWidth;
+    
+    if(window.innerWidth <= 992){
+        btnLeft.classList.add('d-none');
+        btnRight.classList.add('d-none');
+        return;
+    }
+
+    if (carouselHelpSection.scrollLeft <= 0) {
+        btnLeft.classList.add('d-none');
+    } else {
+        btnLeft.classList.remove('d-none');
+    }
+    if (carouselHelpSection.scrollLeft >= maxScrollLeft) {
+        btnRight.classList.remove('d-lg-block');
+        btnRight.classList.add('d-none');
+    } else {
+        btnRight.classList.add('d-lg-block');
+        btnRight.classList.remove('d-none');
+    }
+});
+
 carouselHelpSection.addEventListener('scroll', function () {
     let maxScrollLeft = carouselHelpSection.scrollWidth - carouselHelpSection.clientWidth;
     if (carouselHelpSection.scrollLeft <= 0 && window.innerWidth >= 992) {
