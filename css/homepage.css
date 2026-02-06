@@ -34,6 +34,7 @@ main {
 
 /* HOMEPAGE - HERO SECTION */
 #heroSection {
+  margin-top: 150px;
   text-align: center;
   padding: 60px 20px;
   display: flex;
@@ -79,6 +80,7 @@ main {
 
 @media (max-width: 556px) {
   #heroSection {
+    margin-top: 80px;
     flex-direction: column;
     padding: 32px;
     gap: 12px;
