@@ -6,9 +6,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 96px;
-
-    padding: 128px 24px; 
-    width: 100%;
     width: 100%;
     overflow: hidden;
 }
@@ -321,9 +318,9 @@ section {
     align-items: center;
     justify-content: center;
     gap: 64px;
-
     width: 100%; 
-    max-width: 1191px; 
+    max-width: 1191px;
+    margin-bottom: 24px;
     
 }
 
