@@ -71,6 +71,7 @@ main {
   height: auto;
   width: 100%;
   object-fit: cover;
+  object-position: 75% center;
 }
 
 .gap64 {
@@ -102,17 +103,19 @@ main {
 @media (max-width: 992px) {
   #heroSection {
     margin-top: 100px;
-    padding: 32px 64px;
+    padding: 32px 54px;
     gap: 0px;
   }
 
   #heroSection img {
     height: auto;
+    max-height: 18rem;
     width: 110%;
+    margin: 0 auto;
   }
 
   .heroText #frase1Hero {
-    font-size: 36px;
+    font-size: 26px;
   }
 
   .heroText #frase2Hero {
