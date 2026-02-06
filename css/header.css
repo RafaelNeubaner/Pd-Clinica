@@ -6,6 +6,8 @@
   align-items: center;
   background-color: var(--bg-dark);
   border-radius: 0 0 12px 12px;
+  z-index: 1000;
+  position: fixed;
 }
 
 .headerNav {

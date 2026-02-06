@@ -1,0 +1,188 @@
+@import url(../../css/styles.css);
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    padding: 128px;
+}
+
+#heroSection{
+    width: 100%;
+    max-height: 800px;
+    max-width: 1920px;
+    position: relative;
+    overflow: hidden;
+}
+
+#heroSection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+#heroSection > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    border-radius: 12px;
+}
+
+#heroSection h2{
+    max-width: 700px;
+}
+
+#heroSection button{
+    background-color: var(--bg-dark);
+    color: var(--tertiary);
+    max-width: 260px;
+    font-size: 20px;
+}
+
+@media (max-width: 576px) {
+    #heroSection img{
+        height: 500px;
+    }
+}
+/* Nosssa Historia */
+#historia #img1 {
+    width: 381px;
+    height: 203px;
+    border-radius: 15px 0 0 0;
+    border-top: 3px solid #000;
+    border-left: 3px solid #000;
+}
+
+#historia #img2 {
+    width: 381px;
+    height: 203px;
+    border-right: 3px solid #000;
+}
+
+#historia #img3 {
+    width: 381px;
+    height: 203px;
+    border-radius: 0 0 0 15px;
+    border-bottom: 3px solid #000;
+    border-left: 3px solid #000;
+}
+
+#historia .textHistory{
+    padding: 8px;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    border-radius: 0 15px 0 0;
+    width: 781px;
+    height: 203px;
+    background-color: var(--tertiary);
+}
+
+#historia .textHistory2{
+    padding: 8px;
+    border-left: 3px solid #000;
+    width: 781px;
+    height: 203px;
+    background-color: var(--tertiary);
+}
+
+#historia .textHistory3{
+    padding: 8px;
+    border-bottom: 3px solid #000;
+    border-right: 3px solid #000;
+    border-radius: 0 0 15px 0;
+    width: 781px;
+    height: 203px;
+    background-color: var(--tertiary);
+}
+
+#historia .linha{
+    display: flex;
+    gap: 22px;
+    margin-bottom:32px;
+}
+
+#historia h3{
+    color: var(--bg-light);
+    font-weight: bold;
+    margin-bottom: 0;
+    text-shadow:
+            1px 0 0 var(--bg-light),
+            -1px 0 0 var(--bg-light),
+            0 1px 0 var(--bg-light),
+            0 -1px 0 var(--bg-light);
+}
+
+#historia p {
+    width: 765px;
+    height: 160px;
+    text-align: center;
+    line-height: 1.3;
+}
+  
+/* Missao e valores*/
+  #missaoValores {
+  min-height: 600px;
+}
+
+#missaoValores img {
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  border: 3px solid var(--bg-dark);
+  border-bottom: none;
+}
+
+.missaoValoresItem {
+  background-color: var(--tertiary);
+  padding: 10px 24px;
+  text-align: center;
+  border: 3px solid var(--bg-dark);
+  border-radius: 0;
+  flex:1;
+}
+
+.missaoValoresItem:nth-child(1),
+.missaoValoresItem:nth-child(2) {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.missaoValoresItem:nth-child(3) {
+  border-top: 0;
+  border-radius: 0 0 12px 12px;
+}
+
+.missaoValoresItem h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--txt-dark);
+}
+
+@media (min-width: 992px) {
+    #missaoValores img {
+        max-width: 40%;
+        border-right: 0;
+        border-bottom: 3px solid var(--bg-dark);
+        border-radius: 12px 0 0 12px;
+    }
+
+    .missaoValoresItem:nth-child(1),
+    .missaoValoresItem:nth-child(2) {
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 0;
+    }
+
+    .missaoValoresItem:nth-child(1){
+        border-top: 3px solid var(--bg-dark);
+        border-radius: 0 12px 0 0;
+    }
+
+    .missaoValoresItem:nth-child(3) {
+        border-top: 0;
+        border-left:0;
+        border-radius: 0 0 12px 0;
+    }
+}
