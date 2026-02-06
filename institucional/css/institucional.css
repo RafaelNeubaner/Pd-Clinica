@@ -269,8 +269,8 @@ main {
     justify-content: center;
     gap: 64px;
 
-    width: 100%; /* Garante que ele estique em telas menores */
-    max-width: 1191px; /* Trava na mesma largura total dos 3 cards */
+    width: 100%; 
+    max-width: 1191px; 
     
 }
 
