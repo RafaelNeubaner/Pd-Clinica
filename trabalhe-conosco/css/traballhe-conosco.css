@@ -1,3 +1,71 @@
+<<<<<<< feat/trabalhe-conosco-cta
+@import url(../../css/styles.css);
+
+main {
+    gap: 96px;
+    padding-top: 180px;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+}
+
+/* CTA */
+
+#ctaArticle {
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding:  78px 138px;
+    background-color: var(--primary);
+    color: var(--tertiary);
+    border-radius: 12px;
+    max-width: 1184px;
+}
+
+#ctaArticle p{
+    font-size: 24px;
+
+}
+
+#ctaArticle .btn-outline-dark {
+    white-space: nowrap;
+    font-size: 24px;
+}
+
+#cta img {
+    margin-top: 96px;
+    width: 100%;
+    height: auto;
+    max-height: 469px;
+    object-fit: contain;
+}
+
+@media (max-width: 992px) {
+    main{
+        gap: 48px;;
+    }
+
+    #ctaArticle {
+        margin-top: 24px;
+        flex-direction: column;
+        padding: 40px;
+        gap: 24px;
+        border-radius: 0;
+    }
+
+    #ctaArticle p{
+        font-size: 18px;
+    }
+
+    #ctaArticle .btn-outline-dark {
+        font-size: 18px;
+    }
+
+    #cta img {
+        margin-top: 48px;    }
+}
+=======
 @import url(/css/styles.css);
 @import url(/css/homepage.css);
 
@@ -99,3 +167,4 @@ section {
         border-radius: 0;
       }
     }
+>>>>>>> feat/trabalhe-conosco
