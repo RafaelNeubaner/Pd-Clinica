@@ -3,7 +3,6 @@
 
 main {
     gap: 96px;
-    padding-top: 180px;
     display: flex;
     flex-direction: column;
     min-height: auto;
@@ -129,9 +128,13 @@ section {
 
 #trabalheSection{
     padding-top: 180px;
+    margin: auto
 }
     #trabalheText img{
       object-fit: cover;
+      width: calc(100% + var(--bs-gutter-x));
+      margin-left: calc(var(--bs-gutter-x) / -2);
+      margin-right: calc(var(--bs-gutter-x) / -2);
     }
 
     #formTrabalheConosco{
@@ -164,5 +167,10 @@ section {
 
       #formTrabalheConosco{
         border-radius: 0;
+      }
+      #imgMedicos{
+        max-width: 992px;
+        width: 100%;
+        margin: 0 0;
       }
     }
