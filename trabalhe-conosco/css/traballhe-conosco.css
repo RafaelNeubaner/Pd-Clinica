@@ -1,3 +1,4 @@
+<<<<<<< feat/trabalhe-conosco-cta
 @import url(../../css/styles.css);
 
 main {
@@ -64,3 +65,106 @@ main {
     #cta img {
         margin-top: 48px;    }
 }
+=======
+@import url(/css/styles.css);
+@import url(/css/homepage.css);
+
+section {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top:200px;
+    padding: 20px 
+}
+
+/* TRABALHE-CONOSCO - HERO */
+
+#heroSection .herotext {
+    gap: 12px;
+}
+
+#heroSection h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+
+    #heroSection h2 {
+        font-size: 48px;
+    }
+
+    #heroSection p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:576px) {
+
+    #heroSection h3 {
+        font-size: 16px;
+    }
+
+}
+
+/* VAGAS */
+.cardVagas{
+    background-color: var(--baby-blue);
+    border-radius: 12px;
+}
+
+.cardVagas.dark{
+    background-color: var(--bg-dark);
+    color: var(--txt-dark);
+}
+
+.cardVagas img{
+    object-fit: cover;
+    padding: 0;
+    border-radius: 0 12px 12px 0;
+}
+
+#vagasSection{
+    max-width: 1100px;
+}
+
+#trabalheSection{
+    padding-top: 180px;
+}
+    #trabalheText img{
+      object-fit: cover;
+    }
+
+    #formTrabalheConosco{
+      background-color: var(--bg-dark);
+      border-radius: 12px;
+      border-top-left-radius: 100px;
+    }
+
+    #formTrabalheConosco h2{
+      color: var(--tertiary);
+    }
+
+    #formTrabalheConosco label{
+      color: var(--tertiary);
+    }
+    #formTrabalheConosco input, textarea{
+      color: var(--txt-dark);
+      border-color: var(--tertiary);
+    }
+
+    #formTrabalheConosco button{
+      padding: 12px 24px;
+    }
+
+    @media (max-width: 992px){
+      #contactSection{
+        margin: 16px 0px;
+        padding: 100px;
+      }
+
+      #formTrabalheConosco{
+        border-radius: 0;
+      }
+    }
+>>>>>>> feat/trabalhe-conosco
