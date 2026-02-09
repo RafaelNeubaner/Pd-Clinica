@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/especialidades/css/especialidades.css">
+    <link rel="stylesheet" href="/especialidades/css/especialidades.css" />
 
     <!-- Scripts -->
     <script
@@ -99,9 +99,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="./convenios/index.html"
-                  >Convênios</a
-                >
+                <a class="nav-link" href="./convenios/index.html">Convênios</a>
               </li>
 
               <li class="nav-item">
@@ -129,11 +127,89 @@
       </nav>
     </header>
 
-    <main>
-      <section class="d-flex flex-column justify-content-center align-items-center gap-3 text-center px-4 py-5">
-        <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, officia maiores, excepturi rem libero quisquam voluptatem laudantium commodi culpa corporis amet debitis deserunt, ratione iusto ex saepe nulla odio? Fugiat?</h1>
-      </section>
+    <main class="d-flex flex-column align-items-center">
+      <section id="especialidades">
+        <div class="containerTxt">
+          <h2 class="mainTitle">Nossas Especialidades</h2>
+          <h3>
+            Equipes especializadas trabalhando com foco em oferecer o que há de
+            melhor com a excelência da PD Clínica.
+          </h3>
+        </div>
 
+        <div
+          class="grid-especialidades row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2"
+        >
+          <div class="col m-0">
+            <div class="card">
+              <h2 class="card-title">Angiologia</h2>
+              <img src="../assets/media/images/especialidades-angiologia.png" alt="imagem de um médico especialista em angiologia atendendo um paciente" />
+              <p class="card-text">
+                Cuidado especializado para a saúde dos seus vasos sanguíneos e
+                linfáticos. Prevenção e tratamento de varizes, tromboses e
+                problemas circulatórios. Botão: Conheça os tratamentos
+              </p>
+            </div>
+          </div>
+          <div class="col m-0">
+            <div class="card">
+              <h2 class="card-title">Cardiologia</h2>
+              <img src="../assets/media/images/especialidades-cardiologia.png" alt="imagem de um médico especialista em cardiologia atendendo um paciente" />
+              <p class="card-text">
+                Proteja o seu coração com check-ups preventivos e acompanhamento
+                contínuo. Tratamento de hipertensão, arritmias e cuidado
+                integral do sistema cardiovascular. Botão: Cuide do seu coração
+              </p>
+            </div>
+          </div>
+          <div class="col m-0">
+            <div class="card">
+              <h2 class="card-title">Oftalmologia</h2>
+              <img src="../assets/media/images/especialidades-oftalmologia.png" alt="imagem de um médico especialista em oftalmologia atendendo um paciente" />
+              <p class="card-text">
+                Diagnóstico preciso e tratamento de doenças oculares para
+                preservar a sua visão. Realizamos exames de rotina, adaptação de
+                lentes e prevenção. Botão: Veja nossas soluções
+              </p>
+            </div>
+          </div>
+          <div class="col m-0">
+            <div class="card">
+              <h2 class="card-title">Ortopedia</h2>
+              <img src="../assets/media/images/especialidades-ortopedia.png" alt="imagem de um médico especialista em ortopedia atendendo um paciente" />
+              <p class="card-text">
+                Especialidade dedicada à saúde dos ossos, músculos e
+                articulações. Foco no alívio de dores, correção de traumas e
+                recuperação da sua mobilidade. Botão: Recupere seus movimentos
+              </p>
+            </div>
+          </div>
+          <div class="col m-0">
+            <div class="card">
+              <h2 class="card-title">Pediatria</h2>
+              <img src="../assets/media/images/especialidades-pediatria.png" alt="imagem de um médico especialista em pediatria atendendo um paciente" />
+              <p class="card-text">
+                Acompanhamento completo do desenvolvimento infantil, do
+                nascimento à adolescência. Cuidado preventivo e vacinação para
+                garantir um crescimento saudável. Botão: Cuidado para os
+                pequenos
+              </p>
+            </div>
+          </div>
+
+          <div class="col m-0">
+            <div class="card">
+              <h2 class="card-title">Psicologia</h2>
+              <img src="../assets/media/images/especialidades-psicologia.png" alt="imagem de um médico especialista em psicologia atendendo um paciente" />
+              <p class="card-text">
+                Apoio emocional e terapêutico para promover o seu bem-estar
+                mental. Um espaço de escuta e acolhimento para lidar com
+                ansiedade, depressão e autoconhecimento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer
@@ -172,7 +248,9 @@
             <h2 class="mb-3">Outros Acessos</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
               <li><a href="./blog/index.html">Blog</a></li>
-              <li><a href="./trabalhe-conosco/index.html">Trabalhe Conosco</a></li>
+              <li>
+                <a href="./trabalhe-conosco/index.html">Trabalhe Conosco</a>
+              </li>
               <li>
                 <a href="#"><i class="bi bi-box-arrow-in-right"></i> Entrar</a>
               </li>
