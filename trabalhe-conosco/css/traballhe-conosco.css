@@ -1,6 +1,14 @@
 @import url(/css/styles.css);
 @import url(/css/homepage.css);
 
+section {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top:200px;
+    padding: 20px 
+}
+
 /* TRABALHE-CONOSCO - HERO */
 
 #heroSection .herotext {
@@ -29,6 +37,27 @@
         font-size: 16px;
     }
 
+}
+
+/* VAGAS */
+.cardVagas{
+    background-color: var(--baby-blue);
+    border-radius: 12px;
+}
+
+.cardVagas.dark{
+    background-color: var(--bg-dark);
+    color: var(--txt-dark);
+}
+
+.cardVagas img{
+    object-fit: cover;
+    padding: 0;
+    border-radius: 0 12px 12px 0;
+}
+
+#vagasSection{
+    max-width: 1100px;
 }
 
 #trabalheSection{
