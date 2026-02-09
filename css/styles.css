@@ -27,6 +27,16 @@
   color: var(--txt-dark);
 }
 
+.bg-primary {
+  background-color: var(--primary);
+  color: var(--txt-light);
+}
+
+.bg-secondary{
+  background-color: var(--secondary);
+  color: var(--txt-light);
+}
+
 .bg-tertiary {
   background-color: var(--tertiary);
   color: var(--txt-light);
@@ -89,6 +99,30 @@
   border: 2px solid var(--txt-dark);
 }
 
+.btn-outline-dark {
+  background-color: transparent;
+  color: var(--tertiary);
+  border: 2px solid var(--tertiary);
+  padding: 8px 22px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    all 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-outline-dark.disable {
+  color: var(--txt-muted);
+  border: 2px solid var(--txt-muted);
+  pointer-events: none;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  border: 2px solid var(--tertiary);
+}
+
 p {
   font-size: 12px;
 }
@@ -116,6 +150,11 @@ h3 {
 .subTitle{
     font-size: 20px;
     font-weight: 600;
+}
+
+.cardTitle{
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .textCenter{
