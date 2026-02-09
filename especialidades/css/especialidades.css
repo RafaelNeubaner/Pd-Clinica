@@ -1,4 +1,57 @@
+/* --- ESPECIALIDADES - HOME --- */
+#especialidades {
+  margin-top: 162px;
+}
 
-h1 {
-  color: yellowgreen;
+#especialidades .containerTxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#especialidades .containerTxt h3 {
+  color: var(--txt-light);
+}
+
+.grid-especialidades {
+  margin: 0;
+  gap: 12px;
+  
+}
+
+
+#especialidades .card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  height: auto;
+  max-width: 268px;
+}
+
+#especialidades .card .card-text {
+  color: var(--txt-light);
+  padding: 12px;
+}
+
+#especialidades .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+#especialidades .card .card-title {
+  text-align: center;
+  background-color: var(--secondary);
+  color:var(--txt-dark);
+  border-radius: 8px 8px 0 0;
+  margin: 0;
+  padding: 8px 0;
+}
+
+@media (min-width: 992px) {
+  #especialidades {
+    margin-top: 259px;
+    gap: 24px;
+  }
 }
