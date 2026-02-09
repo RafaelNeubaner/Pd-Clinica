@@ -1,3 +1,32 @@
-h1 {
-    color: blue
+@import url(/css/styles.css);
+@import url(/css/homepage.css);
+
+/* TRABALHE-CONOSCO - HERO */
+
+#heroSection .herotext {
+    gap: 12px;
+}
+
+#heroSection h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+
+    #heroSection h2 {
+        font-size: 48px;
+    }
+
+    #heroSection p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:576px) {
+
+    #heroSection h3 {
+        font-size: 16px;
+    }
+
 }
