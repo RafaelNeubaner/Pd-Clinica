@@ -7,3 +7,37 @@ main >img{
 main > section{
     max-width: 1200px;
 }
+
+#containerMedicos{
+    position: relative;
+    overflow: scroll;
+}
+
+#btnLeftMedicos, #btnRightMedicos{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.cardMedico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    min-width: 300px;
+}
+
+.cardMedico img{
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+}

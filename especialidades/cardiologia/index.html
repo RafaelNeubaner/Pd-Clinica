@@ -70,7 +70,7 @@
 
           <a class="navbar-brand order-1 mx-auto mx-lg-0" href="./index.html">
             <img
-              src="../assets/media/logo/logo-dark.png"
+              src="../../assets/media/logo/logo-dark.png"
               alt="Logo PD Clínica"
               width="256"
               height="68"
@@ -131,7 +131,7 @@
 
     <main class="d-flex flex-column align-items-center gap-5">
         <img src="../../assets/media/images/banner_cardiologia.png" alt="Banner Cardiologia">
-      <section class="row text-start justify-content-center align-items-center gap-3 px-4 py-5">
+      <section class="row text-start justify-content-center align-items-center gap-3 px-4 pt-5">
         <h1 class="title col-12 text-center" >Cardiologia avança para um Coração Saudável </h1>
         <div class="col-7">
             <h3>O que é Cardiologia?</h3>
@@ -143,7 +143,23 @@
         </div>
         <img class="col-4" src="../../assets/media/images/cardiologia.png" alt="Ilustração Cardiologia">
       </section>
-
+      
+        <section id="containerMedicos">
+            <div id="containerMedicosScroll" class="d-flex gap-4">
+                <template id="cardMedicoTemplate">
+                    <div class="cardMedico col">
+                        <img src="../../assets/media/images/dr_jose_ronaldo.png" alt="Foto Dr. José Ronaldo">
+                        <h3>Dr. José Ronaldo Silva</h3>
+                        <p>Especialista em Ecocardiografia</p>
+                        <button class="btn btn-primary">Agendar</button>
+                    </div>
+                </template>
+                <button class="btn-primary d-none" id="btnLeftMedicos"><</button>
+                <button class="btn-primary d-none d-lg-block" id="btnRightMedicos">
+                    >
+                </button>
+            </div>
+        </section>
     </main>
 
     <footer
@@ -156,7 +172,7 @@
           class="col-12 col-lg-auto d-flex flex-column align-items-center align-items-lg-start mb-4"
         >
           <img
-            src="../assets/media/images/logo-dark.png"
+            src="../../assets/media/images/logo-dark.png"
             alt="Logo PDClínica"
             class="w-100 px-5 mb-3"
           />
@@ -207,5 +223,6 @@
       </div>
     </footer>
 
+    <script src="js/cardiologia.js" type="module"></script>
   </body>
 </html>
