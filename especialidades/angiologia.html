@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/especialidades/css/especialidade.css" />
+    <link rel="stylesheet" href="/especialidades/css/especialidade.css">
 
     <!-- Scripts -->
     <script
@@ -99,7 +99,9 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="./convenios/index.html">Convênios</a>
+                <a class="nav-link" href="./convenios/index.html"
+                  >Convênios</a
+                >
               </li>
 
               <li class="nav-item">
@@ -128,125 +130,48 @@
     </header>
 
     <main class="d-flex flex-column align-items-center gap-5">
-      <img
-        src="../../assets/media/images/banner_cardiologia.png"
-        alt="Banner Cardiologia"
-      />
-      <section
-        class="row text-start justify-content-center align-items-center gap-3 px-4 pt-5"
-      >
-        <h1 class="title col-12 text-center order-0">
-          Cardiologia avança para um Coração Saudável
-        </h1>
+        <img src="../../assets/media/images/banner_card_angiologia.png" alt="Banner Angiologia">
+      <section class="row text-start justify-content-center align-items-center gap-3 px-4 pt-5">
+        <h1 class="title col-12 text-center order-0" >Angiologia avança para um Coração Saudável </h1>
         <div class="col-12 col-lg-7 order-2 order-lg-1">
-          <h3>O que é Cardiologia?</h3>
-          <p>
-            Cardiologia é a especialidade médica dedicada à saúde do coração. Na
-            PD Clinica, avaliamos e tratamos doenças cardíacas, incluindo riscos
-            cirúrgicos. Consideramos fatores como idade, histórico familiar e
-            capacidade funcional para fornecer um diagnóstico preciso e um plano
-            de tratamento eficaz, garantindo a saúde cardíaca ideal para cada
-            paciente.
-          </p>
-          <h3>Como Atuamos</h3>
-          <p>
-            Nossa abordagem em Cardiologia é centrada no paciente. Utilizamos
-            avaliações detalhadas, incluindo análise de risco cirúrgico, para
-            entender completamente a saúde cardíaca de cada indivíduo.
-            Combinamos tecnologia de ponta e expertise médica para oferecer
-            tratamentos personalizados, desde o manejo de doenças crônicas até
-            intervenções preventivas, assegurando cuidados cardíacos de alta
-            qualidade.
-          </p>
-          <h3>Escolha a PD Clinica</h3>
-          <p>
-            Escolher a PD Clinica para cuidados cardiológicos significa confiar
-            em uma equipe de especialistas dedicados. Oferecemos uma gama
-            completa de serviços cardiológicos, incluindo avaliações de risco
-            cirúrgico, tratamento de doenças crônicas e estratégias preventivas.
-            Nosso compromisso é com a saúde integral do coração, combinando
-            atendimento personalizado com técnicas avançadas para garantir o
-            melhor resultado para nossos pacientes.
-          </p>
+            <h3>O que é Angiologia?</h3>
+            <p>Angiologia é a especialidade médica dedicada à saúde do sistema circulatório. Na  PD Clinica, avaliamos e tratamos doenças vasculares, incluindo  riscos cirúrgicos. Consideramos fatores como idade, histórico familiar e capacidade funcional para fornecer um diagnóstico preciso e um plano de tratamento eficaz, garantindo a saúde vascular ideal para cada  paciente.</p>
+            <h3>Como Atuamos</h3>
+            <p>Nossa abordagem em Angiologia é centrada no paciente. Utilizamos  avaliações detalhadas, incluindo análise de risco cirúrgico, para  entender completamente a saúde vascular de cada indivíduo. Combinamos  tecnologia de ponta e expertise médica para oferecer tratamentos  personalizados, desde o manejo de doenças crônicas até intervenções  preventivas, assegurando cuidados vasculares de alta qualidade.</p>
+            <h3>Escolha a PD Clinica</h3>
+            <p>Escolher a PD Clinica para cuidados angiológicos significa confiar em uma equipe de especialistas dedicados. Oferecemos uma gama completa  de serviços angiológicos, incluindo avaliações de risco cirúrgico,  tratamento de doenças crônicas e estratégias preventivas. Nosso  compromisso é com a saúde integral do sistema circulatório, combinando atendimento  personalizado com técnicas avançadas para garantir o melhor resultado  para nossos pacientes.</p>
         </div>
-        <img
-          class="col-12 col-lg-4 order-1 order-lg-2"
-          src="../../assets/media/images/cardiologia.png"
-          alt="Ilustração Cardiologia"
-        />
+        <img class="col-12 col-lg-4 order-1 order-lg-2" src="../../assets/media/images/angiologia.jpeg" alt="Ilustração Angiologia">
       </section>
-
+      
       <section id="containerMedicos">
-        <div id="containerMedicosScroll" class="d-flex flex-wrap gap-4">
-          <template id="cardMedicoTemplate">
-            <div class="cardMedico col">
-              <img
-                src="../../assets/media/images/dr_jose_ronaldo.png"
-                alt="Foto Dr. José Ronaldo"
-              />
-              <h3>Dr. José Ronaldo Silva</h3>
-              <p>Especialista em Ecocardiografia</p>
-              <button class="btn btn-primary">Agendar</button>
-            </div>
-          </template>
-        </div>
+          <div id="containerMedicosScroll" class="row justify-content-center gap-4">
+              <template id="cardMedicoTemplate">
+                  <div class="cardMedico col-12 col-md-6 col-lg-3">
+                      <img src="../../assets/media/images/dr_jose_ronaldo.png" alt="Foto Dr. José Ronaldo">
+                      <h3>Dr. José Ronaldo Silva</h3>
+                      <p>Especialista em Ecocardiografia</p>
+                      <button class="btn btn-primary">Agendar</button>
+                  </div>
+              </template>
+          </div>
       </section>
 
-      <section
-        id="procedimentosSection"
-        class="row text-center justify-content-center align-items-center gap-3 px-4 py-5"
-      >
-        <h2 class="col-12 mainTitle">
-          Conheça alguns dos nossos procedimentos
-        </h2>
+
+      <section id="procedimentosSection" class="row text-center justify-content-center align-items-center gap-3 px-4 py-5 w-100">
+        <h2 class="col-12 mainTitle">Conheça alguns dos nossos procedimentos</h2>
         <article class="col-5 p-4 d-flex flex-column gap-3 procedimentoCard">
-          <h3 class="py-2 rounded subTitle">Eletrocardiograma</h3>
-          <p class="d-block d-md-none">
-            O eletrocardiograma (ECG) é um exame essencial que registra a
-            atividade elétrica do coração em repouso, identificando com precisão
-            o ritmo cardíaco, arritmias e possíveis patologias cardiovasculares.
-          </p>
-          <p class="d-none d-md-block">
-            O eletrocardiograma é um exame simples, e totalmente não invasivo
-            que registra a atividade elétrica do coração por meio de eletrodos.
-            Ele é fundamental para a avaliação do ritmo cardíaco, permitindo
-            identificar arritmias, sinais de sobrecarga cardíaca, alterações na
-            condução elétrica e indícios de infarto. O exame é amplamente
-            utilizado tanto em avaliações de rotina quanto em investigações
-            clínicas mais detalhadas, auxiliando o médico cardiologista na
-            tomada de decisões e no acompanhamento da saúde cardiovascular do
-            paciente.
-          </p>
-          <img
-            src="/assets/media/images/eletrocardiograma-procedimento.png"
-            alt="Paciente realizando um eletrocardiograma"
-            class="w-100"
-          />
+          <h3 class="py-2 rounded">Doppler Vascular</h3>
+          <p class="d-block d-md-none">O Doppler vascular é um exame essencial que avalia o fluxo sanguíneo nas artérias e veias, identificando obstruções, tromboses e outras condições vasculares.</p>
+          <p class="d-none d-md-block">O Doppler vascular é um exame que utiliza ultrassom para avaliar o fluxo sanguíneo nas artérias e veias, permitindo a identificação de obstruções, tromboses e outras condições vasculares. É fundamental para o diagnóstico e acompanhamento de doenças circulatórias, oferecendo informações detalhadas para um tratamento eficaz.</p>
+          <img src="/assets/media/images/doppler_vascular.png" alt="Paciente realizando um Doppler vascular" class="w-100">
         </article>
         <article class="col-5 p-4 d-flex flex-column gap-3 procedimentoCard">
-          <img
-            src="/assets/media/images/ecocardiograma-procedimento.webp"
-            alt="Paciente realizando um ecocardiograma"
-            class="w-100 order-1 order-md-0"
-          />
-          <h3 class="py-2 rounded order-0 order-md-1 subTitle">Ecocardiograma</h3>
-          <p class="d-block d-md-none order-2">
-            O ecocardiograma é um exame de imagem que avalia estrutura,
-            funcionamento e fluxo sanguíneo do coração, sendo essencial para
-            diagnosticar e acompanhar doenças cardíacas.
-          </p>
-          <p class="d-none d-md-block order-2">
-            O ecocardiograma é um exame de imagem que utiliza tecnologia de
-            ultrassom para analisar, em tempo real, a estrutura e o
-            funcionamento do coração. Através dele, é possível avaliar as
-            cavidades cardíacas, o funcionamento das válvulas, a espessura do
-            músculo cardíaco e o fluxo sanguíneo. Esse exame é essencial para o
-            diagnóstico e acompanhamento de diversas condições cardíacas, como
-            insuficiência cardíaca, doenças valvares e cardiopatias, oferecendo
-            informações detalhadas e seguras para um cuidado mais preciso e
-            eficaz.
-          </p>
-        </article>
+          <img src="/assets/media/images/escleroterapia.png" alt="Paciente realizando uma escleroterapia" class="w-100 order-1 order-md-0">
+          <h3 class="py-2 rounded order-0 order-md-1">Escleroterapia</h3>
+          <p class="d-block d-md-none order-2">A escleroterapia é um procedimento minimamente invasivo utilizado para tratar varizes e veias insuficientes, promovendo a melhora estética e funcional das pernas.</p>
+          <p class="d-none d-md-block order-2">A escleroterapia é um tratamento que consiste na aplicação de uma substância esclerosante diretamente nas veias afetadas, causando a sua obliteração e posterior reabsorção pelo organismo. É amplamente utilizada para o tratamento de varizes e veias reticulares, proporcionando alívio dos sintomas e melhora estética. O procedimento é realizado em consultório, com rápida recuperação e resultados eficazes, sendo uma opção segura e eficiente para pacientes com doenças venosas.</p>
+        </article>  
       </section>
     </main>
 
@@ -286,9 +211,7 @@
             <h2 class="mb-3">Outros Acessos</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
               <li><a href="./blog/index.html">Blog</a></li>
-              <li>
-                <a href="./trabalhe-conosco/index.html">Trabalhe Conosco</a>
-              </li>
+              <li><a href="./trabalhe-conosco/index.html">Trabalhe Conosco</a></li>
               <li>
                 <a href="#"><i class="bi bi-box-arrow-in-right"></i> Entrar</a>
               </li>
@@ -315,7 +238,7 @@
 
     <script type="module">
       import { setMedicos } from "./js/especialidade.js";
-      setMedicos("Cardiologia");
+      setMedicos("Angiologia");
     </script>
   </body>
 </html>

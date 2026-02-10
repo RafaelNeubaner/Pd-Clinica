@@ -33,6 +33,7 @@ export const medicos = [
     descricao: "Dedicada ao cuidado integral da saúde vascular e prevenção de complicações."
   },
  
+
   // ================= CARDIOLOGIA =================
   {
     id: 5,
@@ -67,6 +68,7 @@ export const medicos = [
     descricao: "Atendimento humanizado com foco em saúde cardíaca e qualidade de vida."
   },
  
+
   // ================= PSICOLOGIA =================
   {
     id: 9,
@@ -81,7 +83,7 @@ export const medicos = [
     nome: "Dr. Renato Lopes",
     especialidades: ["Psicologia"],
     procedimentos: ["Terapia Cognitivo-Comportamental", "Ansiedade", "Depressão"],
-    foto: "/assets/media/images/dr_renato_lopes.png",
+    foto: "/assets/media/images/dr-renato-lopes.png",
     descricao: "Atua no tratamento de transtornos emocionais com abordagem científica."
   },
   {
@@ -89,7 +91,7 @@ export const medicos = [
     nome: "Dra. Camila Azevedo",
     especialidades: ["Psicologia"],
     procedimentos: ["Terapia Individual", "Autoconhecimento", "Apoio Psicológico"],
-    foto: "/assets/media/images/dra_camila_azevedo.png",
+    foto: "/assets/media/images/dra-camila-azevedo.png",
     descricao: "Especialista em desenvolvimento emocional e saúde mental."
   },
   {
@@ -97,11 +99,11 @@ export const medicos = [
     nome: "Dr. André Pacheco",
     especialidades: ["Psicologia"],
     procedimentos: ["Terapia Familiar", "Relacionamentos", "Saúde Mental"],
-    foto: "/assets/media/images/dr_andre_pacheco.png",
+    foto: "/assets/media/images/dr-andre-pacheco.png",
     descricao: "Experiência em atendimento individual e familiar."
   },
- 
-  // ================= OFTALMOLOGIA ================
+
+  // ================= OFTALMOLOGIA =================
   {
     id: 13,
     nome: "Dr. Ricardo Souza",
@@ -169,13 +171,14 @@ export const medicos = [
     descricao: "Especialista em articulações e procedimentos cirúrgicos."
   },
  
+
   // ================= PEDIATRIA =================
   {
     id: 21,
     nome: "Dra. Mariana Silveira",
     especialidades: ["Pediatria"],
     procedimentos: ["Consulta Infantil", "Acompanhamento do Crescimento", "Vacinação"],
-    foto: "/assets/media/images/dra_mariana_silveira.png",
+    foto: "/assets/media/images/dra-mariana-silveira.png",
     descricao: "Pediatra dedicada ao cuidado integral da criança."
   },
   {
@@ -183,7 +186,7 @@ export const medicos = [
     nome: "Dr. Eduardo Campos",
     especialidades: ["Pediatria"],
     procedimentos: ["Emergência Pediátrica", "Consulta Preventiva", "Avaliação Clínica"],
-    foto: "/assets/media/images/dr_eduardo_campos.png",
+    foto: "/assets/media/images/dr-eduardo-campos.png",
     descricao: "Experiente no atendimento pediátrico em todas as fases da infância."
   },
   {
@@ -191,7 +194,7 @@ export const medicos = [
     nome: "Dra. Aline Moreira",
     especialidades: ["Pediatria"],
     procedimentos: ["Desenvolvimento Infantil", "Consulta de Rotina", "Orientação aos Pais"],
-    foto: "/assets/media/images/dra_aline_moreira.png",
+    foto: "/assets/media/images/dra-aline-moreira.png",
     descricao: "Foco em desenvolvimento saudável e prevenção."
   },
   {
@@ -203,3 +206,8 @@ export const medicos = [
     descricao: "Atendimento humanizado para bebês e crianças."
   }
 ];
+    foto: "/assets/media/images/dr-paulo-henrique.png",
+    descricao: "Atendimento humanizado para bebês e crianças."
+  }
+];
+ 
