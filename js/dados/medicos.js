@@ -32,6 +32,7 @@ export const medicos = [
     foto: "/assets/media/images/dra_paula_nogueira.png",
     descricao: "Dedicada ao cuidado integral da saúde vascular e prevenção de complicações."
   },
+ 
 
   // ================= CARDIOLOGIA =================
   {
@@ -66,6 +67,7 @@ export const medicos = [
     foto: "/assets/media/images/dra_ana_costa.png",
     descricao: "Atendimento humanizado com foco em saúde cardíaca e qualidade de vida."
   },
+ 
 
   // ================= PSICOLOGIA =================
   {
@@ -134,6 +136,7 @@ export const medicos = [
     foto: "/assets/media/images/dra_patricia_lima.png",
     descricao: "Atendimento humanizado para todas as idades."
   },
+ 
 
   // ================= ORTOPEDIA =================
   {
@@ -168,6 +171,7 @@ export const medicos = [
     foto: "/assets/media/images/dra_daniela_rocha.png",
     descricao: "Especialista em articulações e procedimentos cirúrgicos."
   },
+ 
 
   // ================= PEDIATRIA =================
   {
@@ -202,4 +206,6 @@ export const medicos = [
     foto: "/assets/media/images/dr_paulo_henrique.png",
     descricao: "Atendimento humanizado para bebês e crianças."
   }
+];
+ 
 ];
