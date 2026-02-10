@@ -26,16 +26,16 @@ export const medicos = [
     {
         id: 4,
         nome: "Dra. Ana Costa",
-        especialidades: ["Cardiologia"],
+        especialidades: ["Cardiologia", "Psicologia"],
         procedimentos: ["Avaliação de Fatores de Risco", "Tratamento de Hipertensão", "Consulta de Acompanhamento"],
         foto: "/assets/media/images/dra_ana_costa.png",
         descricao: "Cardiologista atenciosa, dedicada a ajudar pacientes a manterem um estilo de vida saudável para o coração. Oferece orientações personalizadas para prevenção de doenças cardíacas."
     }
     ,
     {
-        id: 4,
+        id: 5,
         nome: "Dra. Ana Costa",
-        especialidades: ["Cardiologia"],
+        especialidades: ["Angiologia"],
         procedimentos: ["Avaliação de Fatores de Risco", "Tratamento de Hipertensão", "Consulta de Acompanhamento"],
         foto: "/assets/media/images/dra_ana_costa.png",
         descricao: "Cardiologista atenciosa, dedicada a ajudar pacientes a manterem um estilo de vida saudável para o coração. Oferece orientações personalizadas para prevenção de doenças cardíacas."

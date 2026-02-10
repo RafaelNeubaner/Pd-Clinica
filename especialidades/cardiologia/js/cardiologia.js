@@ -1,7 +1,4 @@
 import { medicos } from "../../../js/dados/medicos.js";
-import { ativarCarrossel } from "../../../js/homepage.js";
-
-ativarCarrossel('containerMedicos', 'containerMedicosScroll', 'btnLeftMedicos', 'btnRightMedicos', 330);
 
 const medicosCardiologistas = medicos.filter(medico => medico.especialidades.includes("Cardiologia"));
 
