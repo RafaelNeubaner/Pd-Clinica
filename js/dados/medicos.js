@@ -179,7 +179,7 @@ export const medicos = [
     nome: "Dra. Mariana Silveira",
     especialidades: ["Pediatria"],
     procedimentos: ["Consulta Infantil", "Acompanhamento do Crescimento", "Vacinação"],
-    foto: "/assets/media/images/dra_mariana_silveira.png",
+    foto: "/assets/media/images/dra-mariana-silveira.png",
     descricao: "Pediatra dedicada ao cuidado integral da criança."
   },
   {
@@ -187,7 +187,7 @@ export const medicos = [
     nome: "Dr. Eduardo Campos",
     especialidades: ["Pediatria"],
     procedimentos: ["Emergência Pediátrica", "Consulta Preventiva", "Avaliação Clínica"],
-    foto: "/assets/media/images/dr_eduardo_campos.png",
+    foto: "/assets/media/images/dr-eduardo-campos.png",
     descricao: "Experiente no atendimento pediátrico em todas as fases da infância."
   },
   {
@@ -195,7 +195,7 @@ export const medicos = [
     nome: "Dra. Aline Moreira",
     especialidades: ["Pediatria"],
     procedimentos: ["Desenvolvimento Infantil", "Consulta de Rotina", "Orientação aos Pais"],
-    foto: "/assets/media/images/dra_aline_moreira.png",
+    foto: "/assets/media/images/dra-aline-moreira.png",
     descricao: "Foco em desenvolvimento saudável e prevenção."
   },
   {
@@ -203,7 +203,7 @@ export const medicos = [
     nome: "Dr. Paulo Henrique",
     especialidades: ["Pediatria"],
     procedimentos: ["Saúde do Bebê", "Puericultura", "Acompanhamento Infantil"],
-    foto: "/assets/media/images/dr_paulo_henrique.png",
+    foto: "/assets/media/images/dr-paulo-henrique.png",
     descricao: "Atendimento humanizado para bebês e crianças."
   }
 ];
