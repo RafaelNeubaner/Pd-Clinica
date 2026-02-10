@@ -1,6 +1,9 @@
 /* --- ESPECIALIDADES - HOME --- */
 #especialidades {
-  margin-top: 162px;
+  margin: 162px 32px 48px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 #especialidades .containerTxt {
@@ -15,17 +18,39 @@
 
 .grid-especialidades {
   margin: 0;
-  gap: 12px;
-  
-}
+  gap: 24px;
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
 
 #especialidades .card {
   border: none;
   border-radius: 8px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  height: auto;
-  max-width: 268px;
+  height: 100%;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+#especialidades .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(12, 96, 192, 0.363);
+  cursor: pointer;
+  
+}
+
+#especialidades .card .card-title {
+  text-align: center;
+  background-color: var(--secondary);
+  color: var(--txt-dark);
+  border-radius: 8px 8px 0 0;
+  margin: 0;
+  padding: 8px 0;
 }
 
 #especialidades .card .card-text {
@@ -33,25 +58,24 @@
   padding: 12px;
 }
 
+
 #especialidades .card img {
   width: 100%;
-  height: auto;
+  height: 268px;
   object-fit: cover;
   border-radius: 0;
 }
 
-#especialidades .card .card-title {
-  text-align: center;
-  background-color: var(--secondary);
-  color:var(--txt-dark);
-  border-radius: 8px 8px 0 0;
-  margin: 0;
-  padding: 8px 0;
-}
 
 @media (min-width: 992px) {
   #especialidades {
-    margin-top: 259px;
-    gap: 24px;
+    margin: 259px 0 128px 0;
+    gap: 64px;
   }
+
+  #especialidades .grid-especialidades h2 {
+    font-size: 24px;
+  }
+
+
 }
