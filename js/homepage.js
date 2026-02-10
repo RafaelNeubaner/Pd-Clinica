@@ -1,5 +1,6 @@
 function ativarCarrossel(containerId, scrollId, btnLeftId, btnRightId, step) {
     const container = document.getElementById(containerId);
+    console.log(container);
     if (!container) return;
  
     const scrollSection = container.querySelector(`#${scrollId}`);
@@ -79,3 +80,5 @@ if (formContact) {
         }
     });
 }
+
+export { ativarCarrossel };
