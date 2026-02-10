@@ -8,6 +8,13 @@ main > section{
     max-width: 1200px;
 }
 
+.procedimentoCard{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.procedimentoCard h3{
+    background-color: var(--tertiary);
+}
 #containerMedicos{
     max-width: 1440px;
     margin: 0 20px;
