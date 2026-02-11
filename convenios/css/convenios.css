@@ -1,0 +1,61 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 96px;
+}
+
+#banner{
+    width: 100%;
+        max-width: 1440px;
+        padding-top: 160px;
+}
+
+#conveniosSection{
+    background-color: var(--bg-light);
+    width: 100%;
+}
+
+.convenioLogosContainer{
+    margin: auto;
+}
+
+.convenioLogosContainer img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid var(--txt-light);
+    padding: 2px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.convenioLogosContainer img:hover {
+    border-color: var(--primary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .convenioLogosContainer img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    #banner{
+        padding-top: 80px;
+    }
+    
+}
+
+@media (max-width: 996px) {
+    .convenioLogosContainer img {
+        max-width: 175px;
+        max-height: 175px;
+    }
+    #banner{
+        padding-top: 80px;
+    }
+}
