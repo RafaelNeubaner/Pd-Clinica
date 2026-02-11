@@ -109,7 +109,7 @@ export const medicos = [
     nome: "Dr. Ricardo Souza",
     especialidades: ["Oftalmologia"],
     procedimentos: ["Exame de Vista", "Cirurgia Refrativa", "Avaliação Ocular"],
-    foto: "/assets/media/images/dr_ricardo_souza.png",
+    foto: "/assets/media/images/dr-ricardo-souza.png",
     descricao: "Especialista em saúde ocular e correção visual."
   },
   {
@@ -117,7 +117,7 @@ export const medicos = [
     nome: "Dra. Luciana Prado",
     especialidades: ["Oftalmologia"],
     procedimentos: ["Glaucoma", "Catarata", "Check-up Visual"],
-    foto: "/assets/media/images/dra_luciana_prado.png",
+    foto: "/assets/media/images/dra-luciana-prado.png",
     descricao: "Atua no diagnóstico precoce de doenças oculares."
   },
   {
@@ -125,7 +125,7 @@ export const medicos = [
     nome: "Dr. Felipe Rocha",
     especialidades: ["Oftalmologia"],
     procedimentos: ["Lentes de Contato", "Miopia", "Astigmatismo"],
-    foto: "/assets/media/images/dr_felipe_rocha.png",
+    foto: "/assets/media/images/dr-felipe-rocha.png",
     descricao: "Focado em correção visual e acompanhamento oftalmológico."
   },
   {
@@ -133,11 +133,10 @@ export const medicos = [
     nome: "Dra. Patrícia Lima",
     especialidades: ["Oftalmologia"],
     procedimentos: ["Saúde Ocular Infantil", "Exames Preventivos", "Consulta Especializada"],
-    foto: "/assets/media/images/dra_patricia_lima.png",
+    foto: "/assets/media/images/dra-patricia-lima.png",
     descricao: "Atendimento humanizado para todas as idades."
   },
  
-
   // ================= ORTOPEDIA =================
   {
     id: 17,
@@ -203,6 +202,10 @@ export const medicos = [
     nome: "Dr. Paulo Henrique",
     especialidades: ["Pediatria"],
     procedimentos: ["Saúde do Bebê", "Puericultura", "Acompanhamento Infantil"],
+    foto: "/assets/media/images/dr_paulo_henrique.png",
+    descricao: "Atendimento humanizado para bebês e crianças."
+  }
+];
     foto: "/assets/media/images/dr-paulo-henrique.png",
     descricao: "Atendimento humanizado para bebês e crianças."
   }
