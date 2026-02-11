@@ -206,8 +206,3 @@ export const medicos = [
     descricao: "Atendimento humanizado para bebês e crianças."
   }
 ];
-    foto: "/assets/media/images/dr-paulo-henrique.png",
-    descricao: "Atendimento humanizado para bebês e crianças."
-  }
-];
- 
