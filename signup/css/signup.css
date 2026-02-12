@@ -1,0 +1,150 @@
+#cadastro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100vh;
+  width: 100%;
+}
+
+#cadastro img {
+  width: 60%;
+
+  height: 100vh;
+}
+
+#cadastro form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 50%;
+
+  height: 100vh;
+  padding: 0 48px;
+
+}
+
+#cadastro form fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+#cadastro form legend {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#cadastro form fieldset input {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 12px;
+  border: 2px solid var(--bg-dark);
+  border-radius: 8px;
+  width: 70%;
+}
+
+#cadastro form fieldset ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+}
+
+#cadastro form fieldset ul li a {
+  color: var(--bg-dark);
+  font-size: 24px;
+  line-height: normal;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.custom-radio {
+  height: 20px;
+  width: 20px;
+  border: 2px solid var(--bg-dark);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+.radio-container input:checked+.custom-radio {
+  background-color: transparent;
+  border: 3px solid var(--bg-dark);
+}
+
+
+.radio-container input:checked+.custom-radio::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--tertiary);
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cadastro form .btn-primary {
+  margin: 26px 0;
+}
+
+#cadastro form p, #cadastro form p a {
+  font-size: 20px;
+  text-align: center;
+  color: var(--bg-dark);
+}
+
+#cadastro form p a {
+  color: var(--secondary);
+  text-decoration: none;
+
+}
+
+
+
+@media (max-width: 576px) {
+  #cadastro {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  #cadastro img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  #cadastro form {
+    width: 100%;
+    padding: 0;
+  }
+
+  #cadastro form fieldset input {
+    width: 100%;
+  }
+
+  #cadastro form fieldset ul {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+}
