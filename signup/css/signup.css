@@ -1,0 +1,156 @@
+#loginDesktop {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+#formulario {
+    width: 50vh;
+    max-width: 600px;
+    margin: auto;
+}
+
+#formulario h1 {
+    width: 100%;
+    color: var(--txt-white);
+}
+
+#esqueceuSenha {
+    width:100%;
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: blue;
+    cursor: pointer;
+}
+
+#cadastrar {
+    width:100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+p{
+    font-size: 14px;
+    color: var(--txt-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 57%;
+    max-width: 832px;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 100% 10%;
+    
+}
+
+#logo {
+    width: 350px;
+    height: auto;
+}
+
+input {
+    width: 100%;
+}
+
+#recuperarSenhaSection {
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+#recuperarSenha {
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    max-width: 600px;
+    max-height: fit-content;
+    margin: auto;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    padding: 54px 78px ;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+}
+
+#toggleForm:checked ~ #recuperarSenha {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: auto;
+}
+
+#voltarLogin {
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: var(--txt-light);
+    cursor: pointer;
+    border: 2px solid var(--txt-light);
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#voltarLogin:hover {
+    background-color: var(--txt-light);
+    color: var(--bg-light);
+    transition: 0.3s;
+}
+
+#botaoEnviar {
+    width: max-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+#loginMobile {
+    display: none;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #loginDesktop {
+        display: none;
+    }
+    #loginMobile {
+        display: flex;
+    }
+    #recuperarSenha {
+        text-align: left;
+        padding: 0 32px;
+    }
+
+}
