@@ -6,7 +6,7 @@ export const artigos = [
     imagem: "/assets/media/images/heart-image.png",
     especialidade: "cardiologia",
     conteudo: "saude",
-    data: new Date("2026-01-10")
+    data: new Date("2026-01-10T00:00:00")
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const artigos = [
     imagem: "/assets/media/images/heart-image.png",
     especialidade: "cardiologia",
     conteudo: "saude",
-    data: new Date("2026-01-15")
+    data: new Date("2026-01-15T00:00:00")
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const artigos = [
     especialidade: "psicologia",
     imagem: "/assets/media/images/psychology-image.png",
     conteudo: "saude",
-    data: new Date("2026-01-20")
+    data: new Date("2026-01-20T00:00:00")
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const artigos = [
     especialidade: "oftalmologia",
     imagem: "/assets/media/images/eye-image.jpeg",
     conteudo: "prevencao",
-    data: new Date("2026-01-25")
+    data: new Date("2026-01-25T00:00:00")
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const artigos = [
     especialidade: "ortopedia",
     imagem: "/assets/media/images/ortho-image.jpeg",
     conteudo: "prevencao",
-    data: new Date("2026-01-30")
+    data: new Date("2026-01-30T00:00:00")
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const artigos = [
     especialidade: "pediatria",
     imagem: "/assets/media/images/pediatrics-image.jpeg",
     conteudo: "prevencao",
-    data: new Date("2026-02-05")
+    data: new Date("2026-02-05T00:00:00")
   },
   {
     id: 7,
@@ -60,6 +60,6 @@ export const artigos = [
     especialidade: "angiologia",
     imagem: "/assets/media/images/vascular-image.jpg",
     conteudo: "tratamento",
-    data: new Date("2026-02-10")
+    data: new Date("2026-02-10T00:00:00")
   }
 ];

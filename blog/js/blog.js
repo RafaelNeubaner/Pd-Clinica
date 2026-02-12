@@ -32,7 +32,7 @@ btnFilter.addEventListener("click", function(){
     }
 
     if(dataField.value){
-        filteredPosts = filteredPosts.filter(post => post.data === dataField.value);
+        filteredPosts = filteredPosts.filter(post => post.data.getTime() === new Date(dataField.value+"T00:00:00").getTime());
     }
 
     if(especialidadeSelect.value !== "Especialidade"){
