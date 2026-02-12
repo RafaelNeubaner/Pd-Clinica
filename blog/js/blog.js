@@ -10,7 +10,8 @@ function showPosts(posts){
         postElement.querySelector("img").src = post.imagem;
         postElement.querySelector("img").alt = `Imagem do artigo ${post.titulo}`;
         postElement.querySelector("h3").textContent = post.titulo;
-        postElement.querySelector("p").textContent = post.resumo;
+        postElement.querySelector(".postExcerpt").textContent = post.resumo;
+        postElement.querySelector(".postDate").textContent = post.data.toLocaleDateString("pt-BR");
         postsContainer.appendChild(postElement);
     }
 }
