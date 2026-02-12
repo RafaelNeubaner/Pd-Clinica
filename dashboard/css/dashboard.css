@@ -1,0 +1,40 @@
+
+headerLogo{
+    margin: 20px;
+}
+
+main{
+    overflow: hidden;
+}
+
+main > section{
+    display: none;
+    overflow: auto;
+}
+
+main>section:target{
+    display: block;
+}
+
+.nav-link{
+    width: 100%;
+    padding: 10px;
+    color: var(--txt-light);
+}
+
+.nav-pills .nav-link.active{
+    background-color: var(--secondary);
+    color: var(--txt-dark);
+}
+
+.nav-pills .nav-link:not(.active):hover{
+    color: var(--secondary);
+}
+
+
+@media (min-width: 768px) {
+    header{
+        width: 250px;
+        padding: 20px;
+    }
+}
