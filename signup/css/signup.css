@@ -132,22 +132,22 @@ input {
 
 
 
-#loginMobile {
+/*#loginMobile {
     display: none;
     margin: auto;
     width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 @media (max-width: 768px) {
-    #loginDesktop {
+    /*#loginDesktop {
         display: none;
     }
     #loginMobile {
         display: flex;
-    }
+    }*/
     #recuperarSenha {
         text-align: left;
         padding: 0 32px;
