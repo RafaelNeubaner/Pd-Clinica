@@ -16,6 +16,11 @@ main>section:target{
     display: block;
 }
 
+header{
+    width: 100%;
+    padding: 20px;
+}
+
 .nav-link{
     width: 100%;
     padding: 10px;
