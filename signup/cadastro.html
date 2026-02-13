@@ -67,10 +67,10 @@
           <img
             src="/assets/media/logo/logo-light.png"
             alt="Logo PD Clínica"
-            class="logoMobile d-block d-lg-none"
+            class="logoMobile"
           />
 
-          <form action="" method="post" class="needs-validation">
+          <form class="needs-validation" id="signupForm">
             <legend>Registre-se</legend>
 
             <fieldset>
@@ -101,7 +101,7 @@
 
               <div class="radioGroup">
                 <label class="radioContainer">
-                  <input type="radio" name="role" value="medico" />
+                  <input type="radio" name="role" value="medico" checked />
                   <span class="customRadio"></span>Médico(a)
                 </label>
 
@@ -113,15 +113,27 @@
             </fieldset>
 
             <div class="btnContainer">
-              <button class="btn-primary" type="submit">
+              <button class="btn-primary" type="button" id="handleSignup">
                 Cadastrar
               </button>
-              <p>Já possui uma conta? <a href="/signup/login.html">Login</a></p>
+              <p>Já possui uma conta? <a href="/signup/index.html">Login</a></p>
             </div>
           </form>
         </div>
       </section>
     </main>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div
+        id="errorToast"
+        class="toast text-bg-danger"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-body">errorMessage</div>
+      </div>
+    </div>
 
     <div
       class="modal fade"
@@ -158,6 +170,6 @@
         </div>
       </div>
     </div>
-    <script src="js/homepage.js"></script>
+    <script src="js/cadastro.js"></script>
   </body>
 </html>
