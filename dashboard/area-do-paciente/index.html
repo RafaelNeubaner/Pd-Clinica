@@ -28,10 +28,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="/dashboard/area-do-paciente/css/perfil.css"
-    />
+    <link rel="stylesheet" href="/dashboard/area-do-paciente/css/perfil.css" />
 
     <!-- Scripts -->
     <script
@@ -54,12 +51,12 @@
   </head>
   <body class="bg-light">
     <div class="logo-container mb-5 bg-teste p-5 text-center rounded-bottom-4">
-            <img
-              src="/assets/media/logo/logo-dark.png"
-              alt="PD Clínica"
-              class="logo"
-            />
-          </div>
+      <img
+        src="/assets/media/logo/logo-dark.png"
+        alt="PD Clínica"
+        class="logo"
+      />
+    </div>
     <div class="container-fluid">
       <div class="row">
         <!-- Sidebar -->
@@ -67,12 +64,12 @@
           <nav class="sidebar-nav">
             <ul class="nav flex-column gap-3">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="#" class="nav-link active" data-section="perfil">
                   <i class="bi bi-person-fill"></i> Perfil
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#" class="nav-link" data-section="consultas">
                   <i class="bi bi-calendar-check"></i> Consultas
                 </a>
               </li>
@@ -83,10 +80,12 @@
         <!-- Main Content -->
         <main class="col-lg-10 main-content">
           <div class="content-wrapper p-4 p-lg-5">
-            <!-- Header -->
-            <header class="page-header mb-4">
-              <h1 class="mainTitle txt-light">Informações Pessoais</h1>
-            </header>
+            <!-- Seção Perfil -->
+            <section id="secaoPerfil" class="content-section">
+              <!-- Header -->
+              <header class="page-header mb-4">
+                <h1 class="mainTitle txt-light">Informações Pessoais</h1>
+              </header>
 
               <section class="form-section mb-5">
                 <h2 class="subTitle txt-light mb-4">Informações Pessoais</h2>
@@ -94,7 +93,9 @@
                 <form id="formPerfil">
                   <div class="row g-3">
                     <div class="col-md-6">
-                      <label for="nome" class="form-label txt-light">Nome</label>
+                      <label for="nome" class="form-label txt-light"
+                        >Nome</label
+                      >
                       <input
                         type="text"
                         class="form-control"
@@ -242,9 +243,169 @@
                 <button type="submit" class="btn-primary" id="btnSalvar">
                   Salvar
                 </button>
+              </div>
+            </section>
+
+            <!-- Seção Consultas -->
+            <section
+              id="secaoConsultas"
+              class="content-section"
+              style="display: none"
+            >
+              <!-- Header -->
+              <header class="page-header mb-4">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2 class="subTitle txt-light">Paciente: Humberto de Souza</h2>
+                  <button class="btn-primary " id="btnNovoAgendamento">
+                    <i class="bi bi-plus-circle"></i> Novo Agendamento
+                  </button>
+                </div>
+              </header>
+
+              <!-- Filtros -->
+              <div class="mb-4">
+                <div
+                  class="btn-group"
+                  role="group"
+                  aria-label="Filtros de consultas"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline active"
+                    data-filter="agendadas"
+                  >
+                    Agendadas
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline"
+                    data-filter="concluidas"
+                  >
+                    Concluídas
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline"
+                    data-filter="todas"
+                  >
+                    Todas
+                  </button>
+                </div>
+              </div>
+
+              <!-- Lista de Consultas -->
+              <div class="consultas-list">
+                <!-- Consulta 1 -->
+                <div class="card mb-3 consulta-item" data-status="agendada">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-start"
+                    >
+                      <div>
+                        <h5 class="card-title txt-light">
+                          Médico: Dr Luís Augusto
+                        </h5>
+                        <p class="card-text txt-light mb-1">
+                          Ortopedia - Consulta Geral
+                        </p>
+                        <h3 >
+                          <small class="text-muted">29/01/2025 10:30</small>
+                        </h3>
+                      </div>
+                      <div class="cardsStatus">
+                        <span class="badge bg-success mb-3 mr-2">Pago</span>
+                        <span class="badge bg-warning text-dark mb-3 mr-2"
+                          >Aguardando ser Chamado</span
+                        >
+                        <button class="btn btn-sm btn-primary">
+                          <i class="bi bi-pencil"></i> Editar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Consulta 2 -->
+                <div class="card mb-3 consulta-item" data-status="agendada">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-start"
+                    >
+                      <div>
+                        <h5 class="card-title txt-light">
+                          Médico: Dr Luís Augusto
+                        </h5>
+                        <p class="card-text txt-light mb-1">
+                          Cardiologia - Consulta Geral
+                        </p>
+                        <h3>
+                          <small class="text-muted">30/01/2025 10:30</small>
+                        </h3>
+                      </div>
+                      <div class=" cardsStatus">
+                        <span class="badge bg-warning text-dark mb-3 ">Pendente</span>
+                        <span class="badge bg-info text-dark mb-3 "
+                          >Paciente Pendente</span
+                        >
+                        <button class="btn btn-sm btn-primary ">
+                          <i class="bi bi-pencil"></i> Editar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </main>
       </div>
     </div>
+
+    <!-- Script para alternar entre seções -->
+    <script>
+      $(document).ready(function () {
+        // Alternar entre Perfil e Consultas
+        $(".sidebar-nav .nav-link").on("click", function (e) {
+          e.preventDefault();
+
+          // Remove active de todos os links
+          $(".sidebar-nav .nav-link").removeClass("active");
+
+          // Adiciona active ao link clicado
+          $(this).addClass("active");
+
+          // Pega a seção alvo
+          const targetSection = $(this).data("section");
+
+          // Esconde todas as seções
+          $(".content-section").hide();
+
+          // Mostra a seção alvo
+          if (targetSection === "perfil") {
+            $("#secaoPerfil").show();
+          } else if (targetSection === "consultas") {
+            $("#secaoConsultas").show();
+          }
+        });
+
+        // Filtros de consultas
+        $(".btn-group button").on("click", function () {
+          $(".btn-group button").removeClass("active");
+          $(this).addClass("active");
+
+          const filter = $(this).data("filter");
+
+          if (filter === "todas") {
+            $(".consulta-item").show();
+          } else if (filter === "agendadas") {
+            $(".consulta-item").hide();
+            $('.consulta-item[data-status="agendada"]').show();
+          } else if (filter === "concluidas") {
+            $(".consulta-item").hide();
+            $('.consulta-item[data-status="concluida"]').show();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
