@@ -31,11 +31,6 @@
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/dashboard/css/dashboard.css" />
 
-    <link
-      rel="stylesheet"
-      href="/dashboard/configuracoes/css/configuracoes.css"
-    />
-
     <!-- Scripts -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -56,70 +51,16 @@
     ></script>
   </head>
   <body class="d-flex flex-column vh-100">
-    <div
-      class="d-flex justify-content-between align-items-center p-3"
-      id="headerLogo"
-    >
-      <a href="/"
-        ><img
-          src="/assets/media/images/logo-light.png"
-          alt="Logo PD Clínica"
-          width="200"
-      /></a>
-      <div>
-        <button class="btn btn-outline">
-          <i class="bi bi-box-arrow-left"></i> Sair
-        </button>
-        <button class="btn btn-outline d-md-none" id="showMenu">
-          <i class="bi bi-list"></i>
-        </button>
-      </div>
+
+    <div class="d-flex justify-content-between align-items-center p-3" id="headerLogo">
+        <a href="/"><img src="/assets/media/images/logo-light.png" alt="Logo PD Clínica" width="200" /></a>
+        <div>
+            <button class="btn btn-outline"><i class="bi bi-box-arrow-left"></i> Sair</button>
+            <button class="btn btn-outline d-md-none" id="showMenu"><i class="bi bi-list"></i></button>
+        </div>
     </div>
-
+        
     <main class="d-flex flex-column flex-md-row align-items-start flex-fill">
-      <header class="d-none d-md-flex">
-        <ul
-          class="flex-column justify-content-start gap-3 nav nav-pills flex-md-column mb-auto w-100"
-        >
-          <li class="nav-item">
-            <a class="nav-link active" href="#dashboard"
-              ><i class="bi bi-speedometer2"></i> Dashboard</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#agendamentos"
-              ><i class="bi bi-calendar-fill"></i> Agendamentos</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#pacientes"
-              ><i class="bi bi-people-fill"></i> Pacientes</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#configuracoes"
-              ><i class="bi bi-gear-fill"></i> Configurações</a
-            >
-          </li>
-        </ul>
-      </header>
-
-      <section id="dashboard" class="flex-fill p-4 h-100">
-        <h2>Bem-vindo ao Dashboard</h2>
-        <p>
-          Aqui você pode gerenciar seus agendamentos, pacientes e configurações.
-        </p>
-      </section>
-
-      <section id="agendamentos" class="flex-fill p-4">
-        <h2>Agendamentos Recentes</h2>
-        <p>Aqui estão os agendamentos mais recentes.</p>
-      </section>
-
-      <section id="pacientes" class="flex-fill p-4">
-        <h2>Pacientes</h2>
-        <p>Aqui você pode gerenciar seus pacientes.</p>
-      </section>
 
         <header class="d-none d-md-flex ">
             <ul class="flex-column justify-content-start gap-3 nav nav-pills flex-md-column mb-auto w-100">
@@ -207,12 +148,7 @@
             </div>
         </section>
 
-        <section id="configuracoes" class="flex-fill p-4">
-            <h2>Configurações</h2>
-            <p>Aqui você pode ajustar suas configurações.</p>
-        </section>
-      
-      <!-- Configurações -->
+        <!-- Configurações -->
       <section id="configuracoes" class="flex-fill">
         <div
           class="configAtendimento d-flex flex-row justify-content-between align-items-start"
@@ -386,6 +322,7 @@
             </button>
         </div>
       </section>
+      
     </main>
 
     <script src="js/dashboard.js"></script>
