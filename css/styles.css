@@ -32,8 +32,13 @@
   color: var(--txt-light);
 }
 
-.bg-secondary{
+.bg-secondary {
   background-color: var(--secondary);
+  color: var(--txt-light);
+}
+
+.bg-teste {
+  background-color: var(--primary);
   color: var(--txt-light);
 }
 
