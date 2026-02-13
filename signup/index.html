@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/signup/css/signup.css" />
+    <link rel="stylesheet" href="/signup/css/login.css" />
   </head>
   <body>
     <main>
@@ -38,15 +38,22 @@
         <img
           src="/assets/media/images/signin/signin-img.png"
           alt="Imagem de capa da página de cadastro"
+          class="d-none d-lg-block"
         />
         <div
-          class="d-flex flex-column justify-content-center align-items-center gap-4 px-5 textCenter"
+          class="d-flex flex-column justify-content-center align-items-center gap-4 px-5 textCenter flex-fill"
           id="formulario"
         >
+          <img
+            src="/assets/media/logo/logo-light.png"
+            alt="Logo Pd Clínica"
+            class="mb-4"
+            id="logo"
+          />
           <h1 class="mainTitle textCenter">Login</h1>
           <form class="d-flex flex-column gap-3 w-100" id="signupForm">
             <input
-              type="text"
+              type="email"
               class="form-control"
               placeholder="Email"
               required
@@ -59,52 +66,44 @@
             />
           </form>
           <label for="toggleForm" id="esqueceuSenha">Esqueceu a senha?</label>
-          <a href="#" class="btn-primary textCenter">Login</a>
-          <p>
-            Não tem uma conta?
-            <a href="/signup/cadastro.html" id="cadastrar">Cadastre-se</a>
-          </p>
+          <button type="button" class="btn-primary textCenter" id="handleLogin">
+            Login
+          </button>
+          <p>Não tem uma conta? <a href="cadastro.html" id="cadastrar">Cadastre-se</a></p>
         </div>
       </section>
 
-    </header>
-        <main>
-          <input type="checkbox" id="toggleForm" class="d-none" />
-          <section class="textCenter" id="loginDesktop">
-            <img src="/assets/media/images/signin/signin-img.png" alt="Imagem de capa da página de cadastro" class="d-none d-lg-block" />
-            <div class="d-flex flex-column justify-content-center align-items-center gap-4 px-5 textCenter flex-fill" id="formulario">
-              <img src="/assets/media/logo/logo-light.png" alt="Logo Pd Clínica" class="mb-4" id="logo" />
-              <h1 class="mainTitle textCenter">Login</h1>
-              <form onsubmit="handleLogin()" class="d-flex flex-column gap-3 w-100" id="signupForm">
-                <input type="email" class="form-control" placeholder="Email" required />
-                <input type="password" class="form-control" placeholder="Senha" required />
-              </form>
-              <label for="toggleForm" id="esqueceuSenha">Esqueceu a senha?</label>
-              <button type="button" class="btn-primary textCenter" id="handleLogin">Login</button>
-              <p>Não tem uma conta? <a href="#" id="cadastrar">Cadastre-se</a></p>
-            </div>
-        </section>
+      <article id="recuperarSenha" class=" ">
+        <label for="toggleForm" id="voltarLogin">X</label>
+        <h2 class="mainTitle textCenter">Esqueceu a Senha?</h2>
+        <p class="subTitle textCenter">
+          Digite seu email que enviaremos um link, caso haja uma conta
+          cadastrada
+        </p>
+        <form class="d-flex flex-column gap-3 w-100" id="recuperarSenhaForm">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Email"
+            required
+          />
+          <button type="submit" class="btn-primary textCenter" id="botaoEnviar">
+            Enviar
+          </button>
+        </form>
+      </article>
+    </main>
 
-            <article id="recuperarSenha" class=" ">
-            <label for="toggleForm" id="voltarLogin">X</label>
-            <h2 class="mainTitle textCenter">Esqueceu a Senha?</h2>
-            <p class="subTitle textCenter">Digite seu email que enviaremos um link, caso haja uma conta cadastrada</p>
-            <form class="d-flex flex-column gap-3 w-100" id="recuperarSenhaForm">
-              <input type="email" class="form-control" placeholder="Email" required />
-              <button type="submit" class="btn-primary textCenter" id="botaoEnviar">Enviar</button>
-              
-            </form>
-            
-          </article>
-        </main>    
-    
-        
     <div class="toast-container position-fixed top-0 end-0 p-3">
-        <div id="errorToast" class="toast text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-body">
-            errorMessage
-          </div>
-        </div>
+      <div
+        id="errorToast"
+        class="toast text-bg-danger"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-body">errorMessage</div>
+      </div>
     </div>
 
     <div
@@ -159,6 +158,6 @@
       src="https://kit.fontawesome.com/e169e20a67.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/signup/js/signup.js"></script>
+    <script src="/signup/js/login.js"></script>
   </body>
 </html>

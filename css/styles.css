@@ -177,7 +177,7 @@ input.form-control {
   border: 2px solid var(--secondary) !important;
   outline: none !important;
   background-color: transparent !important;
-  color: var(--txt-dark) !important;
+  color: var(--txt-light) !important;
 }
 
 input::placeholder {

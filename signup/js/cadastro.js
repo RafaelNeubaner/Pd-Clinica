@@ -1,8 +1,10 @@
 
-handleLoginButton = document.getElementById("handleLogin");
+handleLoginButton = document.getElementById("handleSignup");
 formSignin = document.getElementById("signupForm");
+nomeInput = formSignin.querySelector('input[type="text"]');
 emailInput = formSignin.querySelector('input[type="email"]');
 passwordInput = formSignin.querySelector('input[type="password"]');
+roleInput = formSignin.querySelector('select[name="role"]');
 
 
 formSignin.querySelectorAll('input').forEach(input => {
@@ -19,7 +21,14 @@ handleLoginButton.addEventListener("click", handleLogin);
 
 function handleLogin() {
     const email = emailInput.value;
+    console.log("Email:", email);
     const password = passwordInput.value;
+
+    if(nomeInput.value.trim() === "") {
+        console.log("Nome vazio");
+        showToast("Por favor, insira seu nome.");
+        return;
+    }
 
     if (emailInput.checkValidity() === false) {
         console.log("Email inválido");
@@ -33,11 +42,7 @@ function handleLogin() {
         return;
     }
 
-    if (email === "medico@gmail.com"){
-        localStorage.setItem("userRole", "medico");
-    }else{
-        localStorage.setItem("userRole", "atendente");
-    }
+    localStorage.setItem("userRole", "atendente");
 
     showToast("Login bem-sucedido!", true);
     
