@@ -90,8 +90,62 @@
         </section>
 
         <section id="pacientes" class="flex-fill p-4">
-            <h2>Pacientes</h2>
-            <p>Aqui você pode gerenciar seus pacientes.</p>
+            <div class="pacientes-container">
+                <h2 class="mb-4">Pacientes</h2>
+                <p>Aqui você pode gerenciar seus pacientes.</p>
+                <div class="card">
+                    <div class="card-body p-4">
+                        <!-- Filtro de Busca -->
+                        <div class="mb-4">
+                            <label for="buscaPaciente" >Buscar</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="buscaPaciente" 
+                                placeholder="Buscar por nome ou CPF"
+                            />
+                        </div>
+                        <!-- Tabela de Pacientes -->
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>CPF</th>
+                                        <th>Telefone</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Humberto de Souza</td>
+                                        <td>325.1***.***-45</td>
+                                        <td>(11) 99999-9999</td>
+                                        <td>humberto@email.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Oliveira</td>
+                                        <td>123.4***.***-67</td>
+                                        <td>(21) 98888-8888</td>
+                                        <td>maria@email.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>João Silva</td>
+                                        <td>987.6***.***-54</td>
+                                        <td>(31) 97777-7777</td>
+                                        <td>joao@email.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mt-4">
+                            <button class="btn btn-success" id="novoPaciente">
+                                <i class="bi bi-plus-circle"></i> Novo Paciente
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="configuracoes" class="flex-fill p-4">
