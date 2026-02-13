@@ -98,6 +98,18 @@
   pointer-events: none;
 }
 
+.btn-outline.active {
+  background-color: var(--secondary);
+  color: var(--txt-dark);
+  border: 2px solid var(--secondary);
+}
+
+.btn-outline:active {
+  background-color: var(--secondary);
+  color: var(--txt-light);
+  border: 2px solid var(--secondary);
+}
+
 .btn-outline:hover {
   background-color: var(--txt-light);
   color: var(--txt-dark);
