@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PD Clínica - Área do Paciente</title>
+    <link rel="icon" href="/assets/media/icons/fav-icon.png" type="image/png" />
+
+    <!-- Google Fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/dashboard/area-do-paciente/css/perfil.css" />
+    <link
+      rel="stylesheet"
+      href="/dashboard/area-do-paciente/css/consultas.css"
+    />
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e169e20a67.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-light">
+    <div class="logo-container mb-5 bg-teste p-5 text-center rounded-bottom-4">
+      <img
+        src="/assets/media/logo/logo-dark.png"
+        alt="PD Clínica"
+        class="logo"
+      />
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <aside class="col-lg-2 sidebar">
+          <nav class="sidebar-nav">
+            <ul class="nav flex-column gap-3">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" data-section="perfil">
+                  <i class="bi bi-person-fill"></i> Perfil
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" data-section="consultas">
+                  <i class="bi bi-calendar-check"></i> Consultas
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="col-lg-10 main-content">
+          <div class="content-wrapper p-4 p-lg-5">
+            <!-- Seção Perfil -->
+            <section id="secaoPerfil" class="content-section">
+              <!-- Header -->
+              <header class="page-header mb-4">
+                <h1 class="mainTitle txt-light">Informações Pessoais</h1>
+              </header>
+
+              <!-- Subseção de info péssoais -->
+              <section class="form-section mb-5">
+                <h2 class="subTitle txt-light mb-4">Informações Pessoais</h2>
+
+                <form id="formPerfil">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="nome" class="form-label txt-light"
+                        >Nome</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nome"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="sobrenome" class="form-label txt-light"
+                        >Sobrenome</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="sobrenome"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="email" class="form-label txt-light"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="telefone" class="form-label txt-light"
+                        >Telefone</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="telefone"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="cpf" class="form-label txt-light">CPF</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cpf"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="dataNascimento" class="form-label txt-light"
+                        >Data de Nascimento</label
+                      >
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="dataNascimento"
+                        
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="sexo" class="form-label txt-light"
+                        >Sexo</label
+                      >
+                      <select class="form-select" id="sexo" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </section>
+
+              <!-- Subseção de endereço -->
+              <section class="form-section mb-5">
+                <h2 class="subTitle txt-light mb-4">Endereço</h2>
+
+                <form id="formEndereco">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="cep" class="form-label txt-light">CEP</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cep"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="cidade" class="form-label txt-light"
+                        >Cidade</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cidade"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="rua" class="form-label txt-light">Rua</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="rua"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="numero" class="form-label txt-light"
+                        >Número</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="numero"
+                        required
+                      />
+                    </div>
+                  </div>
+                </form>
+              </section>
+
+              <div class="d-flex justify-content-end">
+                <button onclick="history.back()" type="submit" class="btn-primary" id="btnSalvar">
+                  Salvar
+                </button>
+              </div>
+            </section>
+
+            <!-- Seção Consultas -->
+            <section
+              id="secaoConsultas"
+              class="content-section"
+              style="display: none"
+            >
+              <!-- Header -->
+              <header class="page-header mb-4">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2 class="subTitle txt-light">
+                    Paciente: Humberto de Souza
+                  </h2>
+                  <button onclick="window.location.href='/dashboard/agendamentos/index.html'" class="btn btn-primary" id="btnNovoAgendamento">
+                    <i class="bi bi-plus-circle"></i> Novo Agendamento
+                  </button>
+                </div>
+              </header>
+
+              <!-- Filtros -->
+              <div class="mb-4">
+                <div
+                  class="btn-group"
+                  role="group"
+                  aria-label="Filtros de consultas"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline active"
+                    data-filter="agendadas"
+                  >
+                    Agendadas
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline"
+                    data-filter="concluidas"
+                  >
+                    Concluídas
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline"
+                    data-filter="todas"
+                  >
+                    Todas
+                  </button>
+                </div>
+              </div>
+
+              <!-- Lista de Consultas -->
+              <div class="consultasList">
+                <div class="card mb-3 consultaItem" data-status="agendada">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-start"
+                    >
+                      <div class="paddingRight">
+                        <h5 class="card-title txt-light">
+                          Médico: Dr Luís Augusto
+                        </h5>
+                        <p class="card-text txt-light mb-1">
+                          Ortopedia - Consulta Geral
+                        </p>
+                        <h3>
+                          <small class="text-muted">29/01/2025 10:30</small>
+                        </h3>
+                      </div>
+                      <div class="cardsStatus">
+                        <span class="badge bg-success">Pago</span>
+                        <span class="badge bg-warning text-dark"
+                          >Aguardando ser Chamado</span
+                        >
+                        <a href="/dashboard/consulta-medica/index.html" class="btn btn-sm btn-primary">
+                          <i class="bi bi-pencil"></i> Editar
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3 consultaItem" data-status="agendada">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-start"
+                    >
+                      <div class="paddingRight">
+                        <h5 class="card-title txt-light">
+                          Médico: Dr Luís Augusto
+                        </h5>
+                        <p class="card-text txt-light mb-1">
+                          Cardiologia - Consulta Geral
+                        </p>
+                        <h3>
+                          <small class="text-muted">30/01/2025 10:30</small>
+                        </h3>
+                      </div>
+                      <div class="cardsStatus">
+                        <span class="badge bg-warning text-dark">Pendente</span>
+                        <span class="badge bg-info text-dark"
+                          >Paciente Pendente</span
+                        >
+                        <a href="/dashboard/consulta-medica/index.html" class="btn btn-sm btn-primary">
+                          <i class="bi bi-pencil"></i> Editar
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3 consultaItem" data-status="concluida">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-start"
+                    >
+                      <div class="paddingRight">
+                        <h5 class="card-title txt-light">
+                          Médico: Dra Maria Silva
+                        </h5>
+                        <p class="card-text txt-light mb-1">
+                          Psicologia - Consulta Geral
+                        </p>
+                        <h3>
+                          <small class="text-muted">15/01/2025 14:00</small>
+                        </h3>
+                      </div>
+                      <div class="cardsStatus">
+                        <span class="badge bg-success">Pago</span>
+                        <span class="badge bg-success"
+                          >Consulta Realizada</span
+                        >
+                        <a href="/dashboard/consulta-medica/index.html" class="btn btn-sm btn-primary">
+                          <i class="bi bi-pencil"></i> Editar
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="/dashboard/area-do-paciente/js/area-do-paciente.js"></script>
+    <script src="/dashboard/area-do-paciente/js/paciente.js" type="module"></script>
+  </body>
+</html>

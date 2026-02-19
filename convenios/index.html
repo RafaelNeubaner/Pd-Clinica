@@ -26,10 +26,10 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/convenios.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/convenios/css/convenios.css" />
 
     <!-- Scripts -->
     <script
@@ -70,7 +70,7 @@
 
           <a class="navbar-brand order-1 mx-auto mx-lg-0" href="/index.html">
             <img
-              src="./assets/media/logo/logo-dark.png"
+              src="/assets/media/logo/logo-dark.png"
               alt="Logo PD Clínica"
               width="256"
               height="68"
@@ -99,9 +99,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="/convenios/index.html"
-                  >Convênios</a
-                >
+                <a class="nav-link" href="/convenios/index.html">Convênios</a>
               </li>
 
               <li class="nav-item">
@@ -115,7 +113,9 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="/trabalhe-conosco/index.html">Carreira</a>
+                <a class="nav-link" href="/trabalhe-conosco/index.html"
+                  >Carreira</a
+                >
               </li>
 
               <li class="nav-item d-none d-lg-block">
@@ -128,12 +128,63 @@
         </div>
       </nav>
     </header>
-    <body>
-        <main>
+    <main>
+      <section
+        class="conveniosSection d-flex flex-column align-items-center gap-5 py-5"
+      >
+        <img
+          src="/assets/media/images/banner-convenios.png"
+          alt="Banner Convênios"
+          id="banner"
+        />
+        <div class="row convenioLogosContainer">
+          <div class="col-sm-4 col-lg-3 col-6 d-flex justify-content-center">
+            <img
+              src="/assets/media/images/convenios/unimed.jpg"
+              alt="Convênio Unimed"
+              class="convenioLogo"
+            />
+          </div>
+          <div class="col-sm-4 col-lg-3 col-6 d-flex justify-content-center">
+            <img
+              src="/assets/media/images/convenios/amil.jpg"
+              alt="Convênio Amil"
+              class="convenioLogo"
+            />
+          </div>
+          <div class="col-sm-4 col-lg-3 col-6 d-flex justify-content-center">
+            <img
+              src="/assets/media/images/convenios/bradesco.png"
+              alt="Convênio Bradesco Saúde"
+              class="convenioLogo"
+            />
+          </div>
+          <div class="col-sm-4 col-lg-3 col-6 d-flex justify-content-center">
+            <img
+              src="/assets/media/images/convenios/sulamerica.png"
+              alt="Convênio SulAmérica"
+              class="convenioLogo"
+            />
+          </div>
+          <div class="col-sm-4 col-lg-3 col-6 d-flex justify-content-center">
+            <img
+              src="/assets/media/images/convenios/portoseguro.png"
+              alt="Convênio Porto Seguro Saúde"
+              class="convenioLogo"
+            />
+          </div>
+          <div class="col-sm-4 col-lg-3 col-6 d-flex justify-content-center">
+            <img
+              src="/assets/media/images/convenios/usisaude.png"
+              alt="Convênio Usisaúde"
+              class="convenioLogo"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
 
-        </main>    
-    
-        <footer
+    <footer
       class="d-flex flex-column justify-content-center justify-content-lg-between w-100 px-5 py-4"
     >
       <div
@@ -143,7 +194,7 @@
           class="col-12 col-lg-auto d-flex flex-column align-items-center align-items-lg-start mb-4"
         >
           <img
-            src="assets/media/images/logo-dark.png"
+            src="/assets/media/images/logo-dark.png"
             alt="Logo PDClínica"
             class="w-100 px-5 mb-3"
           />
@@ -169,9 +220,13 @@
             <h2 class="mb-3">Outros Acessos</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
               <li><a href="/blog/index.html">Blog</a></li>
-              <li><a href="/trabalhe-conosco/index.html">Trabalhe Conosco</a></li>
               <li>
-                <a href="/signup/index.html"><i class="bi bi-box-arrow-in-right"></i> Entrar</a>
+                <a href="/trabalhe-conosco/index.html">Trabalhe Conosco</a>
+              </li>
+              <li>
+                <a href="/signup/index.html"
+                  ><i class="bi bi-box-arrow-in-right"></i> Entrar</a
+                >
               </li>
             </ul>
           </div>
@@ -215,7 +270,7 @@
             class="modal-body d-flex flex-column justify-content-center align-items-center gap-3 px-4 py-5 text-center"
           >
             <img
-              src="assets/media/icons/send_plane.svg"
+              src="/assets/media/icons/send_plane.svg"
               alt="Mensagem enviada com sucesso"
             />
             <h2 class="subTitle">Recebemos sua mensagem ;)</h2>

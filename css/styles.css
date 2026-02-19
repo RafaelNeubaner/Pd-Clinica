@@ -32,8 +32,13 @@
   color: var(--txt-light);
 }
 
-.bg-secondary{
+.bg-secondary {
   background-color: var(--secondary);
+  color: var(--txt-light);
+}
+
+.bg-teste {
+  background-color: var(--primary);
   color: var(--txt-light);
 }
 
@@ -91,6 +96,18 @@
   color: var(--txt-muted);
   border: 2px solid var(--txt-muted);
   pointer-events: none;
+}
+
+.btn-outline.active {
+  background-color: var(--secondary);
+  color: var(--txt-dark);
+  border: 2px solid var(--secondary);
+}
+
+.btn-outline:active {
+  background-color: var(--secondary);
+  color: var(--txt-light);
+  border: 2px solid var(--secondary);
 }
 
 .btn-outline:hover {
@@ -170,13 +187,41 @@ h3 {
     margin-bottom: 64px;
 }
 
-input, textarea{
-    padding: 10px;
-    border-radius: 12px;
-    border: 2px solid var(--bg-light);
-    outline: none;
-    background-color: transparent;
-    
+input, textarea, 
+input.form-control {
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid var(--secondary);
+  outline: none;
+  background-color: transparent;
+  color: var(--txt-light);
+}
+
+input::placeholder {
+  color: var(--txt-muted);
+}
+
+input:focus {
+  border: 2px solid var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(110, 159, 216, 0.25);
+}
+
+select {
+  padding: 10px !important;
+  border-radius: 12px !important;
+  border: 2px solid var(--secondary) !important;
+  outline: none !important;
+  background-color: transparent !important;
+  color: var(--txt-light) !important;
+}
+
+select:focus {
+  border: 2px solid var(--primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(110, 159, 216, 0.25) !important;
+}
+
+option {
+  color: var(--txt-light);
 }
 
 @media (max-width: 992px) {
@@ -240,11 +285,12 @@ input, textarea{
     }
     
         .btn-primary {
-            padding: 5px 12px;
+            font-size: small;
+            padding: 8px 12px;
         }
     
         .btn-outline {
-            padding: 5px 12px;   
+            padding: 8px 12px;   
         }
 
         .mainTitle {
