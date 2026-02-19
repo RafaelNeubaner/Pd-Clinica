@@ -1,0 +1,33 @@
+.chart {
+    max-height: 250px;
+    border: 5px solid var(--secondary);
+    border-radius: 12px;
+    
+}
+
+.chart h4{
+    font-size: 24px;
+}
+
+.chart h4 span{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.chart p{
+    font-size: 16px;
+}
+
+.chart p span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.graphContainer {
+    width: 60%;
+}
+
+.chart canvas{
+    width: 100% !important;
+    height: auto !important;
+}
