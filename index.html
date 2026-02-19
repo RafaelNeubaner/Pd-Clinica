@@ -148,7 +148,7 @@
             preparados para acompanhar você em cada etapa.
           </p>
           <a
-            href="#"
+            href="#ctaSection"
             class="btn btn-primary d-none d-sm-inline-block d-md-inline-block d-lg-inline-block"
             >Saiba Mais</a
           >
@@ -159,7 +159,7 @@
         />
         <a
           class="btn btn-primary d-sm-none d-md-none d-lg-none"
-          href="#"
+          href="#ctaSection"
           id="button2"
           >Saiba Mais</a
         >
@@ -179,9 +179,11 @@
               PD Clínica para cuidar da sua saúde e bem-estar
             </h2>
           </div>
-          <button class="btn-primary d-none d-lg-block buttonMore">
-            Saiba Mais
-          </button>
+          <a href="/convenios/index.html" class="text-decoration-none">
+            <button class="btn-primary d-none d-lg-block buttonMore">
+              Saiba Mais
+            </button>
+          </a>
         </div>
         <div class="col-12 col-lg-7" id="container-help-carousel">
           <div
@@ -243,14 +245,17 @@
               </div>
             </article>
           </div>
-          <button class="btn-primary d-none" id="slideLeft"><</button>
+          <button class="btn-primary d-none" id="slideLeft"><i class="bi bi-chevron-left"></i></button>
           <button class="btn-primary d-none d-lg-block" id="slideRight">
-            >
+            <i class="bi bi-chevron-right"></i>
           </button>
         </div>
-        <button class="btn-primary w-100 d-lg-none buttonMore">
-          Saiba Mais
-        </button>
+
+        <a href="/convenios/index.html" class="text-decoration-none">
+          <button class="btn-primary w-100 d-lg-none buttonMore">
+            Saiba Mais
+          </button>
+        </a>
       </section>
 
       <!-- Especialidades Section -->
@@ -264,41 +269,52 @@
             </p>
             <div class="row containerEspecialidades">
               <div class="col-lg-4">
-                <button class="btn-primary w-100 h-100">
-                  <img
-                    src="assets/media/icons/icon-agiology.png"
-                    alt="icone angiologia"
-                  />
-                  Angiologia
-                </button>
+                <a href="/especialidades/angiologia.html">
+                  <button class="btn-primary w-100 h-100">
+                    <img
+                      src="assets/media/icons/icon-agiology.png"
+                      alt="icone angiologia"
+                    />
+                    Angiologia
+                  </button>
+                </a>
               </div>
               <div class="col-lg-4">
-                <button class="btn-primary w-100 h-100">
-                  <img
-                    src="assets/media/icons/icon-cardiology.png"
-                    alt="icone cardiologia"
-                  />
-                  Cardiologia
-                </button>
+                <a href="/especialidades/cardiologia.html">
+
+                  <button class="btn-primary w-100 h-100">
+                    <img
+                      src="assets/media/icons/icon-cardiology.png"
+                      alt="icone cardiologia"
+                    />
+                    Cardiologia
+                  </button>
+                </a>
               </div>
               <div class="col-lg-4">
-                <button class="btn-primary w-100 h-100">
-                  <img
-                    src="assets/media/icons/icon-psychology.png"
-                    alt="icone psicologia"
-                  />
-                  Psicologias
-                </button>
+                <a href="/especialidades/psicologia.html">
+                  <button class="btn-primary w-100 h-100">
+                    <img
+                      src="assets/media/icons/icon-psychology.png"
+                      alt="icone psicologia"
+                    />
+                    Psicologias
+                  </button>
+                </a>
               </div>
-              <button class="btn-outline d-md-none d-lg-none">
+              <a href="/especialidades/index.html" class="text-decoration-none">
+                <button class="btn-outline d-md-none d-lg-none">
+                  Acesse a lista completa
+                </button>
+              </a>
+            </div>
+            <a href="/especialidades/index.html">
+              <button
+                class="btn-outline d-none d-md-inline-block d-lg-inline-block"
+              >
                 Acesse a lista completa
               </button>
-            </div>
-            <button
-              class="btn-outline d-none d-md-inline-block d-lg-inline-block"
-            >
-              Acesse a lista completa
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -325,7 +341,7 @@
       <section id="unidades">
         <div class="container container-fluid">
           <div class="containerTxt">
-            <h1>Nossas Trilhas de Formação</h1>
+            <h1>Nossas Unidades</h1>
             <h2>
               Encontre a unidade que melhor atende suas necessidades e tenha
               acesso a todas as informações essenciais em um só lugar
@@ -712,7 +728,7 @@
             Histórias reais de quem confia na PD
           </h2>
         </div>
-        <div class="row m-0 justify-content-center align-items-center w-100">
+        <div class="row m-0 justify-content-center align-items-center w-100 gap-md-4 gap-lg-0">
           <div
             class="col-12 col-lg-3 card shadow p-4 mb-4 mb-md-0 offset-lg-1 assigned h-100"
           >
@@ -794,6 +810,7 @@
         </div>
       </section>
 
+      <!-- Forms Contato -->
       <section
         class="container row justify-content-between py-3"
         id="contactSection"
@@ -818,7 +835,7 @@
           id="formContact"
         >
           <h2 class="mainTitle">Fale Conosco</h2>
-          <form class="d-flex flex-column w-100 gap-2" id="formContactForm">
+          <form class="d-flex flex-column w-100 gap-3" id="formContactForm">
             <div class="w-100 d-flex flex-column">
               <label for="nameInput">Nome Completo</label>
               <input
@@ -866,6 +883,8 @@
           </form>
         </div>
       </section>
+
+      <!-- FAQ -->
       <section class="container d-flex flex-column" id="faqSection">
         <h2 class="mainTitle">Perguntas Frequentes</h2>
         <div>
