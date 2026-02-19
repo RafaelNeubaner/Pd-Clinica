@@ -62,7 +62,9 @@
   width: 100%;
 }
 
-.headerNav ul li a:hover {
+.headerNav ul li a:hover,
+.headerNav ul li .nav-link i:hover
+ {
   color: var(--tertiary);
 }
 
@@ -82,16 +84,6 @@
   width: 80%;
 }
 
-
-.headerNav ul li .nav-link i {
-  color: var(--secondary);
-  transition: color 0.3s ease;
-}
-
-.headerNav ul li .nav-link i:hover {
-  color: var(--tertiary);
-  transition: color 0.3s ease;
-}
 
 .navbar-toggler {
   border: none;
