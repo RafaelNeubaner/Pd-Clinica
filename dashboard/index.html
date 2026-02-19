@@ -30,11 +30,13 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/dashboard/css/dashboard.css" />
     <link rel="stylesheet" href="/dashboard/css/chart.css" />
+    <link rel="stylesheet" href="/dashboard/css/pacientes.css" />
+    <link rel="stylesheet" href="/dashboard/css/agendamentos.css" />
+    <link rel="stylesheet" href="/dashboard/css/configuracoes.css" />
 
     <!-- Scripts -->
     <script
@@ -140,15 +142,248 @@
         <div id="calendarioAgendamentos" class="h-100"></div>
       </section>
 
-      <section id="pacientes" class="flex-fill p-4">
-        <h2>Pacientes</h2>
-        <p>Aqui você pode gerenciar seus pacientes.</p>
-      </section>
+        <section id="pacientes" class="flex-fill p-4">
+            <div class="pacientes-container">
+                <h2 class="mb-4">Pacientes</h2>
+                <p>Aqui você pode gerenciar seus pacientes.</p>
+                <div class="card">
+                    <div class="card-body p-4">
+                        <!-- Filtro de Busca -->
+                        <div class="mb-4">
+                            <label for="buscaPaciente" >Buscar</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="buscaPaciente" 
+                                placeholder="Buscar por nome ou CPF"
+                            />
+                        </div>
+                        <!-- Tabela de Pacientes -->
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>CPF</th>
+                                        <th>Telefone</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <a href="/dashboard/area-do-paciente/index.html">
+                                    <tr onclick="window.location.href='/dashboard/area-do-paciente/humberto-de-souza.html'" 
+                                        style="cursor: pointer;">
+                                        <td>Humberto de Souza</td>
+                                        <td>325.1***.***-45</td>
+                                        <td>(11) 99999-9999</td>
+                                        <td>humberto@email.com</td>
+                                    </tr>
+                                  </a>
+                                    <tr onclick="window.location.href='/dashboard/area-do-paciente/maria-oliveira.html'" 
+                                        style="cursor: pointer;">
+                                        <td>Maria Oliveira</td>
+                                        <td>123.4***.***-67</td>
+                                        <td>(21) 98888-8888</td>
+                                        <td>maria@email.com</td>
+                                    </tr>
+                                    <tr onclick="window.location.href='/dashboard/area-do-paciente/joao-silva.html'" 
+                                        style="cursor: pointer;">
+                                        <td>João Silva</td>
+                                        <td>987.6***.***-54</td>
+                                        <td>(31) 97777-7777</td>
+                                        <td>joao@email.com</td>
+                                    </tr>
+                                  
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mt-4">
+                            <a class="btn btn-success" id="novoPaciente" href="/dashboard/area-do-paciente/novo-paciente.html">
+                                <i class="bi bi-plus-circle"></i> Novo Paciente
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <section id="configuracoes" class="flex-fill p-4">
-        <h2>Configurações</h2>
-        <p>Aqui você pode ajustar suas configurações.</p>
+        <!-- Configurações -->
+      <section id="configuracoes" class="flex-fill">
+        <div id="configuracoesContainer" >
+        <div
+          class="configAtendimento d-flex flex-row justify-content-between align-items-start"
+        >
+          <fieldset class="d-flex flex-column">
+            <legend class="subTitle">Horário de atendimento</legend>
+
+            <div class="formHorario d-flex">
+              <div class="container">
+                <label for="inicio">Início</label>
+                <input
+                  type="time"
+                  id="inicio"
+                  name="inicio"
+                  class="form-control"
+                />
+              </div>
+              <div class="container">
+                <label for="fim">Término</label>
+                <input type="time" id="fim" name="fim" class="form-control" />
+              </div>
+            </div>
+          </fieldset>
+
+          <button class="btn-primary mt-3 d-none d-md-block">
+            <i class="bi bi-floppy2 me-2"></i>Salvar
+          </button>
+        </div>
+
+        <div class="configEspecialidades">
+          <fieldset class="d-flex flex-column">
+            <legend class="subTitle">Especialidades</legend>
+            <div class="formEspecialidades d-flex flex-column">
+              <div class="containerBusca d-flex">
+                <input
+                  class="form-control"
+                  type="search"
+                  name="buscarEspecialidade"
+                  id="buscarEspecialidade"
+                  placeholder="Buscar especialidade"
+                />
+                <button class="btn btn-primary d-flex align-items-center">
+                  <i class="bi bi-plus-lg"></i> Adicionar
+                </button>
+              </div>
+
+              <div class="lista-especialidades">
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="psicologia"
+                    id="esp_psicologia"
+                  />
+                  <label class="form-check-label" for="esp_psicologia">
+                    Psicologia
+                  </label>
+                </div>
+
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="cardiologia"
+                    id="esp_cardiologia"
+                  />
+                  <label class="form-check-label" for="esp_cardiologia">
+                    Cardiologia
+                  </label>
+                </div>
+
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="ortopedia"
+                    id="esp_ortopedia"
+                  />
+                  <label class="form-check-label" for="esp_ortopedia">
+                    Ortopedia
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="configProcedimentos">
+          <fieldset class="d-flex flex-column">
+            <legend class="subTitle">Procedimentos</legend>
+
+            <div
+              class="formProcedimentos d-flex flex-column"
+            >
+              <div class="containerBusca">
+                <input
+                  type="search"
+                  name="buscarProcedimento"
+                  id="buscarProcedimento"
+                  placeholder="Buscar procedimento"
+                />
+
+                <button class="btn-primary">
+                  <i class="bi bi-plus-lg"></i>Adicionar
+                </button>
+              </div>
+
+              <div class="container form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="procedimento1"
+                />
+                <label class="form-check-label" for="procedimento1"
+                  >Consulta Geral</label
+                >
+              </div>
+
+              <div class="container form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="procedimento2"
+                />
+                <label class="form-check-label" for="procedimento2"
+                  >Engessamento</label
+                >
+              </div>
+
+              <div class="container form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="procedimento3"
+                />
+                <label class="form-check-label" for="procedimento3"
+                  >Exame Raio-X</label
+                >
+              </div>
+
+              <div class="container form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="procedimento4"
+                />
+                <label class="form-check-label" for="procedimento4"
+                  >Ausculta</label
+                >
+              </div>
+
+              <div class="container form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="procedimento5"
+                />
+                <label class="form-check-label" for="procedimento5">ECG</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="d-flex justify-content-end mt-3">
+            <button class="btn-primary d-block d-md-none">
+              <i class="bi bi-floppy2 me-2"></i>Salvar
+            </button>
+        </div>
+        </div>
       </section>
+      
     </main>
 
     <script src="js/dashboard.js"></script>

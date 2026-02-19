@@ -3,13 +3,18 @@ headerLogo{
     margin: 20px;
 }
 
+.nav{
+    position: fixed;
+    max-width:fit-content;
+}
+
 main{
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 main > section{
     display: none;
-    overflow: auto;
+    overflow: visible;
 }
 
 main>section:target{
@@ -42,4 +47,19 @@ header{
         width: 250px;
         padding: 20px;
     }
+}
+
+/* Aba de pacientes*/
+#pacientes{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+@media (max-width:768px) {
+    .cardsStatus{
+        flex-direction: column;
+        gap: 50px;
+    }
+    
 }
