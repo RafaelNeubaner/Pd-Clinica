@@ -30,7 +30,10 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
             start: '2026-02-26T09:00:00',
             end: '2026-02-26T10:30:00'
         }
-    ]
+    ],
+    eventClick: function (info) {
+        window.location.href = "consulta-medica/";
+    }
 });
 
 
