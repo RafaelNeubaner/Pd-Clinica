@@ -313,32 +313,9 @@ main {
   gap: 24px;
 }
 
-.containerCtaBtn .btn-primary {
-  background-color: var(--primary);
-  color: var(--tertiary);
-  transition: background-color 0.3s ease;
-  font-weight: 500;
-}
 
-.containerCtaBtn .btn-primary:hover {
-  background-color: var(--bg-dark);
-  color: var(--txt-dark);
-  transition: background-color 0.3s ease;
-  font-weight: 600;
-}
 
-.containerCtaBtn .btn-outline {
-  color: var(--primary);
-  border: 2px solid var(--primary);
-  font-weight: 500;
-}
 
-.containerCtaBtn .btn-outline:hover {
-  background-color: var(--tertiary);
-  color: var(--txt-light);
-  font-weight: 600;
-  border: 2px solid var(--txt-light);
-}
 
 @media (max-width: 576px) {
   #ctaSection .containerCtaTxt h1 {
@@ -734,13 +711,13 @@ main {
   }
 
   #faqSection > h2 {
-    border-bottom: 1px solid var(--bg-dark);
+    border-bottom: 1px solid var(--txt-light);
     text-align: center;
     padding: 20px;
   }
 
   #faqSection .faqItem {
-    border-bottom: 1px solid var(--bg-dark);
+    border-bottom: 1px solid var(--txt-light);
     padding: 16px 0;
     transition: all 0.3s ease;
   }
@@ -769,6 +746,8 @@ main {
   .faqItem summary::after {
     content: url("../assets/media/icons/arrow_down.svg");
     margin-left: 10px;
+    max-height: 24px;
+    background-color: #f9f9f9;
     transition: transform 0.3s ease;
   }
 

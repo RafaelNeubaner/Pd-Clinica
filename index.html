@@ -125,11 +125,20 @@
           </div>
         </div>
       </nav>
+      <input type="checkbox" id="toggleForm" class="d-none" />
+      <button
+        type="button"
+        id="toggleDarkMode"
+        class="btn-outline darkmode-toggle"
+        aria-pressed="false"
+      >
+        <i class="bi bi-moon-stars"></i>
+      </button>
     </header>
 
     <main class="d-flex flex-column align-items-center">
       <!-- Hero Section -->
-      <section class="container-fluid w-100 bg-tertiary" id="heroSection">
+      <section class="container-fluid w-100 bg-hero" id="heroSection">
         <div class="heroText">
           <p id="frase1Hero">
             Saiba tudo o que a PD Clínica oferece para cuidar da sua saúde
@@ -1044,5 +1053,6 @@
       </div>
     </div>
     <script src="js/homepage.js"></script>
+    <script src="js/darkmode.js"></script>
   </body>
 </html>
