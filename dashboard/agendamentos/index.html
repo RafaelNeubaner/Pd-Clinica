@@ -54,6 +54,14 @@
     ></script>
   </head>
   <body>
+    <button
+      type="button"
+      id="toggleDarkMode"
+      class="btn-outline darkmode-toggle"
+      aria-pressed="false"
+    >
+      <i class="bi bi-moon-stars"></i>
+    </button>
     <div class="logo-container bg-teste p-5 text-center rounded-bottom-4">
       <img
         src="/assets/media/logo/logo-dark.png"
@@ -63,72 +71,76 @@
     </div>
 
     <section id="criar-agendamento">
-
       <h2 class="mainTitle text-center">Criar Agendamento</h2>
-  
+
       <form action="" method="post" class="formAgendamento">
         <fieldset>
-            <div class="formContainer d-flex flex-column">
-              <input
-                type="text"
-                class="form-control"
-                id="nomePaciente"
-                placeholder="Nome do paciente"
-              />
-  
-              <input
-                type="text"
-                class="form-control"
-                id="nomeMedico"
-                placeholder="Nome do médico"
-              />
-  
-              <input
-                type="text"
-                class="form-control"
-                id="nomeEspecialidade"
-                placeholder="Informe a especialidade"
-              />
-  
-              <input
-                type="text"
-                class="form-control"
-                id="nomeProcedimento"
-                placeholder="Informe o procedimento"
-              />
-  
-              <div class="containerHorario d-flex align-items-center">
-                <div class="containerData">
-                  <label for="dataAgendamento"> Data</label>
-                  <input type="date" class="form-control" id="dataAgendamento" />
-                </div>
-  
-                <div class="containerHora">
-                  <label for="horaAgendamento"> Hora</label>
-                  <input type="time" class="form-control" id="horaAgendamento" />
-                </div>
+          <div class="formContainer d-flex flex-column">
+            <input
+              type="text"
+              class="form-control"
+              id="nomePaciente"
+              placeholder="Nome do paciente"
+            />
+
+            <input
+              type="text"
+              class="form-control"
+              id="nomeMedico"
+              placeholder="Nome do médico"
+            />
+
+            <input
+              type="text"
+              class="form-control"
+              id="nomeEspecialidade"
+              placeholder="Informe a especialidade"
+            />
+
+            <input
+              type="text"
+              class="form-control"
+              id="nomeProcedimento"
+              placeholder="Informe o procedimento"
+            />
+
+            <div class="containerHorario d-flex align-items-center">
+              <div class="containerData">
+                <label for="dataAgendamento"> Data</label>
+                <input type="date" class="form-control" id="dataAgendamento" />
               </div>
-  
-              <div class="containerHorario d-flex align-items-center">
-                <div class="containerValor">
-                  <label for="valorAgendamento"> Valor</label>
-                  <input type="text" class="form-control" id="valorAgendamento" />
-                </div>
-    
-                <div class="containerStatus">
-                  <label for="statusAgendamento"> Status</label>
-                  <input type="text" class="form-control" id="statusAgendamento" />
-                </div>
+
+              <div class="containerHora">
+                <label for="horaAgendamento"> Hora</label>
+                <input type="time" class="form-control" id="horaAgendamento" />
               </div>
-  
             </div>
-  
-  
-          <button onclick="history.back()" type="submit" class="btn-primary">Salvar</button>
+
+            <div class="containerHorario d-flex align-items-center">
+              <div class="containerValor">
+                <label for="valorAgendamento"> Valor</label>
+                <input type="text" class="form-control" id="valorAgendamento" />
+              </div>
+
+              <div class="containerStatus">
+                <label for="statusAgendamento"> Status</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="statusAgendamento"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button onclick="history.back()" type="submit" class="btn-primary">
+            Salvar
+          </button>
         </fieldset>
       </form>
     </section>
-    <br><br><br>
+    <br /><br /><br />
 
+    <script src="/js/darkmode.js"></script>
   </body>
 </html>

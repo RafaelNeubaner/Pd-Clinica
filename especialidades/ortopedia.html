@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/especialidades/css/especialidade.css">
+    <link rel="stylesheet" href="/especialidades/css/especialidade.css" />
 
     <!-- Scripts -->
     <script
@@ -51,6 +51,14 @@
     ></script>
   </head>
   <body>
+    <button
+      type="button"
+      id="toggleDarkMode"
+      class="btn-outline darkmode-toggle"
+      aria-pressed="false"
+    >
+      <i class="bi bi-moon-stars"></i>
+    </button>
     <header class="headerContainer">
       <nav class="headerNav navbar navbar-expand-lg w-100">
         <div
@@ -99,9 +107,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="/convenios/index.html"
-                  >Convênios</a
-                >
+                <a class="nav-link" href="/convenios/index.html">Convênios</a>
               </li>
 
               <li class="nav-item">
@@ -115,7 +121,9 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="/trabalhe-conosco/index.html">Carreira</a>
+                <a class="nav-link" href="/trabalhe-conosco/index.html"
+                  >Carreira</a
+                >
               </li>
 
               <li class="nav-item d-none d-lg-block">
@@ -130,49 +138,124 @@
     </header>
 
     <main class="d-flex flex-column align-items-center gap-5">
-        <img src="../../assets/media/images/banner_ortopedia.png" alt="Banner Ortopedia">
-        <section class="row text-start justify-content-center align-items-center gap-3 px-4 pt-5">
-            <h1 class="title col-12 text-center order-0" >Ortopedia</h1>
-            <div class="col-12 col-lg-7 order-2 order-lg-1">
-                <h3>O que é Ortopedia?</h3>
-                <p>Ortopedia é a especialidade médica dedicada ao diagnóstico, tratamento e prevenção de doenças e lesões do sistema musculoesquelético. Na PD Clinica, oferecemos cuidados especializados para garantir a saúde dos ossos, articulações, músculos e ligamentos, promovendo a mobilidade e qualidade de vida dos nossos pacientes.</p>
-                <h3>Como Atuamos</h3>
-                <p>Nossa abordagem em Ortopedia é centrada no paciente. Utilizamos avaliações detalhadas e técnicas avançadas para tratar condições ortopédicas, desde fraturas até doenças crônicas. Com uma equipe experiente, oferecemos tratamentos personalizados que incluem terapias conservadoras e intervenções cirúrgicas, visando a recuperação completa e o bem-estar do paciente.</p>
-                <h3>Escolha a PD Clinica</h3>
-                <p>Escolher a PD Clinica para cuidados ortopédicos significa confiar em uma equipe de especialistas dedicados. Oferecemos uma gama completa  de serviços ortopédicos, incluindo avaliações de risco cirúrgico,  tratamento de doenças crônicas e estratégias preventivas. Nosso  compromisso é com a saúde integral do sistema musculoesquelético, combinando atendimento  personalizado com técnicas avançadas para garantir o melhor resultado  para nossos pacientes.</p>
-            </div>
-            <img class="col-12 col-lg-4 order-1 order-lg-2" src="../../assets/media/images/ortopedia.jpeg" alt="Ilustração Ortopedia">
-        </section>
-        
-        <section id="containerMedicos">
-            <div id="containerMedicosScroll" class="row justify-content-center gap-4">
-                <template id="cardMedicoTemplate">
-                    <div class="cardMedico col-12 col-md-6 col-lg-3">
-                        <img src="../../assets/media/images/dr_jose_ronaldo.png" alt="Foto Dr. José Ronaldo">
-                        <h3>Dr. José Ronaldo Silva</h3>
-                        <p>Especialista em Ecocardiografia</p>
-                        <button class="btn btn-primary">Agendar</button>
-                    </div>
-                </template>
-            </div>
-        </section>
+      <img
+        src="../../assets/media/images/banner_ortopedia.png"
+        alt="Banner Ortopedia"
+      />
+      <section
+        class="row text-start justify-content-center align-items-center gap-3 px-4 pt-5"
+      >
+        <h1 class="title col-12 text-center order-0">Ortopedia</h1>
+        <div class="col-12 col-lg-7 order-2 order-lg-1">
+          <h3>O que é Ortopedia?</h3>
+          <p>
+            Ortopedia é a especialidade médica dedicada ao diagnóstico,
+            tratamento e prevenção de doenças e lesões do sistema
+            musculoesquelético. Na PD Clinica, oferecemos cuidados
+            especializados para garantir a saúde dos ossos, articulações,
+            músculos e ligamentos, promovendo a mobilidade e qualidade de vida
+            dos nossos pacientes.
+          </p>
+          <h3>Como Atuamos</h3>
+          <p>
+            Nossa abordagem em Ortopedia é centrada no paciente. Utilizamos
+            avaliações detalhadas e técnicas avançadas para tratar condições
+            ortopédicas, desde fraturas até doenças crônicas. Com uma equipe
+            experiente, oferecemos tratamentos personalizados que incluem
+            terapias conservadoras e intervenções cirúrgicas, visando a
+            recuperação completa e o bem-estar do paciente.
+          </p>
+          <h3>Escolha a PD Clinica</h3>
+          <p>
+            Escolher a PD Clinica para cuidados ortopédicos significa confiar em
+            uma equipe de especialistas dedicados. Oferecemos uma gama completa
+            de serviços ortopédicos, incluindo avaliações de risco cirúrgico,
+            tratamento de doenças crônicas e estratégias preventivas. Nosso
+            compromisso é com a saúde integral do sistema musculoesquelético,
+            combinando atendimento personalizado com técnicas avançadas para
+            garantir o melhor resultado para nossos pacientes.
+          </p>
+        </div>
+        <img
+          class="col-12 col-lg-4 order-1 order-lg-2"
+          src="../../assets/media/images/ortopedia.jpeg"
+          alt="Ilustração Ortopedia"
+        />
+      </section>
 
+      <section id="containerMedicos">
+        <div
+          id="containerMedicosScroll"
+          class="row justify-content-center gap-4"
+        >
+          <template id="cardMedicoTemplate">
+            <div class="cardMedico col-12 col-md-6 col-lg-3">
+              <img
+                src="../../assets/media/images/dr_jose_ronaldo.png"
+                alt="Foto Dr. José Ronaldo"
+              />
+              <h3>Dr. José Ronaldo Silva</h3>
+              <p>Especialista em Ecocardiografia</p>
+              <button class="btn btn-primary">Agendar</button>
+            </div>
+          </template>
+        </div>
+      </section>
 
-        <section id="procedimentosSection" class="row text-center justify-content-center align-items-center gap-3 px-4 py-5 w-100">
-            <h2 class="col-12 mainTitle">Conheça alguns dos nossos procedimentos</h2>
-            <article class="col-5 p-4 d-flex flex-column gap-3 procedimentoCard">
-                <h3 class="py-2 rounded">Imobilizações</h3>
-                <p class="d-block d-md-none">A imobilização é um recurso terapêutico fundamental para estabilizar estruturas ósseas ou articulares após traumas, garantindo o alinhamento correto e o repouso necessário para a cicatrização e consolidação dos tecidos."</p>
-                <p class="d-none d-md-block">A imobilização é um procedimento terapêutico essencial que utiliza talas, gessos ou órteses para estabilizar ossos, articulações e tecidos lesionados, garantindo o alinhamento correto e o repouso necessário para a recuperação. É fundamental no tratamento de fraturas, entorses e inflamações, prevenindo o agravamento de lesões e oferecendo o suporte mecânico indispensável para uma reabilitação segura e eficaz.</p>
-                <img src="/assets/media/images/imobilizacoes_procedimento.png" alt="Paciente realizando um Doppler vascular" class="w-100">
-            </article>
-            <article class="col-5 p-4 d-flex flex-column gap-3 procedimentoCard">
-                <img src="/assets/media/images/artroscopia.png" alt="Paciente realizando uma artroscopia" class="w-100 order-1 order-md-0">
-                <h3 class="py-2 rounded order-0 order-md-1">Artroscopia</h3>
-                <p class="d-block d-md-none order-2">A artroscopia é um procedimento minimamente invasivo utilizado para tratar varizes e veias insuficientes, promovendo a melhora estética e funcional das pernas.</p>
-                <p class="d-none d-md-block order-2">A artroscopia é um tratamento que consiste na aplicação de uma substância esclerosante diretamente nas veias afetadas, causando a sua obliteração e posterior reabsorção pelo organismo. É amplamente utilizada para o tratamento de varizes e veias reticulares, proporcionando alívio dos sintomas e melhora estética. O procedimento é realizado em consultório, com rápida recuperação e resultados eficazes, sendo uma opção segura e eficiente para pacientes com doenças venosas.</p>
-            </article>  
-        </section>
+      <section
+        id="procedimentosSection"
+        class="row text-center justify-content-center align-items-center gap-3 px-4 py-5 w-100"
+      >
+        <h2 class="col-12 mainTitle">
+          Conheça alguns dos nossos procedimentos
+        </h2>
+        <article class="col-5 p-4 d-flex flex-column gap-3 procedimentoCard">
+          <h3 class="py-2 rounded">Imobilizações</h3>
+          <p class="d-block d-md-none">
+            A imobilização é um recurso terapêutico fundamental para estabilizar
+            estruturas ósseas ou articulares após traumas, garantindo o
+            alinhamento correto e o repouso necessário para a cicatrização e
+            consolidação dos tecidos."
+          </p>
+          <p class="d-none d-md-block">
+            A imobilização é um procedimento terapêutico essencial que utiliza
+            talas, gessos ou órteses para estabilizar ossos, articulações e
+            tecidos lesionados, garantindo o alinhamento correto e o repouso
+            necessário para a recuperação. É fundamental no tratamento de
+            fraturas, entorses e inflamações, prevenindo o agravamento de lesões
+            e oferecendo o suporte mecânico indispensável para uma reabilitação
+            segura e eficaz.
+          </p>
+          <img
+            src="/assets/media/images/imobilizacoes_procedimento.png"
+            alt="Paciente realizando um Doppler vascular"
+            class="w-100"
+          />
+        </article>
+        <article class="col-5 p-4 d-flex flex-column gap-3 procedimentoCard">
+          <img
+            src="/assets/media/images/artroscopia.png"
+            alt="Paciente realizando uma artroscopia"
+            class="w-100 order-1 order-md-0"
+          />
+          <h3 class="py-2 rounded order-0 order-md-1">Artroscopia</h3>
+          <p class="d-block d-md-none order-2">
+            A artroscopia é um procedimento minimamente invasivo utilizado para
+            tratar varizes e veias insuficientes, promovendo a melhora estética
+            e funcional das pernas.
+          </p>
+          <p class="d-none d-md-block order-2">
+            A artroscopia é um tratamento que consiste na aplicação de uma
+            substância esclerosante diretamente nas veias afetadas, causando a
+            sua obliteração e posterior reabsorção pelo organismo. É amplamente
+            utilizada para o tratamento de varizes e veias reticulares,
+            proporcionando alívio dos sintomas e melhora estética. O
+            procedimento é realizado em consultório, com rápida recuperação e
+            resultados eficazes, sendo uma opção segura e eficiente para
+            pacientes com doenças venosas.
+          </p>
+        </article>
+      </section>
     </main>
 
     <footer
@@ -211,9 +294,13 @@
             <h2 class="mb-3">Outros Acessos</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
               <li><a href="/blog/index.html">Blog</a></li>
-              <li><a href="/trabalhe-conosco/index.html">Trabalhe Conosco</a></li>
               <li>
-                <a href="/signup/index.html"><i class="bi bi-box-arrow-in-right"></i> Entrar</a>
+                <a href="/trabalhe-conosco/index.html">Trabalhe Conosco</a>
+              </li>
+              <li>
+                <a href="/signup/index.html"
+                  ><i class="bi bi-box-arrow-in-right"></i> Entrar</a
+                >
               </li>
             </ul>
           </div>
@@ -240,5 +327,6 @@
       import { setMedicos } from "./js/especialidade.js";
       setMedicos("Ortopedia");
     </script>
+    <script src="/js/darkmode.js"></script>
   </body>
 </html>

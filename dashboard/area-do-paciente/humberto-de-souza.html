@@ -54,6 +54,14 @@
     ></script>
   </head>
   <body class="bg-light">
+    <button
+      type="button"
+      id="toggleDarkMode"
+      class="btn-outline darkmode-toggle"
+      aria-pressed="false"
+    >
+      <i class="bi bi-moon-stars"></i>
+    </button>
     <div class="logo-container mb-5 bg-teste p-5 text-center rounded-bottom-4">
       <img
         src="/assets/media/logo/logo-dark.png"
@@ -169,7 +177,6 @@
                         class="form-control"
                         id="dataNascimento"
                         value="2000-07-13"
-                        
                       />
                     </div>
 
@@ -246,7 +253,12 @@
               </section>
 
               <div class="d-flex justify-content-end">
-                <button onclick="history.back()" type="submit" class="btn-primary" id="btnSalvar">
+                <button
+                  onclick="history.back()"
+                  type="submit"
+                  class="btn-primary"
+                  id="btnSalvar"
+                >
                   Salvar
                 </button>
               </div>
@@ -264,7 +276,14 @@
                   <h2 class="subTitle txt-light">
                     Paciente: Humberto de Souza
                   </h2>
-                  <button onclick="window.location.href='/dashboard/agendamentos/index.html'" class="btn btn-primary" id="btnNovoAgendamento">
+                  <button
+                    onclick="
+                      window.location.href =
+                        '/dashboard/agendamentos/index.html'
+                    "
+                    class="btn btn-primary"
+                    id="btnNovoAgendamento"
+                  >
                     <i class="bi bi-plus-circle"></i> Novo Agendamento
                   </button>
                 </div>
@@ -324,7 +343,10 @@
                         <span class="badge bg-warning text-dark"
                           >Aguardando ser Chamado</span
                         >
-                        <a href="/dashboard/consulta-medica/index.html" class="btn btn-sm btn-primary">
+                        <a
+                          href="/dashboard/consulta-medica/index.html"
+                          class="btn btn-sm btn-primary"
+                        >
                           <i class="bi bi-pencil"></i> Editar
                         </a>
                       </div>
@@ -353,7 +375,10 @@
                         <span class="badge bg-info text-dark"
                           >Paciente Pendente</span
                         >
-                        <a href="/dashboard/consulta-medica/index.html" class="btn btn-sm btn-primary">
+                        <a
+                          href="/dashboard/consulta-medica/index.html"
+                          class="btn btn-sm btn-primary"
+                        >
                           <i class="bi bi-pencil"></i> Editar
                         </a>
                       </div>
@@ -379,10 +404,11 @@
                       </div>
                       <div class="cardsStatus">
                         <span class="badge bg-success">Pago</span>
-                        <span class="badge bg-success"
-                          >Consulta Realizada</span
+                        <span class="badge bg-success">Consulta Realizada</span>
+                        <a
+                          href="/dashboard/consulta-medica/index.html"
+                          class="btn btn-sm btn-primary"
                         >
-                        <a href="/dashboard/consulta-medica/index.html" class="btn btn-sm btn-primary">
                           <i class="bi bi-pencil"></i> Editar
                         </a>
                       </div>
@@ -397,5 +423,6 @@
     </div>
 
     <script src="/dashboard/area-do-paciente/js/area-do-paciente.js"></script>
+    <script src="/js/darkmode.js"></script>
   </body>
 </html>

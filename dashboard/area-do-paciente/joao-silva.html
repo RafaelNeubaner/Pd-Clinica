@@ -54,6 +54,14 @@
     ></script>
   </head>
   <body class="bg-light">
+    <button
+      type="button"
+      id="toggleDarkMode"
+      class="btn-outline darkmode-toggle"
+      aria-pressed="false"
+    >
+      <i class="bi bi-moon-stars"></i>
+    </button>
     <div class="logo-container mb-5 bg-teste p-5 text-center rounded-bottom-4">
       <img
         src="/assets/media/logo/logo-dark.png"
@@ -266,7 +274,14 @@
               <header class="page-header mb-4">
                 <div class="d-flex justify-content-between align-items-center">
                   <h2 class="subTitle txt-light">Paciente: João Silva</h2>
-                  <button onclick="window.location.href='/dashboard/agendamentos/index.html'" class="btn-primary" id="btnNovoAgendamento">
+                  <button
+                    onclick="
+                      window.location.href =
+                        '/dashboard/agendamentos/index.html'
+                    "
+                    class="btn-primary"
+                    id="btnNovoAgendamento"
+                  >
                     <i class="bi bi-plus-circle"></i> Novo Agendamento
                   </button>
                 </div>
@@ -326,7 +341,10 @@
                         <span class="badge bg-warning text-dark"
                           >Aguardando ser Chamado</span
                         >
-                        <a href="/dashboard/consulta-medica/index.html" class="btn btn-sm btn-primary">
+                        <a
+                          href="/dashboard/consulta-medica/index.html"
+                          class="btn btn-sm btn-primary"
+                        >
                           <i class="bi bi-pencil"></i> Editar
                         </a>
                       </div>
@@ -355,7 +373,10 @@
                         <span class="badge bg-info text-dark"
                           >Paciente Pendente</span
                         >
-                        <a href="/dashboard/consulta-medica/index.html" class="btn btn-sm btn-primary">
+                        <a
+                          href="/dashboard/consulta-medica/index.html"
+                          class="btn btn-sm btn-primary"
+                        >
                           <i class="bi bi-pencil"></i> Editar
                         </a>
                       </div>
@@ -382,7 +403,10 @@
                       <div class="cardsStatus">
                         <span class="badge bg-success">Pago</span>
                         <span class="badge bg-success">Consulta Realizada</span>
-                        <a href="/dashboard/consulta-medica/index.html" class="btn btn-sm btn-primary">
+                        <a
+                          href="/dashboard/consulta-medica/index.html"
+                          class="btn btn-sm btn-primary"
+                        >
                           <i class="bi bi-pencil"></i> Editar
                         </a>
                       </div>
@@ -397,5 +421,6 @@
     </div>
 
     <script src="/dashboard/area-do-paciente/js/area-do-paciente.js"></script>
+    <script src="/js/darkmode.js"></script>
   </body>
 </html>
