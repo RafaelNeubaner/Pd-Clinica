@@ -1,0 +1,65 @@
+
+headerLogo{
+    margin: 20px;
+}
+
+.nav{
+    position: fixed;
+    max-width:fit-content;
+}
+
+main{
+    overflow-y: auto;
+}
+
+main > section{
+    display: none;
+    overflow: visible;
+}
+
+main>section:target{
+    display: block;
+}
+
+header{
+    width: 100%;
+    padding: 20px;
+}
+
+.nav-link{
+    width: 100%;
+    padding: 10px;
+    color: var(--txt-light);
+}
+
+.nav-pills .nav-link.active{
+    background-color: var(--secondary);
+    color: var(--txt-dark);
+}
+
+.nav-pills .nav-link:not(.active):hover{
+    color: var(--secondary);
+}
+
+
+@media (min-width: 768px) {
+    header{
+        width: 250px;
+        padding: 20px;
+    }
+}
+
+/* Aba de pacientes*/
+#pacientes{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+@media (max-width:768px) {
+    .cardsStatus{
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+}
