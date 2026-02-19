@@ -159,7 +159,7 @@
                         </div>
                         <!-- Tabela de Pacientes -->
                         <div class="table-responsive">
-                            <table class="table table-hover">
+                            <table class="table table-hover" id="table-pacientes">
                                 <thead class="table-light">
                                     <tr>
                                         <th>Nome</th>
@@ -169,30 +169,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                  <a href="/dashboard/area-do-paciente/index.html">
-                                    <tr onclick="window.location.href='/dashboard/area-do-paciente/humberto-de-souza.html'" 
-                                        style="cursor: pointer;">
-                                        <td>Humberto de Souza</td>
-                                        <td>325.1***.***-45</td>
-                                        <td>(11) 99999-9999</td>
-                                        <td>humberto@email.com</td>
-                                    </tr>
-                                  </a>
-                                    <tr onclick="window.location.href='/dashboard/area-do-paciente/maria-oliveira.html'" 
-                                        style="cursor: pointer;">
-                                        <td>Maria Oliveira</td>
-                                        <td>123.4***.***-67</td>
-                                        <td>(21) 98888-8888</td>
-                                        <td>maria@email.com</td>
-                                    </tr>
-                                    <tr onclick="window.location.href='/dashboard/area-do-paciente/joao-silva.html'" 
-                                        style="cursor: pointer;">
-                                        <td>João Silva</td>
-                                        <td>987.6***.***-54</td>
-                                        <td>(31) 97777-7777</td>
-                                        <td>joao@email.com</td>
-                                    </tr>
-                                  
+                                  <!-- Iserido pelo js/pacientes.js -->
                                 </tbody>
                             </table>
                         </div>
@@ -388,5 +365,6 @@
     <script src="js/dashboard.js"></script>
     <script src="js/calendar.js" type="module"></script>
     <script src="js/graphs.js" type="module"></script>
+    <script src="js/pacientes.js" type="module"></script>
   </body>
 </html>
