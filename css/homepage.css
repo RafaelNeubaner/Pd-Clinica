@@ -32,6 +32,7 @@ main {
   font-weight: 600;
 }
 
+
 /* HOMEPAGE - HERO SECTION */
 #heroSection {
   margin-top: 150px;
@@ -710,7 +711,7 @@ main {
 
 
 
-/* Fale conosco section */
+/* HOMEPAGE - FALE CONOSCO */
 #contactText img {
   object-fit: cover;
 }
@@ -725,15 +726,27 @@ main {
   color: var(--tertiary);
 }
 
+#formContactForm > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 #formContact label {
   color: var(--tertiary);
 }
 
-#formContact input,
-textarea {
-  color: var(--txt-dark);
-  border-color: var(--tertiary);
+#formContact input::placeholder,
+#formContact textarea::placeholder {
+  color: var(--secondary);
 }
+
+#formContact input,
+#formContact textarea {
+  color: var(--txt-dark);
+  background-color: transparent; 
+}
+
 
 #formContact button {
   padding: 12px 24px;
