@@ -206,6 +206,24 @@ input:focus {
   box-shadow: 0 0 0 0.2rem rgba(110, 159, 216, 0.25) !important;
 }
 
+select {
+  padding: 10px !important;
+  border-radius: 12px !important;
+  border: 2px solid var(--secondary) !important;
+  outline: none !important;
+  background-color: transparent !important;
+  color: var(--txt-light) !important;
+}
+
+select:focus {
+  border: 2px solid var(--primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(110, 159, 216, 0.25) !important;
+}
+
+option {
+  color: var(--txt-light);
+}
+
 @media (max-width: 992px) {
     h1 {
         font-size: 24px;
@@ -267,7 +285,7 @@ input:focus {
     }
     
         .btn-primary {
-          
+            font-size: small;
             padding: 8px 12px;
         }
     

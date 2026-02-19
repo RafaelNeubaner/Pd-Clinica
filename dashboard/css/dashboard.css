@@ -3,13 +3,18 @@ headerLogo{
     margin: 20px;
 }
 
+.nav{
+    position: fixed;
+    max-width:fit-content;
+}
+
 main{
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 main > section{
     display: none;
-    overflow: auto;
+    overflow: visible;
 }
 
 main>section:target{

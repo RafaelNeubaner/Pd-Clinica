@@ -1,0 +1,27 @@
+.consultasList {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.badge {
+    padding: 12px;
+    font-size: 14px;
+    margin: 0 5px 5px 0;
+}
+
+.paddingRight {
+    padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .cardsStatus {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .badge {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
