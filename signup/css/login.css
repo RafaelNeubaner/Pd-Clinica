@@ -120,6 +120,19 @@ img {
     transition: 0.3s;
 }
 
+#goBack{
+    color: var(--secondary);
+    font-size: 20px;
+}
+
+#goBack:hover{
+    color: var(--bg-light);
+    background-color: var(--secondary);
+    border-radius: 8px;
+    padding: 4px 8px;
+    transition: 0.3s;
+}
+
 #botaoEnviar {
     width: max-content;
     margin: auto;

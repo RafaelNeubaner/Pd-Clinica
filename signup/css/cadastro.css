@@ -133,6 +133,20 @@
 
 }
 
+#goBack{
+    color: var(--secondary);
+    font-size: 20px;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+#goBack:hover{
+    color: var(--bg-light);
+    background-color: var(--secondary);
+    border-radius: 8px;
+    padding: 4px 8px;
+    transition: 0.3s;
+}
 
 @media (max-width: 992px) {
   .coverContainer {
