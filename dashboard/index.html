@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PD Clínica</title>
+    <link rel="icon" href="/assets/media/icons/fav-icon.png" type="image/png" />
+    <!--google fonts Lato-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/main.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/dashboard/css/dashboard.css" />
+    <link rel="stylesheet" href="/dashboard/css/chart.css" />
+    <link rel="stylesheet" href="/dashboard/css/configuracoes.css" />
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.js"></script>
+    <script src="js/bootstrap5/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e169e20a67.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+        if(window.location.hash === ""){
+            window.location.hash = "dashboard"
+        }
+    </script>
+  </head>
+  <body class="d-flex flex-column vh-100">
+    <div
+      class="d-flex justify-content-between align-items-center p-3"
+      id="headerLogo"
+    >
+      <a href="/"
+        ><img
+          src="/assets/media/images/logo-light.png"
+          alt="Logo PD Clínica"
+          width="200"
+      /></a>
+      <div>
+        <a class="btn btn-outline" href="/">
+          <i class="bi bi-box-arrow-left"></i> Sair
+        </a>
+        <button class="btn btn-outline d-md-none" id="showMenu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+
+    <main class="d-flex flex-column flex-md-row align-items-start flex-fill">
+      <header class="d-none d-md-flex">
+        <ul
+          class="flex-column justify-content-start gap-3 nav nav-pills flex-md-column mb-auto w-100"
+        >
+          <li class="nav-item">
+            <a class="nav-link active" href="#dashboard"
+              ><i class="bi bi-speedometer2"></i> Dashboard</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#agendamentos"
+              ><i class="bi bi-calendar-fill"></i> Agendamentos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pacientes"
+              ><i class="bi bi-people-fill"></i> Pacientes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#configuracoes"
+              ><i class="bi bi-gear-fill"></i> Configurações</a
+            >
+          </li>
+        </ul>
+      </header>
+
+      <section id="dashboard" class="flex-fill w-100 p-4 min-vh-100">
+        <div class="w-100 h-100 row justify-content-center gap-3">
+          <div id="chart-row" class="w-100 min-vh-100 row gx-md-5">
+            <template id="chartTemplate">
+              <div class="col-12 col-md-6 position-relative chart">
+                <div class="position-absolute top-0 start-0 p-3">
+                  <h4><span class="total-count">68</span> pacientes</h4>
+                  <p class="text-success"><i class="bi bi-graph-up"></i> 3,2% abaixo da média</p>
+                </div>
+                <div class="position-absolute bottom-0 start-0 p-2">
+                  <p>Pacientes novos <span class="new-count">32</span></p>
+                  <p>Pacientes recorrentes <span class="recurring-count">36</span></p>
+                </div>
+                <div class="graphContainer position-absolute bottom-0 end-0 p-2">
+                  <canvas class="graph"> </canvas>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </section>
+
+      <section id="agendamentos" class="flex-fill p-4 h-100">
+        <div id="calendarioAgendamentos" class="h-100"></div>
+      </section>
+
+        <section id="pacientes" class="flex-fill p-4">
+            <div class="pacientes-container">
+                <h2 class="mb-4">Pacientes</h2>
+                <p>Aqui você pode gerenciar seus pacientes.</p>
+                <div class="card">
+                    <div class="card-body p-4">
+                        <!-- Filtro de Busca -->
+                        <div class="mb-4">
+                            <label for="buscaPaciente" >Buscar</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="buscaPaciente" 
+                                placeholder="Buscar por nome ou CPF"
+                            />
+                        </div>
+                        <!-- Tabela de Pacientes -->
+                        <div class="table-responsive">
+                            <table class="table table-hover" id="table-pacientes">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>CPF</th>
+                                        <th>Telefone</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <!-- Iserido pelo js/pacientes.js -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mt-4">
+                            <a class="btn btn-success" id="novoPaciente" href="/dashboard/area-do-paciente/novo-paciente.html">
+                                <i class="bi bi-plus-circle"></i> Novo Paciente
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Configurações -->
+      <section id="configuracoes" class="flex-fill">
+        <div id="configuracoesContainer" >
+        <div
+          class="configAtendimento d-flex flex-row justify-content-between align-items-start"
+        >
+          <fieldset class="d-flex flex-column">
+            <legend class="subTitle">Horário de atendimento</legend>
+
+            <div class="formHorario d-flex">
+              <div class="container">
+                <label for="inicio">Início</label>
+                <input
+                  type="time"
+                  id="inicio"
+                  name="inicio"
+                  class="form-control"
+                />
+              </div>
+              <div class="container">
+                <label for="fim">Término</label>
+                <input type="time" id="fim" name="fim" class="form-control" />
+              </div>
+            </div>
+          </fieldset>
+
+          <button class="btn-primary mt-3 d-none d-md-block">
+            <i class="bi bi-floppy2 me-2"></i>Salvar
+          </button>
+        </div>
+
+        <div class="configEspecialidades">
+          <fieldset class="d-flex flex-column">
+            <legend class="subTitle">Especialidades</legend>
+            <div class="formEspecialidades d-flex flex-column">
+              <div class="containerBusca d-flex">
+                <input
+                  class="form-control"
+                  type="search"
+                  name="buscarEspecialidade"
+                  id="buscarEspecialidade"
+                  placeholder="Buscar especialidade"
+                />
+                <button class="btn btn-primary d-flex align-items-center">
+                  <i class="bi bi-plus-lg"></i> Adicionar
+                </button>
+              </div>
+
+              <div class="lista-especialidades">
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="psicologia"
+                    id="esp_psicologia"
+                  />
+                  <label class="form-check-label" for="esp_psicologia">
+                    Psicologia
+                  </label>
+                </div>
+
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="cardiologia"
+                    id="esp_cardiologia"
+                  />
+                  <label class="form-check-label" for="esp_cardiologia">
+                    Cardiologia
+                  </label>
+                </div>
+
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="ortopedia"
+                    id="esp_ortopedia"
+                  />
+                  <label class="form-check-label" for="esp_ortopedia">
+                    Ortopedia
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="configProcedimentos">
+          <fieldset class="d-flex flex-column">
+            <legend class="subTitle">Procedimentos</legend>
+
+            <div
+              class="formProcedimentos d-flex flex-column"
+            >
+              <div class="containerBusca">
+                <input
+                  type="search"
+                  name="buscarProcedimento"
+                  id="buscarProcedimento"
+                  placeholder="Buscar procedimento"
+                />
+
+                <button class="btn-primary">
+                  <i class="bi bi-plus-lg"></i>Adicionar
+                </button>
+              </div>
+
+              <div class="container form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="procedimento1"
+                />
+                <label class="form-check-label" for="procedimento1"
+                  >Consulta Geral</label
+                >
+              </div>
+
+              <div class="container form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="procedimento2"
+                />
+                <label class="form-check-label" for="procedimento2"
+                  >Engessamento</label
+                >
+              </div>
+
+              <div class="container form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="procedimento3"
+                />
+                <label class="form-check-label" for="procedimento3"
+                  >Exame Raio-X</label
+                >
+              </div>
+
+              <div class="container form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="procedimento4"
+                />
+                <label class="form-check-label" for="procedimento4"
+                  >Ausculta</label
+                >
+              </div>
+
+              <div class="container form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="procedimento5"
+                />
+                <label class="form-check-label" for="procedimento5">ECG</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="d-flex justify-content-end mt-3">
+            <button class="btn-primary d-block d-md-none">
+              <i class="bi bi-floppy2 me-2"></i>Salvar
+            </button>
+        </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/calendar.js" type="module"></script>
+    <script src="js/graphs.js" type="module"></script>
+    <script src="js/pacientes.js" type="module"></script>
+  </body>
+</html>

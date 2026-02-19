@@ -32,8 +32,13 @@
   color: var(--txt-light);
 }
 
-.bg-secondary{
+.bg-secondary {
   background-color: var(--secondary);
+  color: var(--txt-light);
+}
+
+.bg-teste {
+  background-color: var(--primary);
   color: var(--txt-light);
 }
 
@@ -91,6 +96,18 @@
   color: var(--txt-muted);
   border: 2px solid var(--txt-muted);
   pointer-events: none;
+}
+
+.btn-outline.active {
+  background-color: var(--secondary);
+  color: var(--txt-dark);
+  border: 2px solid var(--secondary);
+}
+
+.btn-outline:active {
+  background-color: var(--secondary);
+  color: var(--txt-light);
+  border: 2px solid var(--secondary);
 }
 
 .btn-outline:hover {
@@ -189,6 +206,24 @@ input:focus {
   box-shadow: 0 0 0 0.2rem rgba(110, 159, 216, 0.25);
 }
 
+select {
+  padding: 10px !important;
+  border-radius: 12px !important;
+  border: 2px solid var(--secondary) !important;
+  outline: none !important;
+  background-color: transparent !important;
+  color: var(--txt-light) !important;
+}
+
+select:focus {
+  border: 2px solid var(--primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(110, 159, 216, 0.25) !important;
+}
+
+option {
+  color: var(--txt-light);
+}
+
 @media (max-width: 992px) {
     h1 {
         font-size: 24px;
@@ -250,7 +285,7 @@ input:focus {
     }
     
         .btn-primary {
-          
+            font-size: small;
             padding: 8px 12px;
         }
     
