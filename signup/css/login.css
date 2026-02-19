@@ -23,7 +23,7 @@
     margin-top: -10px;
     margin-bottom: 20px;
     font-size: 20px;
-    color: blue;
+    color: var(--baby-blue);
     cursor: pointer;
 }
 
@@ -32,6 +32,7 @@
     text-align: center;
     margin-top: 20px;
     font-size: 20px;
+    color: var(--baby-blue);
 }
 
 p{

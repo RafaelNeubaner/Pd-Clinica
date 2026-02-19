@@ -17,6 +17,29 @@
   --baby-blue: #6e9fd8;
 }
 
+body {
+  background-color: var(--bg-light);
+  color: var(--txt-light);
+}
+
+body.dark-mode {
+  --txt-light: #f9f9f5;
+  --txt-dark: #0d1b2a;
+  --txt-muted: #b7c0cc;
+  --bg-light: #0d1b2a;
+  --bg-dark: #f9f9f5;
+  --primary: #e3e8f1;
+  --secondary: #6e9fd8;
+  --tertiary: #a3b6ce;
+}
+
+.darkmode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+}
+
 .bg-light {
   background-color: var(--bg-light);
   color: var(--txt-light);
