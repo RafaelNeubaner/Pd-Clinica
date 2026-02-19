@@ -200,19 +200,21 @@ main {
 }
 
 #container-help-carousel #slideLeft {
-  padding: 10px 18px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
 
-#container-help-carousel button:not(.disable) {
-  background-color: var(--primary);
-}
+
 
 #container-help-carousel #slideRight {
-  padding: 10px 18px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
   position: absolute;
   top: 50%;
   right: 0;
@@ -627,13 +629,13 @@ main {
 
 }
 
-#unidades .carousel-control {
+#unidades .carousel-control, #slideRight, #slideLeft {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 12px;
     border: none;
     z-index: 10;
     
@@ -648,7 +650,7 @@ main {
     font-weight: bold;
 }
 
-#unidades .carousel-control:hover {
+#unidades .carousel-control:hover, #slideRight:hover, #slideLeft:hover {
     background-color: var(--bg-dark);
     color: var(--txt-dark);
 
