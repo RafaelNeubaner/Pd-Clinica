@@ -211,6 +211,8 @@ main {
   width: fit-content;
 }
 
+#slideLeft, 
+
 #container-help-carousel #slideLeft {
   width: 40px;
   height: 40px;
@@ -639,6 +641,7 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
   font-weight: bold;
+  color: var(--txt-light)
 }
 
 #unidades .carousel-control:hover,
