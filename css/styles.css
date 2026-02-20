@@ -1,3 +1,4 @@
+/* GLOBAL - RESET */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   font-family: "Lato", sans-serif;
 }
 
+/* GLOBAL - THEME TOKENS */
 :root {
   --txt-light: #0d1b2a;
   --txt-dark: #f9f9f5;
@@ -18,12 +20,14 @@
   --hero: #778da9;
 }
 
+/* GLOBAL - BASE */
 body {
   background-color: var(--bg-light);
   color: var(--txt-light);
   overflow-x: hidden;
 }
 
+/* GLOBAL - DARK MODE OVERRIDES */
 body.dark-mode {
   --txt-light: #c9c9c9;
   --txt-dark: #f9f9f5;
@@ -37,8 +41,7 @@ body.dark-mode {
   --hero: #3b5068;
 }
 
-
-
+/* GLOBAL - BACKGROUND UTILITIES */
 .bg-light {
   background-color: var(--bg-light);
   color: var(--txt-light);

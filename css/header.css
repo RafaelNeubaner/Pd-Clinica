@@ -1,4 +1,4 @@
-
+/* HEADER - CONTAINER */
 .headerContainer {
   width: 100%;
   display: flex;
@@ -10,11 +10,13 @@
   position: fixed;
 }
 
+/* HEADER - NAV */
 .headerNav {
   padding: 24px 32px;
   min-height: auto;
 }
 
+/* HEADER - LOGO */
 .logo {
   max-width: 160px;
   height: auto;
