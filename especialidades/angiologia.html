@@ -51,6 +51,14 @@
     ></script>
   </head>
   <body>
+    <button
+      type="button"
+      id="toggleDarkMode"
+      class="btn-outline darkmode-toggle"
+      aria-pressed="false"
+    >
+      <i class="bi bi-moon-stars"></i>
+    </button>
     <header class="headerContainer">
       <nav class="headerNav navbar navbar-expand-lg w-100">
         <div
@@ -187,8 +195,8 @@
                 src="/assets/media/images/dr_jose_ronaldo.png"
                 alt="Foto Dr. José Ronaldo"
               />
-              <h3>Dr. José Ronaldo Silva</h3>
-              <p>Especialista em Ecocardiografia</p>
+              <h3 style="color: #0d1b2a;">Dr. José Ronaldo Silva</h3>
+              <p style="color: #0d1b2a;">Especialista em Ecocardiografia</p>
               <a href="https://wa.link/c097m2" target="_blank" >
                 <button class="btn btn-primary">Agendar</button>
               </a>
@@ -317,5 +325,6 @@
       import { setMedicos } from "./js/especialidade.js";
       setMedicos("Angiologia");
     </script>
+    <script src="/js/darkmode.js"></script>
   </body>
 </html>

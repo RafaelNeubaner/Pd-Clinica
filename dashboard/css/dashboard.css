@@ -1,11 +1,21 @@
-
-headerLogo{
+#headerLogo {
     margin: 20px;
+    gap: 20px;
 }
 
-header{
+#headerLogo img {
+    flex-shrink: 0;
+}
+
+#toggleDarkMode {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    z-index: auto !important;
+}
+
+header {
     transition: all 0.3s ease;
-    background-color: #fff;
 }
 
 main{
@@ -53,6 +63,41 @@ header{
 #pacientes{
     margin: 0 auto;
     width: 100%;
+    background-color: var(--bg-light);
+}
+
+#pacientes .card{
+    background-color: var(--bg-light);
+}
+
+#pacientes .card-body{
+    background-color: var(--bg-light);
+}
+
+#pacientes .table-responsive{
+    background-color: var(--bg-light);
+}
+
+#pacientes .table-responsive .table thead{
+    background-color: var(--bg-light);
+}
+
+#pacientes .table-responsive .table thead tr{
+    background-color: var(--bg-light);
+}
+
+#pacientes .table-responsive .table thead tr th{
+    background-color: var(--bg-light);
+    color: var(--txt-light);
+}
+
+#pacientes .table-responsive .table tbody tr{
+    background-color: var(--bg-light);
+}
+
+#pacientes .table-responsive .table tbody tr td{
+    background-color: var(--bg-light);
+    color: var(--txt-light);
 }
 
 @media (max-width: 576px){
@@ -69,6 +114,9 @@ header{
     .cardsStatus{
         flex-direction: column;
         gap: 50px;
+    }
+    header{
+        background-color: var(--bg-light);
     }
     
 }

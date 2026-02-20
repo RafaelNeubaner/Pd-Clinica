@@ -15,6 +15,34 @@
   --secondary: #415a77;
   --tertiary: #778da9;
   --baby-blue: #6e9fd8;
+  --hero: #778da9;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--txt-light);
+}
+
+body.dark-mode {
+  --txt-light: #c9c9c9;
+  --txt-dark: #f9f9f5;
+  --txt-muted: #a0a0a0;
+  --bg-light: #111720;
+  --bg-dark: #0d1b2a;
+  --primary: #415a77;
+  --secondary: #1b305c;
+  --tertiary: #859db9;
+  --baby-blue: #1e3a5f;
+  --hero: #3b5068;
+}
+
+
+
+.darkmode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
 }
 
 .bg-light {
@@ -47,6 +75,11 @@
   color: var(--txt-light);
 }
 
+.bg-hero {
+  background-color: var(--hero);
+  color: var(--txt-light);
+}
+
 .txt-light {
   color: var(--txt-light);
 }
@@ -76,13 +109,14 @@
 }
 
 .btn-primary:hover {
-  background-color: var(--txt-light);
-  color: var(--);
+  background-color: var(--bg-dark);
+  color: var(--txt-dark);
+  box-shadow: inset 0 0 0 2px var(--txt-muted);
 }
 
 .btn-outline {
   background-color: transparent;
-  color: var(--secondary);
+  color: var(--tertiary);
   border: 2px solid var(--secondary);
   padding: 8px 22px;
   border-radius: 12px;
@@ -111,7 +145,7 @@
 }
 
 .btn-outline:hover {
-  background-color: var(--txt-light);
+  background-color: var(--bg-dark);
   color: var(--txt-dark);
   border: 2px solid var(--txt-dark);
 }
@@ -194,15 +228,17 @@ input.form-control {
   border: 2px solid var(--secondary);
   outline: none;
   background-color: transparent;
-  color: var(--txt-light);
+  color: var(--txt-light)!important;
 }
 
 input::placeholder {
-  color: var(--txt-muted);
+  color: var(--txt-muted) !important;
 }
 
 input:focus {
+  background-color: var(--text-dark) !important;
   border: 2px solid var(--primary);
+  color: var(--txt-dark);
   box-shadow: 0 0 0 0.2rem rgba(110, 159, 216, 0.25);
 }
 
@@ -213,15 +249,37 @@ select {
   outline: none !important;
   background-color: transparent !important;
   color: var(--txt-light) !important;
+  color-scheme: light !important;
 }
 
 select:focus {
+  background-color: var(--text-dark) !important;
   border: 2px solid var(--primary) !important;
   box-shadow: 0 0 0 0.2rem rgba(110, 159, 216, 0.25) !important;
 }
 
 option {
-  color: var(--txt-light);
+  color: var(--primary) !important;
+}
+
+option:focus {
+  background-color: var(--primary) !important;
+  color: var(--txt-light) !important;
+}
+
+option:hover {
+  background-color: var(--primary) !important;
+  color: var(--txt-light) !important;
+}
+
+option:active {
+  background-color: var(--primary) !important;
+  color: var(--txt-light) !important;
+}
+
+option:checked {
+  background-color: var(--primary) !important;
+  color: var(--txt-light) !important;
 }
 
 @media (max-width: 992px) {

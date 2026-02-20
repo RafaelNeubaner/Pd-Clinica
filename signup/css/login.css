@@ -150,3 +150,19 @@ img {
     }
 
 }
+
+body.dark-mode #esqueceuSenha {
+    color: var(--tertiary);
+}
+
+body.dark-mode #esqueceuSenha:hover {
+    color: var(--baby-blue);
+}
+
+body.dark-mode #cadastrar {
+    color: var(--tertiary);
+}
+
+body.dark-mode #cadastrar:hover {
+    color: var(--baby-blue);
+}
