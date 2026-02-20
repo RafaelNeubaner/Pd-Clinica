@@ -18,19 +18,19 @@
 
 #configuracoes .formHorario label {
   font-size: 20px !important;
-  color: var(--bg-dark) !important;
+  color: var(--txt-light) !important;
 
 }
 
 #configuracoes .formHorario input {
-  border: 2px solid var(--bg-dark) !important;
+  border: 2px solid var(--secondary) !important;
   border-radius: 12px !important;
   padding: 12px   !important;
 }
 
 #configuracoes .formEspecialidades,
 #configuracoes .formProcedimentos {
-  border: 2px solid var(--bg-dark) !important;
+  border: 2px solid var(--secondary) !important;
   border-radius: 12px !important;
   padding: 12px !important;
   gap: 12px !important;
@@ -80,7 +80,7 @@
 }
 
 .form-check-input {
-  border: 2px solid var(--bg-dark) !important;
+  border: 2px solid var(--primary) !important;
   transition: background-color 0.2s, border-color 0.2s !important;
   cursor: pointer !important;
   border-radius: 0.25rem !important;
@@ -104,7 +104,7 @@
 
 .form-check-label {
   font-size: 16px !important;
-  color: var(--bg-dark) !important;
+  color: var(--primary) !important;
   cursor: pointer !important;
 }
 

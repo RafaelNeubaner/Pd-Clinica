@@ -25,7 +25,7 @@ body {
 
 body.dark-mode {
   --txt-light: #c9c9c9;
-  --txt-dark: #bdbdbd;
+  --txt-dark: #f9f9f5;
   --txt-muted: #a0a0a0;
   --bg-light: #111720;
   --bg-dark: #0d1b2a;
@@ -35,6 +35,8 @@ body.dark-mode {
   --baby-blue: #1e3a5f;
   --hero: #3b5068;
 }
+
+
 
 .darkmode-toggle {
   position: fixed;
@@ -114,7 +116,7 @@ body.dark-mode {
 
 .btn-outline {
   background-color: transparent;
-  color: var(--secondary);
+  color: var(--tertiary);
   border: 2px solid var(--secondary);
   padding: 8px 22px;
   border-radius: 12px;
@@ -226,7 +228,7 @@ input.form-control {
   border: 2px solid var(--secondary);
   outline: none;
   background-color: transparent;
-  color: var(--txt-light);
+  color: var(--txt-light)!important;
 }
 
 input::placeholder {
@@ -236,6 +238,7 @@ input::placeholder {
 input:focus {
   background-color: var(--text-dark) !important;
   border: 2px solid var(--primary);
+  color: var(--txt-dark);
   box-shadow: 0 0 0 0.2rem rgba(110, 159, 216, 0.25);
 }
 

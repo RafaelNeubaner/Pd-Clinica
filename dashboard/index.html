@@ -67,18 +67,17 @@
     </script>
   </head>
   <body class="d-flex flex-column vh-100">
-    <button
-      type="button"
-      id="toggleDarkMode"
-      class="btn-outline darkmode-toggle"
-      aria-pressed="false"
-    >
-      <i class="bi bi-moon-stars"></i>
-    </button>
-
     <div class="d-flex justify-content-between align-items-center p-3" id="headerLogo">
-        <a href="/"><img src="/assets/media/images/logo-light.png" alt="Logo PD Clínica" width="200" /></a>
-        <div>
+        <a href="/"><img id="logo" src="/assets/media/images/logo-light.png" alt="Logo PD Clínica" width="200" /></a>
+        <div class="d-flex gap-2 align-items-center">
+            <button
+              type="button"
+              id="toggleDarkMode"
+              class="btn-outline"
+              aria-pressed="false"
+            >
+              <i class="bi bi-moon-stars"></i>
+            </button>
             <button class="btn btn-outline"><i class="bi bi-box-arrow-left"></i> Sair</button>
             <button class="btn btn-outline d-md-none" id="showMenu"><i class="bi bi-list"></i></button>
         </div>
@@ -137,7 +136,7 @@
       <section id="agendamentos" class="flex-fill p-4 h-100">
         <div id="calendarioAgendamentos" class="h-100"></div>
       </section>
-
+      <!-- Pacientes -->
         <section id="pacientes" class="flex-fill p-4">
             <div class="pacientes-container">
                 <h2 class="mb-4">Pacientes</h2>
@@ -155,9 +154,9 @@
                             />
                         </div>
                         <!-- Tabela de Pacientes -->
-                        <div class="table-responsive">
+                        <div class="table-responsive ">
                             <table class="table table-hover" id="table-pacientes">
-                                <thead class="table-light">
+                                <thead class="table">
                                     <tr>
                                         <th>Nome</th>
                                         <th>CPF</th>

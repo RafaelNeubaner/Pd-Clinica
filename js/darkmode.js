@@ -7,6 +7,16 @@ function applyDarkMode(isDark) {
     darkModeToggle.setAttribute("aria-pressed", isDark ? "true" : "false");
     darkModeToggle.innerHTML = isDark ? '<i class="bi bi-brightness-alt-high-fill"></i>' : '<i class="bi bi-moon-stars"></i>';
   }
+  
+  // Trocar o logo baseado no modo escuro
+  const logo = document.getElementById("logo");
+  if (logo) {
+    if (isDark) {
+      logo.src = logo.src.replace("light", "dark");
+    } else {
+      logo.src = logo.src.replace("dark", "light");
+    }
+  }
 }
 
 if (darkModeToggle) {
