@@ -17,6 +17,8 @@ function buildGraph(elementId, labels, data) {
             }]
         },
         options: {
+            responsive: true,
+            maintainAspectRatio: false,
             plugins: {
                 legend: { display: false },
                 datalabels: {
