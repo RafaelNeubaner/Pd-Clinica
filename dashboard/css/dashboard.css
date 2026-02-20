@@ -7,13 +7,6 @@
     flex-shrink: 0;
 }
 
-#toggleDarkMode {
-    position: static !important;
-    top: auto !important;
-    right: auto !important;
-    z-index: auto !important;
-}
-
 header {
     transition: all 0.3s ease;
 }
