@@ -11,7 +11,6 @@
 }
 
 .headerNav {
-
   padding: 24px 32px;
   min-height: auto;
 }
@@ -33,7 +32,7 @@
 
 @media (min-width: 992px) {
   .headerNav {
-    padding: 48px 128px 32px 128px;
+    padding: 48px 80px 32px 80px;
     min-height: 163px;
   }
 
