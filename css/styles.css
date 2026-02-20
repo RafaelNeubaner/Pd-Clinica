@@ -27,12 +27,12 @@ body.dark-mode {
   --txt-light: #c9c9c9;
   --txt-dark: #bdbdbd;
   --txt-muted: #a0a0a0;
-  --bg-light: #0d1b2a;
+  --bg-light: #111720;
   --bg-dark: #0d1b2a;
   --primary: #415a77;
-  --secondary: #2f3e5f;
+  --secondary: #1b305c;
   --tertiary: #859db9;
-  --baby-blue: #8fbfff;
+  --baby-blue: #1e3a5f;
   --hero: #3b5068;
 }
 
@@ -230,10 +230,11 @@ input.form-control {
 }
 
 input::placeholder {
-  color: var(--txt-muted);
+  color: var(--txt-muted) !important;
 }
 
 input:focus {
+  background-color: var(--text-dark) !important;
   border: 2px solid var(--primary);
   box-shadow: 0 0 0 0.2rem rgba(110, 159, 216, 0.25);
 }
@@ -245,15 +246,37 @@ select {
   outline: none !important;
   background-color: transparent !important;
   color: var(--txt-light) !important;
+  color-scheme: light !important;
 }
 
 select:focus {
+  background-color: var(--text-dark) !important;
   border: 2px solid var(--primary) !important;
   box-shadow: 0 0 0 0.2rem rgba(110, 159, 216, 0.25) !important;
 }
 
 option {
-  color: var(--txt-light);
+  color: var(--primary) !important;
+}
+
+option:focus {
+  background-color: var(--primary) !important;
+  color: var(--txt-light) !important;
+}
+
+option:hover {
+  background-color: var(--primary) !important;
+  color: var(--txt-light) !important;
+}
+
+option:active {
+  background-color: var(--primary) !important;
+  color: var(--txt-light) !important;
+}
+
+option:checked {
+  background-color: var(--primary) !important;
+  color: var(--txt-light) !important;
 }
 
 @media (max-width: 992px) {

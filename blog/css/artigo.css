@@ -41,7 +41,8 @@
 
 
 #artigo .dicas {
-  background-color: var(--baby-blue);
+  background-color: #6e9fd8;
+  color: black;
   padding: 24px;
   border-radius: 12px;
 }

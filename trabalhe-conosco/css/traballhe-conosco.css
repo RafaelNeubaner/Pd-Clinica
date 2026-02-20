@@ -112,7 +112,7 @@ section {
 }
 
 .cardVagas.dark{
-    background-color: var(--bg-dark);
+    background-color: var(--primary);
     color: var(--txt-dark);
 }
 

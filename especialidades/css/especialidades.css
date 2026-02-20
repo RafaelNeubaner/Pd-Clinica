@@ -54,7 +54,7 @@
 }
 
 #especialidades .card .card-text {
-  color: var(--txt-light);
+  color: var(--txt-dark);
   padding: 12px;
 }
 
