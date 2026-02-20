@@ -38,13 +38,6 @@ body.dark-mode {
 
 
 
-.darkmode-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1100;
-}
-
 .bg-light {
   background-color: var(--bg-light);
   color: var(--txt-light);
