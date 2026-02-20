@@ -3,9 +3,9 @@ headerLogo{
     margin: 20px;
 }
 
-.nav{
-    position: fixed;
-    max-width:fit-content;
+header{
+    transition: all 0.3s ease;
+    background-color: #fff;
 }
 
 main{
@@ -53,6 +53,15 @@ header{
 #pacientes{
     margin: 0 auto;
     width: 100%;
+}
+
+@media (max-width: 576px){
+    header{
+        position: absolute;
+        z-index: 1000;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+        border-radius: 0 0 12px 12px;
+    }
 }
 
 

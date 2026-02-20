@@ -4,6 +4,7 @@
   flex-direction: column !important;
   gap: 24px !important;
   padding: 24px !important;
+  width: 100% !important;
 }
 
 #configuracoes .configAtendimento .formHorario .container {
