@@ -769,7 +769,6 @@ main {
 
 .faqItem summary::-webkit-details-marker {
   display: none;
-  /* Spec para Safari antigo */
 }
 
 .faqItem[open] summary::marker {
