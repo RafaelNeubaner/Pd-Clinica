@@ -21,6 +21,7 @@
 body {
   background-color: var(--bg-light);
   color: var(--txt-light);
+  overflow-x: hidden;
 }
 
 body.dark-mode {
