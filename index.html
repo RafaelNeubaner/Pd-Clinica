@@ -140,31 +140,38 @@
 
     <main class="d-flex flex-column align-items-center">
       <!-- Hero Section -->
-      <section class="container-fluid w-100 bg-hero" id="heroSection">
-        <div class="heroText">
-          <p id="frase1Hero">
-            Saiba tudo o que a PD Clínica oferece para cuidar da sua saúde
-          </p>
-          <p id="frase2Hero">
-            Cuidamos da sua saúde com atenção, tecnologia e profissionais
-            preparados para acompanhar você em cada etapa.
-          </p>
-          <a
-            href="#ctaSection"
-            class="btn btn-primary d-none d-sm-inline-block d-md-inline-block d-lg-inline-block"
-            >Saiba Mais</a
+      <section class="container-fluid w-100 bg-hero d-block" id="heroSection">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-md-6 heroText">
+            <p id="frase1Hero">
+              Saiba tudo o que a PD Clínica oferece para cuidar da sua saúde
+            </p>
+            <p class="d-none d-md-block" id="frase2Hero">
+              Cuidamos da sua saúde com atenção, tecnologia e profissionais
+              preparados para acompanhar você em cada etapa.
+            </p>
+            <a
+              href="#ctaSection"
+              class="btn btn-primary d-none d-md-inline-block"
+              >Saiba Mais</a
+            >
+          </div>
+          <div
+            class="col-12 d-flex flex-column align-items-end col-md-6 order-2 mb-sm-3 mb-md-0"
           >
+            <img
+              src="assets/media/images/img-hero-home.png"
+              alt="Atendimento de qualidade"
+              class="mb-sm-3 mb-md-0"
+            />
+          </div>
         </div>
-        <img
-          src="assets/media/images/img-hero-home.png"
-          alt="Atendimento de qualidade"
-        />
-        <a
-          class="btn btn-primary d-sm-none d-md-none d-lg-none"
+        <div class="d-md-none text-center">
+          <a
+          class="btn btn-primary d-md-none"
           href="#ctaSection"
-          id="button2"
-          >Saiba Mais</a
-        >
+          id="button2">Saiba Mais</a>
+        </div>
       </section>
       <!-- Como podemos te ajudar Section -->
       <section
