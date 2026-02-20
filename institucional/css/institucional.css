@@ -16,9 +16,14 @@ section {
     margin: 0 auto;
 }
 
+
+a{
+    text-decoration: none;
+}
+
 #heroSection{
     width: 100%;
-    max-height: 800px;
+    max-height: 600px;
     max-width: 1920px;
     position: relative;
     overflow: hidden;
@@ -57,7 +62,7 @@ section {
     }
 }
 
-#historia{
+#historia, #missaoValores, #estrutura {
     padding: 0 24px;
 }
 
@@ -306,6 +311,9 @@ section {
 }
 
 /* --- INSTITUCIONAL | Cta Estrutura --- */
+#ctaEstruturaSec {
+    margin-bottom: 24px;
+}
 #ctaEstrutura {
     background-color: var(--primary);
     padding: 48px 24px;
@@ -315,10 +323,9 @@ section {
     align-items: center;
     justify-content: center;
     gap: 64px;
-    width: 100%; 
-    max-width: 1191px;
-    margin-bottom: 24px;
-    
+    width: 100%;
+    margin: 0 32px;
+    margin-bottom: 24px;   
 }
 
 #ctaEstrutura h2 {
@@ -328,6 +335,7 @@ section {
 
 @media (max-width: 768px) {
     #ctaEstrutura {
+        margin: 0 24px;
         padding: 32px 12px;
         gap: 32px;
     }
@@ -394,7 +402,7 @@ section {
         gap: 22px;
         margin-bottom: 32px;
     }
-    #missaoValores, #historia {
+    #missaoValores, #historia, #estrutura, #ctaEstruturaSec {
         padding: 0 128px;
     }
     #missaoValores img {
