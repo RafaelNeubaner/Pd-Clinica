@@ -240,39 +240,7 @@ select {
   border-radius: 12px !important;
   border: 2px solid var(--secondary) !important;
   outline: none !important;
-  background-color: transparent !important;
-  color: var(--txt-light) !important;
-  color-scheme: light !important;
-}
-
-select:focus {
-  background-color: var(--text-dark) !important;
-  border: 2px solid var(--primary) !important;
-  box-shadow: 0 0 0 0.2rem rgba(110, 159, 216, 0.25) !important;
-}
-
-option {
-  color: var(--primary) !important;
-}
-
-option:focus {
-  background-color: var(--primary) !important;
-  color: var(--txt-light) !important;
-}
-
-option:hover {
-  background-color: var(--primary) !important;
-  color: var(--txt-light) !important;
-}
-
-option:active {
-  background-color: var(--primary) !important;
-  color: var(--txt-light) !important;
-}
-
-option:checked {
-  background-color: var(--primary) !important;
-  color: var(--txt-light) !important;
+  background-color: var(--bg-light) !important;
 }
 
 @media (max-width: 992px) {
