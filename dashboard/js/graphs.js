@@ -22,7 +22,7 @@ function buildGraph(elementId, labels, data) {
             plugins: {
                 legend: { display: false },
                 datalabels: {
-                    color: '#000000',
+                    color: '#ffffff',
                     anchor: 'end', 
                     align: 'start', 
                     offset: 5,
