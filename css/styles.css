@@ -216,11 +216,11 @@ h3 {
 
 input, textarea, 
 input.form-control {
-  padding: 10px;
-  border-radius: 12px;
-  border: 2px solid var(--secondary);
+  padding: 10px!important;
+  border-radius: 12px!important;
+  border: 2px solid var(--secondary)!important;
   outline: none;
-  background-color: transparent;
+  background-color: transparent!important;
   color: var(--txt-light)!important;
 }
 
@@ -230,13 +230,14 @@ input::placeholder {
 
 input:focus {
   background-color: var(--text-dark) !important;
-  border: 2px solid var(--primary);
-  color: var(--txt-dark);
+  border: 2px solid var(--primary)!important;
+  color: var(--txt-dark)!important;
   box-shadow: 0 0 0 0.2rem rgba(110, 159, 216, 0.25);
 }
 
 select {
   padding: 10px !important;
+  color: var(--txt-muted) !important;
   border-radius: 12px !important;
   border: 2px solid var(--secondary) !important;
   outline: none !important;

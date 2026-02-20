@@ -13,6 +13,10 @@
     padding-right: 20px;
 }
 
+.card-body {
+    background-color: var(--bg-light)!important;
+}
+
 @media (max-width: 768px) {
     .cardsStatus {
         display: flex;
