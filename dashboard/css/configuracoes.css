@@ -1,19 +1,19 @@
 
 #configuracoesContainer {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 24px !important;
-  padding: 24px !important;
-  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  width: 100%;
 }
 
 #configuracoes .configAtendimento .formHorario .container {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    padding: 12px 0 !important;
-    margin-right: 24px !important;
-    gap: 8px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0;
+    margin-right: 24px;
+    gap: 8px;
   }
 
 #configuracoes .formHorario label {
@@ -38,45 +38,45 @@
 
 #configuracoes .formEspecialidades .containerBusca,
 #configuracoes .formProcedimentos .containerBusca {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: space-between !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #configuracoes .formEspecialidades .containerBusca input,
 #configuracoes .formProcedimentos .containerBusca input {
-  width: 100% !important;
-  max-width: 400px !important;
-  padding: 8px !important;
-  border: none !important;
-  border-bottom: 1px solid var(--bg-dark) !important;
-  border-radius: 0px !important;
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid var(--bg-dark);
+  border-radius: 0px;
 }
 
 #configuracoes .formEspecialidades .containerBusca input:focus,
 #configuracoes .formProcedimentos .containerBusca input:focus {
-  outline: none   !important;
-  border-bottom: 2px solid var(--primary) !important;
+  outline: none  ;
+  border-bottom: 2px solid var(--primary);
 }
 
 #configuracoes .formEspecialidades .containerBusca .btn-primary,
 #configuracoes .formProcedimentos .containerBusca .btn-primary {
-  display: flex !important;
-  padding: 4px 12px !important;
-  justify-content: center !important;
-  align-items: center !important;
-  font-size: 12px !important;
-  gap: 6px !important;
+  display: flex;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  gap: 6px;
 }
 
 #configuracoes .formEspecialidades .form-check,
 #configuracoes .formProcedimentos .form-check {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  gap: 8px !important;
-  max-height: 300px !important;
-  overflow-y: auto !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 .form-check-input {
@@ -87,19 +87,19 @@
 }
 
 .form-check-input:checked {
-  background-color: var(--bg-dark) !important;
-  border-color: var(--bg-dark) !important;
-  border-color: #0d47a1 !important;
+  background-color: var(--bg-dark);
+  border-color: var(--bg-dark);
+  border-color: #0d47a1;
 
 
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%236e9fd8' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e") !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%236e9fd8' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
 }
 
 
 .form-check-input:focus {
-  border-color: #0d47a1 !important;
+  border-color: #0d47a1;
 
-  box-shadow: 0 0 0 0.2rem rgba(13, 71, 161, 0.25) !important;
+  box-shadow: 0 0 0 0.2rem rgba(13, 71, 161, 0.25);
 }
 
 .form-check-label {
@@ -110,19 +110,19 @@
 
 @media(max-width: 576px) {
   #configuracoes .configAtendimento .formHorario .container {
-    display: flex !important;
-    flex-direction: row !important;
-    padding: 12px 0 !important;
-    margin-right: 24px !important;
-    gap: 8px !important;
+    display: flex;
+    flex-direction: row;
+    padding: 12px 0;
+    margin-right: 24px;
+    gap: 8px;
   }
 
   #configuracoes .configAtendimento .formHorario input {
-    padding: 12px !important;
-    width: 80px !important;
+    padding: 12px;
+    width: 80px;
   }
 
   #configuracoes .formHorario label {
-    font-size: 16px !important;
+    font-size: 16px;
   }
 }
