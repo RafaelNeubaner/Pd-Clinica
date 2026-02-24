@@ -183,7 +183,8 @@ main {
 }
 
 .helpCard {
-  height: 270px;
+  height: fit-content;
+  min-height: 270px;
   max-width: 270px;
   border: 2px solid var(--secondary);
   border-radius: 12px;
@@ -202,7 +203,7 @@ main {
   border-radius: 8px;
 }
 
-.iconHelp img {
+.iconHelp {
   height: 40px;
   width: 40px;
 }

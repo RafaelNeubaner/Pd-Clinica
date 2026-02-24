@@ -24,6 +24,18 @@
     font-weight: bold;
 }
 
+.chart .totalCountContainer{
+    top: 0;
+    left:0;
+}
+
+.chart .pacientesCountContainer{
+    bottom: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+
 @media (max-width: 768px) {
     .chart h4 {
         font-size: 20px;
@@ -41,10 +53,20 @@
         font-size: 16px;
     }
 
-    .chart .graphContainer {
-        max-width: 100% !important;
-        height: 120px !important;
-        margin-top: 16px;
+    .chart .pacientesCountContainer{
+        top: 0;
+        right: 0;
+    }
+
+    .chart .graphContainer{
+        width: 80%;
+    }
+    
+    .chart .graphContainer{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
