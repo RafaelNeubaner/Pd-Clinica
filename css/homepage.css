@@ -138,14 +138,13 @@ main {
 @media (max-width: 576px) {
   #heroSection {
     margin-top: 80px;
-    flex-direction: column;
     padding: 32px;
-    gap: 12px;
   }
 
   #heroSection img {
     width: 100%;
     height: auto;
+    margin-bottom: 12px;
   }
 
   .heroText #frase1Hero {
