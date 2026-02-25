@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-light);
+  background-color: var(--bg-header);
   border-radius: 0 0 12px 12px;
   z-index: 1000;
   position: fixed;
@@ -52,7 +52,7 @@
 .headerNav ul li a {
   font-family: "Lato", sans-serif;
   font-size: 20px;
-  color: #415a77;
+  color: var(--txt-light);
 
   position: relative;
   transition: color 0.3s ease;
