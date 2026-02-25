@@ -28,12 +28,10 @@ footer #socialSection a {
   border-radius: 4px;
 }
 
-footer #socialSection {
-    min-width: 250px;
-}
+
 
 footer #socialSection i {
-  font-size: 38px;
+  font-size: 22px;
 }
 
 footer button {
@@ -45,7 +43,10 @@ footer button {
 }
 
 @media (min-width: 992px) {
-    footer img{
-        max-width: 250px;
-    }
+  footer img{
+      max-width: 250px;
+  }
+  footer #socialSection {
+    max-width: 250px;
+  }
 }
