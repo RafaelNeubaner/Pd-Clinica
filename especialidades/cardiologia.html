@@ -189,7 +189,7 @@
       <section id="containerMedicos">
         <div id="containerMedicosScroll" class="d-flex flex-wrap gap-4">
           <template id="cardMedicoTemplate">
-            <div class="cardMedico col">
+            <article class="cardMedico col">
               <img
                 src="/assets/media/images/dr_jose_ronaldo.png"
                 alt="Foto Dr. José Ronaldo"
@@ -199,7 +199,7 @@
               <a href="https://wa.link/906jde" target="_blank">
                 <button class="btn btn-primary">Agendar</button>
               </a>
-            </div>
+            </article>
           </template>
         </div>
       </section>
@@ -211,7 +211,7 @@
         <h2 class="col-12 mainTitle">
           Conheça alguns dos nossos procedimentos
         </h2>
-        <article class="col-5 p-4 d-flex flex-column gap-3 procedimentoCard">
+        <figcaption class="col-5 p-4 d-flex flex-column gap-3 procedimentoCard">
           <h3 class="py-2 rounded subTitle">Eletrocardiograma</h3>
           <p class="d-block d-md-none">
             O eletrocardiograma (ECG) é um exame essencial que registra a
@@ -234,8 +234,8 @@
             alt="Paciente realizando um eletrocardiograma"
             class="w-100"
           />
-        </article>
-        <article class="col-5 p-4 d-flex flex-column gap-3 procedimentoCard">
+        </figcaption>
+        <figcaption class="col-5 p-4 d-flex flex-column gap-3 procedimentoCard">
           <img
             src="/assets/media/images/ecocardiograma-procedimento.webp"
             alt="Paciente realizando um ecocardiograma"
@@ -260,14 +260,14 @@
             informações detalhadas e seguras para um cuidado mais preciso e
             eficaz.
           </p>
-        </article>
+        </figcaption>
       </section>
     </main>
 
     <footer
       class="d-flex flex-column justify-content-center justify-content-lg-between w-100 px-5 py-4"
     >
-      <div
+      <section
         class="col-12 row justify-content-center justify-content-lg-between mb-4"
       >
         <div
@@ -285,7 +285,7 @@
             Tudo o que sua saúde precisa em um só lugar.
           </h2>
         </div>
-        <div class="d-flex col-12 col-lg-auto justify-content-between">
+        <article class="d-flex col-12 gap-5 col-lg-auto justify-content-between">
           <div class="col-6">
             <h2 class="mb-3">Nossa Clínica</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
@@ -296,7 +296,7 @@
             </ul>
           </div>
 
-          <div class="">
+          <div class="col-6">
             <h2 class="mb-3">Outros Acessos</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
               <li><a href="/blog/index.html">Blog</a></li>
@@ -304,27 +304,27 @@
                 <a href="/trabalhe-conosco/index.html">Trabalhe Conosco</a>
               </li>
               <li>
-                <a href="#"><i class="bi bi-box-arrow-in-right"></i> Entrar</a>
+                <a href="/signup/index.html"
+                  ><i class="bi bi-box-arrow-in-right"></i> Entrar</a
+                >
               </li>
             </ul>
           </div>
-        </div>
-        <div class="col-12 col-lg-auto mt-4 flex" id="socialSection">
+        </article>
+        <article class="col-12 col-lg-auto mt-4 flex" id="socialSection">
           <div class="col-auto d-flex gap-2 justify-content-between">
             <a href="#"><i class="bi bi-whatsapp mx-2"></i></a>
             <a href="#"><i class="bi bi-linkedin mx-2"></i></a>
             <a href="#"><i class="bi bi-instagram mx-2"></i></a>
             <a href="#"><i class="bi bi-envelope mx-2"></i></a>
           </div>
-          <button class="btn-outline mt-4 w-100">Trabalhe Conosco</button>
-        </div>
-      </div>
+          <a href="/trabalhe-conosco/index.html" class="btn btn-outline mt-4 w-100">Trabalhe Conosco</a>
+        </article>
+      </section>
       <div id="divider" class="col-12 my-2"></div>
-      <div class="col-12">
-        <p class="text-center">
-          © PD Clinica 2025 | Desenvolvido por Pablo, Pedro e Rafael.
-        </p>
-      </div>
+      <p class="col-12 text-center">
+        © PD Clinica 2025 | Desenvolvido por Pablo, Pedro e Rafael.
+      </p>
     </footer>
 
     <script type="module">

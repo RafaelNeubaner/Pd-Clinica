@@ -152,37 +152,35 @@
     <main
       class="row g-0 w-100 justify-content-center justify-content-lg-between align-items-start my-4"
     >
-      <div class="order-1 order-lg-0 col-12 col-lg-8">
-        <section
-          id="blogPosts"
-          class="row g-2 gap-4 justify-content-between mt-4"
-        >
-          <template id="blogPostTemplate">
-            <div class="blogPost col-12 col-md-6 row">
-              <img
-                src="/assets/media/images/heart-image.png"
-                alt="Imagem do post 1"
-                class="col-6 mb-3"
-              />
-              <div
-                class="col-6 d-flex flex-column justify-content-center text-center"
-              >
-                <h3 class="subTitle">
-                  Estudo de Perfusão Miocárdica em Obesos sem Doença Cardíaca
-                  Isquêmica Conhecida
-                </h3>
-                <p class="postDate">22/04/2024</p>
-                <p class="postExcerpt">
-                  O estudo explica como a obesidade pode impactar o coração
-                  mesmo sem a presença de doenças cardíacas aparentes.
-                </p>
-                <a href="artigo.html" class="btn btn-primary">Saiba mais</a>
-              </div>
+      <section
+        id="blogPosts"
+        class="order-1 order-lg-0 col-12 col-lg-8 row g-2 gap-4 justify-content-between mt-4"
+      >
+        <template id="blogPostTemplate">
+          <article class="blogPost col-12 col-md-6 row">
+            <img
+              src="/assets/media/images/heart-image.png"
+              alt="Imagem do post 1"
+              class="col-6 mb-3"
+            />
+            <div
+              class="col-6 d-flex flex-column justify-content-center text-center"
+            >
+              <h3 class="subTitle">
+                Estudo de Perfusão Miocárdica em Obesos sem Doença Cardíaca
+                Isquêmica Conhecida
+              </h3>
+              <p class="postDate">22/04/2024</p>
+              <p class="postExcerpt">
+                O estudo explica como a obesidade pode impactar o coração
+                mesmo sem a presença de doenças cardíacas aparentes.
+              </p>
+              <a href="artigo.html" class="btn btn-primary">Saiba mais</a>
             </div>
-          </template>
-        </section>
-      </div>
-      <div
+          </article>
+        </template>
+      </section>
+      <aside
         class="order-0 order-lg-1 col-12 col-lg-3 d-flex flex-column gap-2 p-4"
         id="filterForm"
       >
@@ -219,13 +217,13 @@
         </select>
 
         <button class="btn btn-primary btnFilter">Filtrar</button>
-      </div>
+      </aside>
     </main>
 
     <footer
       class="d-flex flex-column justify-content-center justify-content-lg-between w-100 px-5 py-4"
     >
-      <div
+      <section
         class="col-12 row justify-content-center justify-content-lg-between mb-4"
       >
         <div
@@ -243,18 +241,18 @@
             Tudo o que sua saúde precisa em um só lugar.
           </h2>
         </div>
-        <div class="d-flex col-12 col-lg-auto justify-content-between">
+        <article class="d-flex col-12 gap-5 col-lg-auto justify-content-between">
           <div class="col-6">
             <h2 class="mb-3">Nossa Clínica</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
-              <li><a href="/index.html">Home</a></li>
+              <li><a href="#">Home</a></li>
               <li><a href="/institucional/index.html">Institucional</a></li>
               <li><a href="/convenios/index.html">Convênios</a></li>
               <li><a href="/especialidades/index.html">Especialidades</a></li>
             </ul>
           </div>
 
-          <div class="">
+          <div class="col-6">
             <h2 class="mb-3">Outros Acessos</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
               <li><a href="/blog/index.html">Blog</a></li>
@@ -268,23 +266,21 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="col-12 col-lg-auto mt-4 flex" id="socialSection">
+        </article>
+        <article class="col-12 col-lg-auto mt-4 flex" id="socialSection">
           <div class="col-auto d-flex gap-2 justify-content-between">
             <a href="#"><i class="bi bi-whatsapp mx-2"></i></a>
             <a href="#"><i class="bi bi-linkedin mx-2"></i></a>
             <a href="#"><i class="bi bi-instagram mx-2"></i></a>
             <a href="#"><i class="bi bi-envelope mx-2"></i></a>
           </div>
-          <button class="btn-outline mt-4 w-100">Trabalhe Conosco</button>
-        </div>
-      </div>
+          <a href="/trabalhe-conosco/index.html" class="btn btn-outline mt-4 w-100">Trabalhe Conosco</a>
+        </article>
+      </section>
       <div id="divider" class="col-12 my-2"></div>
-      <div class="col-12">
-        <p class="text-center">
-          © PD Clinica 2025 | Desenvolvido por Pablo, Pedro e Rafael.
-        </p>
-      </div>
+      <p class="col-12 text-center">
+        © PD Clinica 2025 | Desenvolvido por Pablo, Pedro e Rafael.
+      </p>
     </footer>
 
     <script src="./js/blog.js" type="module"></script>

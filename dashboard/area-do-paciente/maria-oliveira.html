@@ -55,7 +55,7 @@
   </head>
   <body class="bg-light">
     <!-- HEADER -->
-    <div
+    <header
       class="logo-container mb-5 bg-teste p-5 text-center rounded-bottom-4 d-flex justify-content-between align-items-center"
     >
       <img
@@ -71,7 +71,7 @@
       >
         <i class="bi bi-moon-stars"></i>
       </button>
-    </div>
+    </header>
     <div class="container-fluid">
       <div class="row">
         <!-- Sidebar -->
@@ -106,7 +106,7 @@
 
                 <form id="formPerfil">
                   <div class="row g-3">
-                    <div class="col-md-6">
+                    <fieldset class="col-md-6">
                       <label for="nome" class="form-label txt-light"
                         >Nome</label
                       >
@@ -117,9 +117,9 @@
                         placeholder="Maria"
                         required
                       />
-                    </div>
+                    </fieldset>
 
-                    <div class="col-md-6">
+                    <fieldset class="col-md-6">
                       <label for="sobrenome" class="form-label txt-light"
                         >Sobrenome</label
                       >
@@ -130,9 +130,9 @@
                         placeholder="Oliveira"
                         required
                       />
-                    </div>
+                    </fieldset>
 
-                    <div class="col-md-6">
+                    <fieldset class="col-md-6">
                       <label for="email" class="form-label txt-light"
                         >Email</label
                       >
@@ -143,9 +143,9 @@
                         placeholder="maria@email.com"
                         required
                       />
-                    </div>
+                    </fieldset>
 
-                    <div class="col-md-6">
+                    <fieldset class="col-md-6">
                       <label for="telefone" class="form-label txt-light"
                         >Telefone</label
                       >
@@ -156,9 +156,9 @@
                         placeholder="(21) 98888-8888"
                         required
                       />
-                    </div>
+                    </fieldset>
 
-                    <div class="col-md-6">
+                    <fieldset class="col-md-6">
                       <label for="cpf" class="form-label txt-light">CPF</label>
                       <input
                         type="text"
@@ -167,9 +167,9 @@
                         placeholder="123.456.789-67"
                         required
                       />
-                    </div>
+                    </fieldset>
 
-                    <div class="col-md-6">
+                    <fieldset class="col-md-6">
                       <label for="dataNascimento" class="form-label txt-light"
                         >Data de Nascimento</label
                       >
@@ -179,9 +179,9 @@
                         id="dataNascimento"
                         value="1995-03-22"
                       />
-                    </div>
+                    </fieldset>
 
-                    <div class="col-md-6">
+                    <fieldset class="col-md-6">
                       <label for="sexo" class="form-label txt-light"
                         >Sexo</label
                       >
@@ -191,7 +191,7 @@
                         <option value="feminino">Feminino</option>
                         <option value="outro">Outro</option>
                       </select>
-                    </div>
+                    </fieldset>
                   </div>
                 </form>
               </section>
@@ -202,7 +202,7 @@
 
                 <form id="formEndereco">
                   <div class="row g-3">
-                    <div class="col-md-6">
+                    <fieldset class="col-md-6">
                       <label for="cep" class="form-label txt-light">CEP</label>
                       <input
                         type="text"
@@ -211,9 +211,9 @@
                         placeholder="00000-000"
                         required
                       />
-                    </div>
+                    </fieldset>
 
-                    <div class="col-md-6">
+                    <fieldset class="col-md-6">
                       <label for="cidade" class="form-label txt-light"
                         >Cidade</label
                       >
@@ -224,9 +224,9 @@
                         placeholder="Rio de Janeiro"
                         required
                       />
-                    </div>
+                    </fieldset>
 
-                    <div class="col-md-6">
+                    <fieldset class="col-md-6">
                       <label for="rua" class="form-label txt-light">Rua</label>
                       <input
                         type="text"
@@ -235,9 +235,9 @@
                         placeholder="Rua das Flores"
                         required
                       />
-                    </div>
+                    </fieldset>
 
-                    <div class="col-md-6">
+                    <fieldset class="col-md-6">
                       <label for="numero" class="form-label txt-light"
                         >Número</label
                       >
@@ -248,7 +248,7 @@
                         placeholder="123"
                         required
                       />
-                    </div>
+                    </fieldset>
                   </div>
                 </form>
               </section>
@@ -289,7 +289,7 @@
               </header>
 
               <!-- Filtros -->
-              <div class="mb-4">
+              <section class="mb-4">
                 <div
                   class="btn-group"
                   role="group"
@@ -317,11 +317,11 @@
                     Todas
                   </button>
                 </div>
-              </div>
+              </section>
 
               <!-- Lista de Consultas -->
-              <div class="consultasList">
-                <div class="card mb-3 consultaItem" data-status="agendada">
+              <section class="consultasList">
+                <article class="card mb-3 consultaItem" data-status="agendada">
                   <div class="card-body">
                     <div
                       class="d-flex justify-content-between align-items-start"
@@ -351,9 +351,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </article>
 
-                <div class="card mb-3 consultaItem" data-status="agendada">
+                <article class="card mb-3 consultaItem" data-status="agendada">
                   <div class="card-body">
                     <div
                       class="d-flex justify-content-between align-items-start"
@@ -383,9 +383,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </article>
 
-                <div class="card mb-3 consultaItem" data-status="concluida">
+                <article class="card mb-3 consultaItem" data-status="concluida">
                   <div class="card-body">
                     <div
                       class="d-flex justify-content-between align-items-start"
@@ -413,9 +413,8 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </section>
+                </article>
+              </section>
           </div>
         </main>
       </div>

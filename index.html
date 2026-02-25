@@ -69,10 +69,11 @@
 
           <a class="navbar-brand order-1 mx-auto mx-lg-0" href="/index.html">
             <img
-              src="/assets/media/logo/logo-dark.png"
+              src="/assets/media/logo/logo-light.png"
               alt="Logo PD Clínica"
               width="256"
               height="68"
+              id="logo"
               class="img-fluid logo"
             />
           </a>
@@ -176,20 +177,20 @@
         <div
           class="col-12 col-lg-5 d-flex flex-column justify-content-between gap-2 text-center text-lg-start"
         >
-          <div>
+          <article>
             <h4 class="mainTitle">Como podemos te ajudar?</h4>
             <h2>
               Conheça mais sobre os serviços oferecidos e convênios aceitos pela
               PD Clínica para cuidar da sua saúde e bem-estar
             </h2>
-          </div>
+          </article>
           <a href="/convenios/index.html" class="text-decoration-none">
             <button class="btn-primary d-none d-lg-block buttonMore">
               Saiba Mais
             </button>
           </a>
         </div>
-        <div class="col-12 col-lg-7" id="container-help-carousel">
+        <section class="col-12 col-lg-7" id="container-help-carousel">
           <div
             class="d-flex gap-3 justify-content-center align-items-center justify-content-lg-start align-items-lg-start flex-wrap flex-lg-nowrap overflow-scroll px-lg-4"
             id="carousel-scroll-container"
@@ -197,56 +198,40 @@
             <article
               class="helpCard col-5 col-lg-auto d-flex flex-column justify-content-start p-2 p-lg-3 py-3 py-lg-5 gap-2 gap-lg-2"
             >
-              <div class="p-2 iconHelp">
-                <img
-                  src="assets/media/icons/house_garage.svg"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <div>
-                <h2>PD Até Você</h2>
-                <p>O atendimento móvel do PD Clínica onde você estiver</p>
-              </div>
+              <img
+                src="assets/media/icons/house_garage.svg"
+                alt=""
+                srcset=""
+                class="p-2 iconHelp"
+              />
+              <h2>PD Até Você</h2>
+              <p>O atendimento móvel do PD Clínica onde você estiver</p>
             </article>
             <article
               class="helpCard col-5 col-lg-auto d-flex flex-column justify-content-start p-2 p-lg-3 py-3 py-lg-5 gap-2 gap-lg-2"
             >
-              <div class="p-2 iconHelp">
-                <img src="assets/media/icons/phone_film.svg" alt="" srcset="" />
-              </div>
-              <div>
-                <h2>Telemedicina</h2>
-                <p>
-                  Consultas com especialistas, a qualquer hora e de forma remota
-                </p>
-              </div>
+              <img src="assets/media/icons/phone_film.svg" alt="" srcset="" class="p-2 iconHelp"/>
+              <h2>Telemedicina</h2>
+              <p>Consultas com especialistas, a qualquer hora e de forma remota</p>
             </article>
             <article
               class="helpCard col-5 col-lg-auto d-flex flex-column justify-content-start p-2 p-lg-3 py-3 py-lg-5 gap-2 gap-lg-2"
             >
-              <div class="p-2 iconHelp">
-                <img
-                  src="assets/media/icons/health_checklist.svg"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <div>
-                <h2>Check-up</h2>
-                <p>Um protocolo de cuidado personalizado para você</p>
-              </div>
+              <img
+                src="assets/media/icons/health_checklist.svg"
+                alt=""
+                srcset=""
+                class="p-2 iconHelp"
+              />
+              <h2>Check-up</h2>
+              <p>Um protocolo de cuidado personalizado para você</p>
             </article>
             <article
               class="helpCard col-5 col-lg-auto d-flex flex-column justify-content-start p-2 p-lg-3 py-3 py-lg-5 gap-2 gap-lg-2"
             >
-              <div class="p-2 iconHelp">
-                <img src="assets/media/icons/checkup.svg" alt="" srcset="" />
-              </div>
-              <div>
-                <h2>Exames & Procedimentos</h2>
-                <p>Atendimento de acordo com a sua necessidade</p>
-              </div>
+              <img src="assets/media/icons/checkup.svg" alt="" srcset="" class="p-2 iconHelp"/>
+              <h2>Exames & Procedimentos</h2>
+              <p>Atendimento de acordo com a sua necessidade</p>
             </article>
           </div>
           <button class="btn-primary d-none" id="slideLeft">
@@ -255,7 +240,7 @@
           <button class="btn-primary d-none d-lg-block" id="slideRight">
             <i class="bi bi-chevron-right"></i>
           </button>
-        </div>
+        </section>
 
         <a href="/convenios/index.html" class="text-decoration-none">
           <button class="btn-primary w-100 d-lg-none buttonMore">
@@ -824,7 +809,7 @@
         class="container d-flex flex-column flex-lg-row justify-content-between py-3"
         id="contactSection"
       >
-        <div
+        <aside
           class="col-12 col-lg-5 d-flex flex-column justify-content-center text-center text-lg-start gap-3"
           id="contactText"
         >
@@ -838,14 +823,14 @@
             src="assets/media/images/fale_conosco.png"
             alt="Img Description Fale Conosco"
           />
-        </div>
-        <div
+        </aside>
+        <article
           class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center gap-3 px-5 py-5"
           id="formContact"
         >
           <h2 class="mainTitle">Fale Conosco</h2>
           <form class="d-flex flex-column w-100 gap-3" id="formContactForm">
-            <div class="w-100 d-flex flex-column">
+            <fieldset class="w-100 d-flex flex-column">
               <label for="nameInput">Nome Completo</label>
               <input
                 type="text"
@@ -855,9 +840,9 @@
                 minlength="4"
                 required
               />
-            </div>
+            </fieldset>
 
-            <div class="w-100 d-flex flex-column">
+            <fieldset class="w-100 d-flex flex-column">
               <label for="email">E-mail</label>
               <input
                 type="email"
@@ -866,9 +851,9 @@
                 placeholder="Digite seu e-mail"
                 required
               />
-            </div>
+            </fieldset>
 
-            <div class="w-100 d-flex flex-column">
+            <fieldset class="w-100 d-flex flex-column">
               <label for="subjectInput">Assunto</label>
               <input
                 type="text"
@@ -877,9 +862,9 @@
                 placeholder="Digite o assunto"
                 required
               />
-            </div>
+            </fieldset>
 
-            <div class="w-100 d-flex flex-column">
+            <fieldset class="w-100 d-flex flex-column">
               <label for="messageInput">Sua Mensagem</label>
               <textarea
                 id="messageInput"
@@ -887,7 +872,7 @@
                 placeholder="Digite sua mensagem aqui..."
                 required
               ></textarea>
-            </div>
+            </fieldset>
             <button class="btn-outline" type="submit">Enviar</button>
           </form>
         </div>
@@ -896,114 +881,112 @@
       <!-- FAQ -->
       <section class="container d-flex flex-column" id="faqSection">
         <h2 class="mainTitle">Perguntas Frequentes</h2>
-        <div>
-          <details class="faqItem">
-            <summary>
-              <h2 class="subTitle">
-                Como faço para acessar resultados de exames?
-              </h2>
-            </summary>
-            <p>
-              Para acessar os resultados de exames basta entrar em contato com a
-              nossa eequipe através dos nosso canais de comunicação (<a
-                class="text-decoration-none"
-                href="mailto:contato@pdclinica.com"
-                >E-mail</a
-              >,
-              <a class="text-decoration-none" href="tel:+5531998881324"
-                >telefone</a
-              >
-              ou
-              <a
-                target="_blank"
-                class="text-decoration-none"
-                href="https://wa.link/xfzkl4"
-                >Whatsapp</a
-              >) que um de nossos atendentes irá te eenviar o relatorio completo
-              com todos os seus resultados, receitas e agendamentos
-            </p>
-          </details>
-          <details class="faqItem">
-            <summary>
-              <h2 class="subTitle">Quais convênios a PD Clínica aceita?</h2>
-            </summary>
-            <p>
-              A PD Clínica aceita uma ampla variedade de convênios médicos. Para
-              obter uma lista completa e atualizada dos convênios aceitos,
-              recomendamos entrar em contato diretamente com nossa equipe de
-              atendimento ao cliente ou visitar a seção de convênios em nosso
-              site.
-            </p>
-          </details>
-          <details class="faqItem">
-            <summary>
-              <h2 class="subTitle">
-                Como faço para marcar uma consulta com um especialista?
-              </h2>
-            </summary>
-            <p>
-              Você pode realizar o agendamento de forma rápida pelo nosso
-              WhatsApp ou telefone. Tenha em mãos seu documento de identidade e,
-              caso possua, a carteirinha do seu convênio para agilizarmos o
-              processo.
-            </p>
-          </details>
-          <details class="faqItem">
-            <summary>
-              <h2 class="subTitle">
-                Como são feitos os agendamentos de exames?
-              </h2>
-            </summary>
-            <p>
-              Os exames são agendados exclusivamente via WhatsApp ou telefone.
-              Para agilizar, pedimos que envie uma foto da sua guia médica e do
-              cartão do convênio. Nossa equipe confirmará a disponibilidade e
-              passará as orientações de preparo na hora.
-            </p>
-          </details>
-          <details class="faqItem">
-            <summary>
-              <h2 class="subTitle">
-                A PD Clínica oferece serviços de telemedicina?
-              </h2>
-            </summary>
-            <p>
-              Sim, a PD Clínica oferece serviços de telemedicina, permitindo que
-              os pacientes consultem especialistas remotamente por meio de
-              videochamadas. Isso proporciona conveniência e acesso a cuidados
-              médicos de qualidade, independentemente da localização do
-              paciente.
-            </p>
-          </details>
-          <details class="faqItem">
-            <summary>
-              <h2 class="subTitle">
-                Em qual unidade da PD Clinica são feitos os procedimentos
-                cirúrgicos?
-              </h2>
-            </summary>
-            <p>
-              Todos os nossos procedimentos cirúrgicos são realizados em nossa
-              unidade central [Endereço/Bairro]. Contamos com um centro
-              cirúrgico moderno e equipado para garantir sua segurança e
-              conforto durante todo o processo.
-            </p>
-          </details>
-        </div>
+        <details class="faqItem">
+          <summary>
+            <h2 class="subTitle">
+              Como faço para acessar resultados de exames?
+            </h2>
+          </summary>
+          <p>
+            Para acessar os resultados de exames basta entrar em contato com a
+            nossa eequipe através dos nosso canais de comunicação (<a
+              class="text-decoration-none"
+              href="mailto:contato@pdclinica.com"
+              >E-mail</a
+            >,
+            <a class="text-decoration-none" href="tel:+5531998881324"
+              >telefone</a
+            >
+            ou
+            <a
+              target="_blank"
+              class="text-decoration-none"
+              href="https://wa.link/xfzkl4"
+              >Whatsapp</a
+            >) que um de nossos atendentes irá te eenviar o relatorio completo
+            com todos os seus resultados, receitas e agendamentos
+          </p>
+        </details>
+        <details class="faqItem">
+          <summary>
+            <h2 class="subTitle">Quais convênios a PD Clínica aceita?</h2>
+          </summary>
+          <p>
+            A PD Clínica aceita uma ampla variedade de convênios médicos. Para
+            obter uma lista completa e atualizada dos convênios aceitos,
+            recomendamos entrar em contato diretamente com nossa equipe de
+            atendimento ao cliente ou visitar a seção de convênios em nosso
+            site.
+          </p>
+        </details>
+        <details class="faqItem">
+          <summary>
+            <h2 class="subTitle">
+              Como faço para marcar uma consulta com um especialista?
+            </h2>
+          </summary>
+          <p>
+            Você pode realizar o agendamento de forma rápida pelo nosso
+            WhatsApp ou telefone. Tenha em mãos seu documento de identidade e,
+            caso possua, a carteirinha do seu convênio para agilizarmos o
+            processo.
+          </p>
+        </details>
+        <details class="faqItem">
+          <summary>
+            <h2 class="subTitle">
+              Como são feitos os agendamentos de exames?
+            </h2>
+          </summary>
+          <p>
+            Os exames são agendados exclusivamente via WhatsApp ou telefone.
+            Para agilizar, pedimos que envie uma foto da sua guia médica e do
+            cartão do convênio. Nossa equipe confirmará a disponibilidade e
+            passará as orientações de preparo na hora.
+          </p>
+        </details>
+        <details class="faqItem">
+          <summary>
+            <h2 class="subTitle">
+              A PD Clínica oferece serviços de telemedicina?
+            </h2>
+          </summary>
+          <p>
+            Sim, a PD Clínica oferece serviços de telemedicina, permitindo que
+            os pacientes consultem especialistas remotamente por meio de
+            videochamadas. Isso proporciona conveniência e acesso a cuidados
+            médicos de qualidade, independentemente da localização do
+            paciente.
+          </p>
+        </details>
+        <details class="faqItem">
+          <summary>
+            <h2 class="subTitle">
+              Em qual unidade da PD Clinica são feitos os procedimentos
+              cirúrgicos?
+            </h2>
+          </summary>
+          <p>
+            Todos os nossos procedimentos cirúrgicos são realizados em nossa
+            unidade central [Endereço/Bairro]. Contamos com um centro
+            cirúrgico moderno e equipado para garantir sua segurança e
+            conforto durante todo o processo.
+          </p>
+        </details>
       </section>
     </main>
 
     <footer
       class="d-flex flex-column justify-content-center justify-content-lg-between w-100 px-5 py-4"
     >
-      <div
+      <section
         class="col-12 row justify-content-center justify-content-lg-between mb-4"
       >
         <div
           class="col-12 col-lg-auto d-flex flex-column align-items-center align-items-lg-start mb-4"
         >
           <img
-            src="assets/media/images/logo-dark.png"
+            src="/assets/media/images/logo-dark.png"
             alt="Logo PDClínica"
             class="w-100 px-5 mb-3"
           />
@@ -1014,7 +997,7 @@
             Tudo o que sua saúde precisa em um só lugar.
           </h2>
         </div>
-        <div class="d-flex col-12 col-lg-auto justify-content-between">
+        <article class="d-flex col-12 gap-5 col-lg-auto justify-content-between">
           <div class="col-6">
             <h2 class="mb-3">Nossa Clínica</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
@@ -1025,7 +1008,7 @@
             </ul>
           </div>
 
-          <div class="">
+          <div class="col-6">
             <h2 class="mb-3">Outros Acessos</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
               <li><a href="/blog/index.html">Blog</a></li>
@@ -1039,23 +1022,21 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="col-12 col-lg-auto mt-4 flex" id="socialSection">
+        </article>
+        <article class="col-12 col-lg-auto mt-4 flex" id="socialSection">
           <div class="col-auto d-flex gap-2 justify-content-between">
             <a href="#"><i class="bi bi-whatsapp mx-2"></i></a>
             <a href="#"><i class="bi bi-linkedin mx-2"></i></a>
             <a href="#"><i class="bi bi-instagram mx-2"></i></a>
             <a href="#"><i class="bi bi-envelope mx-2"></i></a>
           </div>
-          <button class="btn-outline mt-4 w-100">Trabalhe Conosco</button>
-        </div>
-      </div>
+          <a href="/trabalhe-conosco/index.html" class="btn btn-outline mt-4 w-100">Trabalhe Conosco</a>
+        </article>
+      </section>
       <div id="divider" class="col-12 my-2"></div>
-      <div class="col-12">
-        <p class="text-center">
-          © PD Clinica 2025 | Desenvolvido por Pablo, Pedro e Rafael.
-        </p>
-      </div>
+      <p class="col-12 text-center">
+        © PD Clinica 2025 | Desenvolvido por Pablo, Pedro e Rafael.
+      </p>
     </footer>
 
     <div
@@ -1066,15 +1047,15 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
+        <article class="modal-content">
+          <header class="modal-header">
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
-          </div>
+          </header>
           <div
             class="modal-body d-flex flex-column justify-content-center align-items-center gap-3 px-4 py-5 text-center"
           >
@@ -1090,7 +1071,7 @@
               Fechar
             </button>
           </div>
-        </div>
+        </article>
       </div>
     </div>
     <script src="js/homepage.js"></script>
