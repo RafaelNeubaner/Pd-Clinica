@@ -1,7 +1,7 @@
 /* FOOTER - BASE */
 footer {
   background-color: var(--bg-dark);
-  color: var(--tertiary);
+  color: var(--baby-blue);
 }
 
 /* FOOTER - LINKS */
@@ -11,7 +11,7 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--tertiary);
+  color: var(--baby-blue);
   transition: all 0.2s ease;
 }
 
@@ -25,6 +25,7 @@ footer #socialSection a {
   background-color: var(--secondary);
   padding: 1px;
   border-radius: 4px;
+  border: 2px solid var(--tertiary);
 }
 
 

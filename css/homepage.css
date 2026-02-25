@@ -22,10 +22,11 @@ main {
   margin: 0;
 }
 
-.containerTxt h2 {
+.containerTxt h3 {
   color: var(--txt-light);
   margin: 0;
   text-align: center;
+  font-size: 16px;
 }
 
 .containerTxt span {
@@ -138,14 +139,13 @@ main {
 @media (max-width: 576px) {
   #heroSection {
     margin-top: 80px;
-    flex-direction: column;
     padding: 32px;
-    gap: 12px;
   }
 
   #heroSection img {
     width: 100%;
     height: auto;
+    margin-bottom: 12px;
   }
 
   .heroText #frase1Hero {
@@ -165,7 +165,6 @@ main {
 }
 
 .buttonMore {
-  background-color: var(--primary);
   padding: 12px 24px;
 }
 
@@ -188,7 +187,7 @@ main {
   max-width: 270px;
   border: 2px solid var(--secondary);
   border-radius: 12px;
-  color: var(--primary);
+  color: var(--txt-light);
 }
 
 .helpCard h2 {
@@ -198,7 +197,7 @@ main {
 }
 
 .helpCard .iconHelp {
-  background-color: var(--primary);
+  background-color: #1b263b;
   width: fit-content;
   border-radius: 8px;
 }
@@ -319,10 +318,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
+    color: var(--txt-dark);
 }
 
 .containerCtaTxt span {
   font-weight: 600;
+  color:  var(--txt-dark);
 }
 
 .containerCtaBtn {
@@ -359,6 +360,11 @@ main {
 #avaliacoes .col-lg-4 {
   margin-right: 8px;
   margin-left: 8px;
+}
+
+#avaliacoes article {
+  background-color: var(--bg-header);
+  color: var(--txt-light);
 }
 
 .starBadge {
