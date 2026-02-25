@@ -6,7 +6,7 @@ footer {
 
 /* FOOTER - LINKS */
 footer a {
-  color: var(--secondary);
+  color: var(--txt-dark);
   text-decoration: none;
 }
 
@@ -23,7 +23,6 @@ footer img{
 /* FOOTER - SOCIAL */
 footer #socialSection a {
   background-color: var(--secondary);
-  color: var(--bg-dark);
   padding: 1px;
   border-radius: 4px;
 }
