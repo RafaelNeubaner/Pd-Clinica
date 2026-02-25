@@ -22,10 +22,11 @@ main {
   margin: 0;
 }
 
-.containerTxt h2 {
+.containerTxt h3 {
   color: var(--txt-light);
   margin: 0;
   text-align: center;
+  font-size: 16px;
 }
 
 .containerTxt span {
@@ -138,14 +139,13 @@ main {
 @media (max-width: 576px) {
   #heroSection {
     margin-top: 80px;
-    flex-direction: column;
     padding: 32px;
-    gap: 12px;
   }
 
   #heroSection img {
     width: 100%;
     height: auto;
+    margin-bottom: 12px;
   }
 
   .heroText #frase1Hero {

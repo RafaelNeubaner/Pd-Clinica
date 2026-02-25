@@ -53,10 +53,8 @@
   <body>
     <!-- HEADER -->
     <header class="headerContainer">
-      <nav class="headerNav navbar navbar-expand-lg w-100">
-        <div
-          class="container-fluid d-flex justify-content-between align-items-center p-0"
-        >
+      <nav class="headerNav navbar navbar-expand-lg w-100 container-fluid d-flex justify-content-between align-items-center">
+
           <button
             class="navbar-toggler custom-toggler order-0 me-auto"
             type="button"
@@ -87,12 +85,9 @@
             <i class="bi bi-box-arrow-in-right"></i>
           </a>
 
-          <div
-            class="collapse navbar-collapse order-3 order-lg-2"
-            id="navbarSupportedContent"
-          >
             <ul
-              class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-start align-items-lg-center"
+              class="collapse navbar-collapse order-3 order-lg-2 navbar-nav ms-auto mb-2 mb-lg-0 align-items-start align-items-lg-center justify-content-start justify-content-lg-end"
+              id="navbarSupportedContent"
             >
               <li class="nav-item">
                 <a class="nav-link" href="/institucional/index.html"
@@ -136,8 +131,6 @@
                 </button>
               </li>
             </ul>
-          </div>
-        </div>
       </nav>
       <input type="checkbox" id="toggleForm" class="d-none" />
     </header>
@@ -147,7 +140,7 @@
       <!-- Hero Section -->
       <section class="container-fluid w-100 bg-hero d-block" id="heroSection">
         <div class="row justify-content-center align-items-center">
-          <div class="col-12 col-md-6 heroText">
+          <article class="col-12 col-md-6 heroText">
             <p id="frase1Hero">
               Saiba tudo o que a PD Clínica oferece para cuidar da sua saúde
             </p>
@@ -160,8 +153,8 @@
               class="btn btn-primary d-none d-md-inline-block"
               >Saiba Mais</a
             >
-          </div>
-          <div
+          </article>
+          <figure
             class="col-12 d-flex flex-column align-items-end col-md-6 order-2 mb-sm-3 mb-md-0"
           >
             <img
@@ -169,14 +162,13 @@
               alt="Atendimento de qualidade"
               class="mb-sm-3 mb-md-0"
             />
-          </div>
+          </figure>
         </div>
-        <div class="d-md-none text-center">
-          <a class="btn btn-primary d-md-none" href="#ctaSection" id="button2"
+          <a class="btn btn-primary d-md-none text-center" href="#ctaSection" id="button2"
             >Saiba Mais</a
           >
-        </div>
       </section>
+
       <!-- Como podemos te ajudar Section -->
       <section
         class="container row gap-3 gap-lg-0 justify-content-between"
@@ -258,8 +250,7 @@
       </section>
 
       <!-- Especialidades Section -->
-      <section class="container" id="especialidades">
-        <div class="textCenter">
+      <section class="container text-center" id="especialidades">
           <h2 class="mainTitle txt-light">Especialidades Médicas</h2>
           <div class="gap64">
             <p class="subTitle">
@@ -267,7 +258,7 @@
               bem-estar. Conheça as especialidades oferecidas
             </p>
             <div class="row containerEspecialidades">
-              <div class="col-lg-4">
+              <article class="col-lg-4">
                 <a href="/especialidades/angiologia.html">
                   <button class="btn-primary w-100 h-100">
                     <img
@@ -277,8 +268,8 @@
                     Angiologia
                   </button>
                 </a>
-              </div>
-              <div class="col-lg-4">
+              </article>
+              <article class="col-lg-4">
                 <a href="/especialidades/cardiologia.html">
                   <button class="btn-primary w-100 h-100">
                     <img
@@ -288,18 +279,18 @@
                     Cardiologia
                   </button>
                 </a>
-              </div>
-              <div class="col-lg-4">
+              </article>
+              <article class="col-lg-4">
                 <a href="/especialidades/psicologia.html">
                   <button class="btn-primary w-100 h-100">
                     <img
                       src="assets/media/icons/icon-psychology.png"
                       alt="icone psicologia"
                     />
-                    Psicologias
+                    Psicologia<span style="color: transparent;">s</span>
                   </button>
                 </a>
-              </div>
+              </article>
               <a href="/especialidades/index.html" class="text-decoration-none">
                 <button class="btn-outline d-md-none d-lg-none">
                   Acesse a lista completa
@@ -314,27 +305,26 @@
               </button>
             </a>
           </div>
-        </div>
       </section>
 
       <!-- CTA Section -->
       <section class="container-fluid" id="ctaSection">
-        <div class="containerCtaTxt">
+        <hgroup class="containerCtaTxt">
           <h2 class="mainTitle">Atendimento de Qualidade é Saúde</h2>
-          <h2 class="subTitle">
+          <h3 class="subTitle">
             Junte-se a <span>milhares de pacientes</span> que já simplificaram
             seus cuidados médicos.
             <br />
             <span> Sem filas, sem espera e com preço justo.</span>
-          </h2>
-        </div>
+          </h3>
+        </hgroup>
 
         <div class="containerCtaBtn">
-          <a href="https://wa.link/gs04ay" target="_blank">
-            <button class="btn-primary btnCta">Agende já sua consulta</button>
+          <a href="https://wa.link/gs04ay" target="_blank" class="btn-primary btnCta text-decoration-none">
+            Agende já sua consulta
           </a>
-          <a href="#formContact">
-            <button class="btn-outline btnCta">Fale com um especialista</button>
+          <a href="#formContact" class="btn-outline btnCta text-decoration-none">
+            Fale com um especialista
           </a>
         </div>
       </section>
@@ -343,11 +333,11 @@
       <section id="unidades">
         <div class="container container-fluid">
           <div class="containerTxt">
-            <h1>Nossas Unidades</h1>
-            <h2>
+            <h2 class="mainTitle">Nossas Unidades</h2>
+            <h3>
               Encontre a unidade que melhor atende suas necessidades e tenha
               acesso a todas as informações essenciais em um só lugar
-            </h2>
+            </h3>
           </div>
 
           <div class="carousel-container position-relative">
@@ -365,7 +355,7 @@
                     <img
                       src="/assets/media/images/pd-cidade-nobre(Ipatinga).png"
                       class="cardImgUnidade card-img-top"
-                      alt="Imagem que representa a PD Clínica localizada em Ipatinga no bairro Cidade Nobre"
+                      alt="PD Clínica localizada em Ipatinga no bairro Cidade Nobre"
                     />
 
                     <div class="card-body">
@@ -417,12 +407,12 @@
                 </div>
 
                 <!-- PD Santa Bárbara -->
-                <div class="slider-item col-12 col-md-4">
+                <article class="slider-item col-12 col-md-4">
                   <div class="card">
                     <img
                       src="/assets/media/images/pd-santa-barbara.png"
                       class="cardImgUnidade card-img-top"
-                      alt="Imagem que representa a PD Clínica localizada em Santa Bárbara no bairro Centro"
+                      alt="PD Clínica localizada em Santa Bárbara no bairro Centro"
                     />
 
                     <div class="card-body">
@@ -471,15 +461,15 @@
                       >
                     </div>
                   </div>
-                </div>
+                </article>
 
                 <!-- PD Vila da Serra -->
-                <div class="slider-item col-12 col-md-4">
+                <article class="slider-item col-12 col-md-4">
                   <div class="card">
                     <img
                       src="/assets/media/images/pd-vila-da-serra(NovaLima).jpg"
                       class="cardImgUnidade card-img-top"
-                      alt="Imagem que representa a PD Clínica localizada em Nova Lima no bairro Vila da Serra"
+                      alt="PD Clínica localizada em Nova Lima no bairro Vila da Serra"
                     />
 
                     <div class="card-body">
@@ -528,15 +518,15 @@
                       >
                     </div>
                   </div>
-                </div>
+                </article>
 
                 <!-- PD Savassi -->
-                <div class="slider-item col-12 col-md-4">
+                <article class="slider-item col-12 col-md-4">
                   <div class="card">
                     <img
                       src="/assets/media/images/pd-savassi(BH).png"
                       class="cardImgUnidade card-img-top"
-                      alt="Imagem que representa a PD Clínica localizada em Belo Horizonte no bairro Savassi"
+                      alt="PD Clínica localizada em Belo Horizonte no bairro Savassi"
                     />
 
                     <div class="card-body">
@@ -585,15 +575,15 @@
                       >
                     </div>
                   </div>
-                </div>
+                </article>
 
                 <!-- PD Eldorado -->
-                <div class="slider-item col-12 col-md-4">
+                <article class="slider-item col-12 col-md-4">
                   <div class="card">
                     <img
                       src="/assets/media/images/pd-eldorado(Contagem).png"
                       class="cardImgUnidade card-img-top"
-                      alt="Imagem que representa a PD Clínica localizada em Ipatinga no bairro Cidade Nobre"
+                      alt="PD Clínica localizada em Contagem no bairro Eldorado"
                     />
 
                     <div class="card-body">
@@ -642,15 +632,15 @@
                       >
                     </div>
                   </div>
-                </div>
+                </article>
 
                 <!-- PD Sidil -->
-                <div class="slider-item col-12 col-md-4">
+                <article class="slider-item col-12 col-md-4">
                   <div class="card">
                     <img
                       src="/assets/media/images/pd-sidil(Divinopolis).png"
                       class="cardImgUnidade card-img-top"
-                      alt="Imagem que representa a PD Clínica localizada em Ipatinga no bairro Cidade Nobre"
+                      alt="PD Clínica localizada em Divinópolis no bairro Sidil"
                     />
 
                     <div class="card-body">
@@ -698,7 +688,7 @@
                       >
                     </div>
                   </div>
-                </div>
+                </article>
               </div>
             </div>
 
@@ -713,8 +703,8 @@
       </section>
       <!-- Avaliações Section-->
       <section class="container" id="avaliacoes">
-        <div class="padding24">
-          <div
+        <header class="padding24">
+          <aside
             class="d-md-flex justify-content-center align-items-center badgeRating"
           >
             <span class="starBadge">
@@ -725,24 +715,24 @@
               <i class="bi bi-star-fill"></i>
             </span>
             <p class="subTitle mb-0 ms-2">4.9/5 de satisfação dos pacientes</p>
-          </div>
+          </aside>
           <h2 class="font36 text-center">
             Histórias reais de quem confia na PD
           </h2>
-        </div>
+        </header>
         <div
           class="row m-0 justify-content-center align-items-center w-100 gap-md-4 gap-lg-0"
         >
-          <div
+          <article
             class="col-12 col-lg-3 card shadow p-4 mb-4 mb-md-0 offset-lg-1 assigned h-100"
           >
-            <div class="cardHeader d-flex align-items-center">
+            <header class="cardHeader d-flex align-items-center">
               <p class="avatar">P</p>
               <div class="infoClient">
                 <p class="nameCard">Pedro Manoel</p>
                 <p class="patientDesc">Paciente do Dr. Rodrigo Lasmar</p>
               </div>
-            </div>
+            </header>
             <span class="starBadge">
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
@@ -758,17 +748,17 @@
             <p class="feedback">
               Feedback realizado pelo: <a href="#">Whatsapp</a>
             </p>
-          </div>
-          <div
+          </article>
+          <article
             class="col-12 col-lg-3 card shadow p-4 mb-4 mb-md-0 offset-lg-1 assigned h-100"
           >
-            <div class="cardHeader d-flex align-items-center">
+            <header class="cardHeader d-flex align-items-center">
               <p class="avatar">R</p>
               <div class="infoClient">
                 <p class="nameCard">Rafael Almeida</p>
                 <p class="patientDesc">Paciente da Dra. Ana Clara</p>
               </div>
-            </div>
+            </header>
             <span class="starBadge">
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
@@ -784,17 +774,17 @@
             <p class="feedback">
               Feedback realizado pelo: <a href="#">Whatsapp</a>
             </p>
-          </div>
-          <div
+          </article>
+          <article
             class="col-12 col-lg-3 card shadow p-4 mb-4 mb-md-0 offset-lg-1 assigned h-100"
           >
-            <div class="cardHeader d-flex align-items-center">
+            <header class="cardHeader d-flex align-items-center">
               <p class="avatar">P</p>
               <div class="infoClient">
                 <p class="nameCard">Pablo Santos</p>
                 <p class="patientDesc">Paciente do Dr. Lucas Ferreira</p>
               </div>
-            </div>
+            </header>
             <span class="starBadge">
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
@@ -810,7 +800,7 @@
             <p class="feedback">
               Feedback realizado pelo: <a href="#">Whatsapp</a>
             </p>
-          </div>
+          </article>
         </div>
       </section>
 
