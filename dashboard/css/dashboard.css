@@ -1,9 +1,14 @@
+
+
 #headerLogo {
     margin: 20px;
     gap: 20px;
     background-color: var(--bg-dark);
     margin: 0;
     padding: 40px !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #headerLogo img {
@@ -12,15 +17,18 @@
 
 aside {
     transition: all 0.3s ease;
+    position: sticky;
+    top: var(--header-height, 0);
+    z-index: 10;
 }
 
 main{
-    overflow-y: auto;
+    height: 100%;
 }
 
 main > section{
     display: none;
-    overflow: visible;
+    overflow: scroll;
 }
 
 main>section:target{
