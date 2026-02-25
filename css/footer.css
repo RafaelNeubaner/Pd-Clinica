@@ -1,9 +1,10 @@
-
+/* FOOTER - BASE */
 footer {
   background-color: var(--bg-dark);
   color: var(--tertiary);
 }
 
+/* FOOTER - LINKS */
 footer a {
   color: var(--secondary);
   text-decoration: none;
@@ -14,10 +15,12 @@ footer a:hover {
   transition: all 0.2s ease;
 }
 
+/* FOOTER - LOGO */
 footer img{
     min-width: 350px;
 }
 
+/* FOOTER - SOCIAL */
 footer #socialSection a {
   background-color: var(--secondary);
   color: var(--bg-dark);
