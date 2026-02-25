@@ -6,7 +6,7 @@ footer {
 
 /* FOOTER - LINKS */
 footer a {
-  color: var(--tertiary);
+  color: var(--txt-dark);
   text-decoration: none;
 }
 
@@ -22,17 +22,16 @@ footer img{
 
 /* FOOTER - SOCIAL */
 footer #socialSection a {
+  background-color: var(--secondary);
   padding: 1px;
   border-radius: 4px;
   border: 2px solid var(--tertiary);
 }
 
-footer #socialSection {
-    min-width: 250px;
-}
+
 
 footer #socialSection i {
-  font-size: 38px;
+  font-size: 22px;
 }
 
 footer button {
@@ -44,7 +43,10 @@ footer button {
 }
 
 @media (min-width: 992px) {
-    footer img{
-        max-width: 250px;
-    }
+  footer img{
+      max-width: 250px;
+  }
+  footer #socialSection {
+    max-width: 250px;
+  }
 }
