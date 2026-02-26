@@ -50,6 +50,7 @@
       src="https://kit.fontawesome.com/e169e20a67.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/darkmode.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -72,17 +73,18 @@
 
           <a class="navbar-brand order-1 mx-auto mx-lg-0" href="/index.html">
             <img
-              src="/assets/media/logo/logo-dark.png"
+              src="/assets/media/logo/logo-light.png"
               alt="Logo PD Clínica"
               width="256"
               height="68"
+              id="logo"
               class="img-fluid logo"
             />
           </a>
 
           <a
             class="nav-link d-lg-none order-2 ms-auto text-secondary fs-4"
-            href="#"
+            href="/signup/index.html"
           >
             <i class="bi bi-box-arrow-in-right"></i>
           </a>
@@ -139,12 +141,13 @@
           </div>
         </div>
       </nav>
+      <input type="checkbox" id="toggleForm" class="d-none" />
     </header>
 
     <main>
       <article id="artigo">
-        <div class="containerTitle">
-          <h2 class="mainTitle">A Importância da Cardiologia Preventiva</h2>
+        <header class="containerTitle">
+          <h1 class="mainTitle">A Importância da Cardiologia Preventiva</h1>
 
           <div class="col-lg-6 text-center d-block d-md-none">
             <img
@@ -154,26 +157,26 @@
             />
           </div>
 
-          <p class="fw-bold">Cardiologia • Prevenção • 11/02/2026</p>
-        </div>
+          <p class="fw-bold">Cardiologia • Prevenção • <time datetime="2026-02-11">11/02/2026</time> </p>
+        </header>
 
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <div class="pilarCentral">
-              <h3 class="subTitle">
+            <section class="pilarCentral">
+              <h2 class="subTitle">
                 A saúde do coração é o pilar central para uma vida longa e
                 ativa.
-              </h3>
+              </h2>
 
               <p>
                 Na PD Clínica, a especialidade de Cardiologia é estruturada para
                 oferecer não apenas tratamentos de ponta, mas um acompanhamento
                 preventivo rigoroso, focado na individualidade de cada paciente.
               </p>
-            </div>
+            </section>
 
-            <div class="significado">
-              <h3 class="subTitle">O Que é a Cardiologia Preventiva?</h3>
+            <section class="significado mt-4">
+              <h2 class="subTitle">O que é a Cardiologia Preventiva?</h2>
 
               <p>
                 A Cardiologia Preventiva não se trata apenas de evitar a morte,
@@ -183,20 +186,20 @@
                 moderna nos ensina que o verdadeiro sucesso está em agir antes
                 que a doença se instale.
               </p>
-            </div>
+            </section>
 
-            <div class="importanciaPrevensao">
-              <h3 class="subTitle">A Importância da Cardiologia Preventiva</h3>
+            <section class="importanciaPrevencao mt-4">
+              <h2 class="subTitle">A Importância da Cardiologia Preventiva</h2>
               <p>
                 Muitas doenças cardiovasculares são silenciosas. Condições como
                 hipertensão e dislipidemia podem não apresentar sintomas claros
                 até que ocorra um evento mais grave. Na PD Clínica, priorizamos
                 o <strong>check-up cardiológico</strong>.
               </p>
-            </div>
+            </section>
 
-            <div class="quandoProcurar">
-              <h3 class="subTitle">Quando procurar um cardiologista?</h3>
+            <section class="quandoProcurar mt-4">
+              <h2 class="subTitle">Quando procurar um cardiologista?</h2>
               <ul class="checkList">
                 <li>
                   <i class="bi bi-check-circle"></i
@@ -219,7 +222,7 @@
                   pré-participação esportiva.
                 </li>
               </ul>
-            </div>
+            </section>
           </div>
           <div class="col-lg-6 text-center d-none d-md-block">
             <img
@@ -232,12 +235,12 @@
 
         <div class="row">
           <div class="col-12">
-            <div class="dicas">
+            <section class="dicas">
               <div class="containerDicas">
-                <h3 class="subTitle">
+                <h2 class="subTitle">
                   <i class="bi bi-lightbulb-fill me-2"></i>Dicas para Manter o
                   Coração Saudável
-                </h3>
+                </h2>
                 <div class="row mb-3">
                   <div class="col-md-4">
                     <p>
@@ -276,7 +279,7 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
         </div>
       </article>
@@ -285,15 +288,15 @@
     <footer
       class="d-flex flex-column justify-content-center justify-content-lg-between w-100 px-5 py-4"
     >
-      <div
-        class="col-12 row justify-content-center justify-content-lg-between mb-4"
+      <section
+        class="col-12 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between mb-4"
       >
         <div
-          class="col-12 col-lg-auto d-flex flex-column align-items-center align-items-lg-start mb-4"
+          class="col-12 col-lg-auto d-flex flex-column align-items-center mb-4"
         >
           <img
             src="/assets/media/images/logo-dark.png"
-            alt="Logo PDClínica"
+            alt="Logo PD Clínica"
             class="w-100 px-5 mb-3"
           />
           <h2 class="text-center d-lg-none">
@@ -302,49 +305,52 @@
           <h2 class="d-none d-lg-block">
             Tudo o que sua saúde precisa em um só lugar.
           </h2>
+          <address class="d-flex flex-column align-items-center justify-content-center">
+            <a
+              href="mailto:contato@pdclinica.com"
+              class="text-decoration-none"
+              ><i class="bi bi-envelope"></i> contato@pdclinica.com</a>
+            <a 
+              href="tel:+5531998881324"
+              class="text-decoration-none"
+              ><i class="bi bi-telephone"></i> +55 (31) 9 9888-1324</a>
+          </address>
         </div>
-        <div class="d-flex col-12 col-lg-auto justify-content-between">
+        <article class="d-none d-lg-flex col-12 gap-5 col-lg-auto justify-content-between">
           <div class="col-6">
             <h2 class="mb-3">Nossa Clínica</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
-              <li><a href="/index.html">Home</a></li>
+              <li><a href="#">Home</a></li>
               <li><a href="/institucional/index.html">Institucional</a></li>
               <li><a href="/convenios/index.html">Convênios</a></li>
               <li><a href="/especialidades/index.html">Especialidades</a></li>
             </ul>
           </div>
 
-          <div class="">
+          <div class="col-6">
             <h2 class="mb-3">Outros Acessos</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
               <li><a href="/blog/index.html">Blog</a></li>
               <li>
                 <a href="/trabalhe-conosco/index.html">Trabalhe Conosco</a>
               </li>
-              <li>
-                <a href="/signup/index.html"
-                  ><i class="bi bi-box-arrow-in-right"></i> Entrar</a
-                >
-              </li>
             </ul>
           </div>
-        </div>
-        <div class="col-12 col-lg-auto mt-4 flex" id="socialSection">
+        </article>
+        <article class="col-12 col-lg-auto mt-4 flex w-100" id="socialSection">
           <div class="col-auto d-flex gap-2 justify-content-between">
-            <a href="#"><i class="bi bi-whatsapp mx-2"></i></a>
-            <a href="#"><i class="bi bi-linkedin mx-2"></i></a>
-            <a href="#"><i class="bi bi-instagram mx-2"></i></a>
-            <a href="#"><i class="bi bi-envelope mx-2"></i></a>
+            <a href="https://wa.link/t49sro" target="_blank"><i class="bi bi-whatsapp mx-2"></i></a>
+            <a href="https://www.linkedin.com/company/pd-case-informatica-ltda/" target="_blank"><i class="bi bi-linkedin mx-2"></i></a>
+            <a href="https://www.instagram.com/pdcaseinformatica/" target="_blank"><i class="bi bi-instagram mx-2"></i></a>
+            <a href="mailto:contato@pdclinica.com"><i class="bi bi-envelope mx-2"></i></a>
           </div>
-          <button class="btn-outline mt-4 w-100">Trabalhe Conosco</button>
-        </div>
-      </div>
+          <a href="/trabalhe-conosco/index.html" class="btn btn-outline mt-4 w-100">Trabalhe Conosco</a>
+        </article>
+      </section>
       <div id="divider" class="col-12 my-2"></div>
-      <div class="col-12">
-        <p class="text-center">
-          © PD Clinica 2025 | Desenvolvido por Pablo, Pedro e Rafael.
-        </p>
-      </div>
+      <p class="col-12 text-center">
+        © PD Clínica 2026 | Desenvolvido por Pablo, Pedro e Rafael.
+      </p>
     </footer>
 
     <div
@@ -372,9 +378,9 @@
               alt="Mensagem enviada com sucesso"
             />
             <h2 class="subTitle">Recebemos sua mensagem ;)</h2>
-            <h3 class="subTitle">
+            <h2 class="subTitle">
               Em breve nossa equipe entrará em contato pelo e-mail.
-            </h3>
+            </h2>
             <button type="button" class="btn-primary" data-bs-dismiss="modal">
               Fechar
             </button>
@@ -383,6 +389,5 @@
       </div>
     </div>
     <script src="js/homepage.js"></script>
-    <script src="/js/darkmode.js"></script>
   </body>
 </html>

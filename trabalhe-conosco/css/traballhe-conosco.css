@@ -62,12 +62,15 @@ section {
 
 #ctaArticle p {
     font-size: 24px;
+    color: var(--txt-dark);
 
 }
 
 #ctaArticle .btn-outline-dark {
     white-space: nowrap;
     font-size: 24px;
+    color: var(--txt-dark);
+    text-decoration: none;
 }
 
 #cta img {
@@ -157,7 +160,7 @@ section {
       color: var(--tertiary);
     }
     #formTrabalheConosco input, textarea{
-      color: var(--txt-dark);
+      color: var(--txt-dark) !important;
       border-color: var(--tertiary);
     }
 

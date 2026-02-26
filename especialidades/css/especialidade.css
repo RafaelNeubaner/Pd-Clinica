@@ -12,6 +12,10 @@ main > section{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.procedimentoCard {
+    background-color: var(--bg-header);
+}
+
 .procedimentoCard h3{
     background-color: var(--tertiary);
 }
@@ -34,7 +38,7 @@ main > section{
     border-radius: 12px;
     border: 4px solid var(--tertiary);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    background-color: #fff;
+    background-color: var(--bg-header);
     max-width: 280px;
 }
 
@@ -44,6 +48,3 @@ main > section{
     margin-bottom: 20px;
 }
 
-.cardMedico h3, .cardMedico p{
-    color: #0d1b2a !important;
-}

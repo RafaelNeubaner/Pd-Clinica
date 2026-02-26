@@ -9,12 +9,13 @@
 /* GLOBAL - THEME TOKENS */
 :root {
   --txt-light: #0d1b2a;
-  --txt-dark: #f9f9f5;
+  --txt-dark: #ffffff;
   --txt-muted: #6e6e6e;
   --bg-light: #f9f9f5;
   --bg-dark: #0d1b2a;
+  --bg-header: #ffffff;
   --primary: #1b263b;
-  --secondary: #415a77;
+  --secondary: #3c4b5d;
   --tertiary: #778da9;
   --baby-blue: #6e9fd8;
   --hero: #778da9;
@@ -34,10 +35,11 @@ body.dark-mode {
   --txt-muted: #a0a0a0;
   --bg-light: #111720;
   --bg-dark: #0d1b2a;
+  --bg-header: #0d1b2a;
   --primary: #415a77;
   --secondary: #1b305c;
-  --tertiary: #859db9;
-  --baby-blue: #1e3a5f;
+  --tertiary: #4c6f99;;
+  --baby-blue: #274b7a;
   --hero: #3b5068;
 }
 
@@ -142,9 +144,9 @@ body.dark-mode {
 }
 
 .btn-outline:hover {
-  background-color: var(--bg-dark);
-  color: var(--txt-dark);
-  border: 2px solid var(--txt-dark);
+  background-color: var(--bg-dark) !important;
+  color: var(--txt-dark)!important;
+  border: 2px solid var(--txt-dark)!important;
 }
 
 .btn-outline-dark {
@@ -172,7 +174,7 @@ body.dark-mode {
 }
 
 p {
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 h1 {
@@ -265,7 +267,7 @@ select {
       }
     
       p {
-        font-size: 12px;
+        font-size: 1rem;
       }
     
       .btn-primary {

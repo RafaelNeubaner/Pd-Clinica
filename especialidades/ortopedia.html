@@ -49,6 +49,7 @@
       src="https://kit.fontawesome.com/e169e20a67.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/darkmode.js"></script>
   </head>
   <body>
     <header class="headerContainer">
@@ -70,17 +71,18 @@
 
           <a class="navbar-brand order-1 mx-auto mx-lg-0" href="/index.html">
             <img
-              src="../../assets/media/logo/logo-dark.png"
+              src="/assets/media/logo/logo-light.png"
               alt="Logo PD Clínica"
               width="256"
               height="68"
+              id="logo"
               class="img-fluid logo"
             />
           </a>
 
           <a
             class="nav-link d-lg-none order-2 ms-auto text-secondary fs-4"
-            href="#"
+            href="/signup/index.html"
           >
             <i class="bi bi-box-arrow-in-right"></i>
           </a>
@@ -137,6 +139,7 @@
           </div>
         </div>
       </nav>
+      <input type="checkbox" id="toggleForm" class="d-none" />
     </header>
 
     <main class="d-flex flex-column align-items-center gap-5">
@@ -153,7 +156,7 @@
           <p>
             Ortopedia é a especialidade médica dedicada ao diagnóstico,
             tratamento e prevenção de doenças e lesões do sistema
-            musculoesquelético. Na PD Clinica, oferecemos cuidados
+            musculoesquelético. Na PD Clínica, oferecemos cuidados
             especializados para garantir a saúde dos ossos, articulações,
             músculos e ligamentos, promovendo a mobilidade e qualidade de vida
             dos nossos pacientes.
@@ -167,9 +170,9 @@
             terapias conservadoras e intervenções cirúrgicas, visando a
             recuperação completa e o bem-estar do paciente.
           </p>
-          <h3>Escolha a PD Clinica</h3>
+          <h3>Escolha a PD Clínica</h3>
           <p>
-            Escolher a PD Clinica para cuidados ortopédicos significa confiar em
+            Escolher a PD Clínica para cuidados ortopédicos significa confiar em
             uma equipe de especialistas dedicados. Oferecemos uma gama completa
             de serviços ortopédicos, incluindo avaliações de risco cirúrgico,
             tratamento de doenças crônicas e estratégias preventivas. Nosso
@@ -197,7 +200,7 @@
                 alt="Foto Dr. José Ronaldo"
               />
               <h3>Dr. José Ronaldo Silva</h3>
-              <p>Especialista em Ecocardiografia</p>
+              <p>Ortopedista Geral</p>
               <a href="https://wa.link/p2ieya" target="_blank">
                 <button class="btn btn-primary">Agendar</button>
               </a>
@@ -219,7 +222,7 @@
             A imobilização é um recurso terapêutico fundamental para estabilizar
             estruturas ósseas ou articulares após traumas, garantindo o
             alinhamento correto e o repouso necessário para a cicatrização e
-            consolidação dos tecidos."
+            consolidação dos tecidos.
           </p>
           <p class="d-none d-md-block">
             A imobilização é um procedimento terapêutico essencial que utiliza
@@ -232,7 +235,7 @@
           </p>
           <img
             src="/assets/media/images/imobilizacoes_procedimento.png"
-            alt="Paciente realizando um Doppler vascular"
+            alt="Paciente perna imobilizada por gesso"
             class="w-100"
           />
         </figcaption>
@@ -244,19 +247,10 @@
           />
           <h3 class="py-2 rounded order-0 order-md-1">Artroscopia</h3>
           <p class="d-block d-md-none order-2">
-            A artroscopia é um procedimento minimamente invasivo utilizado para
-            tratar varizes e veias insuficientes, promovendo a melhora estética
-            e funcional das pernas.
+            A artroscopia é um procedimento cirúrgico minimamente invasivo que permite ao ortopedista visualizar, diagnosticar e tratar problemas dentro das articulações, como lesões de menisco ou ligamentos, utilizando uma pequena câmera e instrumentos especializados.
           </p>
           <p class="d-none d-md-block order-2">
-            A artroscopia é um tratamento que consiste na aplicação de uma
-            substância esclerosante diretamente nas veias afetadas, causando a
-            sua obliteração e posterior reabsorção pelo organismo. É amplamente
-            utilizada para o tratamento de varizes e veias reticulares,
-            proporcionando alívio dos sintomas e melhora estética. O
-            procedimento é realizado em consultório, com rápida recuperação e
-            resultados eficazes, sendo uma opção segura e eficiente para
-            pacientes com doenças venosas.
+            A artroscopia é um procedimento cirúrgico minimamente invasivo que permite ao ortopedista visualizar, diagnosticar e tratar problemas dentro das articulações, como lesões de menisco ou ligamentos, utilizando uma pequena câmera e instrumentos especializados. Este método oferece uma recuperação mais rápida, menos dor e cicatrizes menores em comparação com a cirurgia tradicional, tornando-se uma opção eficaz para o tratamento de diversas condições ortopédicas.
           </p>
         </figcaption>
       </section>
@@ -266,14 +260,14 @@
       class="d-flex flex-column justify-content-center justify-content-lg-between w-100 px-5 py-4"
     >
       <section
-        class="col-12 row justify-content-center justify-content-lg-between mb-4"
+        class="col-12 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between mb-4"
       >
         <div
-          class="col-12 col-lg-auto d-flex flex-column align-items-center align-items-lg-start mb-4"
+          class="col-12 col-lg-auto d-flex flex-column align-items-center mb-4"
         >
           <img
             src="/assets/media/images/logo-dark.png"
-            alt="Logo PDClínica"
+            alt="Logo PD Clínica"
             class="w-100 px-5 mb-3"
           />
           <h2 class="text-center d-lg-none">
@@ -282,8 +276,18 @@
           <h2 class="d-none d-lg-block">
             Tudo o que sua saúde precisa em um só lugar.
           </h2>
+          <address class="d-flex flex-column align-items-center justify-content-center">
+            <a
+              href="mailto:contato@pdclinica.com"
+              class="text-decoration-none"
+              ><i class="bi bi-envelope"></i> contato@pdclinica.com</a>
+            <a 
+              href="tel:+5531998881324"
+              class="text-decoration-none"
+              ><i class="bi bi-telephone"></i> +55 (31) 99988-1324</a>
+          </address>
         </div>
-        <article class="d-flex col-12 gap-5 col-lg-auto justify-content-between">
+        <article class="d-none d-lg-flex col-12 gap-5 col-lg-auto justify-content-between">
           <div class="col-6">
             <h2 class="mb-3">Nossa Clínica</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
@@ -301,27 +305,26 @@
               <li>
                 <a href="/trabalhe-conosco/index.html">Trabalhe Conosco</a>
               </li>
-              <li>
-                <a href="/signup/index.html"
-                  ><i class="bi bi-box-arrow-in-right"></i> Entrar</a
-                >
-              </li>
             </ul>
           </div>
         </article>
-        <article class="col-12 col-lg-auto mt-4 flex" id="socialSection">
+        <article class="col-12 col-lg-auto mt-4 flex w-100" id="socialSection">
           <div class="col-auto d-flex gap-2 justify-content-between">
-            <a href="#"><i class="bi bi-whatsapp mx-2"></i></a>
-            <a href="#"><i class="bi bi-linkedin mx-2"></i></a>
-            <a href="#"><i class="bi bi-instagram mx-2"></i></a>
-            <a href="#"><i class="bi bi-envelope mx-2"></i></a>
+            <a href="https://wa.link/t49sro" target="_blank"><i class="bi bi-whatsapp mx-2"></i></a>
+            <a href="https://www.linkedin.com/company/pd-case-informatica-ltda/" target="_blank"><i class="bi bi-linkedin mx-2"></i></a>
+            <a href="https://www.instagram.com/pdcaseinformatica/" target="_blank"><i class="bi bi-instagram mx-2"></i></a>
+            <a href="mailto:contato@pdclinica.com"><i class="bi bi-envelope mx-2"></i></a>
           </div>
-          <a href="/trabalhe-conosco/index.html" class="btn btn-outline mt-4 w-100">Trabalhe Conosco</a>
+          <a
+            href="/trabalhe-conosco/index.html"
+            class="btn btn-outline mt-4 w-100"
+            >Trabalhe Conosco</a
+          >
         </article>
       </section>
       <div id="divider" class="col-12 my-2"></div>
       <p class="col-12 text-center">
-        © PD Clinica 2025 | Desenvolvido por Pablo, Pedro e Rafael.
+        © PD Clínica 2026 | Desenvolvido por Pablo, Pedro e Rafael.
       </p>
     </footer>
 
@@ -329,6 +332,5 @@
       import { setMedicos } from "./js/especialidade.js";
       setMedicos("Ortopedia");
     </script>
-    <script src="/js/darkmode.js"></script>
   </body>
 </html>
