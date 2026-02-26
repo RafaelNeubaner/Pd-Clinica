@@ -54,8 +54,10 @@
   <body>
     <!-- HEADER -->
     <header class="headerContainer">
-      <nav class="headerNav navbar navbar-expand-lg w-100 container-fluid d-flex justify-content-between align-items-center">
-
+      <nav class="headerNav navbar navbar-expand-lg w-100">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center p-0"
+        >
           <button
             class="navbar-toggler custom-toggler order-0 me-auto"
             type="button"
@@ -76,6 +78,7 @@
               height="68"
               id="logo"
               class="img-fluid logo"
+              id="logo"
             />
           </a>
 
@@ -86,9 +89,12 @@
             <i class="bi bi-box-arrow-in-right"></i>
           </a>
 
+          <div
+            class="collapse navbar-collapse order-3 order-lg-2"
+            id="navbarSupportedContent"
+          >
             <ul
-              class="collapse navbar-collapse order-3 order-lg-2 navbar-nav ms-auto mb-2 mb-lg-0 align-items-start align-items-lg-center justify-content-start justify-content-lg-end"
-              id="navbarSupportedContent"
+              class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-start align-items-lg-center"
             >
               <li class="nav-item">
                 <a class="nav-link" href="/institucional/index.html"
@@ -111,7 +117,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="./trabalhe-conosco/index.html"
+                <a class="nav-link" href="/trabalhe-conosco/index.html"
                   >Carreira</a
                 >
               </li>
@@ -132,6 +138,8 @@
                 </button>
               </li>
             </ul>
+          </div>
+        </div>
       </nav>
       <input type="checkbox" id="toggleForm" class="d-none" />
     </header>
@@ -982,7 +990,7 @@
         class="col-12 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between mb-4"
       >
         <div
-          class="col-12  d-flex flex-column align-items-center align-items-lg-start mb-4"
+          class="col-12 col-lg-auto d-flex flex-column align-items-center mb-4"
         >
           <img
             src="/assets/media/images/logo-dark.png"
@@ -1039,7 +1047,7 @@
       </section>
       <div id="divider" class="col-12 my-2"></div>
       <p class="col-12 text-center">
-        © PD Clinica 2026 | Desenvolvido por Pablo, Pedro e Rafael.
+        © PD Clínica 2026 | Desenvolvido por Pablo, Pedro e Rafael.
       </p>
     </footer>
 
