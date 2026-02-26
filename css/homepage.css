@@ -36,7 +36,7 @@ main {
 
 /* HOMEPAGE - HERO SECTION */
 #heroSection {
-  margin-top: 150px;
+  margin-top: 110px;
   text-align: center;
   padding: 60px 20px;
   display: flex;
@@ -165,7 +165,6 @@ main {
 }
 
 .buttonMore {
-  background-color: var(--primary);
   padding: 12px 24px;
 }
 
@@ -174,8 +173,13 @@ main {
 }
 
 #carousel-scroll-container {
+  display: flex;
+  gap: 1rem; 
+  overflow-x: auto;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; 
   scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 #carousel-scroll-container::-webkit-scrollbar {
@@ -188,7 +192,7 @@ main {
   max-width: 270px;
   border: 2px solid var(--secondary);
   border-radius: 12px;
-  color: var(--primary);
+  color: var(--txt-light);
 }
 
 .helpCard h2 {
@@ -198,7 +202,7 @@ main {
 }
 
 .helpCard .iconHelp {
-  background-color: var(--primary);
+  background-color: #1b263b;
   width: fit-content;
   border-radius: 8px;
 }
@@ -209,6 +213,10 @@ main {
 }
 
 #helpSection button {
+  width: fit-content;
+}
+
+#helpSection a {
   width: fit-content;
 }
 
@@ -223,8 +231,6 @@ main {
   left: 0;
   transform: translateY(-50%);
 }
-
-
 
 #container-help-carousel #slideRight {
   width: 40px;
@@ -244,6 +250,13 @@ main {
   .iconHelp img {
     height: 25px;
     width: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .helpCard {
+    flex: 0 0 calc(50% - 8px); 
+    max-width: calc(50% - 8px);
   }
 }
 
@@ -319,10 +332,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
+    color: var(--txt-dark);
 }
 
 .containerCtaTxt span {
   font-weight: 600;
+  color:  var(--txt-dark);
 }
 
 .containerCtaBtn {
@@ -359,6 +374,11 @@ main {
 #avaliacoes .col-lg-4 {
   margin-right: 8px;
   margin-left: 8px;
+}
+
+#avaliacoes article {
+  background-color: var(--bg-header);
+  color: var(--txt-light);
 }
 
 .starBadge {
