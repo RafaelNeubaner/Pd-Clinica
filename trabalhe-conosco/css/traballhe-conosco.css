@@ -157,7 +157,7 @@ section {
       color: var(--tertiary);
     }
     #formTrabalheConosco input, textarea{
-      color: var(--txt-dark);
+      color: var(--txt-dark) !important;
       border-color: var(--tertiary);
     }
 
