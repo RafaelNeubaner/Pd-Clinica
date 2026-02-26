@@ -5,13 +5,13 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 96px;
+    gap: 60px;
     width: 100%;
     overflow: hidden;
 }
 
 section {
-    max-width: 1920px;
+    max-width: 1620px;
     width: 100%;
     margin: 0 auto;
 }
@@ -33,8 +33,9 @@ a{
 #heroSection img{
     width: 100%;
     height: 100%;
+    max-height: 600px;
     object-fit: cover;
-    
+    object-position: center;
 }
 
 #heroSection > div{
@@ -76,27 +77,20 @@ a{
 #historia #img1 {
 
     border-radius: 15px 0 0 0;
-    border-top: 3px solid #000;
-    border-left: 3px solid #000;
     object-fit: cover;
 }
 
 #historia #img2 {
-    border-right: 3px solid #000;
     object-fit: cover;
 }
 
 #historia #img3 {
     border-radius: 0 0 0 15px;
-    border-bottom: 3px solid #000;
-    border-left: 3px solid #000;
     object-fit: cover;
 }
 
 #historia .textHistory {
     padding: 8px;
-    border-top: 3px solid #000;
-    border-right: 3px solid #000;
     border-radius: 0 15px 0 0;
     flex:1;
     background-color: var(--tertiary);
@@ -104,15 +98,12 @@ a{
 
 #historia .textHistory2 {
     padding: 8px;
-    border-left: 3px solid #000;
     flex:1;
     background-color: var(--tertiary);
 }
 
 #historia .textHistory3 {
     padding: 8px;
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
     border-radius: 0 0 15px 0;
     flex:1;
     background-color: var(--tertiary);
@@ -150,6 +141,7 @@ a{
     gap: 32px;
     justify-content: center;
     flex-wrap:nowrap;
+    align-items: stretch;
 
 }
 
@@ -168,26 +160,12 @@ a{
     margin-bottom: 32px;
 }
 
-#imgEstrutura01,
-#imgEstrutura03 {
-    border-top: 3px solid var(--bg-dark);
-    
-}
-
 #imgEstrutura01 {
-    border-left: 3px solid var(--bg-dark);
     border-radius: 12px 0 0 0;
-}
-
-#imgEstrutura02 {
-    border-top: 3px solid var(--bg-dark);
-    
 }
 
 #imgEstrutura03 {
     border-radius: 0 12px 0 0;
-    border-top: 3px solid var(--bg-dark);
-    border-right: 3px solid var(--bg-dark);
 }
 
 #estrutura .textContainer01,
@@ -197,26 +175,20 @@ a{
     padding: 24px 16px;
     height: auto;
     min-height: 200px;
+    flex-grow: 1;
 
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 16px;
     align-items: center;
 }
 
 #estrutura .textContainer01 {
-    border-bottom: 3px solid var(--bg-dark);
-    border-left: 3px solid var(--bg-dark);
     border-radius: 0 0 0 12px;
 }
 
-#estrutura .textContainer02 {
-    border-bottom: 3px solid var(--bg-dark);
-}
-
 #estrutura .textContainer03 {
-    border-bottom: 3px solid var(--bg-dark);
-    border-right: 3px solid var(--bg-dark);
     border-radius: 0 0 12px 0;
 }
 
@@ -254,18 +226,8 @@ a{
 
     #imgEstrutura01 {
         border-radius: 12px 12px 0 0;
-        border-top: 3px solid var(--bg-dark);
-        border-left: 3px solid var(--bg-dark);
-        border-right: 3px solid var(--bg-dark);
     }
 
-    #imgEstrutura02,
-    #imgEstrutura03 {
-        border-left: 3px solid var(--bg-dark);
-        border-right: 3px solid var(--bg-dark);
-        border-top: none;
-        border-bottom: none;
-    }
 
     #imgEstrutura03 {
         border-radius: 0;
@@ -286,25 +248,10 @@ a{
     }
 
     #estrutura .textContainer01 {
-        border-bottom: none;
-
-        border-left: 3px solid var(--bg-dark);
-        border-right: 3px solid var(--bg-dark);
         border-radius: 0;
     }
 
-    #estrutura .textContainer02 {
-
-        border-left: 3px solid var(--bg-dark);
-        border-right: 3px solid var(--bg-dark);
-        border-bottom: none;
-
-    }
-
     #estrutura .textContainer03 {
-        border-bottom: 3px solid var(--bg-dark);
-        border-left: 3px solid var(--bg-dark);
-        border-right: 3px solid var(--bg-dark);
         border-radius: 0 0 12px 12px;
     }
 
@@ -324,7 +271,6 @@ a{
     justify-content: center;
     gap: 64px;
     width: 100%;
-    margin: 0 32px;
     margin-bottom: 24px;   
 }
 
@@ -335,7 +281,6 @@ a{
 
 @media (max-width: 768px) {
     #ctaEstrutura {
-        margin: 0 24px;
         padding: 32px 12px;
         gap: 32px;
     }
@@ -347,34 +292,23 @@ a{
   
 /* Missao e valores*/
 #missaoValores {
-    min-height: 600px;
     padding: 0 24px;
 }
 
 #missaoValores img {
     object-fit: cover;
     border-radius: 12px 12px 0 0;
-    border: 3px solid var(--bg-dark);
-    border-bottom: none;
 }
 
 .missaoValoresItem {
     background-color: var(--tertiary);
     padding: 10px 24px;
     text-align: center;
-    border: 3px solid var(--bg-dark);
     border-radius: 0;
     flex:1;
 }
 
-.missaoValoresItem:nth-child(1),
-.missaoValoresItem:nth-child(2) {
-    border-top: 0;
-    border-bottom: 0;
-}
-
 .missaoValoresItem:nth-child(3) {
-    border-top: 0;
     border-radius: 0 0 12px 12px;
 }
 
@@ -407,26 +341,15 @@ a{
     }
     #missaoValores img {
         max-width: 40%;
-        border-right: 0;
-        border-bottom: 3px solid var(--bg-dark);
         border-radius: 12px 0 0 12px;
     }
 
-    .missaoValoresItem:nth-child(1),
-    .missaoValoresItem:nth-child(2) {
-        border-top: 0;
-        border-bottom: 0;
-        border-left: 0;
-    }
 
     .missaoValoresItem:nth-child(1){
-        border-top: 3px solid var(--bg-dark);
         border-radius: 0 12px 0 0;
     }
 
     .missaoValoresItem:nth-child(3) {
-        border-top: 0;
-        border-left:0;
         border-radius: 0 0 12px 0;
     }
 
