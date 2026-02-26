@@ -8,6 +8,10 @@ main > section{
     max-width: 1200px;
 }
 
+.pt-5{
+    background-color: var(--bg-header);
+}
+
 .procedimentoCard{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -36,7 +40,7 @@ main > section{
     text-align: center;
     padding: 20px;
     border-radius: 12px;
-    border: 4px solid var(--tertiary);
+    border: 3px solid var(--tertiary);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     background-color: var(--bg-header);
     max-width: 280px;
