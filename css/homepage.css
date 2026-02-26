@@ -744,7 +744,7 @@ main {
 
 #formContact input,
 #formContact textarea {
-  color: var(--txt-dark);
+  color: var(--txt-dark) !important;
   background-color: transparent; 
 }
 
