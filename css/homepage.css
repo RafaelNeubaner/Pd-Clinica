@@ -36,7 +36,7 @@ main {
 
 /* HOMEPAGE - HERO SECTION */
 #heroSection {
-  margin-top: 150px;
+  margin-top: 110px;
   text-align: center;
   padding: 60px 20px;
   display: flex;
@@ -173,8 +173,13 @@ main {
 }
 
 #carousel-scroll-container {
+  display: flex;
+  gap: 1rem; 
+  overflow-x: auto;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; 
   scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 #carousel-scroll-container::-webkit-scrollbar {
@@ -211,6 +216,10 @@ main {
   width: fit-content;
 }
 
+#helpSection a {
+  width: fit-content;
+}
+
 #slideLeft, 
 
 #container-help-carousel #slideLeft {
@@ -222,8 +231,6 @@ main {
   left: 0;
   transform: translateY(-50%);
 }
-
-
 
 #container-help-carousel #slideRight {
   width: 40px;
@@ -243,6 +250,13 @@ main {
   .iconHelp img {
     height: 25px;
     width: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .helpCard {
+    flex: 0 0 calc(50% - 8px); 
+    max-width: calc(50% - 8px);
   }
 }
 
@@ -410,7 +424,6 @@ main {
 }
 
 .depoimento {
-  font-size: 12px;
   line-height: 18px;
   margin-top: 12px;
   margin-bottom: 12px;

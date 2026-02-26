@@ -197,7 +197,7 @@
             id="carousel-scroll-container"
           >
             <article
-              class="helpCard col-5 col-lg-auto d-flex flex-column justify-content-start p-2 p-lg-3 py-3 py-lg-5 gap-2 gap-lg-2"
+              class="helpCard col-5 d-flex flex-column justify-content-start p-2 p-lg-3 py-3 py-lg-5 gap-2 gap-lg-2"
             >
               <img
                 src="assets/media/icons/house_garage.svg"
@@ -209,14 +209,14 @@
               <p>O atendimento móvel do PD Clínica onde você estiver</p>
             </article>
             <article
-              class="helpCard col-5 col-lg-auto d-flex flex-column justify-content-start p-2 p-lg-3 py-3 py-lg-5 gap-2 gap-lg-2"
+              class="helpCard col-5  d-flex flex-column justify-content-start p-2 p-lg-3 py-3 py-lg-5 gap-2 gap-lg-2"
             >
               <img src="assets/media/icons/phone_film.svg" alt="" srcset="" class="p-2 iconHelp"/>
               <h2>Telemedicina</h2>
               <p>Consultas com especialistas, a qualquer hora e de forma remota</p>
             </article>
             <article
-              class="helpCard col-5 col-lg-auto d-flex flex-column justify-content-start p-2 p-lg-3 py-3 py-lg-5 gap-2 gap-lg-2"
+              class="helpCard col-5  d-flex flex-column justify-content-start p-2 p-lg-3 py-3 py-lg-5 gap-2 gap-lg-2"
             >
               <img
                 src="assets/media/icons/health_checklist.svg"
@@ -228,7 +228,7 @@
               <p>Um protocolo de cuidado personalizado para você</p>
             </article>
             <article
-              class="helpCard col-5 col-lg-auto d-flex flex-column justify-content-start p-2 p-lg-3 py-3 py-lg-5 gap-2 gap-lg-2"
+              class="helpCard col-5  d-flex flex-column justify-content-start p-2 p-lg-3 py-3 py-lg-5 gap-2 gap-lg-2"
             >
               <img src="assets/media/icons/checkup.svg" alt="" srcset="" class="p-2 iconHelp"/>
               <h2>Exames & Procedimentos</h2>
@@ -243,10 +243,8 @@
           </button>
         </section>
 
-        <a href="/convenios/index.html" class="text-decoration-none">
-          <button class="btn-primary w-100 d-lg-none buttonMore">
-            Saiba Mais
-          </button>
+        <a href="/convenios/index.html" class="btn-primary w-100 d-lg-none buttonMore text-decoration-none text-center">
+          Saiba Mais
         </a>
       </section>
 
@@ -782,7 +780,7 @@
             <header class="cardHeader d-flex align-items-center">
               <p class="avatar">P</p>
               <div class="infoClient">
-                <p class="nameCard">Pablo Santos</p>
+                <p class="nameCard">Pablo Perdigão</p>
                 <p class="patientDesc">Paciente do Dr. Lucas Ferreira</p>
               </div>
             </header>
@@ -890,13 +888,13 @@
           </summary>
           <p>
             Para acessar os resultados de exames basta entrar em contato com a
-            nossa eequipe através dos nosso canais de comunicação (<a
+            nossa equipe através dos nossos canais de comunicação (<a
               class="text-decoration-none"
               href="mailto:contato@pdclinica.com"
               >E-mail</a
             >,
             <a class="text-decoration-none" href="tel:+5531998881324"
-              >telefone</a
+              >Telefone</a
             >
             ou
             <a
@@ -904,8 +902,8 @@
               class="text-decoration-none"
               href="https://wa.link/xfzkl4"
               >Whatsapp</a
-            >) que um de nossos atendentes irá te eenviar o relatorio completo
-            com todos os seus resultados, receitas e agendamentos
+            >) que um de nossos atendentes irá te enviar o relatório completo
+            com todos os seus resultados, receitas e agendamentos.
           </p>
         </details>
         <details class="faqItem">
@@ -981,10 +979,10 @@
       class="d-flex flex-column justify-content-center justify-content-lg-between w-100 px-5 py-4"
     >
       <section
-        class="col-12 row justify-content-center justify-content-lg-between mb-4"
+        class="col-12 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between mb-4"
       >
         <div
-          class="col-12 col-lg-auto d-flex flex-column align-items-center align-items-lg-start mb-4"
+          class="col-12  d-flex flex-column align-items-center align-items-lg-start mb-4"
         >
           <img
             src="/assets/media/images/logo-dark.png"
@@ -997,8 +995,18 @@
           <h2 class="d-none d-lg-block">
             Tudo o que sua saúde precisa em um só lugar.
           </h2>
+          <address class="d-flex flex-column align-items-center justify-content-center">
+            <a
+              href="mailto:contato@pdclinica.com"
+              class="text-decoration-none"
+              ><i class="bi bi-envelope"></i> contato@pdclinica.com</a>
+            <a 
+              href="tel:+5531998881324"
+              class="text-decoration-none"
+              ><i class="bi bi-telephone"></i> +55 (31) 99988-1324</a>
+          </address>
         </div>
-        <article class="d-flex col-12 gap-5 col-lg-auto justify-content-between">
+        <article class="d-none d-lg-flex col-12 gap-5 col-lg-auto justify-content-between">
           <div class="col-6">
             <h2 class="mb-3">Nossa Clínica</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
@@ -1016,27 +1024,22 @@
               <li>
                 <a href="/trabalhe-conosco/index.html">Trabalhe Conosco</a>
               </li>
-              <li>
-                <a href="/signup/index.html"
-                  ><i class="bi bi-box-arrow-in-right"></i> Entrar</a
-                >
-              </li>
             </ul>
           </div>
         </article>
-        <article class="col-12 col-lg-auto mt-4 flex" id="socialSection">
+        <article class="col-12 col-lg-auto mt-4 flex w-100" id="socialSection">
           <div class="col-auto d-flex gap-2 justify-content-between">
-            <a href="#"><i class="bi bi-whatsapp mx-2"></i></a>
-            <a href="#"><i class="bi bi-linkedin mx-2"></i></a>
-            <a href="#"><i class="bi bi-instagram mx-2"></i></a>
-            <a href="#"><i class="bi bi-envelope mx-2"></i></a>
+            <a href="https://wa.link/t49sro" target="_blank"><i class="bi bi-whatsapp mx-2"></i></a>
+            <a href="https://www.linkedin.com/company/pd-case-informatica-ltda/" target="_blank"><i class="bi bi-linkedin mx-2"></i></a>
+            <a href="https://www.instagram.com/pdcaseinformatica/" target="_blank"><i class="bi bi-instagram mx-2"></i></a>
+            <a href="mailto:contato@pdclinica.com"><i class="bi bi-envelope mx-2"></i></a>
           </div>
           <a href="/trabalhe-conosco/index.html" class="btn btn-outline mt-4 w-100">Trabalhe Conosco</a>
         </article>
       </section>
       <div id="divider" class="col-12 my-2"></div>
       <p class="col-12 text-center">
-        © PD Clinica 2025 | Desenvolvido por Pablo, Pedro e Rafael.
+        © PD Clinica 2026 | Desenvolvido por Pablo, Pedro e Rafael.
       </p>
     </footer>
 

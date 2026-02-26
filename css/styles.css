@@ -174,7 +174,7 @@ body.dark-mode {
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 h1 {
@@ -267,7 +267,7 @@ select {
       }
     
       p {
-        font-size: 12px;
+        font-size: 14px;
       }
     
       .btn-primary {

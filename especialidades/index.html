@@ -73,7 +73,7 @@
 
           <a class="navbar-brand order-1 mx-auto mx-lg-0" href="/index.html">
             <img
-              src="/assets/media/logo/logo-dark.png"
+              src="/assets/media/logo/logo-light.png"
               alt="Logo PD Clínica"
               width="256"
               height="68"
@@ -141,6 +141,7 @@
           </div>
         </div>
       </nav>
+      <input type="checkbox" id="toggleForm" class="d-none" />
     </header>
 
     <main class="d-flex flex-column align-items-center">
@@ -170,7 +171,7 @@
               </h3>
               <img
                 src="/assets/media/images/especialidades-angiologia.png"
-                alt="imagem de um médico especialista em angiologia atendendo um paciente"
+                alt="Médico especialista em angiologia atendendo um paciente"
               />
               <p class="card-text">
                 Cuidado especializado para a saúde dos seus vasos sanguíneos e
@@ -191,7 +192,7 @@
               </h3>
               <img
                 src="/assets/media/images/especialidades-cardiologia.png"
-                alt="imagem de um médico especialista em cardiologia atendendo um paciente"
+                alt="Médico especialista em cardiologia atendendo um paciente"
               />
               <p class="card-text">
                 Proteja o seu coração com check-ups preventivos e acompanhamento
@@ -212,7 +213,7 @@
               </h3>
               <img
                 src="/assets/media/images/especialidades-oftalmologia.png"
-                alt="imagem de um médico especialista em oftalmologia atendendo um paciente"
+                alt="Médico especialista em oftalmologia atendendo um paciente"
               />
               <p class="card-text">
                 Diagnóstico preciso e tratamento de doenças oculares para
@@ -233,7 +234,7 @@
               </h3>
               <img
                 src="/assets/media/images/especialidades-ortopedia.png"
-                alt="imagem de um médico especialista em ortopedia atendendo um paciente"
+                alt="Médico especialista em ortopedia atendendo um paciente"
               />
               <p class="card-text">
                 Especialidade dedicada à saúde dos ossos, músculos e
@@ -254,13 +255,12 @@
               </h3>
               <img
                 src="/assets/media/images/especialidades-pediatria.png"
-                alt="imagem de um médico especialista em pediatria atendendo um paciente"
+                alt="Médico especialista em pediatria atendendo um paciente"
               />
               <p class="card-text">
                 Acompanhamento completo do desenvolvimento infantil, do
                 nascimento à adolescência. Cuidado preventivo e vacinação para
-                garantir um crescimento saudável. Botão: Cuidado para os
-                pequenos
+                garantir um crescimento saudável.
               </p>
             </article>
           </div>
@@ -277,7 +277,7 @@
               </h3>
               <img
                 src="/assets/media/images/especialidades-psicologia.png"
-                alt="imagem de um médico especialista em psicologia atendendo um paciente"
+                alt="Médico especialista em psicologia atendendo um paciente"
               />
               <p class="card-text">
                 Apoio emocional e terapêutico para promover o seu bem-estar
@@ -294,10 +294,10 @@
       class="d-flex flex-column justify-content-center justify-content-lg-between w-100 px-5 py-4"
     >
       <section
-        class="col-12 row justify-content-center justify-content-lg-between mb-4"
+        class="col-12 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between mb-4"
       >
         <div
-          class="col-12 col-lg-auto d-flex flex-column align-items-center align-items-lg-start mb-4"
+          class="col-12 col-lg-auto d-flex flex-column align-items-center mb-4"
         >
           <img
             src="/assets/media/images/logo-dark.png"
@@ -310,10 +310,18 @@
           <h2 class="d-none d-lg-block">
             Tudo o que sua saúde precisa em um só lugar.
           </h2>
+          <address class="d-flex flex-column align-items-center justify-content-center">
+            <a
+              href="mailto:contato@pdclinica.com"
+              class="text-decoration-none"
+              ><i class="bi bi-envelope"></i> contato@pdclinica.com</a>
+            <a 
+              href="tel:+5531998881324"
+              class="text-decoration-none"
+              ><i class="bi bi-telephone"></i> +55 (31) 99988-1324</a>
+          </address>
         </div>
-        <article
-          class="d-flex col-12 gap-5 col-lg-auto justify-content-between"
-        >
+        <article class="d-none d-lg-flex col-12 gap-5 col-lg-auto justify-content-between">
           <div class="col-6">
             <h2 class="mb-3">Nossa Clínica</h2>
             <ul class="list-unstyled d-flex flex-column gap-3">
@@ -331,20 +339,15 @@
               <li>
                 <a href="/trabalhe-conosco/index.html">Trabalhe Conosco</a>
               </li>
-              <li>
-                <a href="/signup/index.html"
-                  ><i class="bi bi-box-arrow-in-right"></i> Entrar</a
-                >
-              </li>
             </ul>
           </div>
         </article>
-        <article class="col-12 col-lg-auto mt-4 flex" id="socialSection">
+        <article class="col-12 col-lg-auto mt-4 flex w-100" id="socialSection">
           <div class="col-auto d-flex gap-2 justify-content-between">
-            <a href="#"><i class="bi bi-whatsapp mx-2"></i></a>
-            <a href="#"><i class="bi bi-linkedin mx-2"></i></a>
-            <a href="#"><i class="bi bi-instagram mx-2"></i></a>
-            <a href="#"><i class="bi bi-envelope mx-2"></i></a>
+            <a href="https://wa.link/t49sro" target="_blank"><i class="bi bi-whatsapp mx-2"></i></a>
+            <a href="https://www.linkedin.com/company/pd-case-informatica-ltda/" target="_blank"><i class="bi bi-linkedin mx-2"></i></a>
+            <a href="https://www.instagram.com/pdcaseinformatica/" target="_blank"><i class="bi bi-instagram mx-2"></i></a>
+            <a href="mailto:contato@pdclinica.com"><i class="bi bi-envelope mx-2"></i></a>
           </div>
           <a
             href="/trabalhe-conosco/index.html"
@@ -355,7 +358,7 @@
       </section>
       <div id="divider" class="col-12 my-2"></div>
       <p class="col-12 text-center">
-        © PD Clinica 2025 | Desenvolvido por Pablo, Pedro e Rafael.
+        © PD Clínica 2026 | Desenvolvido por Pablo, Pedro e Rafael.
       </p>
     </footer>
 
