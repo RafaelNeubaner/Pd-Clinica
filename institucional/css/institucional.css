@@ -40,7 +40,7 @@ a{
 
 #heroSection > div{
     position: absolute;
-    top: 50%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px 40px;
@@ -49,6 +49,8 @@ a{
 
 #heroSection h2{
     max-width: 700px;
+    font-weight: 800;
+    color: var(--primary);
 }
 
 #heroSection button{
@@ -119,13 +121,8 @@ a{
 
 #historia h3 {
     color: var(--bg-light);
-    font-weight: bold;
+    font-weight: 800;
     margin-bottom: 0;
-    text-shadow:
-        1px 0 0 var(--bg-light),
-        -1px 0 0 var(--bg-light),
-        0 1px 0 var(--bg-light),
-        0 -1px 0 var(--bg-light);
 }
 
 #historia p {
@@ -195,7 +192,7 @@ a{
 
 #estrutura h3 {
     color: var(--bg-light);
-    font-weight: bold;
+    font-weight: 800;
     font-size: 24px;
     margin: 0;
 
@@ -314,7 +311,7 @@ a{
 
 .missaoValoresItem h2 {
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 800;
     color: var(--txt-dark);
 }
 
