@@ -434,3 +434,7 @@ a{
       margin-top: 150px;
     }
 }
+
+.botaoEspecialista {
+    color: var(--txt-dark);
+}
