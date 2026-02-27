@@ -66,6 +66,7 @@
         window.location.hash = "dashboard";
       }
     </script>
+    <script src="/dashboard/js/validateLogin.js"></script>
   </head>
   <body class="d-flex flex-column vh-100">
     <!-- HEADER -->
@@ -89,9 +90,9 @@
         >
           <i class="bi bi-moon-stars"></i>
         </button>
-        <a href="/" class="btn btn-outline"
-          ><i class="bi bi-box-arrow-left"></i> Sair</a
-        >
+        <button type="button" class="btn btn-outline" id="logoutButton">
+          <i class="bi bi-box-arrow-left"></i> Sair
+        </button>
         <button class="btn btn-outline d-md-none" id="showMenu">
           <i class="bi bi-list"></i>
         </button>
@@ -130,10 +131,10 @@
         <div class="w-100 h-100 row justify-content-center gap-3 mt-3 g-4">
           <div
             id="chart-row"
-            class="w-100 h-100 d-flex flex-column gap-2 flex-md-row gx-md-5"
+            class="w-100 h-100 d-flex flex-column gap-2 flex-lg-row gx-md-5"
           >
             <template id="chartTemplate">
-              <article class="col-12 col-md-6 position-relative chart">
+              <article class="col-12 col-lg-6 position-relative chart">
                 <div
                   class="position-absolute top-0 start-0 p-3 totalCountContainer"
                 >

@@ -34,17 +34,30 @@ function handleLogin() {
         return;
     }
 
-    if (email === "medico@gmail.com"){
+    if (email === "medico@gmail.com" ) {
+        if (password !== "medico123") {
+            console.log("Senha incorreta para médico");
+            showToast("Senha incorreta para médico.");
+            return;
+        }
+        // Login bem-sucedido para médico
         localStorage.setItem("userRole", "medico");
-    }else{
-        localStorage.setItem("userRole", "atendente");
+
+        showToast("Login bem-sucedido!", true);
+    
+        setTimeout(() => {
+            window.location.href = "/dashboard/index.html";
+        }, 800);
+        return;
     }
+
+    localStorage.setItem("userRole", "atendente");
 
     showToast("Login bem-sucedido!", true);
     
     setTimeout(() => {
         window.location.href = "/dashboard/index.html";
-    }, 1200);
+    }, 800);
 }
 
 function showToast(message, isSuccess = false) {

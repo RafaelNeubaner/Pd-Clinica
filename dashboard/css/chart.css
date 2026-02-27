@@ -3,6 +3,7 @@
     border-radius: 12px;
     background-color: var(--bg-light);
     aspect-ratio: 1.5;
+    max-height: 300px;
 }
 
 
@@ -35,8 +36,12 @@
     height: fit-content;
 }
 
+.chart .graphContainer{
+    width: 50% !important;
+    height: 40%;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .chart h4 {
         font-size: 20px;
     }
@@ -63,6 +68,8 @@
     }
     
     .chart .graphContainer{
+        width: 80% !important;
+        height: 60%;
         position: absolute;
         bottom: 0;
         left: 50%;
