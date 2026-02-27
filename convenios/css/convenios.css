@@ -5,18 +5,19 @@ main {
     gap: 96px;
 }
 
-#banner{
+#banner {
     width: 100%;
-        max-width: 1440px;
-        padding-top: 160px;
-}
+    object-fit: cover;
 
-#conveniosSection{
+    padding-top: 65px;
+}
+ 
+#conveniosSection {
     background-color: var(--bg-light);
     width: 100%;
 }
 
-.convenioLogosContainer{
+.convenioLogosContainer {
     margin: auto;
 }
 
@@ -39,23 +40,26 @@ main {
     cursor: pointer;
 }
 
-@media (max-width: 576px) {
-    .convenioLogosContainer img {
-        max-width: 150px;
-        max-height: 150px;
-    }
-    #banner{
-        padding-top: 80px;
-    }
-    
-}
 
 @media (max-width: 996px) {
     .convenioLogosContainer img {
         max-width: 175px;
         max-height: 175px;
     }
-    #banner{
-        padding-top: 80px;
+    
+    #banner {
+        padding-top: 30px;
     }
+}
+
+@media (max-width: 576px) {
+    .convenioLogosContainer img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    #banner {
+        padding-top: 48px;
+    }
+
 }
