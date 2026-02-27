@@ -50,19 +50,15 @@ function ativarCarrossel(containerId, scrollId, btnLeftId, btnRightId, step) {
   });
 
   btnLeft.addEventListener("click", function () {
-    const currentStep =
-      scrollSection.querySelector(".helpCard").offsetWidth + 16;
     scrollSection.scrollBy({
-      left: -currentStep,
+      left: -step,
       behavior: "smooth",
     });
   });
 
   btnRight.addEventListener("click", function () {
-    const currentStep =
-      scrollSection.querySelector(".helpCard").offsetWidth + 16;
     scrollSection.scrollBy({
-      left: currentStep,
+      left: step,
       behavior: "smooth",
     });
   });
