@@ -3,7 +3,6 @@ body{
 }
 
 section{
-    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -15,8 +14,10 @@ main{
     
 }
 
-#heroBlog{
-    padding-top: 110px;
+#heroBlog {
+    width: 100vw;
+    object-fit: cover;
+    margin-top: 78px;
 }
 
 .blogPost{
@@ -50,8 +51,21 @@ main{
     }
 }
 
-@media (min-width: 992px) {
+
+
+@media (max-width: 768px) {
     #heroBlog{
-        padding-top: 180px;
+        margin-top: 80px;
     }
 }
+
+
+@media (max-width: 576px) {
+    #heroBlog{
+        margin-top: 96px;
+    }
+}
+
+
+
+
