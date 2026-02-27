@@ -12,6 +12,7 @@ function showPosts(posts){
         postElement.querySelector("h3").textContent = post.titulo;
         postElement.querySelector(".postExcerpt").textContent = post.resumo;
         postElement.querySelector(".postDate").textContent = post.data.toLocaleDateString("pt-BR");
+        postElement.querySelector("a").href = post.link;
         postsContainer.appendChild(postElement);
     }
 }
