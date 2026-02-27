@@ -528,12 +528,13 @@ main {
   max-width: 100%;
 }
 
-#unidades .slider-window {
+#unidades .slider-window .slider-track {
   overflow-x: auto;
   overflow-y: hidden;
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  scroll-snap-type: x mandatory; 
 }
 
 #unidades .slider-window::-webkit-scrollbar {
@@ -544,7 +545,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
-
+  scroll-snap-align: start;
   background-color: var(--tertiary);
   border: none;
   height: 100%;
