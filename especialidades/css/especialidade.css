@@ -1,7 +1,7 @@
-main >img{
+main > #bannerEspecialidade {
     width: 100%;
-    max-width: 1440px;
-    padding-top: 160px;
+    object-fit: cover;
+    padding-top: 86px;
 }
 
 main > section{
@@ -51,4 +51,11 @@ main > section{
     max-width: 250px;
     margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+    #bannerEspecialidade {
+        padding-top: 65px;
+    }
+}
+
 
