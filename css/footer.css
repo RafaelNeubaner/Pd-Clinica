@@ -22,20 +22,33 @@ footer img{
 
 /* FOOTER - SOCIAL */
 footer #socialSection a {
-  background-color: var(--secondary);
   padding: 1px;
   border-radius: 4px;
+  color: var(--tertiary);
   border: 2px solid var(--tertiary);
 }
 
-
+footer #socialSection a:hover {
+  color: var(--baby-blue);
+  border: 2px solid var(--baby-blue);
+  transition: all 0.2s ease;
+}
 
 footer #socialSection i {
   font-size: 22px;
 }
 
-footer button {
-  height: 50px;
+footer .btn {
+  display: flex;
+  height: 50px !important;
+  color: var(--txt-dark)!important;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .btn:hover {
+  color: var(--baby-blue)!important;
+  border: 2px solid var(--baby-blue)!important;
 }
 
 #divider {
