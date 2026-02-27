@@ -3,7 +3,7 @@
 var links = document.querySelectorAll("a.nav-link");
 
 document.querySelector("#showMenu").addEventListener("click", function () {
-  document.querySelector("header").classList.toggle("d-none");
+  document.querySelector("aside").classList.toggle("d-none");
 });
 
 function updateActiveLink() {
@@ -12,7 +12,7 @@ function updateActiveLink() {
   link.classList.add("active");
 
   if (document.body.clientWidth < 768) {
-    document.querySelector("header").classList.add("d-none");
+    document.querySelector("aside").classList.add("d-none");
   }
 }
 
