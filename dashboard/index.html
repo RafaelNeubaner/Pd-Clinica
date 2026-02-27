@@ -84,12 +84,12 @@
         <button
           type="button"
           id="toggleDarkMode"
-          class="btn-outline"
+          class="btn-outline d-none d-sm-block"
           aria-pressed="false"
         >
           <i class="bi bi-moon-stars"></i>
         </button>
-        <a href="/" class="btn btn-outline"
+        <a href="/" class="btn btn-outline d-none d-sm-block"
           ><i class="bi bi-box-arrow-left"></i> Sair</a
         >
         <button class="btn btn-outline d-md-none" id="showMenu">
@@ -121,6 +121,22 @@
           <li class="nav-item">
             <a class="nav-link" href="#configuracoes"
               ><i class="bi bi-gear-fill"></i> Configurações</a
+            >
+          </li>
+          <hr class="d-sm-none my-3" />
+          <li class="nav-item d-sm-none">
+            <button
+              type="button"
+              id="toggleDarkModeMenu"
+              class="nav-link btn-outline w-100 text-start"
+              aria-pressed="false"
+            >
+              <i class="bi bi-moon-stars"></i> Modo escuro
+            </button>
+          </li>
+          <li class="nav-item d-sm-none">
+            <a href="/" class="nav-link btn-outline w-100 text-start"
+              ><i class="bi bi-box-arrow-left"></i> Sair</a
             >
           </li>
         </ul>

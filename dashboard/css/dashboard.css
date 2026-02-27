@@ -55,7 +55,6 @@ aside{
     color: var(--secondary);
 }
 
-
 @media (min-width: 768px) {
     aside{
         width: 250px;
@@ -109,23 +108,11 @@ aside{
     color: var(--txt-light);
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
     header{
         position: absolute;
         z-index: 1000;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
         border-radius: 0 0 12px 12px;
     }
-}
-
-
-@media (max-width:768px) {
-    .cardsStatus{
-        flex-direction: column;
-        gap: 50px;
-    }
-    header{
-        background-color: var(--bg-light);
-    }
-    
 }
