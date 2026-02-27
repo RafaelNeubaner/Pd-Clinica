@@ -1,3 +1,5 @@
+
+
 var links = document.querySelectorAll("a.nav-link");
 
 document.querySelector("#showMenu").addEventListener("click", function () {
@@ -16,3 +18,12 @@ function updateActiveLink() {
 
 window.addEventListener("hashchange", updateActiveLink);
 updateActiveLink();
+
+
+document.getElementById("logoutButton").addEventListener("click", function() {
+    localStorage.removeItem("userRole");
+    
+    setTimeout(() => {
+        window.location.href = "/";
+    }, 800);
+});
