@@ -26,14 +26,3 @@ function alertToast(message, error){
     var toast = new bootstrap.Toast(toastElement);
     toast.show();
 }
-
-
-var cardsTrabalho = document.querySelectorAll('.cardVagas');
-cardsTrabalho.forEach(function(card) {
-    card.addEventListener('mouseenter', function() {
-        this.classList.toggle('dark');
-    });
-    card.addEventListener('mouseleave', function() {
-        this.classList.toggle('dark');
-    });
-});
