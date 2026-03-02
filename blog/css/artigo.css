@@ -23,6 +23,12 @@
   height: auto;
 }
 
+#artigo .img-fluid {
+  width: 100%;
+  height: auto;
+  margin: 32px;
+}
+
 #artigo .checkList {
   padding: 0;
 }
