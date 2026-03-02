@@ -535,6 +535,7 @@ main {
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-snap-type: x mandatory; 
+  flex-wrap: nowrap;
 }
 
 #unidades .slider-window::-webkit-scrollbar {
@@ -622,6 +623,9 @@ main {
 
 
 @media (min-width: 992px) {
+  #unidades .slider-window .slider-track {
+    flex-wrap: nowrap; 
+  }
 
   #unidades .slider-item {
     flex: 0 0 calc((100% - 72px) / 2);
@@ -708,6 +712,20 @@ main {
   #unidades .slider-item .card .card-body address a {
     font-size: 14px;
 
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  #unidades .slider-window .slider-track {
+    flex-wrap: wrap;
+    overflow-x: visible; 
+    scroll-snap-type: none;
+    justify-content: center; 
+  }
+
+  #unidades .slider-item {
+    flex: 0 0 calc(50% - 12px); 
+    max-width: calc(50% - 12px);
   }
 }
 
