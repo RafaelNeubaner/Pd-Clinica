@@ -194,20 +194,23 @@
       <section id="containerMedicos">
         <div
           id="containerMedicosScroll"
-          class="row justify-content-center gap-4"
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3"
         >
           <template id="cardMedicoTemplate">
-            <article class="cardMedico col-12 col-md-6 col-lg-3">
-              <img
+            <div class="col">
+              
+              <article class="cardMedico h-100">
+                <img
                 src="../../assets/media/images/dr_jose_ronaldo.png"
                 alt="Foto Dr. José Ronaldo"
-              />
-              <h3>Dr. José Ronaldo Silva</h3>
-              <p>Ortopedista Geral</p>
-              <a href="https://wa.link/p2ieya" target="_blank">
-                <button class="btn btn-primary">Agendar</button>
-              </a>
-            </article>
+                />
+                <h3>Dr. José Ronaldo Silva</h3>
+                <p>Ortopedista Geral</p>
+                <a href="https://wa.link/p2ieya" target="_blank">
+                  <button class="btn btn-primary">Agendar</button>
+                </a>
+              </article>
+            </div>
           </template>
         </div>
       </section>

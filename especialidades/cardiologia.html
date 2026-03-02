@@ -193,19 +193,21 @@
       </section>
 
       <section id="containerMedicos">
-        <div id="containerMedicosScroll" class="d-flex flex-wrap gap-4">
+        <div id="containerMedicosScroll" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
           <template id="cardMedicoTemplate">
-            <article class="cardMedico col">
-              <img
+            <div class="col">
+              <article class="cardMedico h-100">
+                <img
                 src="/assets/media/images/dr_jose_ronaldo.png"
                 alt="Foto Dr. José Ronaldo"
-              />
-              <h3>Dr. José Ronaldo Silva</h3>
-              <p>Especialista em Ecocardiografia</p>
-              <a href="https://wa.link/906jde" target="_blank">
-                <button class="btn btn-primary">Agendar</button>
-              </a>
-            </article>
+                />
+                <h3>Dr. José Ronaldo Silva</h3>
+                <p>Especialista em Ecocardiografia</p>
+                <a href="https://wa.link/906jde" target="_blank">
+                  <button class="btn btn-primary">Agendar</button>
+                </a>
+              </article>
+            </div>
           </template>
         </div>
       </section>

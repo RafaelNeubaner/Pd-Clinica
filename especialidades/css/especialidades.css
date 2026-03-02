@@ -27,6 +27,11 @@
 
 }
 
+#especialidades .col{
+  max-width: 500px;
+  height: 100%;
+}
+
 #especialidades .card {
   border: none;
   border-radius: 8px;
