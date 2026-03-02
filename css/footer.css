@@ -2,6 +2,46 @@
 footer {
   background-color: var(--bg-dark);
   color: var(--baby-blue);
+  width: 100%;
+  padding: 40px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* FOOTER - CONTENT */
+.footerContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+/* FOOTER - LOGO SECTION */
+.footerLogoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.footerLogo {
+  width: 100%;
+  margin-bottom: 24px;
+  max-width: 250px;
+}
+
+.footerLogoSection h2 {
+  text-align: center;
+}
+
+/* FOOTER - ADDRESS */
+.footerAddress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* FOOTER - LINKS */
@@ -15,51 +55,176 @@ footer a:hover {
   transition: all 0.2s ease;
 }
 
-/* FOOTER - LOGO */
-footer img{
-    min-width: 350px;
+.footerNossaClinica,
+.footerOutrosAcessos {
+  display: none;
+}
+
+.footerNossaClinica h2,
+.footerOutrosAcessos h2 {
+  margin-bottom: 24px;
+}
+
+.footerNossaClinica ul,
+.footerOutrosAcessos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 /* FOOTER - SOCIAL */
-footer #socialSection a {
-  padding: 1px;
+#socialSection {
+  margin-top: 32px;
+}
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+#socialSection a {
+  padding: 4px 8px;
   border-radius: 4px;
   color: var(--tertiary);
   border: 2px solid var(--tertiary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer #socialSection a:hover {
+#socialSection a:hover {
   color: var(--baby-blue);
   border: 2px solid var(--baby-blue);
   transition: all 0.2s ease;
 }
 
-footer #socialSection i {
+#socialSection i {
   font-size: 22px;
 }
 
-footer .btn {
+.footerBtn {
   display: flex;
-  height: 50px !important;
-  color: var(--txt-dark)!important;
+  height: 50px;
+  color: var(--txt-dark);
   justify-content: center;
   align-items: center;
+  background-color: transparent;
+  border: 2px solid var(--tertiary);
+  padding: 8px 22px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 32px;
+  width: 100%;
 }
 
-footer .btn:hover {
-  color: var(--baby-blue)!important;
-  border: 2px solid var(--baby-blue)!important;
+.footerBtn:hover {
+  color: var(--baby-blue);
+  border: 2px solid var(--baby-blue);
 }
 
+/* FOOTER - DIVIDER */
 #divider {
+  width: 100%;
+  margin: 16px 0;
   border-bottom: 1px solid var(--tertiary);
 }
 
-@media (min-width: 992px) {
-  footer img{
-      max-width: 250px;
+/* FOOTER - COPYRIGHT */
+.footerCopyright {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+/* RESPONSIVE - TABLET AND UP */
+@media (min-width: 768px) {
+  .footerContent {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
   }
-  footer #socialSection {
-    max-width: 250px;
+
+  .footerLogoSection {
+    flex: 1 1 0;
+    margin-bottom: 0;
+  }
+
+  
+
+  .footerNossaClinica,
+  .footerOutrosAcessos {
+    display: block;
+    flex: 1 1 0;
+  }
+
+  #socialSection {
+    flex: 1 1 0;
+    margin-top: 0;
+  }
+
+}
+
+/* RESPONSIVE - DESKTOP */
+@media (min-width: 992px) {
+
+  .footerLogoSection {
+    flex: 1 1 0;
+  }
+
+  .footerNossaClinica,
+  .footerOutrosAcessos {
+    flex: 1 1 0;
+  }
+
+  #socialSection {
+    flex: 1 1 0;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 24px 16px;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+  .footerBtn {
+    padding: 0;
+    margin-top: 16px;
+  }
+
+  .footerLogoSection {
+    margin-bottom: 16px;
+  }
+
+  .footerLogoSection h2 {
+    margin-bottom: 0;
+  }
+
+  .footerNossaClinica,
+  .footerOutrosAcessos {
+    display: none;
+  }
+
+  #socialSection {
+    margin-top: 16px;
+  }
+
+  .footerLogo {
+    max-width: 200px;
+    margin-bottom: 16px;
   }
 }
