@@ -17,18 +17,18 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
   events: [
     {
       title: "Consulta com João",
-      start: "2026-02-20T10:00:00",
-      end: "2026-02-20T11:00:00",
+      start: "2026-03-03T10:00:00",
+      end: "2026-03-03T11:00:00",
     },
     {
       title: "Consulta com Maria",
-      start: "2026-02-23T14:00:00",
-      end: "2026-02-23T15:00:00",
+      start: "2026-03-05T14:00:00",
+      end: "2026-03-05T15:00:00",
     },
     {
       title: "Consulta com Carlos",
-      start: "2026-02-26T09:00:00",
-      end: "2026-02-26T10:30:00",
+      start: "2026-03-06T09:00:00",
+      end: "2026-03-06T10:30:00",
     },
   ],
   eventClick: function (info) {
