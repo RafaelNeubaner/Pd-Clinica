@@ -43,7 +43,6 @@ main > section{
     border: 3px solid var(--tertiary);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     background-color: var(--bg-header);
-    max-width: 280px;
 }
 
 .cardMedico img{
