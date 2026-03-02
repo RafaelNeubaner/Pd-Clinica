@@ -202,7 +202,7 @@ export const medicos = [
     nome: "Dr. Paulo Henrique",
     especialidades: ["Pediatria"],
     procedimentos: ["Saúde do Bebê", "Puericultura", "Acompanhamento Infantil"],
-    foto: "/assets/media/images/dr_paulo_henrique.png",
+    foto: "/assets/media/images/dr-paulo-henrique.png",
     descricao: "Atendimento humanizado para bebês e crianças."
   }
 ];

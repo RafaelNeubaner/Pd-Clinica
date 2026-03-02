@@ -1,9 +1,9 @@
+import { showToast } from "/js/showToast.js";
 
-handleLoginButton = document.getElementById("handleLogin");
-formSignin = document.getElementById("signupForm");
-emailInput = formSignin.querySelector('input[type="email"]');
-passwordInput = formSignin.querySelector('input[type="password"]');
-
+const handleLoginButton = document.getElementById("handleLogin");
+const formSignin = document.getElementById("signupForm");
+const emailInput = formSignin.querySelector('input[type="email"]');
+const passwordInput = formSignin.querySelector('input[type="password"]');
 
 formSignin.querySelectorAll('input').forEach(input => {
     input.addEventListener("keypress", function (event) {
@@ -15,7 +15,6 @@ formSignin.querySelectorAll('input').forEach(input => {
 });
 
 handleLoginButton.addEventListener("click", handleLogin);
-
 
 function handleLogin() {
     const email = emailInput.value;
@@ -34,31 +33,29 @@ function handleLogin() {
         return;
     }
 
-    if (email === "medico@gmail.com"){
+    if (email === "medico@gmail.com" ) {
+        if (password !== "medico123") {
+            console.log("Senha incorreta para médico");
+            showToast("Senha incorreta para médico.");
+            return;
+        }
+        // Login bem-sucedido para médico
         localStorage.setItem("userRole", "medico");
-    }else{
-        localStorage.setItem("userRole", "atendente");
+
+        showToast("Login bem-sucedido!", true);
+    
+        setTimeout(() => {
+            window.location.href = "/dashboard/index.html";
+        }, 800);
+        return;
     }
+
+    localStorage.setItem("userRole", "atendente");
 
     showToast("Login bem-sucedido!", true);
     
     setTimeout(() => {
         window.location.href = "/dashboard/index.html";
-    }, 1200);
+    }, 800);
 }
 
-function showToast(message, isSuccess = false) {
-    const toastElement = document.getElementById("errorToast");
-    const toastBody = toastElement.querySelector(".toast-body");
-    toastBody.textContent = message;
-
-    if(isSuccess) {
-        toastElement.classList.remove("bg-danger");
-        toastElement.classList.add("bg-success");
-    } else {
-        toastElement.classList.remove("bg-success");
-        toastElement.classList.add("bg-danger");
-    }
-
-    bootstrap.Toast.getOrCreateInstance(toastElement).show();
-}

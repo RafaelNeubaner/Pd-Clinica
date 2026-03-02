@@ -21,3 +21,12 @@ if (paciente) {
 } else {
     alert('Paciente não encontrado!');
 }
+
+
+document.getElementById("btnNovoAgendamento").addEventListener("click", function () {
+    const query = new URLSearchParams();
+
+    query.append("userId", idPaciente);
+
+    window.location.href = "/dashboard/agendamentos/index.html?" + query.toString();
+})
