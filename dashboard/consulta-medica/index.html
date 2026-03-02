@@ -58,13 +58,15 @@
   <body>
     <!-- HEADER -->
     <header
-      class="logo-container mb-5 bg-teste p-5 text-center rounded-bottom-4 d-flex justify-content-between align-items-center"
+      class="logo-container mb-5 bg-teste px-5 py-4 text-center rounded-bottom-4 d-flex justify-content-between align-items-center"
     >
-      <img
-        src="/assets/media/logo/logo-dark.png"
-        alt="PD Clínica"
-        class="logo"
-      />
+      <a href="/dashboard">
+        <img
+          src="/assets/media/logo/logo-dark.png"
+          alt="PD Clínica"
+          class="logo"
+        />
+      </a>
       <button
         type="button"
         id="toggleDarkMode"
@@ -146,6 +148,18 @@
         </form>
       </section>
     </main>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div
+        id="errorToast"
+        class="toast text-bg-danger"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-body">errorMessage</div>
+      </div>
+    </div>
 
     <script src="/dashboard/consulta-medica/js/medicos.js"></script>
   </body>
