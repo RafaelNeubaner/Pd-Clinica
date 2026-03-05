@@ -1,18 +1,18 @@
-main > #bannerEspecialidade {
+main>#bannerEspecialidade {
     width: 100%;
     object-fit: cover;
     padding-top: 86px;
 }
 
-main > section{
+main>section {
     max-width: 1200px;
 }
 
-.pt-5{
+.pt-5 {
     background-color: var(--bg-header);
 }
 
-.procedimentoCard{
+.procedimentoCard {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -20,10 +20,11 @@ main > section{
     background-color: var(--bg-header);
 }
 
-.procedimentoCard h3{
+.procedimentoCard h3 {
     background-color: var(--tertiary);
 }
-#containerMedicos{
+
+#containerMedicos {
     max-width: 1440px;
     margin: 0 20px;
 }
@@ -32,7 +33,7 @@ main > section{
     color: #0d1b2a !important;
 }
 
-.cardMedico{
+.cardMedico {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,7 +46,7 @@ main > section{
     background-color: var(--bg-header);
 }
 
-.cardMedico img{
+.cardMedico img {
     width: 100%;
     max-width: 250px;
     margin-bottom: 20px;
@@ -55,6 +56,21 @@ main > section{
     #bannerEspecialidade {
         padding-top: 65px;
     }
+
+    .sobreEspecialidade img {
+        
+        height: 400px;
+        object-fit: cover;
+        width: 100%;
+
+    }
 }
 
+@media (max-width: 576px) {
 
+    .sobreEspecialidade img {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+    }
+}

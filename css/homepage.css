@@ -364,6 +364,10 @@ main {
     margin: auto;
   }
 
+  .containerCtaBtn .btnCta {
+    font-size: 14px;
+  }
+
 }
 
 /* Avaliações Section */
