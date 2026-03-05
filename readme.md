@@ -227,26 +227,41 @@ Desktop ≥ 992px Layout completo
 
 Deve ser desenvolvido em equipe com o trabalho de todos os integrantes. As páginas devem ser componentizadas e seguidas fielmente no desenvolvimento.
 
-## 👨‍💻 Divisão de Módulos e Requisitos (RFs)
+# Uso da plataforma PDClínica
 
-### 1. Pedro: Módulo de Sistemas e Lógica
+## Login
 
-**Foco:** Funcionalidades interativas, fluxos de dados simulados e reatividade do sistema.
+### Requisitos email:
+- Ter formato válido
 
-- **RF04 — Área do Paciente:** Telas de Login, Cadastro, Perfil e Recuperação de Senha.
-- **RF05 — Agendamento Médico:** Formulário interativo com seleção de especialidade/data e confirmação visual via JS.
-- **RF10 — Área Administrativa:** Dashboard funcional com alternância de abas (Agenda, Relatórios e Configurações).
-- **Scripts Globais:** Criação dos arquivos `.js` que controlam a inteligência do sistema.
+### Requisitos senhas:
+- Ter no mínimo 6 dígitos
 
-### 2. Rafael: Módulo Institucional e Conteúdo
 
-**Foco:** Apresentação da clínica, autoridade médica e páginas informativas.
+### Uso:
+- Se digitar um email válido e uma senha válida o login é feito com sucesso como atendente
 
-- **RF02 — Institucional:** Páginas de Missão, Visão, Valores, Estrutura e História.
-- **RF03 — Especialidades Médicas:** Listagem geral e páginas individuais para as 5 especialidades.
-- **RF06 — Conteúdo Informativo:** Estrutura do Blog, Artigos Médicos, FAQ e Convênios.
+    ### Acesso médico:
 
-### 3. Pablo: Módulo de Conversão e UI/UX
+    Se digitar essas credenciais:
+    ```json
+        {
+            "email": "medico@gmail.com",
+            "senha": "medico123"
+        }
+    ```
+
+    o login vai ser validado como o usuário sendo médico. Sendo assim ele pode acessar a tela de consulta que é exclusiva para o médico
+
+
+### Validação de autenticação
+As telas quem complementam o dashboard, descritas abaixo só abrem se o houver um usuário logado
+
+- /dashboard
+- /dashboard/agendamentos
+- /dashboard/area-do-paciente
+- /dashboard/consulta-medica
+
 
 **Foco:** Design do sistema, suporte ao cliente e padronização visual (CSS).
 
