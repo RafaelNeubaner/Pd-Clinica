@@ -7,7 +7,7 @@ export function setMedicos(especialidade){
     console.log(medicosCardiologistas);
 
     let templateCardiologistas = document.querySelector('#containerMedicos #cardMedicoTemplate');
-    let containerCardiologistas = document.querySelector('#containerMedicosScroll');
+    let containerCardiologistas = document.querySelector('#containerMedicos');
 
     medicosCardiologistas.forEach(medico => {
         let card = templateCardiologistas.content.cloneNode(true);
