@@ -513,7 +513,7 @@ main {
 
 /* HOMEPAGE - UNIDADES */
 
-#unidades .container {
+#unidades {
   display: flex;
   flex-direction: column;
   gap: 64px;
