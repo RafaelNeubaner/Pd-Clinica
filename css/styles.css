@@ -13,12 +13,13 @@
   --txt-muted: #6e6e6e;
   --bg-light: #f9f9f5;
   --bg-dark: #0d1b2a;
-  --bg-header: #ffffff;
+  --bg-header: #e5eaec;
   --primary: #1b263b;
   --secondary: #3c4b5d;
   --tertiary: #778da9;
   --baby-blue: #6e9fd8;
   --hero: #778da9;
+  --links-relevant: #274b7a;
 }
 
 /* GLOBAL - BASE */
@@ -41,6 +42,7 @@ body.dark-mode {
   --tertiary: #4c6f99;;
   --baby-blue: #274b7a;
   --hero: #3b5068;
+  --links-relevant: #6e9fd8;
 }
 
 /* GLOBAL - BACKGROUND UTILITIES */

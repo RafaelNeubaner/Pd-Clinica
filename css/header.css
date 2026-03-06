@@ -13,14 +13,13 @@
 
 /* HEADER - NAV */
 .headerNav {
-  padding: 24px 32px;
+  padding: 14px 32px;
   min-height: auto;
 }
 
 /* HEADER - LOGO */
-.logo {
-  max-width: 160px;
-  height: auto;
+#logoHeader {
+  height: 45px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -28,7 +27,7 @@
     padding: 12px 32px;
   }
 
-  .logo {
+  #logoHeader {
     max-width: 200px;
   }
 }
@@ -38,13 +37,13 @@
     padding: 24px 32px;
   }
 
-  .logo {
+  #logoHeader {
     max-width: 160px;
   }
 }
 
 @media (min-width: 1080px) {
-  .logo {
+  #logoHeader {
     max-width: 260px;
   }
 }
