@@ -1,18 +1,18 @@
-body{
+body {
     overflow-x: hidden;
 }
 
-section{
+section {
     max-width: 1620px;
     margin: 0 auto;
 }
 
-main{
+main {
     max-width: 1620px;
     width: 100%;
     margin: 0 auto;
     padding: 0px 30px;
-    
+
 }
 
 #heroBlog {
@@ -21,7 +21,7 @@ main{
     margin-top: 78px;
 }
 
-.blogPost{
+.blogPost {
     border: 3px solid var(--primary);
     padding: 10px;
     border-radius: 12px;
@@ -34,11 +34,11 @@ main{
     border-radius: 12px;
 }
 
-.subTitle{
+.subTitle {
     font-size: 1.2em;
 }
 
-#filterForm{
+#filterForm {
     border: 2px solid var(--primary);
     height: fit-content;
     border-radius: 12px;
@@ -46,7 +46,7 @@ main{
 
 
 @media (min-width: 576px) {
-    .blogPost{
+    .blogPost {
         margin: -12px;
         margin-bottom: 12px;
     }
@@ -55,18 +55,33 @@ main{
 
 
 @media (max-width: 768px) {
-    #heroBlog{
+    #heroBlog {
         margin-top: 80px;
     }
+
+    .blogPost {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .blogPost img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .blogPost > div {
+        width: 100%;
+    }
+
+    
 }
 
 
 @media (max-width: 576px) {
-    #heroBlog{
+    #heroBlog {
         margin-top: 96px;
     }
 }
-
-
-
-

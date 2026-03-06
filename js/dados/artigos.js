@@ -65,7 +65,7 @@ export const artigos = [
     resumo: "Entenda os fatores de risco para doenças vasculares e como melhorar a circulação sanguínea nos membros inferiores.",
     especialidade: "angiologia",
     link: "/blog/prevenção-varizes.html",
-    imagem: "/assets/media/images/blog/vascular-image.jpeg",
+    imagem: "/assets/media/images/blog/vascular-image.png",
     conteudo: "tratamento",
     data: new Date("2026-02-10T00:00:00")
   }

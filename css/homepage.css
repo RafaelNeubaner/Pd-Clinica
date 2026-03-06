@@ -364,6 +364,10 @@ main {
     margin: auto;
   }
 
+  .containerCtaBtn .btnCta {
+    font-size: 14px;
+  }
+
 }
 
 /* Avaliações Section */
@@ -513,7 +517,7 @@ main {
 
 /* HOMEPAGE - UNIDADES */
 
-#unidades .container {
+#unidades {
   display: flex;
   flex-direction: column;
   gap: 64px;
