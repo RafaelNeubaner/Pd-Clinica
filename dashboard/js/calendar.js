@@ -14,6 +14,22 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
     right: "timeGridWeek,timeGridDay",
   },
   locale: "pt-br",
+
+  datesSet: function () {
+    const titulo = document.querySelector('.fc-toolbar-title');
+    if (titulo) {
+      if (window.innerWidth <= 576) {
+        
+        titulo.style.setProperty('font-size', '1rem', 'important');
+        titulo.style.setProperty('margin', '0 12px', 'important');
+        titulo.style.setProperty('text-align', 'center', 'important');
+      } else {
+        
+        titulo.style.setProperty('font-size', '28px', 'important');
+      }
+    }
+  },
+
   events: [
     {
       title: "Consulta com João",
