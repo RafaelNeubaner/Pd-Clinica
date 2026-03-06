@@ -31,14 +31,14 @@ function ativarCarrossel(containerId, scrollId, btnLeftId, btnRightId, step) {
 
   scrollSection.addEventListener("scroll", function () {
     let maxScrollLeft = scrollSection.scrollWidth - scrollSection.clientWidth;
-    if (scrollSection.scrollLeft <= 24 && window.innerWidth >= 992) {
+    if (scrollSection.scrollLeft <= 25 && window.innerWidth >= 992) {
       btnLeft.classList.add("d-none");
     } else {
       btnLeft.classList.remove("d-none");
     }
 
     if (
-      Math.ceil(scrollSection.scrollLeft) >= maxScrollLeft &&
+      Math.ceil(scrollSection.scrollLeft) >= maxScrollLeft -25 &&
       window.innerWidth >= 992
     ) {
       btnRight.classList.remove("d-lg-block");
