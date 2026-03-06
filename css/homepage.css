@@ -190,6 +190,8 @@ main {
   height: fit-content;
   min-height: 270px;
   max-width: 270px;
+  height: 100%;
+  scroll-snap-align: start;
   border: 2px solid var(--secondary);
   border-radius: 12px;
   color: var(--txt-light);
@@ -255,8 +257,8 @@ main {
 
 @media (min-width: 992px) {
   .helpCard {
-    flex: 0 0 calc(50% - 8px); 
-    max-width: calc(50% - 8px);
+    flex: 0 0 calc(50% + 12px); 
+    max-width: calc(50% + 12px);
   }
 }
 
@@ -524,22 +526,17 @@ main {
 }
 
 #unidades .slider-track {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   gap: 24px;
 }
 
 #unidades .slider-item {
   flex: 0 0 100%;
   max-width: 100%;
-}
-
-#unidades .slider-window .slider-track {
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  scroll-snap-type: x mandatory; 
-  flex-wrap: nowrap;
+  scroll-snap-align: start;
 }
 
 #unidades .slider-window::-webkit-scrollbar {
@@ -632,8 +629,8 @@ main {
   }
 
   #unidades .slider-item {
-    flex: 0 0 calc((100% - 72px) / 2);
-    max-width: calc((100% - 72px) / 2);
+    flex: 0 0 calc(50% - 12px);
+    max-width: calc(50% - 12px);
   }
 
   #unidades .slider-item .card .card-body {
