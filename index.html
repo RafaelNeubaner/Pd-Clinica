@@ -74,11 +74,8 @@
             <img
               src="/assets/media/logo/logo-light.png"
               alt="Logo PD Clínica"
-              width="256"
-              height="68"
-              id="logo"
               class="img-fluid logo"
-              id="logo"
+              id="logoHeader"
             />
           </a>
 
@@ -89,7 +86,7 @@
             <i class="bi bi-box-arrow-in-right"></i>
           </a>
 
-          <section
+          <div
             class="collapse navbar-collapse order-3 order-lg-2"
             id="navbarSupportedContent"
           >
@@ -138,7 +135,7 @@
                 </button>
               </li>
             </ul>
-          </section>
+          </div>
         </div>
       </nav>
       <input type="checkbox" id="toggleForm" class="d-none" />
@@ -183,7 +180,7 @@
         class="container row gap-3 gap-lg-0 justify-content-between"
         id="helpSection"
       >
-        <div
+        <aside
           class="col-12 col-lg-5 d-flex flex-column justify-content-between gap-2 text-center text-lg-start"
         >
           <article>
@@ -198,7 +195,7 @@
               Saiba Mais
             </button>
           </a>
-        </div>
+        </aside>
         <section class="col-12 col-lg-7" id="container-help-carousel">
           <div
             class="d-flex gap-3 justify-content-center align-items-center justify-content-lg-start align-items-lg-start flex-wrap flex-lg-nowrap overflow-scroll px-lg-4"
@@ -337,8 +334,7 @@
       </section>
 
       <!-- Unidades Section -->
-      <section id="unidades">
-        <div class="container container-fluid">
+      <section id="unidades" class="container container-fluid">
           <hgroup class="containerTxt">
             <h2 class="mainTitle">Nossas Unidades</h2>
             <h3>
@@ -352,9 +348,8 @@
               <i class="bi bi-chevron-left"></i>
             </button>
 
-            <div class="slider-window overflow-x-hidden" >
               <div
-                class="slider-track d-flex flex-wrap flex-lg-nowrap align-items-stretch" id="unidades-scroll"
+                class="slider-window overflow-x-hidden slider-track d-flex flex-wrap flex-lg-nowrap align-items-stretch" id="unidades-scroll"
               >
                 <!-- PD Cidade Nobre -->
                 <article class="slider-item col-12 col-md-4">
@@ -367,7 +362,7 @@
 
                     <div class="card-body">
                       <div class="card-content">
-                        <div class="card-txt d-flex flex-column">
+                        <hgroup class="card-txt d-flex flex-column">
                           <h3>PD Cidade Nobre</h3>
 
                           <p>
@@ -386,7 +381,7 @@
                               MG.
                             </a>
                           </address>
-                        </div>
+                        </hgroup>
 
                         <a
                           target="_blank"
@@ -396,11 +391,14 @@
                         >
                       </div>
 
+        
                       <iframe
+                        title="Mapa de localização da PD Clínica em Ipatinga"
                         src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1771509463123!5m2!1spt-BR!2sbr!6m8!1m7!1s5KWUA7m7vMspAdc0ZM2y7A!2m2!1d-19.46952198288702!2d-42.55877415816203!3f257.12252366391084!4f3.7244422354731057!5f1.1924812503605782"
                         allowfullscreen=""
                         loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
+                        referrerpolicy="no-referrer-when-downgrade"  
+                        allow="accelerometer"
                       ></iframe>
 
                       <a
@@ -424,7 +422,7 @@
 
                     <div class="card-body">
                       <div class="card-content">
-                        <div class="card-txt d-flex flex-column">
+                        <hgroup class="card-txt d-flex flex-column">
                           <h3>PD Santa Bárbara</h3>
 
                           <p>
@@ -443,7 +441,7 @@
                               Bárbara - MG.
                             </a>
                           </address>
-                        </div>
+                        </hgroup>
 
                         <a
                           target="_blank"
@@ -453,11 +451,14 @@
                         >
                       </div>
 
+        
                       <iframe
+                        title="Mapa de localização da PD Clínica em Santa Bárbara"
                         src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1770297256791!5m2!1spt-BR!2sbr!6m8!1m7!1sI0nfdpXs-HC_osbkSo-4Ng!2m2!1d-19.95937140395175!2d-43.41684338408821!3f233.5237738081119!4f3.9590604493267136!5f0.7820865974627469"
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
+                        allow="accelerometer"
                       ></iframe>
 
                       <a
@@ -481,7 +482,7 @@
 
                     <div class="card-body">
                       <div class="card-content">
-                        <div class="card-txt d-flex flex-column">
+                        <hgroup class="card-txt d-flex flex-column">
                           <h3>PD Vila da Serra</h3>
 
                           <p>
@@ -500,7 +501,7 @@
                               MG.
                             </a>
                           </address>
-                        </div>
+                        </hgroup>
 
                         <a
                           target="_blank"
@@ -510,11 +511,14 @@
                         >
                       </div>
 
+        
                       <iframe
+                        title="Mapa de localização da PD Clínica em Nova Lima"
                         src="https://www.google.com/maps/embed?pb=!4v1770297471688!6m8!1m7!1sKUlYhD_eaVm69O9sBQFKEg!2m2!1d-19.98144519229119!2d-43.94443731830027!3f134.2!4f0!5f0.7820865974627469"
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
+                        allow="accelerometer"
                       ></iframe>
 
                       <a
@@ -538,7 +542,7 @@
 
                     <div class="card-body">
                       <div class="card-content">
-                        <div class="card-txt d-flex flex-column">
+                        <hgroup class="card-txt d-flex flex-column">
                           <h3>PD Savassi</h3>
 
                           <p>
@@ -557,7 +561,7 @@
                               Horizonte-MG
                             </a>
                           </address>
-                        </div>
+                        </hgroup>
 
                         <a
                           target="_blank"
@@ -567,11 +571,14 @@
                         >
                       </div>
 
+        
                       <iframe
+                        title="Mapa de localização da PD Clínica em Belo Horizonte"
                         src="https://www.google.com/maps/embed?pb=!4v1770298134644!6m8!1m7!1svh2e4m15rgTZCBAMFHXSYw!2m2!1d-19.93445454478668!2d-43.9317940447512!3f249.92554525442185!4f10.30649072763191!5f0.7820865974627469"
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
+                        allow="accelerometer"
                       ></iframe>
 
                       <a
@@ -595,7 +602,7 @@
 
                     <div class="card-body">
                       <div class="card-content">
-                        <div class="card-txt d-flex flex-column">
+                        <hgroup class="card-txt d-flex flex-column">
                           <h3>PD Eldorado</h3>
 
                           <p>
@@ -614,7 +621,7 @@
                               Contagem – MG.
                             </a>
                           </address>
-                        </div>
+                        </hgroup>
 
                         <a
                           target="_blank"
@@ -624,11 +631,14 @@
                         >
                       </div>
 
+        
                       <iframe
+                        title="Mapa de localização da PD Clínica em Contagem"
                         src="https://www.google.com/maps/embed?pb=!4v1770298318187!6m8!1m7!1seNdKLyD_Y67JLIliIq2FqA!2m2!1d-19.94270209485993!2d-44.03955610897944!3f131.7300075856254!4f3.0139638773614905!5f0.7820865974627469"
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
+                        allow="accelerometer"
                       ></iframe>
 
                       <a
@@ -652,7 +662,7 @@
 
                     <div class="card-body">
                       <div class="card-content">
-                        <div class="card-txt d-flex flex-column">
+                        <hgroup class="card-txt d-flex flex-column">
                           <h3>PD Sidil</h3>
 
                           <p>
@@ -670,7 +680,7 @@
                               Rua Rio de Janeiro, 950 – Sidil, Divinópolis – MG.
                             </a>
                           </address>
-                        </div>
+                        </hgroup>
 
                         <a
                           target="_blank"
@@ -680,11 +690,14 @@
                         >
                       </div>
 
+        
                       <iframe
+                        title="Mapa de localização da PD Clínica em Divinópolis"
                         src="https://www.google.com/maps/embed?pb=!4v1770298412076!6m8!1m7!1sPUV0_acArEaseaRonwcylw!2m2!1d-20.14268014771464!2d-44.88910327057868!3f104.9372675226727!4f2.7746035529230255!5f1.1924812503605782"
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
+                        allow="accelerometer"
                       ></iframe>
 
                       <a
@@ -697,7 +710,6 @@
                   </div>
                 </article>
               </div>
-            </div>
 
             <button
               class="btn-primary carousel-control next d-none d-lg-block"
@@ -706,7 +718,6 @@
               <i class="bi bi-chevron-right"></i>
             </button>
           </div>
-        </div>
       </section>
       <!-- Avaliações Section-->
       <section class="container" id="avaliacoes">
@@ -850,7 +861,7 @@
             </fieldset>
 
             <fieldset class="w-100 d-flex flex-column">
-              <label for="email">E-mail</label>
+              <label for="emailInput">E-mail</label>
               <input
                 type="email"
                 id="emailInput"
@@ -985,37 +996,18 @@
 
     <footer>
       <section class="footerContent">
-        <article class="footerLogoSection">
-          <img
+        <article class="footerLogoSection d-none d-lg-block">
+           <img
             src="/assets/media/images/logo-dark.png"
             alt="Logo PDClínica"
-            class="footerLogo"
+            class="footerLogo logo"
           />
-          <h2>
-            Tudo o que sua saúde precisa em um só lugar.
-          </h2>
+         <!--<h2>Tudo o que sua saúde precisa em um só lugar.</h2> -->
         </article>
-        
-        <article class="footerNossaClinica">
-          <h2>Nossa Clínica</h2>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="/institucional/index.html">Institucional</a></li>
-            <li><a href="/convenios/index.html">Convênios</a></li>
-            <li><a href="/especialidades/index.html">Especialidades</a></li>
-          </ul>
-        </article>
+        <p class="footerCopyright">
+          © PD Clínica 2026 | Desenvolvido por Pablo, Pedro e Rafael.
+        </p>
 
-        <article class="footerOutrosAcessos">
-          <h2>Outros Acessos</h2>
-          <ul>
-            <li><a href="/blog/index.html">Blog</a></li>
-            <li>
-              <a href="/trabalhe-conosco/index.html">Trabalhe Conosco</a>
-            </li>
-          </ul>
-        </article>
-        
         <article id="socialSection">
           <div class="social-icons">
             <a href="https://wa.link/t49sro" target="_blank"><i class="bi bi-whatsapp"></i></a>
@@ -1023,15 +1015,9 @@
             <a href="https://www.instagram.com/pdcaseinformatica/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="mailto:contato@pdclinica.com"><i class="bi bi-envelope"></i></a>
           </div>
-          <a href="/trabalhe-conosco/index.html" class="footerBtn">Trabalhe Conosco</a>
         </article>
       </section>
       
-      <div id="divider"></div>
-      
-      <p class="footerCopyright">
-        © PD Clínica 2026 | Desenvolvido por Pablo, Pedro e Rafael.
-      </p>
     </footer>
 
     <div

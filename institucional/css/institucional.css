@@ -40,17 +40,17 @@ a {
 
 #heroSection>div {
     position: absolute;
-    top: 43%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px 40px;
-    border-radius: 12px;
 }
 
 #heroSection h2 {
-    max-width: 700px;
+    font-size: 36px;
+    max-width: 750px;
     font-weight: 800;
-    color: var(--primary);
+    color: var(--txt-dark);
 }
 
 #heroSection button {
@@ -59,23 +59,70 @@ a {
     font-size: 20px;
 }
 
-@media (max-width: 576px) {
-    #heroSection img {
-        height: 500px;
-    }
-}
-
-#historia,
-#missaoValores,
-#estrutura {
-    padding: 0 24px;
-}
-
 #historia img {
     flex: 1;
     max-width: 30vw;
     object-fit: cover;
 }
+
+
+#heroSection #botoesHero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+@media (max-width: 768px) {
+    #heroSection {
+        max-height: 800px;
+    }
+
+    #heroSection img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #heroSection>div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px 40px;
+    }
+
+    #heroSection h2 {
+        font-size: 32px;
+        max-width: 750px;
+        font-weight: 600;
+    }
+
+    #heroSection a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 220px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    #heroSection h2 {
+        font-size: 20px;
+    }
+
+    #heroSection img {
+        height: 350px;
+    }
+
+    #heroSection #botoesHero {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 /* INSTITUCIONAL | Nossa Historia */
 #historia #img1 {
@@ -94,23 +141,26 @@ a {
 }
 
 #historia .textHistory {
-    padding: 8px;
+    padding: 12px;
     border-radius: 0 15px 0 0;
     flex: 1;
     background-color: var(--tertiary);
+    gap: 12px;
 }
 
 #historia .textHistory2 {
-    padding: 8px;
+    padding: 12px;
     flex: 1;
     background-color: var(--tertiary);
+    gap: 12px;
 }
 
 #historia .textHistory3 {
-    padding: 8px;
+    padding: 12px;
     border-radius: 0 0 15px 0;
     flex: 1;
     background-color: var(--tertiary);
+    gap: 12px;
 }
 
 #historia .linha {
@@ -258,11 +308,33 @@ a {
 
 @media (max-width: 768px) {
 
-    #estrutura .estrutura-card {
-        height: 350px;
+    #estrutura #imgEstrutura01,
+    #estrutura #imgEstrutura02,
+    #estrutura #imgEstrutura03 {
+        height: 200px;
+        object-fit: cover;
+
+    }
+
+    #estrutura .textContainer01,
+    #estrutura .textContainer02,
+    #estrutura .textContainer03 {
+
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #estrutura .textContainer01 p,
+    #estrutura .textContainer02 p,
+    #estrutura .textContainer03 p {
+        max-width: 570px;
+    }
+
+    #estrutura .estrutura-card {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -365,7 +437,22 @@ a {
     margin: 0;
 }
 
+
 @media (max-width: 768px) {
+
+    #historia,
+    #missaoValores,
+    #estrutura,
+    #ctaEstruturaSec {
+        padding: 0 32px;
+    }
+
+    #estrutura h2,
+    #historia h2 {
+        margin-bottom: 32px;
+
+    }
+
     #ctaEstrutura {
         padding: 32px 12px;
         gap: 32px;
@@ -374,10 +461,14 @@ a {
     #ctaEstrutura h2 {
         font-size: 20px;
     }
+
 }
 
 @media (max-width: 576px) {
-    #ctaEstrutura {
-        margin: 0 32px;
+
+    #ctaEstrutura .btn-primary {
+        font-size: 16px;
+        padding: 8px 22px;
+        border-radius: 12px;
     }
 }

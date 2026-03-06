@@ -142,14 +142,14 @@
       <input type="checkbox" id="toggleForm" class="d-none" />
     </header>
 
-    <main class="d-flex flex-column align-items-center gap-5">
+    <main class="d-flex flex-column align-items-center">
       <img
-        src="../../assets/media/images/esbanner-ortopedia.png"
+        src="../../assets/media/images/especialidades/banner-ortopedia.png"
         alt="Banner Ortopedia"
         id="bannerEspecialidade"
       />
       <section
-        class="row text-start justify-content-center align-items-center gap-3 px-4 pt-5"
+        class="sobreEspecialidade row text-start justify-content-center align-items-center gap-3 px-4 pt-5"
       >
         <h1 class="title col-12 text-center order-0">
           Cuidados Especializados em Ortopedia
@@ -191,11 +191,7 @@
         />
       </section>
 
-      <section id="containerMedicos">
-        <div
-          id="containerMedicosScroll"
-          class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3"
-        >
+      <section id="containerMedicos" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
           <template id="cardMedicoTemplate">
             <div class="col">
               
@@ -212,7 +208,6 @@
               </article>
             </div>
           </template>
-        </div>
       </section>
 
       <section
@@ -240,14 +235,14 @@
             segura e eficaz.
           </p>
           <img
-            src="/assets/media/images/imobilizacoes_procedimento.png"
+            src="/assets/media/images/especialidades/imobilizacoes_procedimento.png"
             alt="Paciente perna imobilizada por gesso"
             class="w-100"
           />
         </figcaption>
         <figcaption class="col-5 p-4 d-flex flex-column gap-3 procedimentoCard">
           <img
-            src="/assets/media/images/artroscopia.png"
+            src="/assets/media/images/especialidades/artroscopia.png"
             alt="Paciente realizando uma artroscopia"
             class="w-100 order-1 order-md-0"
           />
@@ -273,20 +268,28 @@
 
     <footer>
       <section class="footerContent">
-        <div class="footerLogoSection">
+        <article class="footerLogoSection">
           <img
             src="/assets/media/images/logo-dark.png"
             alt="Logo PDClínica"
-            class="footerLogo"
+            class="footerLogo logo"
           />
-          <h2>Tudo o que sua saúde precisa em um só lugar.</h2>
-        </div>
-
+          <h2>
+            Tudo o que sua saúde precisa em um só lugar.
+          </h2>
+        </article>
+        
         <article class="footerNossaClinica">
           <h2>Nossa Clínica</h2>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="/institucional/index.html">Institucional</a></li>
+          </ul>
+        </article>
+
+        <article class="footerAtendimentos">
+          <h2>Atendimentos</h2>
+          <ul>
             <li><a href="/convenios/index.html">Convênios</a></li>
             <li><a href="/especialidades/index.html">Especialidades</a></li>
           </ul>
@@ -301,34 +304,18 @@
             </li>
           </ul>
         </article>
-
+        
         <article id="socialSection">
           <div class="social-icons">
-            <a href="https://wa.link/t49sro" target="_blank"
-              ><i class="bi bi-whatsapp"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/company/pd-case-informatica-ltda/"
-              target="_blank"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/pdcaseinformatica/"
-              target="_blank"
-              ><i class="bi bi-instagram"></i
-            ></a>
-            <a href="mailto:contato@pdclinica.com"
-              ><i class="bi bi-envelope"></i
-            ></a>
+            <a href="https://wa.link/t49sro" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/company/pd-case-informatica-ltda/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/pdcaseinformatica/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="mailto:contato@pdclinica.com"><i class="bi bi-envelope"></i></a>
           </div>
-          <a href="/trabalhe-conosco/index.html" class="footerBtn"
-            >Trabalhe Conosco</a
-          >
+          <a href="/trabalhe-conosco/index.html" class="footerBtn">Trabalhe Conosco</a>
         </article>
       </section>
-
-      <div id="divider"></div>
-
+      
       <p class="footerCopyright">
         © PD Clínica 2026 | Desenvolvido por Pablo, Pedro e Rafael.
       </p>

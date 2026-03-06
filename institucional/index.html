@@ -150,7 +150,7 @@
     <main class="d-flex flex-column align-items-center">
       <section class="" id="heroSection">
         <img
-          src="/assets/media/images/institucional/recepcao_clinica.png"
+          src="/assets/media/images/institucional/hero-institucional.png"
           alt="Recepção da Clínica"
         />
         <div class="d-flex flex-column justify-content-around align-items-center h-100 w-100">
@@ -158,16 +158,17 @@
             Mais do que uma clínica, um espaço onde cuidado, confiança e saúde
             caminham juntos.
           </h2>
-          <div class="d-flex flex-column flex-lg-row justify-content-between text-center gap-2  mt-4">
-            <a class="btn-primary" href="#historia">Conheça nossa história</a>
+          <div id="botoesHero">
+            <a class="btn-primary text-center" href="#historia">Conheça nossa história</a>
             <a class="btn-primary" href="#missaoValores">
-              Entenda nossa missão, visão e valores
+              Missão, Visão & Valores
             </a>
             <a class="btn-primary" href="#estrutura">Visualize nossa estrutura</a>
           </div> 
         </div>
       </section>
         
+      
       <!-- Nossa Historia -->
       <section class="w-100" id="historia">
         <h2 class="mainTitle textCenter mb64">Nossa História</h2>
@@ -220,7 +221,7 @@
         
         <!-- Missao e valores -->
         <section class="text-center mb-4 w-100" id="missaoValores">
-            <h2 class="mainTitle py-4">Missão Visão e Valores</h2>
+            <h2 class="mainTitle py-4">Missão, Visão & Valores</h2>
             <div class="d-flex flex-column flex-lg-row gap-2">
                 <img src="/assets/media/images/institucional/missao.png" alt="Imagem Missão e Valores"/>
                 <div class="d-flex flex-column gap-2">
@@ -247,13 +248,13 @@
 
           <ul class="estrutura-grid d-flex flex-column flex-lg-row gap-2 w-100 p-0">
             <li class="estrutura-card col-12 col-lg-4 flex-grow-1 ">
-              <div class="img-container">
                 <img
                   id="imgEstrutura01"
                   src="/assets/media/images/institucional/estrutura-01.png"
                   alt="Recepção da clínica"
+                  class="img-container"
                 />
-              </div>
+
               <hgroup class="textContainer01">
                 <h3 class="subTitle textCenter">Recepção Acolhedora</h3>
                 <p class="subTitle">
@@ -265,13 +266,12 @@
             </li>
 
             <li class="estrutura-card col-12 col-lg-4 flex-grow-1 ">
-              <div class="img-container">
                 <img
                 id="imgEstrutura02"
                   src="/assets/media/images/institucional/estrutura-02.png"
                   alt="Equipamento médico moderno"
+                  class="img-container"
                 />
-              </div>
               <hgroup class="textContainer02">
                 <h3 class="subTitle textCenter">Consultórios Modernos</h3>
                 <p class="subTitle">
@@ -283,13 +283,12 @@
             </li>
 
             <li class="estrutura-card col-12 col-lg-4 flex-grow-1 ">
-              <div class="img-container">
                 <img
                   id="imgEstrutura03"
                   src="/assets/media/images/institucional/estrutura-03.png"
                   alt="Laboratório de exames médicos"
+                  class="img-container"
                 />
-              </div>
               <hgroup class="textContainer03">
                 <h3 class="subTitle textCenter">Centro de Diagnóstico</h3>
                 <p class="subTitle">
@@ -310,7 +309,7 @@
             Estamos prontos para cuidar de você!
           </h2>
           <div class="d-flex justify-content-center gap-4 flex-wrap">
-            <a class="btn-primary" href="https://wa.link/t49sro" target="_blank" rel="noopener noreferrer">Agendar uma consulta</a>
+            <a class="btn-primary " href="https://wa.link/t49sro" target="_blank" rel="noopener noreferrer">Agendar uma consulta</a>
             <a class="btn-outline botaoEspecialista" href="/index.html#contactSection">Fale com um especialista</a>
           </div>
         </div>
@@ -321,22 +320,28 @@
 
     <footer>
       <section class="footerContent">
-        <div class="footerLogoSection">
+        <article class="footerLogoSection">
           <img
             src="/assets/media/images/logo-dark.png"
             alt="Logo PDClínica"
-            class="footerLogo"
+            class="footerLogo logo"
           />
           <h2>
             Tudo o que sua saúde precisa em um só lugar.
           </h2>
-        </div>
+        </article>
         
         <article class="footerNossaClinica">
           <h2>Nossa Clínica</h2>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="/institucional/index.html">Institucional</a></li>
+          </ul>
+        </article>
+
+        <article class="footerAtendimentos">
+          <h2>Atendimentos</h2>
+          <ul>
             <li><a href="/convenios/index.html">Convênios</a></li>
             <li><a href="/especialidades/index.html">Especialidades</a></li>
           </ul>
@@ -363,10 +368,9 @@
         </article>
       </section>
       
-      <div id="divider"></div>
-      
       <p class="footerCopyright">
         © PD Clínica 2026 | Desenvolvido por Pablo, Pedro e Rafael.
       </p>
-    </footer>  </body>
+    </footer>
+  </body>
 </html>

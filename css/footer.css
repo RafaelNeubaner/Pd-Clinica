@@ -1,11 +1,13 @@
 /* FOOTER - BASE */
 footer {
-  background-color: var(--bg-dark);
-  color: var(--baby-blue);
+  background-color: var(--bg-header);
+  color: var(--txt-light);
   width: 100%;
-  padding: 40px 48px;
+  padding: 20px 24px;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -15,7 +17,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 32px;
+  align-items: center;
+  max-width: 1200px;
 }
 
 /* FOOTER - LOGO SECTION */
@@ -23,17 +26,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 32px;
+  justify-content: space-between;
+  margin-bottom: 12px;
 }
 
 .footerLogo {
   width: 100%;
-  margin-bottom: 24px;
   max-width: 250px;
-}
-
-.footerLogoSection h2 {
-  text-align: center;
 }
 
 /* FOOTER - ADDRESS */
@@ -46,38 +45,19 @@ footer {
 
 /* FOOTER - LINKS */
 footer a {
-  color: var(--txt-dark);
+  color: var(--txt-light);
   text-decoration: none;
 }
 
 footer a:hover {
-  color: var(--baby-blue);
+  color: var(--tertiary);
   transition: all 0.2s ease;
-}
-
-.footerNossaClinica,
-.footerOutrosAcessos {
-  display: none;
-}
-
-.footerNossaClinica h2,
-.footerOutrosAcessos h2 {
-  margin-bottom: 24px;
-}
-
-.footerNossaClinica ul,
-.footerOutrosAcessos ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
 }
 
 /* FOOTER - SOCIAL */
 #socialSection {
   margin-top: 32px;
+  display: flex;
 }
 
 .social-icons {
@@ -90,8 +70,8 @@ footer a:hover {
 #socialSection a {
   padding: 4px 8px;
   border-radius: 4px;
-  color: var(--tertiary);
-  border: 2px solid var(--tertiary);
+  color: var(--links-relevant);
+  border: 2px solid var(--links-relevant);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,36 +84,9 @@ footer a:hover {
 }
 
 #socialSection i {
-  font-size: 22px;
+  font-size: 15px;
 }
 
-.footerBtn {
-  display: flex;
-  height: 50px;
-  color: var(--txt-dark);
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: 2px solid var(--tertiary);
-  padding: 8px 22px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 32px;
-  width: 100%;
-}
-
-.footerBtn:hover {
-  color: var(--baby-blue);
-  border: 2px solid var(--baby-blue);
-}
-
-/* FOOTER - DIVIDER */
-#divider {
-  width: 100%;
-  margin: 16px 0;
-  border-bottom: 1px solid var(--tertiary);
-}
 
 /* FOOTER - COPYRIGHT */
 .footerCopyright {
@@ -146,22 +99,19 @@ footer a:hover {
 @media (min-width: 768px) {
   .footerContent {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 24px;
   }
 
   .footerLogoSection {
-    flex: 1 1 0;
     margin-bottom: 0;
   }
 
-  
-
   .footerNossaClinica,
+  .footerAtendimentos,
   .footerOutrosAcessos {
     display: block;
-    flex: 1 1 0;
   }
 
   #socialSection {
@@ -174,14 +124,6 @@ footer a:hover {
 /* RESPONSIVE - DESKTOP */
 @media (min-width: 992px) {
 
-  .footerLogoSection {
-    flex: 1 1 0;
-  }
-
-  .footerNossaClinica,
-  .footerOutrosAcessos {
-    flex: 1 1 0;
-  }
 
   #socialSection {
     flex: 1 1 0;
@@ -191,7 +133,7 @@ footer a:hover {
 
 @media (max-width: 767px) {
   footer {
-    padding: 24px 16px;
+    padding: 12px 16px;
   }
 
   .footerContent {
@@ -225,6 +167,5 @@ footer a:hover {
 
   .footerLogo {
     max-width: 200px;
-    margin-bottom: 16px;
   }
 }

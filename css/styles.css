@@ -14,13 +14,14 @@
   --txt-muted-dark: #a0a0a0;
   --bg-light: #f9f9f5;
   --bg-dark: #0d1b2a;
-  --bg-header: #ffffff;
+  --bg-header: #e5eaec;
   --primary: #1b263b;
   --secondary: #3c4b5d;
   --tertiary: #778da9;
   --baby-blue: #6e9fd8;
   --hero: #778da9;
   --carrossel: #0d1b2a;
+  --links-relevant: #274b7a;
 }
 
 /* GLOBAL - BASE */
@@ -45,6 +46,7 @@ body.dark-mode {
   --baby-blue: #274b7a;
   --hero: #3b5068;
   --carrossel: #415a77;
+  --links-relevant: #6e9fd8;
 }
 
 /* GLOBAL - BACKGROUND UTILITIES */
