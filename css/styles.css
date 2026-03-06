@@ -19,6 +19,7 @@
   --tertiary: #778da9;
   --baby-blue: #6e9fd8;
   --hero: #778da9;
+  --carrossel: #0d1b2a;
 }
 
 /* GLOBAL - BASE */
@@ -41,6 +42,7 @@ body.dark-mode {
   --tertiary: #4c6f99;;
   --baby-blue: #274b7a;
   --hero: #3b5068;
+  --carrossel: #415a77;
 }
 
 /* GLOBAL - BACKGROUND UTILITIES */
