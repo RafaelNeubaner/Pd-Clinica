@@ -24,6 +24,9 @@ main>section {
     background-color: var(--tertiary);
 }
 
+
+
+
 #containerMedicos {
     max-width: 1440px;
     margin: 0 20px;
@@ -58,11 +61,18 @@ main>section {
     }
 
     .sobreEspecialidade img {
-        
+
         height: 400px;
         object-fit: cover;
         width: 100%;
 
+    }
+
+    .procedimentoCard {
+        
+        
+        height: 720px;
+        
     }
 }
 
@@ -72,5 +82,26 @@ main>section {
         height: 300px;
         object-fit: cover;
         width: 100%;
+    }
+
+    .procedimentoCard .subTitle {
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--tertiary);
+
+    }
+
+    .procedimentoCard {
+        
+        width: 100%;
+        height: auto;
+        
+    }
+
+    #procedimentosSection {
+        display: flex;
+        flex-direction: column;
     }
 }
