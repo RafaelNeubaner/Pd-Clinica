@@ -7,7 +7,7 @@
 #headerLogo {
     margin: 0px;
     gap: 20px;
-    background-color: var(--bg-dark);
+    background-color: var(--bg-header);
     margin: 0;
     padding: 30px 40px !important;
     position: sticky;

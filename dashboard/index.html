@@ -74,13 +74,6 @@
       class="d-flex justify-content-between align-items-center"
       id="headerLogo"
     >
-      <a href="/"
-        ><img
-          id="loo"
-          src="/assets/media/images/logo-dark.png"
-          alt="Logo PD Clínica"
-          width="200"
-      /></a>
       <div class="d-flex gap-2 align-items-center">
         <button
           type="button"
@@ -90,13 +83,25 @@
         >
           <i class="bi bi-moon-stars"></i>
         </button>
-        <button type="button" class="btn btn-outline d-none d-sm-block" id="logoutButton">
+        <button
+          type="button"
+          class="btn btn-outline d-none d-sm-block"
+          id="logoutButton"
+        >
           <i class="bi bi-box-arrow-left"></i> Sair
         </button>
         <button class="btn btn-outline d-md-none" id="showMenu">
           <i class="bi bi-list"></i>
         </button>
       </div>
+      <a href="/"
+        ><img
+          id="logo"
+          src="/assets/media/images/logo-dark.png"
+          alt="Logo PD Clínica"
+          width="200"
+          class="logo"
+      /></a>
     </header>
 
     <main class="d-flex flex-column flex-md-row align-items-start flex-fill">
@@ -189,7 +194,9 @@
           <div class="card-body p-4">
             <!-- Filtro de Busca -->
             <fieldset class="mb-4">
-              <label for="buscaPaciente txt-light" id="labelBuscar">Buscar</label>
+              <label for="buscaPaciente txt-light" id="labelBuscar"
+                >Buscar</label
+              >
               <input
                 type="text"
                 class="form-control"
@@ -311,7 +318,7 @@
             </fieldset>
           </section>
 
-          <section class="configProcedimentos ">
+          <section class="configProcedimentos">
             <fieldset class="d-flex flex-column">
               <legend class="subTitle">Procedimentos</legend>
               <form class="formProcedimentos d-flex flex-column">
@@ -328,66 +335,65 @@
                   </button>
                 </fieldset>
 
-                  <fieldset class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="procedimento1"
-                    />
-                    <label class="form-check-label" for="procedimento1"
-                      >Consulta Geral</label
-                    >
-                  </fieldset>
-  
-                  <fieldset class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="procedimento2"
-                    />
-                    <label class="form-check-label" for="procedimento2"
-                      >Exame de sangue</label
-                    >
-                  </fieldset>
-  
-                  <fieldset class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="procedimento3"
-                    />
-                    <label class="form-check-label" for="procedimento3"
-                      >Exame Raio-X</label
-                    >
-                  </fieldset>
-  
-                  <fieldset class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="procedimento4"
-                    />
-                    <label class="form-check-label" for="procedimento4"
-                      >Ausculta</label
-                    >
-                  </fieldset>
-  
-                  <fieldset class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="procedimento5"
-                    />
-                    <label class="form-check-label" for="procedimento5"
-                      >ECG (Eletrocardiograma)</label
-                    >
-                  </fieldset>
+                <fieldset class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="procedimento1"
+                  />
+                  <label class="form-check-label" for="procedimento1"
+                    >Consulta Geral</label
+                  >
+                </fieldset>
 
+                <fieldset class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="procedimento2"
+                  />
+                  <label class="form-check-label" for="procedimento2"
+                    >Exame de sangue</label
+                  >
+                </fieldset>
+
+                <fieldset class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="procedimento3"
+                  />
+                  <label class="form-check-label" for="procedimento3"
+                    >Exame Raio-X</label
+                  >
+                </fieldset>
+
+                <fieldset class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="procedimento4"
+                  />
+                  <label class="form-check-label" for="procedimento4"
+                    >Ausculta</label
+                  >
+                </fieldset>
+
+                <fieldset class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="procedimento5"
+                  />
+                  <label class="form-check-label" for="procedimento5"
+                    >ECG (Eletrocardiograma)</label
+                  >
+                </fieldset>
               </form>
             </fieldset>
           </section>
