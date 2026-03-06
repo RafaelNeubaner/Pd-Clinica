@@ -10,7 +10,8 @@
 :root {
   --txt-light: #0d1b2a;
   --txt-dark: #ffffff;
-  --txt-muted: #6e6e6e;
+  --txt-muted: #a0a0a0;
+  --txt-muted-dark: #a0a0a0;
   --bg-light: #f9f9f5;
   --bg-dark: #0d1b2a;
   --bg-header: #ffffff;
@@ -34,6 +35,7 @@ body.dark-mode {
   --txt-light: #c9c9c9;
   --txt-dark: #f9f9f5;
   --txt-muted: #a0a0a0;
+  --txt-muted-dark:#a0a0a0;
   --bg-light: #111720;
   --bg-dark: #0d1b2a;
   --bg-header: #0d1b2a;
@@ -232,11 +234,13 @@ input.form-control {
   color: var(--txt-light)!important;
 }
 
-input::placeholder {
-  color: var(--txt-muted) !important;
+input::placeholder,
+textarea::placeholder {
+  color: var(--txt-muted-dark) !important;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   background-color: var(--text-dark) !important;
   border: 2px solid var(--primary)!important;
   color: var(--txt-light)!important;

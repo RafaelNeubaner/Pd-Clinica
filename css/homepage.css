@@ -771,7 +771,7 @@ main {
 
 #formContact input::placeholder,
 #formContact textarea::placeholder {
-  color: var(--secondary);
+  color: var(--txt-muted-dark) !important;
 }
 
 #formContact input,
