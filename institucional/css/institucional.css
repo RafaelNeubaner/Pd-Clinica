@@ -357,6 +357,10 @@ a {
     flex: 1;
 }
 
+.missaoValoresItem h2 {
+    color: var(--bg-light);
+}
+
 .missaoValoresItem:nth-child(3) {
     border-radius: 0 0 12px 12px;
 }
