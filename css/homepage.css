@@ -26,7 +26,6 @@ main {
   color: var(--txt-light);
   margin: 0;
   text-align: center;
-  font-size: 16px;
 }
 
 .containerTxt span {
@@ -164,6 +163,10 @@ main {
   padding: 0 32px;
 }
 
+#helpSection aside{
+  padding-right: 64px;
+}
+
 .buttonMore {
   padding: 12px 24px;
 }
@@ -230,7 +233,7 @@ main {
   padding: 0;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -40px;
   transform: translateY(-50%);
 }
 
@@ -240,13 +243,14 @@ main {
   padding: 0;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -40px;
   transform: translateY(-50%);
 }
 
 @media (max-width: 992px) {
   .helpCard {
-    height: 190px;
+    height: 210px;
+    min-height: 0px;
   }
 
   .iconHelp img {
@@ -843,4 +847,5 @@ main {
 
 .faqItem p {
   margin: 10px 40px;
+  font-size: 18px;
 }
