@@ -697,11 +697,11 @@ main {
 }
 
 #unidades .prev {
-  left: -20px;
+  left: -50px;
 }
 
 #unidades .next {
-  right: -20px;
+  right: -50px;
 }
 
 @media (max-width: 991px) {
