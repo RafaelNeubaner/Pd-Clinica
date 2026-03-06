@@ -167,9 +167,10 @@ section {
 #formTrabalheConosco label{
     color: var(--tertiary);
 }
-#formTrabalheConosco input, textarea{
-    color: var(--txt-dark) !important;
-    border-color: var(--tertiary);
+#formTrabalheConosco input, 
+#formTrabalheConosco textarea{
+    color: var(--txt-muted-dark) !important;
+    border-color: var(--secondary) !important;
 }
 
 #formTrabalheConosco button{

@@ -44,7 +44,6 @@
 
 #especialidades .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 16px rgba(7, 59, 122, 0.253);
   cursor: pointer;
   
 }
