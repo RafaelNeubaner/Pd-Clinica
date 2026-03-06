@@ -64,8 +64,6 @@ a {
     height: auto;
 }
 
-
-
 #recuperarSenhaSection {
     width: 100%;
     height: 100vh;
@@ -129,12 +127,14 @@ a {
 }
 
 #goBack{
-    color: var(--secondary);
+    color: var(--bg-header);
     font-size: 20px;
+    z-index: 1000;
+    text-decoration: none;
 }
 
 #goBack:hover{
-    color: var(--bg-light);
+    color: var(--txt-dark)!important;
     background-color: var(--secondary);
     border-radius: 8px;
     padding: 4px 8px;
