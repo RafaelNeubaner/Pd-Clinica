@@ -1,9 +1,10 @@
 /* FOOTER - BASE */
 footer {
-  background-color: var(--bg-dark);
-  color: var(--baby-blue);
+  background-color: var(--bg-header);
+  color: var(--txt-light);
   width: 100%;
-  padding: 40px 48px;
+  padding: 20px 24px;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +16,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 /* FOOTER - LOGO SECTION */
@@ -23,17 +24,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 32px;
+  justify-content: space-between;
+  margin-bottom: 12px;
 }
 
 .footerLogo {
   width: 100%;
-  margin-bottom: 24px;
   max-width: 250px;
-}
-
-.footerLogoSection h2 {
-  text-align: center;
 }
 
 /* FOOTER - ADDRESS */
@@ -46,33 +43,44 @@ footer {
 
 /* FOOTER - LINKS */
 footer a {
-  color: var(--txt-dark);
+  color: var(--txt-light);
   text-decoration: none;
 }
 
 footer a:hover {
-  color: var(--baby-blue);
+  color: var(--tertiary);
   transition: all 0.2s ease;
 }
 
 .footerNossaClinica,
+.footerAtendimentos,
 .footerOutrosAcessos {
   display: none;
 }
 
 .footerNossaClinica h2,
+.footerAtendimentos h2,
 .footerOutrosAcessos h2 {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
+  color: var(--links-relevant);
 }
 
 .footerNossaClinica ul,
+.footerAtendimentos ul,
 .footerOutrosAcessos ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
+  width: fit-content;
+}
+
+.footerNossaClinica ul li,
+.footerAtendimentos ul li,
+.footerOutrosAcessos ul li {
+  width: fit-content;
 }
 
 /* FOOTER - SOCIAL */
@@ -90,8 +98,8 @@ footer a:hover {
 #socialSection a {
   padding: 4px 8px;
   border-radius: 4px;
-  color: var(--tertiary);
-  border: 2px solid var(--tertiary);
+  color: var(--links-relevant);
+  border: 2px solid var(--links-relevant);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,20 +127,13 @@ footer a:hover {
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 32px;
+  margin-top: 12px;
   width: 100%;
 }
 
 .footerBtn:hover {
   color: var(--baby-blue);
   border: 2px solid var(--baby-blue);
-}
-
-/* FOOTER - DIVIDER */
-#divider {
-  width: 100%;
-  margin: 16px 0;
-  border-bottom: 1px solid var(--tertiary);
 }
 
 /* FOOTER - COPYRIGHT */
@@ -159,6 +160,7 @@ footer a:hover {
   
 
   .footerNossaClinica,
+  .footerAtendimentos,
   .footerOutrosAcessos {
     display: block;
     flex: 1 1 0;
@@ -225,6 +227,5 @@ footer a:hover {
 
   .footerLogo {
     max-width: 200px;
-    margin-bottom: 16px;
   }
 }
