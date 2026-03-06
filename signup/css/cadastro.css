@@ -22,7 +22,6 @@
 
 .formContainer {
   padding: 2rem;
-
   flex-grow: 1;
   
   background-color: var(--bg-light);
@@ -30,7 +29,7 @@
 
 
 .logoMobile {
-  max-width: 250px;
+  max-width: 350px;
   height: auto;
   margin-bottom: 64px;
 }
@@ -134,14 +133,14 @@
 }
 
 #goBack{
-    color: var(--secondary);
+    color: var(--bg-header);
     font-size: 20px;
     z-index: 1000;
     text-decoration: none;
 }
 
 #goBack:hover{
-    color: var(--bg-light);
+    color: var(--txt-dark)!important;
     background-color: var(--secondary);
     border-radius: 8px;
     padding: 4px 8px;
@@ -160,3 +159,4 @@
   }
 
 }
+

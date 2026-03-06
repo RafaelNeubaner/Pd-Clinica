@@ -26,7 +26,6 @@ main {
   color: var(--txt-light);
   margin: 0;
   text-align: center;
-  font-size: 16px;
 }
 
 .containerTxt span {
@@ -164,6 +163,10 @@ main {
   padding: 0 32px;
 }
 
+#helpSection aside{
+  padding-right: 64px;
+}
+
 .buttonMore {
   padding: 12px 24px;
 }
@@ -190,6 +193,8 @@ main {
   height: fit-content;
   min-height: 270px;
   max-width: 270px;
+  height: 100%;
+  scroll-snap-align: start;
   border: 2px solid var(--secondary);
   border-radius: 12px;
   color: var(--txt-light);
@@ -228,7 +233,7 @@ main {
   padding: 0;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -40px;
   transform: translateY(-50%);
   background-color: var(--secondary);
   color: var(--txt-dark);
@@ -240,7 +245,7 @@ main {
   padding: 0;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -40px;
   transform: translateY(-50%);
   background-color: var(--secondary);
   color: var(--txt-dark);
@@ -248,7 +253,8 @@ main {
 
 @media (max-width: 992px) {
   .helpCard {
-    height: 190px;
+    height: 210px;
+    min-height: 0px;
   }
 
   .iconHelp img {
@@ -259,8 +265,8 @@ main {
 
 @media (min-width: 992px) {
   .helpCard {
-    flex: 0 0 calc(50% - 8px); 
-    max-width: calc(50% - 8px);
+    flex: 0 0 calc(50% + 12px); 
+    max-width: calc(50% + 12px);
   }
 }
 
@@ -529,22 +535,17 @@ main {
 }
 
 #unidades .slider-track {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   gap: 24px;
 }
 
 #unidades .slider-item {
   flex: 0 0 100%;
   max-width: 100%;
-}
-
-#unidades .slider-window .slider-track {
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  scroll-snap-type: x mandatory; 
-  flex-wrap: nowrap;
+  scroll-snap-align: start;
 }
 
 #unidades .slider-window::-webkit-scrollbar {
@@ -638,8 +639,8 @@ main {
   }
 
   #unidades .slider-item {
-    flex: 0 0 calc((100% - 72px) / 2);
-    max-width: calc((100% - 72px) / 2);
+    flex: 0 0 calc(50% - 12px);
+    max-width: calc(50% - 12px);
   }
 
   #unidades .slider-item .card .card-body {
@@ -696,11 +697,11 @@ main {
 }
 
 #unidades .prev {
-  left: -20px;
+  left: -50px;
 }
 
 #unidades .next {
-  right: -20px;
+  right: -50px;
 }
 
 @media (max-width: 991px) {
@@ -859,4 +860,5 @@ main {
 
 .faqItem p {
   margin: 10px 40px;
+  font-size: 18px;
 }

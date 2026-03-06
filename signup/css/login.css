@@ -3,7 +3,22 @@
     width: 100%;
     height: 100vh;
     display: flex;
+}
 
+.coverContainer {
+    width: 57%;
+    height: 100vh;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+}
+
+.coverImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    object-position: 100% 10%;
 }
 
 #formulario {
@@ -44,20 +59,10 @@ a {
     text-decoration: none;
 }
 
-img {
-    width: 57%;
-    max-width: 832px;
-    height: 100vh;
-    object-fit: cover;
-    object-position: 100% 10%;
-    
-}
-
 #logo {
     width: 350px;
     height: auto;
 }
-
 
 #recuperarSenhaSection {
     width: 100%;
@@ -122,12 +127,14 @@ img {
 }
 
 #goBack{
-    color: var(--secondary);
+    color: var(--bg-header);
     font-size: 20px;
+    z-index: 1000;
+    text-decoration: none;
 }
 
 #goBack:hover{
-    color: var(--bg-light);
+    color: var(--txt-dark)!important;
     background-color: var(--secondary);
     border-radius: 8px;
     padding: 4px 8px;
@@ -148,7 +155,12 @@ img {
         text-align: left;
         padding: 0 32px;
     }
+}
 
+@media (max-width: 992px) {
+    .coverContainer {
+        display: none;
+    }
 }
 
 body.dark-mode #esqueceuSenha {
