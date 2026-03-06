@@ -7,6 +7,7 @@ footer {
   padding-bottom: 24px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -16,7 +17,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 24px;
+  align-items: center;
+  max-width: 1200px;
 }
 
 /* FOOTER - LOGO SECTION */
@@ -52,47 +54,10 @@ footer a:hover {
   transition: all 0.2s ease;
 }
 
-footer #linksSection{
-  flex: 1 1 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 30px;
-}
-
-.footerNossaClinica,
-.footerAtendimentos,
-.footerOutrosAcessos {
-  display: none;
-}
-
-.footerNossaClinica h2,
-.footerAtendimentos h2,
-.footerOutrosAcessos h2 {
-  margin-bottom: 12px;
-  color: var(--links-relevant);
-}
-
-.footerNossaClinica ul,
-.footerAtendimentos ul,
-.footerOutrosAcessos ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: fit-content;
-}
-
-.footerNossaClinica ul li,
-.footerAtendimentos ul li,
-.footerOutrosAcessos ul li {
-  width: fit-content;
-}
-
 /* FOOTER - SOCIAL */
 #socialSection {
   margin-top: 32px;
+  display: flex;
 }
 
 .social-icons {
@@ -119,29 +84,9 @@ footer #linksSection{
 }
 
 #socialSection i {
-  font-size: 22px;
+  font-size: 15px;
 }
 
-.footerBtn {
-  display: flex;
-  height: 50px;
-  color: var(--txt-dark);
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: 2px solid var(--tertiary);
-  padding: 8px 22px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 12px;
-  width: 100%;
-}
-
-.footerBtn:hover {
-  color: var(--baby-blue);
-  border: 2px solid var(--baby-blue);
-}
 
 /* FOOTER - COPYRIGHT */
 .footerCopyright {
@@ -154,8 +99,8 @@ footer #linksSection{
 @media (min-width: 768px) {
   .footerContent {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 24px;
   }
 
@@ -188,7 +133,7 @@ footer #linksSection{
 
 @media (max-width: 767px) {
   footer {
-    padding: 24px 16px;
+    padding: 12px 16px;
   }
 
   .footerContent {
