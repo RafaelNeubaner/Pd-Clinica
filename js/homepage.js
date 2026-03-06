@@ -15,7 +15,7 @@ function ativarCarrossel(containerId, scrollId, btnLeftId, btnRightId, step) {
       return;
     }
 
-    if (scrollSection.scrollLeft <= 0) {
+    if (scrollSection.scrollLeft <= 25) {
       btnLeft.classList.add("d-none");
     } else {
       btnLeft.classList.remove("d-none");
@@ -31,7 +31,7 @@ function ativarCarrossel(containerId, scrollId, btnLeftId, btnRightId, step) {
 
   scrollSection.addEventListener("scroll", function () {
     let maxScrollLeft = scrollSection.scrollWidth - scrollSection.clientWidth;
-    if (scrollSection.scrollLeft <= 0 && window.innerWidth >= 992) {
+    if (scrollSection.scrollLeft <= 24 && window.innerWidth >= 992) {
       btnLeft.classList.add("d-none");
     } else {
       btnLeft.classList.remove("d-none");
@@ -50,6 +50,14 @@ function ativarCarrossel(containerId, scrollId, btnLeftId, btnRightId, step) {
   });
 
   btnLeft.addEventListener("click", function () {
+    console.log(step)
+    if (!step) {
+      if (cardComp) {
+        step = cardComp.offsetWidth;
+      } else {
+        step = 300;
+      }
+    }
     scrollSection.scrollBy({
       left: -step,
       behavior: "smooth",
@@ -57,6 +65,11 @@ function ativarCarrossel(containerId, scrollId, btnLeftId, btnRightId, step) {
   });
 
   btnRight.addEventListener("click", function () {
+    if (!step) {
+      //const cardComp = container.querySelector(`.${cardCompClass}`);
+      step = scrollSection.clientWidth;
+     
+    }
     scrollSection.scrollBy({
       left: step,
       behavior: "smooth",
@@ -69,7 +82,7 @@ ativarCarrossel(
   "carousel-scroll-container",
   "slideLeft",
   "slideRight",
-  300,
+  null,
 );
 
 ativarCarrossel(
@@ -77,7 +90,7 @@ ativarCarrossel(
   "unidades-scroll",
   "btnLeftUnits",
   "btnRightUnits",
-  630,
+  null,
 );
 
 var formContact = document.getElementById("formContactForm");
