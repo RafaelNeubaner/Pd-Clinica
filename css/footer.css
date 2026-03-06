@@ -52,6 +52,13 @@ footer a:hover {
   transition: all 0.2s ease;
 }
 
+footer #linksSection{
+  flex: 1 1 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
 .footerNossaClinica,
 .footerAtendimentos,
 .footerOutrosAcessos {
@@ -153,17 +160,13 @@ footer a:hover {
   }
 
   .footerLogoSection {
-    flex: 1 1 0;
     margin-bottom: 0;
   }
-
-  
 
   .footerNossaClinica,
   .footerAtendimentos,
   .footerOutrosAcessos {
     display: block;
-    flex: 1 1 0;
   }
 
   #socialSection {
@@ -176,14 +179,6 @@ footer a:hover {
 /* RESPONSIVE - DESKTOP */
 @media (min-width: 992px) {
 
-  .footerLogoSection {
-    flex: 1 1 0;
-  }
-
-  .footerNossaClinica,
-  .footerOutrosAcessos {
-    flex: 1 1 0;
-  }
 
   #socialSection {
     flex: 1 1 0;
