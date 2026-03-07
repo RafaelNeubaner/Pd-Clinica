@@ -5,6 +5,8 @@
     display: flex;
 }
 
+
+
 .coverContainer {
     width: 57%;
     height: 100vh;
@@ -150,11 +152,17 @@ a {
 }
 
 
+
 @media (max-width: 768px) {
     #recuperarSenha {
         text-align: left;
         padding: 0 32px;
     }
+
+    #loginDesktop a {
+    color: var(--txt-light);
+}
+
 }
 
 @media (max-width: 992px) {

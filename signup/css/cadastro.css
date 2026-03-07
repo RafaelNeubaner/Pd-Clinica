@@ -160,3 +160,10 @@
 
 }
 
+@media (max-width: 768px) {
+  #cadastro a {
+    color: var(--txt-light);
+
+  }
+}
+
